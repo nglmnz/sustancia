@@ -1,0 +1,241 @@
+/*-- scss:defaults --*/
+
+// ---------------------------------------------------------------
+// SUSTANCIA — identidad visual v2
+// Unificada con el cuaderno de arquitectura teórica de la tesis:
+// Spectral (display) + IBM Plex Sans/Mono, azul minuit, rojo señal.
+// La rampa cromática sigue codificando los niveles N1→N4, ahora
+// convergiendo hacia el minuit. El rojo señal marca lo extractivo
+// y los errores interpretativos.
+// ---------------------------------------------------------------
+
+@import url('https://fonts.googleapis.com/css2?family=Spectral:wght@400;500;600;800&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap');
+
+$paper:   #F7F7F2;
+$ink:     #14161A;
+$minuit:  #223A8F;   // color del proyecto = N4
+$minuit-deep: #16265F;
+$signal:  #C8341F;   // extracción / errores
+$gris:    #8A8F98;
+$line:    #D8D8CF;
+$card:    #FFFFFF;
+
+// Rampa de niveles: del gris técnico al minuit
+$n1: #8A8F98;
+$n2: #6B7AA8;
+$n3: #45589E;
+$n4: #223A8F;
+
+$body-bg: $paper;
+$body-color: $ink;
+$link-color: $minuit;
+$font-family-sans-serif: "IBM Plex Sans", system-ui, sans-serif;
+$font-family-monospace: "IBM Plex Mono", monospace;
+$headings-font-family: "Spectral", serif;
+$headings-font-weight: 800;
+
+/*-- scss:rules --*/
+
+h1, h2, h3 { letter-spacing: -0.01em; }
+
+.eyebrow {
+  font-family: "IBM Plex Mono", monospace;
+  font-size: 0.75rem;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: $minuit;
+  margin-bottom: 0.85rem;
+}
+
+// ---------- Hero: un ítem del juego como portada ----------
+.hero {
+  padding: 3.5rem 0 2.5rem 0;
+  border-bottom: 3px solid $ink;
+  margin-bottom: 1rem;
+
+  h1 {
+    font-size: clamp(2.1rem, 5vw, 3.2rem);
+    font-weight: 800;
+    line-height: 1.1;
+    max-width: 24ch;
+    margin-bottom: 1rem;
+    em { font-style: italic; color: $minuit; }
+  }
+
+  .hero-sub {
+    font-family: "Spectral", serif;
+    font-size: 1.2rem;
+    font-weight: 500;
+    max-width: 40rem;
+    color: #33363D;
+  }
+}
+
+// ---------- Tabla mini de regresión (demo) ----------
+.demo-tabla {
+  font-family: "IBM Plex Mono", monospace;
+  font-size: 0.85rem;
+  border-collapse: collapse;
+  margin: 1.5rem 0;
+  width: 100%;
+  max-width: 620px;
+  background: $card;
+
+  th, td { padding: 0.5rem 0.85rem; text-align: left; }
+  thead th { border-bottom: 2px solid $ink; font-weight: 500; }
+  tbody tr { border-bottom: 1px solid $line; }
+  .fila-ns td { color: $signal; font-weight: 500; }
+  caption { caption-side: bottom; font-size: 0.75rem; color: $gris; padding-top: 0.5rem; text-align: left; }
+}
+
+// ---------- Tarjetas de interpretación N1 vs N3 ----------
+.comparacion {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.25rem;
+  margin: 2rem 0 1rem 0;
+  @media (max-width: 700px) { grid-template-columns: 1fr; }
+}
+
+.carta {
+  border-radius: 8px;
+  padding: 1.4rem 1.5rem;
+  background: $card;
+
+  .nivel-tag {
+    font-family: "IBM Plex Mono", monospace;
+    font-size: 0.72rem;
+    font-weight: 500;
+    letter-spacing: 0.1em;
+    display: inline-block;
+    padding: 0.18rem 0.65rem;
+    border-radius: 100px;
+    margin-bottom: 0.9rem;
+    color: $paper;
+  }
+
+  p {
+    font-family: "Spectral", serif;
+    font-size: 1.05rem;
+    line-height: 1.55;
+    margin: 0;
+  }
+
+  .veredicto {
+    font-family: "IBM Plex Sans", sans-serif;
+    font-size: 0.85rem;
+    margin-top: 1rem;
+    padding-top: 0.9rem;
+    border-top: 1px dashed $line;
+  }
+}
+
+.carta-n1 { border: 1px solid $line;                .nivel-tag { background: $n1; } }
+.carta-n3 { border: 1px solid rgba($minuit, 0.5);   .nivel-tag { background: $n4; } }
+
+// ---------- Escalera de niveles ----------
+.escalera { margin: 2rem 0; }
+
+.peldano {
+  display: grid;
+  grid-template-columns: 64px 1fr;
+  gap: 1.2rem;
+  padding: 1.1rem 0;
+  border-bottom: 1px solid $line;
+  align-items: baseline;
+
+  .peldano-n {
+    font-family: "IBM Plex Mono", monospace;
+    font-weight: 500;
+    font-size: 1.3rem;
+  }
+  h3 { font-size: 1.15rem; font-weight: 600; margin: 0 0 0.25rem 0; }
+  p { margin: 0; color: #4A4D54; font-size: 0.95rem; }
+}
+
+.peldano-1 .peldano-n { color: $n1; }
+.peldano-2 .peldano-n { color: $n2; }
+.peldano-3 .peldano-n { color: $n3; }
+.peldano-4 .peldano-n { color: $n4; }
+
+// ---------- Bloques ----------
+.seccion { padding: 2.5rem 0 1rem 0; }
+
+.num-seccion {
+  font-family: "IBM Plex Mono", monospace;
+  font-size: 0.75rem;
+  color: $gris;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  display: block;
+  margin-bottom: 0.5rem;
+}
+
+.cita-marco {
+  font-family: "Spectral", serif;
+  font-size: 1.25rem;
+  line-height: 1.5;
+  max-width: 52ch;
+  border-left: 3px solid $minuit;
+  padding-left: 1.4rem;
+  margin: 2rem 0;
+  color: #33363D;
+}
+
+// ---------- Diagrama de dos arquitecturas (fundamentación) ----------
+.diagrama {
+  background: $card;
+  border: 1px solid $line;
+  border-radius: 8px;
+  padding: 1.4rem 1.1rem 0.75rem;
+  margin-top: 0.5rem;
+}
+
+.modos { display: flex; gap: 0.5rem; margin-bottom: 0.9rem; flex-wrap: wrap; }
+
+.modo {
+  font-family: "IBM Plex Mono", monospace;
+  font-size: 0.8rem;
+  padding: 0.5rem 0.9rem;
+  border: 1px solid $line;
+  border-radius: 4px;
+  background: $paper;
+  cursor: pointer;
+}
+.modo:focus-visible { outline: 2px solid $minuit; outline-offset: 2px; }
+.modo.activo-del { background: $signal; border-color: $signal; color: #fff; }
+.modo.activo-inc { background: $minuit; border-color: $minuit; color: #fff; }
+
+.diagrama svg { width: 100%; height: auto; display: block; }
+.flujo-inc, .flujo-del { transition: opacity 0.35s; }
+
+.leyenda {
+  font-size: 0.92rem;
+  color: #33363D;
+  padding: 0.9rem 0.25rem 0.6rem;
+  border-top: 1px dashed $line;
+  margin-top: 0.6rem;
+  min-height: 74px;
+
+  .tag {
+    font-family: "IBM Plex Mono", monospace;
+    font-size: 0.7rem;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    display: block;
+    margin-bottom: 0.25rem;
+  }
+  .tag.azul { color: $minuit; }
+  .tag.rojo { color: $signal; }
+  strong { color: $ink; }
+}
+
+// Accesibilidad
+a:focus-visible, button:focus-visible {
+  outline: 3px solid $minuit;
+  outline-offset: 2px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  * { animation: none !important; transition: none !important; }
+}

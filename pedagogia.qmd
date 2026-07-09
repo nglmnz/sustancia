@@ -1,0 +1,75 @@
+---
+title: "Diseño pedagógico"
+toc: true
+---
+
+## Fundamento
+
+La progresión del juego se basa en la taxonomía de comprensión de representaciones
+de datos de Curcio (1987), extendida por Shaughnessy (2007), y en la distinción
+entre alfabetización, razonamiento y pensamiento estadístico de Garfield y
+Ben-Zvi (2008). El juego no inventa niveles arbitrarios: **operacionaliza una
+progresión que la literatura ya validó**, y la convierte en mecánica lúdica.
+
+| Nivel | Nombre | Equivalente en la literatura |
+|---|---|---|
+| N1 | Lectura técnica | *Reading the data* / alfabetización estadística |
+| N2 | Interpretación estadística | *Reading between the data* / razonamiento |
+| N3 | Interpretación sustantiva | *Reading beyond the data* |
+| N4 | Interpretación crítica-reflexiva | *Reading behind the data* / pensamiento estadístico |
+
+La regla de oro: una respuesta técnicamente correcta pero no sustantiva recibe
+puntaje parcial y retroalimentación explícita sobre qué le faltó. El puntaje es
+no lineal (N1=1, N2=2, N3=4, N4=7): **la sustancia vale más que la técnica**.
+
+## Taxonomía de errores interpretativos
+
+Cada error detectado es contenido pedagógico: el evaluador lo nombra, lo explica
+y lo fundamenta en el corpus.
+
+| Código | Error |
+|---|---|
+| E1 | Causalidad espuria (asociación → causa) |
+| E2 | Confusión significancia estadística / relevancia sustantiva |
+| E3 | Sobregeneralización más allá del diseño muestral |
+| E4 | R² interpretado como explicación causal |
+| E5 | Ceguera al hallazgo nulo teóricamente relevante |
+| E6 | Reificación de tipologías (clusters como grupos naturales) |
+| E7 | Artefacto de composición atribuido a la variable equivocada |
+| E8 | Direccionalidad causal asumida sin justificación |
+| E9 | Comparación de coeficientes no estandarizados |
+| E10 | Falacia ecológica / individualista |
+
+## Anatomía del ítem
+
+Cada ítem presenta un output estadístico real en un contexto disciplinar elegible,
+una pregunta abierta con audiencia ficticia definida ("redacta para la Dirección
+de Asuntos Estudiantiles…"), una rúbrica con criterios observables por nivel, y
+fragmentos curados del corpus metodológico que fundamentan la retroalimentación.
+
+El evaluador — un modelo de lenguaje operando con la rúbrica del ítem, la taxonomía
+de errores y respuestas ancla pre-clasificadas — devuelve: nivel alcanzado,
+criterios cumplidos, errores detectados, retroalimentación formativa y cita al corpus.
+
+## Ítems piloto
+
+Los cuatro ítems iniciales provienen de una investigación real:
+
+- **D1 — "El estudiante de 16 horas"** (descriptiva): media vs. mediana con
+outliers; la decisión de winsorizar como contenido interpretativo.
+- **A1 — "¿Carreras distintas o composiciones distintas?"** (control estadístico):
+un titular de prensa atribuye a la carrera un efecto que es composición de género.
+- **R1 — "Lo que la pantalla no dice"** (regresión): el hallazgo central es el
+predictor *no* significativo — el tiempo de pantalla no predice deterioro; el
+modo compulsivo de uso, sí.
+- **C1 — "¿Existen tres tipos de estudiantes?"** (clusters): desmontar la
+reificación — los perfiles de k-means son construcciones analíticas, "clases en
+el papel" (Bourdieu), no grupos naturales descubiertos.
+
+## Referencias
+
+- Curcio, F. (1987). Comprehension of mathematical relationships expressed in graphs. *Journal for Research in Mathematics Education*, 18(5).
+- Shaughnessy, J. M. (2007). Research on statistics learning and reasoning. En *Second Handbook of Research on Mathematics Teaching and Learning*.
+- Garfield, J. y Ben-Zvi, D. (2008). *Developing Students' Statistical Reasoning*. Springer.
+- Simondon, G. (2007 [1958]). *El modo de existencia de los objetos técnicos*. Prometeo.
+- Bourdieu, P. (1990). ¿Cómo se hace una clase social? Sobre la existencia teórica y práctica de los grupos.

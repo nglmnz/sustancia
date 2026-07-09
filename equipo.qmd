@@ -1,0 +1,34 @@
+---
+title: "Proyecto y equipo"
+---
+
+## El proyecto
+
+**Sustancia** nace de una constatación simple: los programas de formación en
+ciencias sociales enseñan a *ejecutar* técnicas estadísticas, pero la competencia
+que distingue a un buen investigador — y a un buen lector de investigación — es
+la **interpretación**: qué significa un resultado para el fenómeno, qué permite
+afirmar y qué no.
+
+El proyecto se inscribe en una tradición de laboratorio interdisciplinario: diseño
+pedagógico + desarrollo de software + investigación empírica sobre el propio
+instrumento. La app es a la vez herramienta de aprendizaje y objeto de estudio:
+el piloto incluye un diseño de evaluación pre/post de competencia interpretativa.
+
+## Corpus inicial
+
+El primer conjunto de ítems se construye sobre la investigación *Habitus
+tecnológico y salud mental en estudiantes de primer año* (Universidad Alberto
+Hurtado, n = 276, cinco carreras), complementada con fuentes de datos públicas
+chilenas (ELSOC, CASEN) para las variantes de contexto disciplinar.
+
+## Equipo
+
+- **Angel Muñoz ** — Licenciado en Sociología, Universidad Alberto Hurtado. Diseño
+pedagógico, desarrollo (R/Shiny), corpus empírico.
+- *(Colaboraciones abiertas: diseño de ítems en otras disciplinas, pilotaje
+docente, diseño UX.)*
+
+## Contacto
+
+*(anmunozr@alumnos.uahurtado.cl / GitHub del proyecto)*

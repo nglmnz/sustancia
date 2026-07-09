@@ -1,0 +1,185 @@
+---
+title: ""
+pagetitle: "Fundamentación — Sustancia"
+---
+
+::: {.hero}
+<div class="eyebrow">Fundamentación</div>
+
+# La interpretación como <em>capital que no se puede delegar</em>
+
+<p class="hero-sub">Sustancia no es una app de ejercicios con IA. Es un dispositivo
+diseñado desde una teoría del problema: si la externalización cognitiva es una
+forma de descapitalización, entonces la arquitectura del uso de la IA — quién
+produce y quién evalúa — es una decisión sociológica, no técnica.</p>
+:::
+
+## El problema: la conversión inversa {.seccion}
+
+<span class="num-seccion">I — Diagnóstico</span>
+
+El capital cultural en estado incorporado tiene, en Bourdieu, una propiedad
+definitoria: **cuesta tiempo que debe invertirse personalmente**. Nadie puede
+incorporar por otro la capacidad de sostener la atención, estructurar un
+argumento o interpretar un resultado. Esa imposibilidad de delegación es lo que
+la IA generativa parece prometer suspender.
+
+La externalización cognitiva — delegar la redacción, el resumen, la
+interpretación — no es un atajo neutral: es una **conversión inversa de
+capital**. El estudiante cambia acumulación futura de capital incorporado por
+alivio presente de esfuerzo. La literatura reciente lo llama "deuda cognitiva";
+la teoría de los capitales permite decirlo con más precisión: es
+descapitalización en el estado del capital que sostiene a todos los demás.
+
+La evidencia empírica que origina este proyecto (estudio sobre habitus
+tecnológico y salud mental en 276 estudiantes de primer año) aporta dos matices
+que orientan el diseño:
+
+- **Lo dañino no es la cantidad sino el circuito.** El tiempo de pantalla no
+predice deterioro de salud mental; el patrón compulsivo de uso, sí. El problema
+no es la exposición a la tecnología: es el modo de relación instalado.
+- **La delegación es un gradiente, no un destino.** Los perfiles de uso severamente
+delegativo son minoritarios. La descapitalización es un riesgo estructural, no
+una condena — y por lo tanto es intervenible pedagógicamente.
+
+## Dos arquitecturas de uso {.seccion}
+
+<span class="num-seccion">II — La decisión de diseño</span>
+
+Toda herramienta de aprendizaje con IA implementa, lo declare o no, una de dos
+arquitecturas. Cambia el modo y observa qué hace cada una con el trabajo
+cognitivo del estudiante.
+
+```{=html}
+<div class="diagrama">
+  <div class="modos" role="group" aria-label="Modo del diagrama">
+    <button class="modo activo-del" id="btn-del">▸ Arquitectura delegativa</button>
+    <button class="modo" id="btn-inc">▸ Arquitectura incorporativa</button>
+  </div>
+
+  <svg viewBox="0 0 700 300" xmlns="http://www.w3.org/2000/svg" role="img"
+       aria-label="Diagrama de dos arquitecturas de uso de IA: delegativa (la IA produce, el estudiante valida) e incorporativa (el estudiante produce, la IA evalúa)">
+    <!-- estudiante -->
+    <rect x="30" y="100" width="180" height="100" rx="8" fill="#FFFFFF" stroke="#14161A" stroke-width="1.5"/>
+    <text x="120" y="145" text-anchor="middle" font-family="Spectral,serif" font-weight="700" font-size="16" fill="#14161A">Estudiante</text>
+    <text x="120" y="168" text-anchor="middle" font-family="IBM Plex Mono,monospace" font-size="10" fill="#8A8F98">tiempo + atención</text>
+
+    <!-- IA -->
+    <rect x="490" y="100" width="180" height="100" rx="8" fill="#FFFFFF" stroke="#14161A" stroke-width="1.5"/>
+    <text x="580" y="145" text-anchor="middle" font-family="Spectral,serif" font-weight="700" font-size="16" fill="#14161A">Modelo de IA</text>
+    <text x="580" y="168" text-anchor="middle" font-family="IBM Plex Mono,monospace" font-size="10" fill="#8A8F98">capacidad de producción</text>
+
+    <!-- flujo delegativo -->
+    <g class="flujo-del" id="fx-del">
+      <path d="M 490 125 C 400 90, 300 90, 215 122" stroke="#C8341F" stroke-width="3" fill="none" marker-end="url(#pR)"/>
+      <text x="350" y="82" text-anchor="middle" font-family="IBM Plex Mono,monospace" font-size="11" fill="#C8341F">la IA produce el texto / la interpretación</text>
+      <path d="M 215 178 C 300 212, 400 212, 485 180" stroke="#C8341F" stroke-width="1.6" stroke-dasharray="5 4" fill="none" marker-end="url(#pR)"/>
+      <text x="350" y="232" text-anchor="middle" font-family="IBM Plex Mono,monospace" font-size="11" fill="#C8341F">el estudiante solo valida (o ni eso)</text>
+      <text x="350" y="272" text-anchor="middle" font-family="Spectral,serif" font-style="italic" font-size="13" fill="#7E1F12">resultado: conversión inversa — capital por alivio</text>
+    </g>
+
+    <!-- flujo incorporativo -->
+    <g class="flujo-inc" id="fx-inc" opacity="0.10">
+      <path d="M 215 125 C 300 90, 400 90, 485 122" stroke="#223A8F" stroke-width="3" fill="none" marker-end="url(#pA)"/>
+      <text x="350" y="82" text-anchor="middle" font-family="IBM Plex Mono,monospace" font-size="11" fill="#223A8F">el estudiante produce la interpretación</text>
+      <path d="M 485 178 C 400 212, 300 212, 220 180" stroke="#223A8F" stroke-width="1.6" stroke-dasharray="5 4" fill="none" marker-end="url(#pA)"/>
+      <text x="350" y="232" text-anchor="middle" font-family="IBM Plex Mono,monospace" font-size="11" fill="#223A8F">la IA evalúa con rúbrica y devuelve nivel, errores, preguntas</text>
+      <text x="350" y="272" text-anchor="middle" font-family="Spectral,serif" font-style="italic" font-size="13" fill="#16265F">resultado: la inversión de tiempo y atención queda intacta</text>
+    </g>
+
+    <defs>
+      <marker id="pA" markerWidth="8" markerHeight="8" refX="6" refY="4" orient="auto"><path d="M0,0 L8,4 L0,8 z" fill="#223A8F"/></marker>
+      <marker id="pR" markerWidth="8" markerHeight="8" refX="6" refY="4" orient="auto"><path d="M0,0 L8,4 L0,8 z" fill="#C8341F"/></marker>
+    </defs>
+  </svg>
+
+  <div class="leyenda" id="leyenda">
+    <span class="tag rojo">Arquitectura delegativa</span>
+    La IA realiza el trabajo cognitivo; el estudiante administra el producto.
+    La inversión personal de tiempo y atención — la condición del capital
+    incorporado — se suspende. <strong>Es la arquitectura por defecto de casi
+    todo uso educativo de IA generativa.</strong>
+  </div>
+</div>
+
+<script>
+(function(){
+  var leyenda = document.getElementById('leyenda');
+  var fxInc = document.getElementById('fx-inc'), fxDel = document.getElementById('fx-del');
+  var bInc = document.getElementById('btn-inc'), bDel = document.getElementById('btn-del');
+  if(!bInc) return;
+  bDel.addEventListener('click', function(){
+    fxDel.setAttribute('opacity','1'); fxInc.setAttribute('opacity','0.10');
+    bDel.className='modo activo-del'; bInc.className='modo';
+    leyenda.innerHTML = '<span class="tag rojo">Arquitectura delegativa</span> La IA realiza el trabajo cognitivo; el estudiante administra el producto. La inversión personal de tiempo y atención — la condición del capital incorporado — se suspende. <strong>Es la arquitectura por defecto de casi todo uso educativo de IA generativa.</strong>';
+  });
+  bInc.addEventListener('click', function(){
+    fxInc.setAttribute('opacity','1'); fxDel.setAttribute('opacity','0.10');
+    bInc.className='modo activo-inc'; bDel.className='modo';
+    leyenda.innerHTML = '<span class="tag azul">Arquitectura incorporativa</span> El estudiante produce; la IA opera solo sobre el producto ya realizado: evalúa contra rúbricas explícitas, detecta errores interpretativos y devuelve preguntas orientadoras. <strong>Sustancia está construido para que solo este circuito sea posible</strong>: no hay alternativas que seleccionar — la interpretación se escribe.';
+  });
+})();
+</script>
+```
+
+En Sustancia la arquitectura incorporativa no es una recomendación de uso: está
+**forzada por el diseño**. No existen preguntas de alternativas; el evaluador
+tiene prohibido redactar interpretaciones; su única salida es nivel alcanzado,
+errores detectados y preguntas que devuelven el trabajo al jugador.
+
+## La interpretación sustantiva como capital {.seccion}
+
+<span class="num-seccion">III — Qué se entrena exactamente</span>
+
+La competencia que el juego entrena — interpretar un resultado estadístico en
+profundidad — es un caso ejemplar de capital cultural incorporado: se adquiere
+lentamente, por ejercicio personal, y no puede transmitirse por delegación. Es,
+además, un capital de creciente valor: en un entorno donde generar análisis es
+barato, **saber leer qué significa un análisis y qué no permite afirmar** es la
+competencia que distingue.
+
+<div class="cita-marco">El juego construye, deliberadamente, un régimen de
+valorización contrario al del campo de plataformas: su sistema de puntaje premia
+la profundidad sobre la velocidad — llegar a la interpretación sustantiva vale
+cuatro veces más que la lectura técnica correcta. Donde la plataforma valoriza
+el instante continuo, el juego valoriza el trabajo lento de la comprensión.</div>
+
+Hasta la mecánica de los errores responde a esta lógica: cometer un error
+interpretativo resta puntos pero **desbloquea su ficha** — el error comprendido
+se acumula como conocimiento. Nada se pierde si se incorpora.
+
+## El fundamento epistemológico {.seccion}
+
+<span class="num-seccion">IV — Simondon</span>
+
+La progresión hacia el nivel N4 (interpretación crítica-reflexiva) sigue a
+Gilbert Simondon: la relación no alienada con un objeto técnico no consiste en
+operarlo sino en **comprender su funcionamiento interno**. Aplicado a la
+estadística: quien llega a N4 no lee resultados — reconstruye la cadena de
+decisiones que los produjo: por qué esta técnica, qué supuestos carga, qué
+impone el algoritmo a los datos, qué no permite afirmar el diseño.
+
+Ese es el sentido preciso en que Sustancia es un complemento pedagógico y no un
+sustituto: no busca que el estudiante obtenga interpretaciones, sino que se
+individúe como intérprete.
+
+## Síntesis {.seccion}
+
+<span class="num-seccion">V — Las tres patas</span>
+
+| Fundamento | Aporta | Se traduce en |
+|---|---|---|
+| **Sociológico** (Bourdieu, teoría de los capitales) | El diagnóstico: qué está en disputa y por qué la arquitectura de uso importa | Arquitectura incorporativa forzada; régimen de valorización contrario al extractivo |
+| **Epistemológico** (Simondon) | El horizonte: comprender la técnica desde dentro, no operarla | El nivel N4 y la reconstrucción de decisiones metodológicas |
+| **Pedagógico** (Curcio; Shaughnessy; Garfield y Ben-Zvi) | La escalera medible de profundidad interpretativa | Los niveles N1–N4, las rúbricas y la evaluación formativa |
+
+## Referencias {.seccion}
+
+- Bourdieu, P. (1987 [1979]). Los tres estados del capital cultural. *Sociológica*, 2(5).
+- Bourdieu, P. y Wacquant, L. (2005 [1992]). *Una invitación a la sociología reflexiva*. Siglo XXI.
+- Curcio, F. (1987). Comprehension of mathematical relationships expressed in graphs. *JRME*, 18(5).
+- Garfield, J. y Ben-Zvi, D. (2008). *Developing Students' Statistical Reasoning*. Springer.
+- Ignatow, G. y Robinson, L. (2017). Pierre Bourdieu: theorizing the digital. *Information, Communication & Society*, 20(7).
+- Shaughnessy, J. M. (2007). Research on statistics learning and reasoning. En *Second Handbook of Research on Mathematics Teaching and Learning*.
+- Simondon, G. (2007 [1958]). *El modo de existencia de los objetos técnicos*. Prometeo.
+- Zuboff, S. (2020). *La era del capitalismo de la vigilancia*. Paidós.

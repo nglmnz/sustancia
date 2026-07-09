@@ -1,0 +1,170 @@
+[
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Leer una tabla no es interpretarla.",
+    "section": "",
+    "text": "Sustancia · nombre provisorio · proyecto en desarrollo\n\n\n\n\nSustancia es un juego web para aprender a interpretar resultados estadísticos en contexto: sociología, psicología, política pública, salud. El jugador no elige alternativas — escribe su interpretación, y un evaluador con rúbricas explícitas le dice qué tan profundo llegó y qué le faltó."
+  },
+  {
+    "objectID": "index.html#mira-la-diferencia",
+    "href": "index.html#mira-la-diferencia",
+    "title": "Leer una tabla no es interpretarla.",
+    "section": "Mira la diferencia",
+    "text": "Mira la diferencia\nAmbas respuestas describen la misma tabla de un estudio real sobre tecnología y salud mental en estudiantes de primer año. Solo una de ellas dice algo sobre el mundo.\n\n\nModelo de regresión: deterioro de salud mental (fragmento ilustrativo)\n\n\n\n\nPredictor\n\n\nβ\n\n\np\n\n\n\n\n\n\nUso compulsivo (IDA)\n\n\n.38\n\n\n&lt; .001\n\n\n\n\nGénero (mujer)\n\n\n.24\n\n\n.002\n\n\n\n\nTiempo de pantalla\n\n\n.05\n\n\n.41\n\n\n\n\n\n\nNIVEL 1 · LECTURA TÉCNICA\n\n“El uso compulsivo y el género son significativos (p &lt; .05). El tiempo de pantalla no es significativo.”\n\n\n✓ Correcto. Pero todavía no dijiste nada sobre el mundo. 1 punto.\n\n\n\nNIVEL 3 · INTERPRETACIÓN SUSTANTIVA\n\n“El deterioro no se asocia a cuánto tiempo se usa la pantalla, sino a cómo se usa: es el modo compulsivo, no la exposición, lo que importa. Una política centrada en limitar horas apuntaría al blanco equivocado.”\n\n\n✓ Interpretación con sustancia: conecta el hallazgo — incluido el nulo — con el fenómeno y sus implicancias. 4 puntos."
+  },
+  {
+    "objectID": "index.html#cuatro-niveles-de-profundidad",
+    "href": "index.html#cuatro-niveles-de-profundidad",
+    "title": "Leer una tabla no es interpretarla.",
+    "section": "Cuatro niveles de profundidad",
+    "text": "Cuatro niveles de profundidad\nLa progresión del juego operacionaliza una escalera validada por la investigación en educación estadística (Curcio; Shaughnessy; Garfield y Ben-Zvi): comprender un resultado no es un acto binario sino una profundización por capas.\n\n\nN1\n\n\nLectura técnica\n\n\nDecodificar el output correctamente: valores, significancia, escalas. Necesario, pero es el piso, no el techo.\n\n\n\n\nN2\n\n\nInterpretación estadística\n\n\nTraducir a lenguaje de relación: dirección, magnitud, comparación, condicionalidad (“controlando por…”).\n\n\n\n\nN3\n\n\nInterpretación sustantiva\n\n\nConectar el resultado con el fenómeno: ¿qué significa esto para el problema de investigación, la teoría, la intervención?\n\n\n\n\nN4\n\n\nInterpretación crítica-reflexiva\n\n\nReconstruir la cadena de decisiones que produjo el resultado: supuestos, límites del diseño, explicaciones alternativas, qué no permite afirmar el análisis."
+  },
+  {
+    "objectID": "index.html#cómo-funciona",
+    "href": "index.html#cómo-funciona",
+    "title": "Leer una tabla no es interpretarla.",
+    "section": "Cómo funciona",
+    "text": "Cómo funciona\n\nElige contexto. El jugador selecciona disciplina y temática (tecnología, salud mental, política pública…). El mismo esqueleto estadístico se presenta con datos y narrativas distintas.\nInterpreta en texto libre. Frente a un output real — tabla de regresión, perfiles de cluster, distribución — el jugador escribe su interpretación. No hay alternativas: la interpretación se produce, no se selecciona.\nRecibe evaluación formativa. Un evaluador (modelo de lenguaje operando con rúbricas explícitas por ítem) determina el nivel alcanzado, detecta errores de una taxonomía de diez errores interpretativos clásicos, y retroalimenta citando el corpus metodológico del proyecto.\nLos errores se coleccionan. Cometer un error resta puntos pero desbloquea su ficha: causalidad espuria, reificación de tipologías, artefactos de composición. La colección completa es un logro en sí misma."
+  },
+  {
+    "objectID": "index.html#marco",
+    "href": "index.html#marco",
+    "title": "Leer una tabla no es interpretarla.",
+    "section": "Marco",
+    "text": "Marco\n\nLa apuesta epistemológica sigue a Gilbert Simondon: el objetivo no es operar la técnica estadística como caja negra, sino comprender su funcionamiento interno — qué decide el investigador, qué transforma el algoritmo, qué supuestos carga el modelo. Esa comprensión es una relación no alienada con el instrumento.\n\nEl corpus inicial del juego proviene de una investigación empírica real sobre habitus tecnológico y salud mental en estudiantes universitarios de primer año (n = 276), lo que permite que cada ítem tenga contexto, decisiones metodológicas documentadas y hallazgos genuinos — incluidos los nulos, que suelen ser los más formativos de interpretar."
+  },
+  {
+    "objectID": "index.html#estado-del-proyecto",
+    "href": "index.html#estado-del-proyecto",
+    "title": "Leer una tabla no es interpretarla.",
+    "section": "Estado del proyecto",
+    "text": "Estado del proyecto\n\n\n\n\n\n\n\n\nFase\nContenido\nEstado\n\n\n\n\nDiseño pedagógico\nNiveles, taxonomía de errores, rúbricas, ítems piloto\n✅ Completo (v0.1)\n\n\nPrototipo Shiny\nApp funcional con evaluador vía API\n🔨 En desarrollo\n\n\nPiloto\nPrueba con estudiantes; calibración del evaluador\n⏳ Próximo\n\n\nExpansión\n15 ítems, contextos alternativos, corpus ampliado\n⏳ Planificado\n\n\n\nLeer la fundamentación completa → · Ver el diseño pedagógico →"
+  },
+  {
+    "objectID": "pedagogia.html",
+    "href": "pedagogia.html",
+    "title": "Diseño pedagógico",
+    "section": "",
+    "text": "La progresión del juego se basa en la taxonomía de comprensión de representaciones de datos de Curcio (1987), extendida por Shaughnessy (2007), y en la distinción entre alfabetización, razonamiento y pensamiento estadístico de Garfield y Ben-Zvi (2008). El juego no inventa niveles arbitrarios: operacionaliza una progresión que la literatura ya validó, y la convierte en mecánica lúdica.\n\n\n\n\n\n\n\n\nNivel\nNombre\nEquivalente en la literatura\n\n\n\n\nN1\nLectura técnica\nReading the data / alfabetización estadística\n\n\nN2\nInterpretación estadística\nReading between the data / razonamiento\n\n\nN3\nInterpretación sustantiva\nReading beyond the data\n\n\nN4\nInterpretación crítica-reflexiva\nReading behind the data / pensamiento estadístico\n\n\n\nLa regla de oro: una respuesta técnicamente correcta pero no sustantiva recibe puntaje parcial y retroalimentación explícita sobre qué le faltó. El puntaje es no lineal (N1=1, N2=2, N3=4, N4=7): la sustancia vale más que la técnica."
+  },
+  {
+    "objectID": "pedagogia.html#fundamento",
+    "href": "pedagogia.html#fundamento",
+    "title": "Diseño pedagógico",
+    "section": "",
+    "text": "La progresión del juego se basa en la taxonomía de comprensión de representaciones de datos de Curcio (1987), extendida por Shaughnessy (2007), y en la distinción entre alfabetización, razonamiento y pensamiento estadístico de Garfield y Ben-Zvi (2008). El juego no inventa niveles arbitrarios: operacionaliza una progresión que la literatura ya validó, y la convierte en mecánica lúdica.\n\n\n\n\n\n\n\n\nNivel\nNombre\nEquivalente en la literatura\n\n\n\n\nN1\nLectura técnica\nReading the data / alfabetización estadística\n\n\nN2\nInterpretación estadística\nReading between the data / razonamiento\n\n\nN3\nInterpretación sustantiva\nReading beyond the data\n\n\nN4\nInterpretación crítica-reflexiva\nReading behind the data / pensamiento estadístico\n\n\n\nLa regla de oro: una respuesta técnicamente correcta pero no sustantiva recibe puntaje parcial y retroalimentación explícita sobre qué le faltó. El puntaje es no lineal (N1=1, N2=2, N3=4, N4=7): la sustancia vale más que la técnica."
+  },
+  {
+    "objectID": "pedagogia.html#taxonomía-de-errores-interpretativos",
+    "href": "pedagogia.html#taxonomía-de-errores-interpretativos",
+    "title": "Diseño pedagógico",
+    "section": "Taxonomía de errores interpretativos",
+    "text": "Taxonomía de errores interpretativos\nCada error detectado es contenido pedagógico: el evaluador lo nombra, lo explica y lo fundamenta en el corpus.\n\n\n\nCódigo\nError\n\n\n\n\nE1\nCausalidad espuria (asociación → causa)\n\n\nE2\nConfusión significancia estadística / relevancia sustantiva\n\n\nE3\nSobregeneralización más allá del diseño muestral\n\n\nE4\nR² interpretado como explicación causal\n\n\nE5\nCeguera al hallazgo nulo teóricamente relevante\n\n\nE6\nReificación de tipologías (clusters como grupos naturales)\n\n\nE7\nArtefacto de composición atribuido a la variable equivocada\n\n\nE8\nDireccionalidad causal asumida sin justificación\n\n\nE9\nComparación de coeficientes no estandarizados\n\n\nE10\nFalacia ecológica / individualista"
+  },
+  {
+    "objectID": "pedagogia.html#anatomía-del-ítem",
+    "href": "pedagogia.html#anatomía-del-ítem",
+    "title": "Diseño pedagógico",
+    "section": "Anatomía del ítem",
+    "text": "Anatomía del ítem\nCada ítem presenta un output estadístico real en un contexto disciplinar elegible, una pregunta abierta con audiencia ficticia definida (“redacta para la Dirección de Asuntos Estudiantiles…”), una rúbrica con criterios observables por nivel, y fragmentos curados del corpus metodológico que fundamentan la retroalimentación.\nEl evaluador — un modelo de lenguaje operando con la rúbrica del ítem, la taxonomía de errores y respuestas ancla pre-clasificadas — devuelve: nivel alcanzado, criterios cumplidos, errores detectados, retroalimentación formativa y cita al corpus."
+  },
+  {
+    "objectID": "pedagogia.html#ítems-piloto",
+    "href": "pedagogia.html#ítems-piloto",
+    "title": "Diseño pedagógico",
+    "section": "Ítems piloto",
+    "text": "Ítems piloto\nLos cuatro ítems iniciales provienen de una investigación real:\n\nD1 — “El estudiante de 16 horas” (descriptiva): media vs. mediana con outliers; la decisión de winsorizar como contenido interpretativo.\nA1 — “¿Carreras distintas o composiciones distintas?” (control estadístico): un titular de prensa atribuye a la carrera un efecto que es composición de género.\nR1 — “Lo que la pantalla no dice” (regresión): el hallazgo central es el predictor no significativo — el tiempo de pantalla no predice deterioro; el modo compulsivo de uso, sí.\nC1 — “¿Existen tres tipos de estudiantes?” (clusters): desmontar la reificación — los perfiles de k-means son construcciones analíticas, “clases en el papel” (Bourdieu), no grupos naturales descubiertos."
+  },
+  {
+    "objectID": "pedagogia.html#referencias",
+    "href": "pedagogia.html#referencias",
+    "title": "Diseño pedagógico",
+    "section": "Referencias",
+    "text": "Referencias\n\nCurcio, F. (1987). Comprehension of mathematical relationships expressed in graphs. Journal for Research in Mathematics Education, 18(5).\nShaughnessy, J. M. (2007). Research on statistics learning and reasoning. En Second Handbook of Research on Mathematics Teaching and Learning.\nGarfield, J. y Ben-Zvi, D. (2008). Developing Students’ Statistical Reasoning. Springer.\nSimondon, G. (2007 [1958]). El modo de existencia de los objetos técnicos. Prometeo.\nBourdieu, P. (1990). ¿Cómo se hace una clase social? Sobre la existencia teórica y práctica de los grupos."
+  },
+  {
+    "objectID": "equipo.html",
+    "href": "equipo.html",
+    "title": "Proyecto y equipo",
+    "section": "",
+    "text": "Sustancia nace de una constatación simple: los programas de formación en ciencias sociales enseñan a ejecutar técnicas estadísticas, pero la competencia que distingue a un buen investigador — y a un buen lector de investigación — es la interpretación: qué significa un resultado para el fenómeno, qué permite afirmar y qué no.\nEl proyecto se inscribe en una tradición de laboratorio interdisciplinario: diseño pedagógico + desarrollo de software + investigación empírica sobre el propio instrumento. La app es a la vez herramienta de aprendizaje y objeto de estudio: el piloto incluye un diseño de evaluación pre/post de competencia interpretativa."
+  },
+  {
+    "objectID": "equipo.html#el-proyecto",
+    "href": "equipo.html#el-proyecto",
+    "title": "Proyecto y equipo",
+    "section": "",
+    "text": "Sustancia nace de una constatación simple: los programas de formación en ciencias sociales enseñan a ejecutar técnicas estadísticas, pero la competencia que distingue a un buen investigador — y a un buen lector de investigación — es la interpretación: qué significa un resultado para el fenómeno, qué permite afirmar y qué no.\nEl proyecto se inscribe en una tradición de laboratorio interdisciplinario: diseño pedagógico + desarrollo de software + investigación empírica sobre el propio instrumento. La app es a la vez herramienta de aprendizaje y objeto de estudio: el piloto incluye un diseño de evaluación pre/post de competencia interpretativa."
+  },
+  {
+    "objectID": "equipo.html#corpus-inicial",
+    "href": "equipo.html#corpus-inicial",
+    "title": "Proyecto y equipo",
+    "section": "Corpus inicial",
+    "text": "Corpus inicial\nEl primer conjunto de ítems se construye sobre la investigación Habitus tecnológico y salud mental en estudiantes de primer año (Universidad Alberto Hurtado, n = 276, cinco carreras), complementada con fuentes de datos públicas chilenas (ELSOC, CASEN) para las variantes de contexto disciplinar."
+  },
+  {
+    "objectID": "equipo.html#equipo",
+    "href": "equipo.html#equipo",
+    "title": "Proyecto y equipo",
+    "section": "Equipo",
+    "text": "Equipo\n\nAngel [Apellido] — Sociología, Universidad Alberto Hurtado. Diseño pedagógico, desarrollo (R/Shiny), corpus empírico.\n(Colaboraciones abiertas: diseño de ítems en otras disciplinas, pilotaje docente, diseño UX.)"
+  },
+  {
+    "objectID": "equipo.html#contacto",
+    "href": "equipo.html#contacto",
+    "title": "Proyecto y equipo",
+    "section": "Contacto",
+    "text": "Contacto\n(correo institucional / GitHub del proyecto)"
+  },
+  {
+    "objectID": "fundamentacion.html",
+    "href": "fundamentacion.html",
+    "title": "La interpretación como capital que no se puede delegar",
+    "section": "",
+    "text": "Fundamentación\n\n\n\n\nSustancia no es una app de ejercicios con IA. Es un dispositivo diseñado desde una teoría del problema: si la externalización cognitiva es una forma de descapitalización, entonces la arquitectura del uso de la IA — quién produce y quién evalúa — es una decisión sociológica, no técnica."
+  },
+  {
+    "objectID": "fundamentacion.html#el-problema-la-conversión-inversa",
+    "href": "fundamentacion.html#el-problema-la-conversión-inversa",
+    "title": "La interpretación como capital que no se puede delegar",
+    "section": "El problema: la conversión inversa",
+    "text": "El problema: la conversión inversa\nI — Diagnóstico\nEl capital cultural en estado incorporado tiene, en Bourdieu, una propiedad definitoria: cuesta tiempo que debe invertirse personalmente. Nadie puede incorporar por otro la capacidad de sostener la atención, estructurar un argumento o interpretar un resultado. Esa imposibilidad de delegación es lo que la IA generativa parece prometer suspender.\nLa externalización cognitiva — delegar la redacción, el resumen, la interpretación — no es un atajo neutral: es una conversión inversa de capital. El estudiante cambia acumulación futura de capital incorporado por alivio presente de esfuerzo. La literatura reciente lo llama “deuda cognitiva”; la teoría de los capitales permite decirlo con más precisión: es descapitalización en el estado del capital que sostiene a todos los demás.\nLa evidencia empírica que origina este proyecto (estudio sobre habitus tecnológico y salud mental en 276 estudiantes de primer año) aporta dos matices que orientan el diseño:\n\nLo dañino no es la cantidad sino el circuito. El tiempo de pantalla no predice deterioro de salud mental; el patrón compulsivo de uso, sí. El problema no es la exposición a la tecnología: es el modo de relación instalado.\nLa delegación es un gradiente, no un destino. Los perfiles de uso severamente delegativo son minoritarios. La descapitalización es un riesgo estructural, no una condena — y por lo tanto es intervenible pedagógicamente."
+  },
+  {
+    "objectID": "fundamentacion.html#dos-arquitecturas-de-uso",
+    "href": "fundamentacion.html#dos-arquitecturas-de-uso",
+    "title": "La interpretación como capital que no se puede delegar",
+    "section": "Dos arquitecturas de uso",
+    "text": "Dos arquitecturas de uso\nII — La decisión de diseño\nToda herramienta de aprendizaje con IA implementa, lo declare o no, una de dos arquitecturas. Cambia el modo y observa qué hace cada una con el trabajo cognitivo del estudiante.\n\n  \n    ▸ Arquitectura delegativa\n    ▸ Arquitectura incorporativa\n  \n\n  \n    \n    \n    Estudiante\n    tiempo + atención\n\n    \n    \n    Modelo de IA\n    capacidad de producción\n\n    \n    \n      \n      la IA produce el texto / la interpretación\n      \n      el estudiante solo valida (o ni eso)\n      resultado: conversión inversa — capital por alivio\n    \n\n    \n    \n      \n      el estudiante produce la interpretación\n      \n      la IA evalúa con rúbrica y devuelve nivel, errores, preguntas\n      resultado: la inversión de tiempo y atención queda intacta\n    \n\n    \n      \n      \n    \n  \n\n  \n    Arquitectura delegativa\n    La IA realiza el trabajo cognitivo; el estudiante administra el producto.\n    La inversión personal de tiempo y atención — la condición del capital\n    incorporado — se suspende. Es la arquitectura por defecto de casi\n    todo uso educativo de IA generativa.\n  \n\n\n\nEn Sustancia la arquitectura incorporativa no es una recomendación de uso: está forzada por el diseño. No existen preguntas de alternativas; el evaluador tiene prohibido redactar interpretaciones; su única salida es nivel alcanzado, errores detectados y preguntas que devuelven el trabajo al jugador."
+  },
+  {
+    "objectID": "fundamentacion.html#la-interpretación-sustantiva-como-capital",
+    "href": "fundamentacion.html#la-interpretación-sustantiva-como-capital",
+    "title": "La interpretación como capital que no se puede delegar",
+    "section": "La interpretación sustantiva como capital",
+    "text": "La interpretación sustantiva como capital\nIII — Qué se entrena exactamente\nLa competencia que el juego entrena — interpretar un resultado estadístico en profundidad — es un caso ejemplar de capital cultural incorporado: se adquiere lentamente, por ejercicio personal, y no puede transmitirse por delegación. Es, además, un capital de creciente valor: en un entorno donde generar análisis es barato, saber leer qué significa un análisis y qué no permite afirmar es la competencia que distingue.\n\nEl juego construye, deliberadamente, un régimen de valorización contrario al del campo de plataformas: su sistema de puntaje premia la profundidad sobre la velocidad — llegar a la interpretación sustantiva vale cuatro veces más que la lectura técnica correcta. Donde la plataforma valoriza el instante continuo, el juego valoriza el trabajo lento de la comprensión.\n\nHasta la mecánica de los errores responde a esta lógica: cometer un error interpretativo resta puntos pero desbloquea su ficha — el error comprendido se acumula como conocimiento. Nada se pierde si se incorpora."
+  },
+  {
+    "objectID": "fundamentacion.html#el-fundamento-epistemológico",
+    "href": "fundamentacion.html#el-fundamento-epistemológico",
+    "title": "La interpretación como capital que no se puede delegar",
+    "section": "El fundamento epistemológico",
+    "text": "El fundamento epistemológico\nIV — Simondon\nLa progresión hacia el nivel N4 (interpretación crítica-reflexiva) sigue a Gilbert Simondon: la relación no alienada con un objeto técnico no consiste en operarlo sino en comprender su funcionamiento interno. Aplicado a la estadística: quien llega a N4 no lee resultados — reconstruye la cadena de decisiones que los produjo: por qué esta técnica, qué supuestos carga, qué impone el algoritmo a los datos, qué no permite afirmar el diseño.\nEse es el sentido preciso en que Sustancia es un complemento pedagógico y no un sustituto: no busca que el estudiante obtenga interpretaciones, sino que se individúe como intérprete."
+  },
+  {
+    "objectID": "fundamentacion.html#síntesis",
+    "href": "fundamentacion.html#síntesis",
+    "title": "La interpretación como capital que no se puede delegar",
+    "section": "Síntesis",
+    "text": "Síntesis\nV — Las tres patas\n\n\n\n\n\n\n\n\nFundamento\nAporta\nSe traduce en\n\n\n\n\nSociológico (Bourdieu, teoría de los capitales)\nEl diagnóstico: qué está en disputa y por qué la arquitectura de uso importa\nArquitectura incorporativa forzada; régimen de valorización contrario al extractivo\n\n\nEpistemológico (Simondon)\nEl horizonte: comprender la técnica desde dentro, no operarla\nEl nivel N4 y la reconstrucción de decisiones metodológicas\n\n\nPedagógico (Curcio; Shaughnessy; Garfield y Ben-Zvi)\nLa escalera medible de profundidad interpretativa\nLos niveles N1–N4, las rúbricas y la evaluación formativa"
+  },
+  {
+    "objectID": "fundamentacion.html#referencias",
+    "href": "fundamentacion.html#referencias",
+    "title": "La interpretación como capital que no se puede delegar",
+    "section": "Referencias",
+    "text": "Referencias\n\nBourdieu, P. (1987 [1979]). Los tres estados del capital cultural. Sociológica, 2(5).\nBourdieu, P. y Wacquant, L. (2005 [1992]). Una invitación a la sociología reflexiva. Siglo XXI.\nCurcio, F. (1987). Comprehension of mathematical relationships expressed in graphs. JRME, 18(5).\nGarfield, J. y Ben-Zvi, D. (2008). Developing Students’ Statistical Reasoning. Springer.\nIgnatow, G. y Robinson, L. (2017). Pierre Bourdieu: theorizing the digital. Information, Communication & Society, 20(7).\nShaughnessy, J. M. (2007). Research on statistics learning and reasoning. En Second Handbook of Research on Mathematics Teaching and Learning.\nSimondon, G. (2007 [1958]). El modo de existencia de los objetos técnicos. Prometeo.\nZuboff, S. (2020). La era del capitalismo de la vigilancia. Paidós."
+  }
+]
