@@ -10,7 +10,7 @@ lang: es
   <video autoplay muted loop playsinline id="hero-video">
     <!-- Reemplaza con la URL de tu video. Puedes usar un video de Pexels/Coverr gratis.
          Ej. de video libre de ciencias/datos: https://www.pexels.com/video/... -->
-    <source src="/assets/video.mp4/" type="video/mp4">
+    <source src="assets/video.mp4/" type="video/mp4">
   </video>
 
   <div class="site-header">
