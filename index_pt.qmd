@@ -1,0 +1,106 @@
+---
+title: "Sustância"
+format: html
+lang: pt
+---
+
+<div class="site-header">
+  <div class="lang-switcher">
+    <a href="/">ES</a>
+    <span>|</span>
+    <a href="/index_pt.html" class="active">PT</a>
+  </div>
+  <button id="theme-toggle">🌙</button>
+</div>
+
+<div class="container">
+
+  <!-- HERO -->
+  <div class="hero">
+    <h1>
+      Ler uma tabela <br> <span class="highlight">não é interpretá-la.</span>
+    </h1>
+    <p class="subhead">
+      Sustância é um laboratório lúdico onde você aprende a dar sentido 
+      aos resultados estatísticos, desde a descritiva até o aprendizado de máquina, 
+      escrevendo suas próprias interpretações.
+    </p>
+    <a href="#" class="cta-button">Explorar a demo →</a>
+  </div>
+
+  <!-- COMPARAÇÃO N1 vs N3 -->
+  <h2 style="margin-top: 3rem; font-weight: 600; font-size: 1.8rem; letter-spacing: -0.02em;">
+    A diferença entre <span style="color: var(--accent-blue);">ler</span> e <span style="color: var(--accent-terracota);">interpretar</span>
+  </h2>
+  <div class="comparison-grid">
+    <div class="card-n1">
+      <span class="level-badge">NÍVEL 1 · LEITURA TÉCNICA</span>
+      <h3>“O coeficiente é significativo”</h3>
+      <p>
+        <strong>Decodifica</strong> corretamente o output: identifica o que é 
+        significativo, quais valores a tabela mostra. É um <strong>ato de leitura</strong>, 
+        ainda não há conexão com o fenômeno.
+      </p>
+    </div>
+    <div class="card-n3">
+      <span class="level-badge">NÍVEL 3 · INTERPRETAÇÃO SUBSTANTIVA</span>
+      <h3>“Isso muda a compreensão do fenômeno”</h3>
+      <p>
+        <strong>Conecta o resultado</strong> ao mundo. Traduz direção, 
+        magnitude e condicionalidade para a linguagem do problema estudado, 
+        e aponta <strong>o que implica</strong> para o público do relatório.
+      </p>
+    </div>
+  </div>
+
+  <!-- COMO FUNCIONA -->
+  <h2 style="font-weight: 600; font-size: 1.8rem; letter-spacing: -0.02em;">Como funciona o jogo</h2>
+  <div class="steps-grid">
+    <div class="step-item">
+      <span class="num">01</span>
+      <h4>Escolha o contexto</h4>
+      <p>Sociologia, psicologia, saúde ou política pública. O output estatístico se ajusta ao caso real.</p>
+    </div>
+    <div class="step-item">
+      <span class="num">02</span>
+      <h4>Escreva sua interpretação</h4>
+      <p>Texto livre. Não há alternativas. Produzir é a única forma de exercitar a competência.</p>
+    </div>
+    <div class="step-item">
+      <span class="num">03</span>
+      <h4>Feedback formativo</h4>
+      <p>Um avaliador com rubricas te diz seu nível e mostra os erros interpretativos clássicos.</p>
+    </div>
+  </div>
+
+  <!-- MARCO CONCEITUAL -->
+  <div class="quote-block">
+    <p>
+      “O nível máximo não consiste em operar a técnica como caixa-preta, 
+      mas em compreender a cadeia de decisões que produz o resultado.”
+    </p>
+    <cite>— Simondon, <em>O modo de existência dos objetos técnicos</em></cite>
+  </div>
+
+  <!-- ESTADO DO PROJETO -->
+  <h2 style="font-weight: 600; font-size: 1.8rem; letter-spacing: -0.02em;">Estado do projeto</h2>
+  <div class="project-status">
+    <ul>
+      <li><strong>Níveis:</strong> 5 níveis de profundidade (N0 a N4)</li>
+      <li><strong>Erros:</strong> Taxonomia de 10 erros interpretativos</li>
+      <li><strong>Itens:</strong> 4 pilotos construídos sobre pesquisa empírica (n=276)</li>
+      <li><strong>Protótipo:</strong> Funcional em R/Shiny com avaliação via API</li>
+      <li><strong>Piloto:</strong> Previsto para agosto–setembro 2026</li>
+      <li><strong>Próximo:</strong> Expansão para 15 itens com ELSOC e CASEN</li>
+    </ul>
+  </div>
+
+  <!-- CTA FINAL -->
+  <div style="text-align: center; margin: 3rem 0 1rem;">
+    <a href="#" class="cta-button">Testar o protótipo</a>
+    <p style="color: var(--text-muted); font-size: 0.85rem; margin-top: 0.8rem;">
+      Vamos colaborar? Escreva para anmunozr@alumnos.uahurtado.cl
+    </p>
+  </div>
+
+</div>
