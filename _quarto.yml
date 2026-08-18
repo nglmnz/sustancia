@@ -5,7 +5,7 @@ format:
   html:
     css: styles.css
     js: script.js
-    theme: none  # Desactivamos el tema por defecto para usar nuestro CSS puro
+    theme: none
     toc: false
     code-tools: false
     anchor-sections: false
