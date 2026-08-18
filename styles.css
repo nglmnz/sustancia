@@ -1,0 +1,460 @@
+/* ========================================
+   FUENTES EDITORIALES
+   Instrument Serif para el hero (cinematográfico)
+   Helvetica Now Var para el cuerpo
+======================================== */
+@import url('https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&display=swap');
+@import url('https://db.onlinewebfonts.com/c/e66905e07608167a84e6ad52f638c3c6?family=Helvetica+Now+Var');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* ========================================
+   TOKENS DE COLOR
+   Modo claro (default) y oscuro
+======================================== */
+:root {
+  --bg-body:          #0e0c0a;
+  --bg-surface:       rgba(14, 12, 10, 0.88);
+  --bg-card:          rgba(255, 252, 248, 0.04);
+  --text-primary:     #ede8e2;
+  --text-secondary:   #9e9790;
+  --text-muted:       #5e5a56;
+  --accent-terracota: #c97a52;
+  --accent-blue:      #6b8fa8;
+  --accent-gold:      #c4a472;
+  --border-light:     rgba(255, 255, 255, 0.07);
+  --shadow-card:      0 8px 32px rgba(0, 0, 0, 0.5);
+  --pattern-opacity:  0.06;
+  --glass-bg:         rgba(255, 255, 255, 0.03);
+  --glass-border:     rgba(255, 255, 255, 0.10);
+}
+
+[data-theme="light"] {
+  --bg-body:          #f5f2ed;
+  --bg-surface:       rgba(255, 252, 248, 0.92);
+  --bg-card:          #ffffff;
+  --text-primary:     #1f1b17;
+  --text-secondary:   #4a443e;
+  --text-muted:       #6b6560;
+  --accent-terracota: #b8734b;
+  --accent-blue:      #4a6b8a;
+  --accent-gold:      #b5976e;
+  --border-light:     rgba(0, 0, 0, 0.07);
+  --shadow-card:      0 8px 30px rgba(0, 0, 0, 0.06);
+  --glass-bg:         rgba(255, 255, 255, 0.60);
+  --glass-border:     rgba(255, 255, 255, 0.80);
+}
+
+/* ========================================
+   BODY / FONDO
+======================================== */
+body {
+  font-family: 'Helvetica Now Var', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  background-color: var(--bg-body);
+  color: var(--text-primary);
+  line-height: 1.65;
+  min-height: 100vh;
+  transition: background-color 0.4s ease, color 0.3s ease;
+}
+
+/* Patrón geométrico latente sobre el body */
+body::before {
+  content: '';
+  position: fixed;
+  inset: 0;
+  background-image: url("data:image/svg+xml,%3Csvg width='80' height='80' viewBox='0 0 80 80' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M20 20 L30 20 L30 30 L40 30 L40 40 L30 40 L30 30 L20 30 Z M50 50 L60 50 L60 60 L70 60 L70 70 L60 70 L60 60 L50 60 Z' fill='none' stroke='%23c97a52' stroke-width='1' opacity='var(--pattern-opacity)'/%3E%3C/svg%3E");
+  background-size: 160px 160px;
+  pointer-events: none;
+  z-index: 0;
+}
+
+/* ========================================
+   HERO CON VIDEO
+   El vídeo va en #video-hero (añadido en index.qmd)
+======================================== */
+#video-hero {
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  background: #0a0806;
+}
+
+#video-hero video {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transform: translateY(17%);
+  opacity: 0;
+  transition: none;
+  z-index: 0;
+}
+
+#video-hero::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    to bottom,
+    rgba(10, 8, 6, 0.35) 0%,
+    rgba(10, 8, 6, 0.20) 40%,
+    rgba(10, 8, 6, 0.65) 100%
+  );
+  z-index: 1;
+}
+
+.hero-content {
+  position: relative;
+  z-index: 2;
+  text-align: center;
+  padding: 2rem 1.5rem;
+  max-width: 860px;
+  width: 100%;
+}
+
+/* ========================================
+   TIPOGRAFÍA HERO — INSTRUMENT SERIF
+======================================== */
+.hero-content h1,
+.hero h1 {
+  font-family: 'Instrument Serif', serif;
+  font-size: clamp(2.8rem, 8vw, 5.5rem);
+  font-weight: 400;
+  line-height: 1.05;
+  letter-spacing: -0.02em;
+  color: #ffffff;
+  margin-bottom: 1.4rem;
+}
+
+.hero-content h1 .highlight,
+.hero h1 .highlight {
+  font-style: italic;
+  color: var(--accent-terracota);
+  border-bottom: 2px solid rgba(201, 122, 82, 0.4);
+  display: inline-block;
+}
+
+.hero-content .subhead,
+.hero .subhead {
+  font-size: clamp(1rem, 1.6vw, 1.25rem);
+  color: rgba(237, 232, 226, 0.75);
+  max-width: 580px;
+  margin: 0 auto 2.5rem;
+  font-weight: 350;
+  letter-spacing: -0.01em;
+}
+
+/* ========================================
+   LIQUID GLASS — CLASE REUTILIZABLE
+======================================== */
+.liquid-glass {
+  background: var(--glass-bg);
+  backdrop-filter: blur(12px) saturate(160%);
+  -webkit-backdrop-filter: blur(12px) saturate(160%);
+  border: 1px solid var(--glass-border);
+  box-shadow:
+    inset 0 1px 1px rgba(255, 255, 255, 0.12),
+    0 8px 32px rgba(0, 0, 0, 0.4);
+  position: relative;
+  overflow: hidden;
+}
+
+.liquid-glass::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
+  padding: 1px;
+  background: linear-gradient(
+    180deg,
+    rgba(255,255,255,0.40) 0%,
+    rgba(255,255,255,0.12) 25%,
+    rgba(255,255,255,0.00) 50%,
+    rgba(255,255,255,0.08) 80%,
+    rgba(255,255,255,0.30) 100%
+  );
+  -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+  -webkit-mask-composite: xor;
+  mask-composite: exclude;
+  pointer-events: none;
+}
+
+/* ========================================
+   BOTÓN CTA
+======================================== */
+.cta-button {
+  display: inline-block;
+  background: var(--accent-terracota);
+  color: #fff;
+  padding: 0.9rem 2.8rem;
+  border-radius: 50px;
+  font-weight: 600;
+  font-size: 1rem;
+  text-decoration: none;
+  transition: all 0.25s ease;
+  box-shadow: 0 4px 20px rgba(201, 122, 82, 0.30);
+  border: none;
+  cursor: pointer;
+  letter-spacing: 0.01em;
+}
+.cta-button:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 30px rgba(201, 122, 82, 0.45);
+  background: #d98a62;
+  color: #fff;
+}
+
+/* ========================================
+   SITIO HEADER (nav superior)
+======================================== */
+.site-header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 10;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 1.2rem;
+  padding: 1.5rem 2rem;
+}
+
+.lang-switcher a {
+  color: rgba(237,232,226,0.70);
+  text-decoration: none;
+  font-size: 0.82rem;
+  font-weight: 500;
+  letter-spacing: 0.04em;
+  padding: 0.3rem 0.7rem;
+  border-radius: 4px;
+  transition: all 0.2s;
+}
+.lang-switcher a:hover { color: #fff; background: rgba(255,255,255,0.10); }
+.lang-switcher a.active { color: var(--accent-terracota); font-weight: 600; }
+.lang-switcher span { color: rgba(255,255,255,0.25); margin: 0 0.2rem; }
+
+#theme-toggle {
+  background: var(--glass-bg);
+  border: 1px solid var(--glass-border);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  border-radius: 30px;
+  padding: 0.3rem 0.9rem;
+  font-size: 1.05rem;
+  cursor: pointer;
+  color: var(--text-primary);
+  transition: all 0.3s;
+  line-height: 1.8;
+}
+#theme-toggle:hover { border-color: var(--accent-terracota); }
+
+/* ========================================
+   CONTENEDOR PRINCIPAL (debajo del hero)
+======================================== */
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 4rem 1.5rem 6rem;
+  position: relative;
+  z-index: 1;
+}
+
+/* ========================================
+   SECCIÓN: COMPARACIÓN N1 vs N3
+======================================== */
+.comparison-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.8rem;
+  margin: 2rem 0 3rem;
+}
+
+.card-n1, .card-n3 {
+  padding: 2rem 2rem 2.5rem;
+  border-radius: 20px;
+  transition: transform 0.25s ease;
+}
+.card-n1:hover, .card-n3:hover { transform: translateY(-4px); }
+
+.card-n1 {
+  background: var(--glass-bg);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid var(--glass-border);
+  border-top: 3px solid var(--accent-blue);
+  box-shadow: var(--shadow-card);
+}
+.card-n3 {
+  background: var(--glass-bg);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid var(--glass-border);
+  border-top: 3px solid var(--accent-gold);
+  box-shadow: var(--shadow-card);
+}
+
+.card-n1 .level-badge {
+  background: rgba(107, 143, 168, 0.20);
+  color: var(--accent-blue);
+  border: 1px solid rgba(107, 143, 168, 0.35);
+  padding: 0.2rem 0.9rem;
+  border-radius: 30px;
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  display: inline-block;
+  margin-bottom: 1rem;
+}
+.card-n3 .level-badge {
+  background: rgba(196, 164, 114, 0.18);
+  color: var(--accent-gold);
+  border: 1px solid rgba(196, 164, 114, 0.35);
+  padding: 0.2rem 0.9rem;
+  border-radius: 30px;
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  display: inline-block;
+  margin-bottom: 1rem;
+}
+
+.card-n1 h3, .card-n3 h3 {
+  font-family: 'Instrument Serif', serif;
+  font-size: 1.5rem;
+  font-weight: 400;
+  margin-bottom: 0.8rem;
+  letter-spacing: -0.01em;
+}
+.card-n1 h3 { color: var(--accent-blue); }
+.card-n3 h3 { color: var(--accent-terracota); }
+
+.card-n1 p, .card-n3 p {
+  color: var(--text-secondary);
+  font-size: 0.92rem;
+  line-height: 1.7;
+}
+.card-n3 p strong { color: var(--accent-terracota); }
+.card-n1 p strong { color: var(--accent-blue); }
+
+/* ========================================
+   SECCIÓN: PASOS (CÓMO FUNCIONA)
+======================================== */
+.steps-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.6rem;
+  margin: 2rem 0 3.5rem;
+}
+.step-item {
+  padding: 1.8rem 1.5rem;
+  border-radius: 16px;
+  border: 1px solid var(--border-light);
+  background: var(--glass-bg);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  box-shadow: var(--shadow-card);
+  transition: transform 0.2s ease;
+}
+.step-item:hover { transform: translateY(-3px); }
+.step-item .num {
+  font-family: 'Instrument Serif', serif;
+  font-size: 2.8rem;
+  font-weight: 400;
+  color: var(--accent-gold);
+  opacity: 0.4;
+  margin-bottom: 0.4rem;
+  display: block;
+}
+.step-item h4 { font-weight: 600; margin-bottom: 0.4rem; color: var(--text-primary); }
+.step-item p  { color: var(--text-secondary); font-size: 0.88rem; margin: 0; }
+
+/* ========================================
+   CITA / MARCO SIMONDON
+======================================== */
+.quote-block {
+  background: var(--glass-bg);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border-left: 3px solid var(--accent-terracota);
+  border-radius: 0 16px 16px 0;
+  padding: 1.8rem 2rem;
+  margin: 2.5rem 0;
+  box-shadow: var(--shadow-card);
+}
+.quote-block p {
+  font-family: 'Instrument Serif', serif;
+  font-size: 1.15rem;
+  font-style: italic;
+  color: var(--text-secondary);
+  margin-bottom: 0.5rem;
+  line-height: 1.6;
+}
+.quote-block cite {
+  font-style: normal;
+  font-size: 0.85rem;
+  font-weight: 500;
+  color: var(--accent-gold);
+}
+
+/* ========================================
+   ESTADO DEL PROYECTO
+======================================== */
+.project-status {
+  background: var(--glass-bg);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  border: 1px solid var(--border-light);
+  padding: 1.8rem 2rem;
+  border-radius: 16px;
+  margin: 2rem 0;
+  box-shadow: var(--shadow-card);
+}
+.project-status ul {
+  list-style: none;
+  padding: 0;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0.5rem 2rem;
+}
+.project-status ul li::before {
+  content: "▹";
+  color: var(--accent-terracota);
+  margin-right: 0.6rem;
+}
+.project-status ul li { color: var(--text-secondary); font-size: 0.9rem; }
+
+/* ========================================
+   HEADINGS DE SECCIÓN (debajo del hero)
+======================================== */
+h2 {
+  font-family: 'Instrument Serif', serif !important;
+  font-weight: 400 !important;
+  font-size: clamp(1.6rem, 3vw, 2.2rem) !important;
+  letter-spacing: -0.02em !important;
+  color: var(--text-primary) !important;
+}
+
+/* ========================================
+   RESPONSIVE
+======================================== */
+@media (max-width: 850px) {
+  .container { padding: 3rem 1rem 4rem; }
+  .comparison-grid { grid-template-columns: 1fr; gap: 1.2rem; }
+  .steps-grid { grid-template-columns: 1fr; gap: 1rem; }
+  .project-status ul { grid-template-columns: 1fr; }
+  .site-header { justify-content: center; padding: 1rem; }
+}
+@media (max-width: 480px) {
+  .hero-content h1, .hero h1 { font-size: 2.2rem; }
+  .card-n1, .card-n3 { padding: 1.4rem; }
+}
