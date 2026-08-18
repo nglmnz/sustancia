@@ -1,33 +1,12 @@
 project:
-  type: website
-  output-dir: _site
-
-website:
-  title: "Sustancia"
-  description: "Un juego para aprender a interpretar resultados estadísticos"
-  navbar:
-    background: "#16265F"
-    foreground: "#F7F7F2"
-    left:
-      - href: index.qmd
-        text: Inicio
-      - href: fundamentacion.qmd
-        text: Fundamentación
-      - href: pedagogia.qmd
-        text: Diseño pedagógico
-      - href: equipo.qmd
-        text: Proyecto y equipo
-  page-footer:
-    center: "Sustancia · Proyecto de investigación interdisciplinaria · Universidad Alberto Hurtado · 2026"
-    background: "#14161A"
+  type: default
 
 format:
   html:
-    theme:
-      - cosmo
-      - styles.scss
+    css: styles.css
+    js: script.js
+    theme: none  # Desactivamos el tema por defecto para usar nuestro CSS puro
     toc: false
+    code-tools: false
+    anchor-sections: false
     smooth-scroll: true
-    link-external-newwindow: true
-
-lang: es
