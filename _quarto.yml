@@ -1,5 +1,7 @@
 project:
   type: default
+  type: website
+  output-dir: _site
 
 format:
   html:
