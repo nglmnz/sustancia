@@ -15,7 +15,6 @@ lang: es
 
 <div class="container">
 
-  <!-- HERO -->
   <div class="hero">
     <h1>
       Leer una tabla <br> <span class="highlight">no es interpretarla.</span>
@@ -28,7 +27,6 @@ lang: es
     <a href="#" class="cta-button">Explorar la demo →</a>
   </div>
 
-  <!-- COMPARACIÓN N1 vs N3 -->
   <h2 style="margin-top: 3rem; font-weight: 600; font-size: 1.8rem; letter-spacing: -0.02em;">
     La diferencia entre <span style="color: var(--accent-blue);">leer</span> y <span style="color: var(--accent-terracota);">interpretar</span>
   </h2>
@@ -53,7 +51,6 @@ lang: es
     </div>
   </div>
 
-  <!-- CÓMO FUNCIONA -->
   <h2 style="font-weight: 600; font-size: 1.8rem; letter-spacing: -0.02em;">Cómo funciona el juego</h2>
   <div class="steps-grid">
     <div class="step-item">
@@ -73,7 +70,6 @@ lang: es
     </div>
   </div>
 
-  <!-- MARCO CONCEPTUAL -->
   <div class="quote-block">
     <p>
       “El nivel máximo no consiste en operar la técnica como caja negra, 
@@ -82,7 +78,6 @@ lang: es
     <cite>— Simondon, <em>El modo de existencia de los objetos técnicos</em></cite>
   </div>
 
-  <!-- ESTADO DEL PROYECTO -->
   <h2 style="font-weight: 600; font-size: 1.8rem; letter-spacing: -0.02em;">Estado del proyecto</h2>
   <div class="project-status">
     <ul>
@@ -95,7 +90,6 @@ lang: es
     </ul>
   </div>
 
-  <!-- CTA FINAL -->
   <div style="text-align: center; margin: 3rem 0 1rem;">
     <a href="#" class="cta-button">Probar el prototipo</a>
     <p style="color: var(--text-muted); font-size: 0.85rem; margin-top: 0.8rem;">
