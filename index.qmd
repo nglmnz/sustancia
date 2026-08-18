@@ -28,7 +28,7 @@ lang: es
     <a href="#" class="cta-button">Explorar la demo →</a>
   </div>
 
-  <!-- COMPARACIÓN N1 vs N3 (El corazón) -->
+  <!-- COMPARACIÓN N1 vs N3 -->
   <h2 style="margin-top: 3rem; font-weight: 600; font-size: 1.8rem; letter-spacing: -0.02em;">
     La diferencia entre <span style="color: var(--accent-blue);">leer</span> y <span style="color: var(--accent-terracota);">interpretar</span>
   </h2>
