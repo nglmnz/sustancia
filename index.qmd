@@ -1,0 +1,114 @@
+---
+title: ""
+pagetitle: "Sustancia — aprender a interpretar estadística"
+format: html
+lang: es
+---
+
+<div id="video-hero">
+
+  <video autoplay muted loop playsinline id="hero-video">
+    <!-- Reemplaza con la URL de tu video. Puedes usar un video de Pexels/Coverr gratis.
+         Ej. de video libre de ciencias/datos: https://www.pexels.com/video/... -->
+    <source src="https://www.pexels.com/download/video/3209828/" type="video/mp4">
+  </video>
+
+  <div class="site-header">
+    <div class="lang-switcher">
+      <a href="/" class="active">ES</a>
+      <span>|</span>
+      <a href="/index_pt.html">PT</a>
+    </div>
+    <button id="theme-toggle">🌙</button>
+  </div>
+
+  <div class="hero-content">
+    <h1>
+      Leer una tabla no es <br><span class="highlight">interpretarla.</span>
+    </h1>
+    <p class="subhead">
+      Sustancia es un juego web para aprender a interpretar resultados
+      estadísticos en contexto. El jugador no elige alternativas — escribe
+      su interpretación, y un evaluador con rúbricas explícitas le dice qué
+      tan profundo llegó y qué le faltó.
+    </p>
+    <a href="#como-funciona" class="cta-button">Explorar →</a>
+  </div>
+
+</div>
+
+<div class="container">
+
+<h2 style="margin-top: 0; padding-top: 1rem;">
+  La diferencia entre <span style="color: var(--accent-blue);">leer</span>
+  y <span style="color: var(--accent-terracota);">interpretar</span>
+</h2>
+
+<div class="comparison-grid">
+  <div class="card-n1">
+    <span class="level-badge">NIVEL 1 · LECTURA TÉCNICA</span>
+    <h3>"El coeficiente es significativo"</h3>
+    <p>
+      <strong>Decodifica</strong> correctamente el output: identifica qué es 
+      significativo, qué valores muestra la tabla. Es un <strong>acto de lectura</strong>, 
+      todavía no hay conexión con el fenómeno.
+    </p>
+  </div>
+  <div class="card-n3">
+    <span class="level-badge">NIVEL 3 · INTERPRETACIÓN SUSTANTIVA</span>
+    <h3>"Esto cambia la comprensión del fenómeno"</h3>
+    <p>
+      <strong>Conecta el resultado</strong> con el mundo. Traduce dirección, 
+      magnitud y condicionalidad al lenguaje del problema estudiado, 
+      y señala <strong>qué implica</strong> para la audiencia del informe.
+    </p>
+  </div>
+</div>
+
+<h2 id="como-funciona">Cómo funciona el juego</h2>
+<div class="steps-grid">
+  <div class="step-item">
+    <span class="num">01</span>
+    <h4>Elige contexto</h4>
+    <p>Sociología, psicología, salud o política pública. El output estadístico se ajusta al caso real.</p>
+  </div>
+  <div class="step-item">
+    <span class="num">02</span>
+    <h4>Escribe tu interpretación</h4>
+    <p>Texto libre. No hay alternativas. Producir es la única forma de ejercitar la competencia.</p>
+  </div>
+  <div class="step-item">
+    <span class="num">03</span>
+    <h4>Feedback formativo</h4>
+    <p>Un evaluador con rúbricas te dice tu nivel y te muestra los errores interpretativos clásicos.</p>
+  </div>
+</div>
+
+<div class="quote-block">
+  <p>
+    "El nivel máximo no consiste en operar la técnica como caja negra, 
+    sino en comprender la cadena de decisiones que produce el resultado."
+  </p>
+  <cite>— Simondon, <em>El modo de existencia de los objetos técnicos</em></cite>
+</div>
+
+<h2>Estado del proyecto</h2>
+<div class="project-status">
+  <ul>
+    <li><strong>Niveles:</strong> 5 niveles de profundidad (N0 a N4)</li>
+    <li><strong>Errores:</strong> Taxonomía de 10 errores interpretativos</li>
+    <li><strong>Ítems:</strong> 4 pilotos sobre investigación empírica (n=276)</li>
+    <li><strong>Prototipo:</strong> Funcional en R/Shiny con evaluación vía API</li>
+    <li><strong>Piloto:</strong> Previsto para agosto–septiembre 2026</li>
+    <li><strong>Próximo:</strong> Expansión a 15 ítems con ELSOC y CASEN</li>
+  </ul>
+</div>
+
+<div style="text-align: center; margin: 3rem 0 1rem;">
+  <a href="#" class="cta-button">Probar el prototipo</a>
+  <p style="color: var(--text-muted); font-size: 0.85rem; margin-top: 0.8rem;">
+    ¿Colaboramos? <a href="mailto:anmunozr@alumnos.uahurtado.cl" style="color:var(--accent-terracota);">anmunozr@alumnos.uahurtado.cl</a>
+  </p>
+</div>
+
+</div>
