@@ -1,8 +1,8 @@
 project:
-  type: default
   type: website
   output-dir: _site
-
+  resources:
+    - assets/
 format:
   html:
     css: styles.css
