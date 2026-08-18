@@ -1,125 +1,106 @@
 ---
-title: ""
-pagetitle: "Sustancia — aprender a interpretar estadística"
+title: "Sustancia"
+format: html
+lang: es
 ---
 
-::: {.hero}
-<div class="eyebrow">Sustancia · nombre provisorio · proyecto en desarrollo</div>
-
-# Leer una tabla no es interpretarla.
-
-<p class="hero-sub">**Sustancia** es un juego web para aprender a interpretar resultados
-estadísticos en contexto: sociología, psicología, política pública, salud.
-El jugador no elige alternativas — escribe su interpretación, y un evaluador
-con rúbricas explícitas le dice qué tan profundo llegó y qué le faltó.</p>
-:::
-
-## Mira la diferencia {.seccion}
-
-Ambas respuestas describen la misma tabla de un estudio real sobre tecnología y
-salud mental en estudiantes de primer año. Solo una de ellas dice algo sobre el mundo.
-
-<table class="demo-tabla">
-<caption>Modelo de regresión: deterioro de salud mental (fragmento ilustrativo)</caption>
-<thead>
-<tr><th>Predictor</th><th>β</th><th>p</th></tr>
-</thead>
-<tbody>
-<tr><td>Uso compulsivo (IDA)</td><td>.38</td><td>&lt; .001</td></tr>
-<tr><td>Género (mujer)</td><td>.24</td><td>.002</td></tr>
-<tr class="fila-ns"><td>Tiempo de pantalla</td><td>.05</td><td>.41</td></tr>
-</tbody>
-</table>
-
-::: {.comparacion}
-<div class="carta carta-n1">
-<span class="nivel-tag">NIVEL 1 · LECTURA TÉCNICA</span>
-<p>"El uso compulsivo y el género son significativos (p&nbsp;&lt;&nbsp;.05).
-El tiempo de pantalla no es significativo."</p>
-<div class="veredicto">✓ Correcto. Pero todavía no dijiste nada sobre el mundo.
-<strong>1 punto.</strong></div>
+<div class="site-header">
+  <div class="lang-switcher">
+    <a href="/" class="active">ES</a>
+    <span>|</span>
+    <a href="/index_pt.html">PT</a>
+  </div>
+  <button id="theme-toggle">🌙</button>
 </div>
 
-<div class="carta carta-n3">
-<span class="nivel-tag">NIVEL 3 · INTERPRETACIÓN SUSTANTIVA</span>
-<p>"El deterioro no se asocia a <em>cuánto</em> tiempo se usa la pantalla,
-sino a <em>cómo</em> se usa: es el modo compulsivo, no la exposición, lo que
-importa. Una política centrada en limitar horas apuntaría al blanco equivocado."</p>
-<div class="veredicto">✓ Interpretación con sustancia: conecta el hallazgo — incluido
-el nulo — con el fenómeno y sus implicancias. <strong>4 puntos.</strong></div>
+<div class="container">
+
+  <!-- HERO -->
+  <div class="hero">
+    <h1>
+      Leer una tabla <br> <span class="highlight">no es interpretarla.</span>
+    </h1>
+    <p class="subhead">
+      Sustancia es un laboratorio lúdico donde aprendes a darle sentido 
+      a los resultados estadísticos, desde la descriptiva hasta el machine learning, 
+      escribiendo tus propias interpretaciones.
+    </p>
+    <a href="#" class="cta-button">Explorar la demo →</a>
+  </div>
+
+  <!-- COMPARACIÓN N1 vs N3 (El corazón) -->
+  <h2 style="margin-top: 3rem; font-weight: 600; font-size: 1.8rem; letter-spacing: -0.02em;">
+    La diferencia entre <span style="color: var(--accent-blue);">leer</span> y <span style="color: var(--accent-terracota);">interpretar</span>
+  </h2>
+  <div class="comparison-grid">
+    <div class="card-n1">
+      <span class="level-badge">NIVEL 1 · LECTURA TÉCNICA</span>
+      <h3>“El coeficiente es significativo”</h3>
+      <p>
+        <strong>Decodifica</strong> correctamente el output: identifica qué es 
+        significativo, qué valores muestra la tabla. Es un <strong>acto de lectura</strong>, 
+        todavía no hay conexión con el fenómeno.
+      </p>
+    </div>
+    <div class="card-n3">
+      <span class="level-badge">NIVEL 3 · INTERPRETACIÓN SUSTANTIVA</span>
+      <h3>“Esto cambia la comprensión del fenómeno”</h3>
+      <p>
+        <strong>Conecta el resultado</strong> con el mundo. Traduce la dirección, 
+        magnitud y condicionalidad al lenguaje del problema estudiado, 
+        y señala <strong>qué implica</strong> para la audiencia del informe.
+      </p>
+    </div>
+  </div>
+
+  <!-- CÓMO FUNCIONA -->
+  <h2 style="font-weight: 600; font-size: 1.8rem; letter-spacing: -0.02em;">Cómo funciona el juego</h2>
+  <div class="steps-grid">
+    <div class="step-item">
+      <span class="num">01</span>
+      <h4>Elige contexto</h4>
+      <p>Sociología, psicología, salud o política pública. El output estadístico se ajusta al caso real.</p>
+    </div>
+    <div class="step-item">
+      <span class="num">02</span>
+      <h4>Escribe tu interpretación</h4>
+      <p>Texto libre. No hay alternativas. Producir es la única forma de ejercitar la competencia.</p>
+    </div>
+    <div class="step-item">
+      <span class="num">03</span>
+      <h4>Feedback formativo</h4>
+      <p>Un evaluador con rúbricas te dice tu nivel y te muestra los errores interpretativos clásicos.</p>
+    </div>
+  </div>
+
+  <!-- MARCO CONCEPTUAL -->
+  <div class="quote-block">
+    <p>
+      “El nivel máximo no consiste en operar la técnica como caja negra, 
+      sino en comprender la cadena de decisiones que produce el resultado.”
+    </p>
+    <cite>— Simondon, <em>El modo de existencia de los objetos técnicos</em></cite>
+  </div>
+
+  <!-- ESTADO DEL PROYECTO -->
+  <h2 style="font-weight: 600; font-size: 1.8rem; letter-spacing: -0.02em;">Estado del proyecto</h2>
+  <div class="project-status">
+    <ul>
+      <li><strong>Niveles:</strong> 5 niveles de profundidad (N0 a N4)</li>
+      <li><strong>Errores:</strong> Taxonomía de 10 errores interpretativos</li>
+      <li><strong>Ítems:</strong> 4 pilotos construidos sobre investigación empírica (n=276)</li>
+      <li><strong>Prototipo:</strong> Funcional en R/Shiny con evaluación vía API</li>
+      <li><strong>Piloto:</strong> Previsto para agosto–septiembre 2026</li>
+      <li><strong>Próximo:</strong> Expansión a 15 ítems con ELSOC y CASEN</li>
+    </ul>
+  </div>
+
+  <!-- CTA FINAL -->
+  <div style="text-align: center; margin: 3rem 0 1rem;">
+    <a href="#" class="cta-button">Probar el prototipo</a>
+    <p style="color: var(--text-muted); font-size: 0.85rem; margin-top: 0.8rem;">
+      ¿Colaboramos? Escríbeme a anmunozr@alumnos.uahurtado.cl
+    </p>
+  </div>
+
 </div>
-:::
-
-## Cuatro niveles de profundidad {.seccion}
-
-La progresión del juego operacionaliza una escalera validada por la investigación
-en educación estadística (Curcio; Shaughnessy; Garfield y Ben-Zvi): comprender un
-resultado no es un acto binario sino una profundización por capas.
-
-::: {.escalera}
-<div class="peldano peldano-1">
-<span class="peldano-n">N1</span>
-<div><h3>Lectura técnica</h3><p>Decodificar el output correctamente: valores,
-significancia, escalas. Necesario, pero es el piso, no el techo.</p></div>
-</div>
-
-<div class="peldano peldano-2">
-<span class="peldano-n">N2</span>
-<div><h3>Interpretación estadística</h3><p>Traducir a lenguaje de relación:
-dirección, magnitud, comparación, condicionalidad ("controlando por…").</p></div>
-</div>
-
-<div class="peldano peldano-3">
-<span class="peldano-n">N3</span>
-<div><h3>Interpretación sustantiva</h3><p>Conectar el resultado con el fenómeno:
-¿qué significa esto para el problema de investigación, la teoría, la intervención?</p></div>
-</div>
-
-<div class="peldano peldano-4">
-<span class="peldano-n">N4</span>
-<div><h3>Interpretación crítica-reflexiva</h3><p>Reconstruir la cadena de decisiones
-que produjo el resultado: supuestos, límites del diseño, explicaciones alternativas,
-qué <em>no</em> permite afirmar el análisis.</p></div>
-</div>
-:::
-
-## Cómo funciona {.seccion}
-
-1. **Elige contexto.** El jugador selecciona disciplina y temática (tecnología,
-salud mental, política pública…). El mismo esqueleto estadístico se presenta con
-datos y narrativas distintas.
-2. **Interpreta en texto libre.** Frente a un output real — tabla de regresión,
-perfiles de cluster, distribución — el jugador escribe su interpretación. No hay
-alternativas: la interpretación se produce, no se selecciona.
-3. **Recibe evaluación formativa.** Un evaluador (modelo de lenguaje operando con
-rúbricas explícitas por ítem) determina el nivel alcanzado, detecta errores de una
-taxonomía de diez errores interpretativos clásicos, y retroalimenta citando el
-corpus metodológico del proyecto.
-4. **Los errores se coleccionan.** Cometer un error resta puntos pero desbloquea
-su ficha: causalidad espuria, reificación de tipologías, artefactos de composición.
-La colección completa es un logro en sí misma.
-
-## Marco {.seccion}
-
-<div class="cita-marco">La apuesta epistemológica sigue a Gilbert Simondon: el
-objetivo no es operar la técnica estadística como caja negra, sino comprender su
-funcionamiento interno — qué decide el investigador, qué transforma el algoritmo,
-qué supuestos carga el modelo. Esa comprensión es una relación no alienada con
-el instrumento.</div>
-
-El corpus inicial del juego proviene de una investigación empírica real sobre
-habitus tecnológico y salud mental en estudiantes universitarios de primer año
-(n = 276), lo que permite que cada ítem tenga contexto, decisiones metodológicas
-documentadas y hallazgos genuinos — incluidos los nulos, que suelen ser los más
-formativos de interpretar.
-
-## Estado del proyecto {.seccion}
-
-| Fase | Contenido | Estado |
-|---|---|---|
-| Diseño pedagógico | Niveles, taxonomía de errores, rúbricas, ítems piloto | ✅ Completo (v0.1) |
-| Prototipo Shiny | App funcional con evaluador vía API | 🔨 En desarrollo |
-| Piloto | Prueba con estudiantes; calibración del evaluador | ⏳ Próximo |
-| Expansión | 15 ítems, contextos alternativos, corpus ampliado | ⏳ Planificado |
-
-[Leer la fundamentación completa →](fundamentacion.qmd) · [Ver el diseño pedagógico →](pedagogia.qmd)
