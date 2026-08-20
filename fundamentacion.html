@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Sustancia — aprender a interpretar estadística – Sustancia</title>
+<title>Fundamentación — Sustancia – Sustancia</title>
 <style>
 /* Default styles provided by pandoc.
 ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
@@ -96,11 +96,11 @@ ul.task-list li input[type="checkbox"] {
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll me-auto">
   <li class="nav-item">
-    <a class="nav-link active" href="./index.html" aria-current="page"> 
+    <a class="nav-link" href="./index.html"> 
 <span class="menu-text">Inicio</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./fundamentacion.html"> 
+    <a class="nav-link active" href="./fundamentacion.html" aria-current="page"> 
 <span class="menu-text">Fundamentación</span></a>
   </li>  
   <li class="nav-item">
@@ -131,146 +131,161 @@ ul.task-list li input[type="checkbox"] {
 
 <div class="hero">
 <div class="eyebrow">
-Sustancia · nombre provisorio · proyecto en desarrollo
+Fundamentación
 </div>
-<section id="leer-una-tabla-no-es-interpretarla." class="level1">
-<h1>Leer una tabla no es interpretarla.</h1>
+<section id="la-interpretación-como-capital-que-no-se-puede-delegar" class="level1">
+<h1>La interpretación como <em>capital que no se puede delegar</em></h1>
 <p class="hero-sub">
-<strong>Sustancia</strong> es un juego web para aprender a interpretar resultados estadísticos en contexto: sociología, psicología, política pública, salud. El jugador no elige alternativas — escribe su interpretación, y un evaluador con rúbricas explícitas le dice qué tan profundo llegó y qué le faltó.
+Sustancia no es una app de ejercicios con IA. Es un dispositivo diseñado desde una teoría del problema: si la externalización cognitiva es una forma de descapitalización, entonces la arquitectura del uso de la IA — quién produce y quién evalúa — es una decisión sociológica, no técnica.
 </p>
 </section>
 </div>
-<section id="mira-la-diferencia" class="level2 seccion">
-<h2 class="seccion anchored" data-anchor-id="mira-la-diferencia">Mira la diferencia</h2>
-<p>Ambas respuestas describen la misma tabla de un estudio real sobre tecnología y salud mental en estudiantes de primer año. Solo una de ellas dice algo sobre el mundo.</p>
-<table class="demo-tabla">
-<caption>
-Modelo de regresión: deterioro de salud mental (fragmento ilustrativo)
-</caption>
-<thead>
-<tr>
-<th>
-Predictor
-</th>
-<th>
-β
-</th>
-<th>
-p
-</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>
-Uso compulsivo (IDA)
-</td>
-<td>
-.38
-</td>
-<td>
-&lt; .001
-</td>
-</tr>
-<tr>
-<td>
-Género (mujer)
-</td>
-<td>
-.24
-</td>
-<td>
-.002
-</td>
-</tr>
-<tr class="fila-ns">
-<td>
-Tiempo de pantalla
-</td>
-<td>
-.05
-</td>
-<td>
-.41
-</td>
-</tr>
-</tbody>
-</table>
-<div class="comparacion">
-<div class="carta carta-n1">
-<span class="nivel-tag">NIVEL 1 · LECTURA TÉCNICA</span>
-<p>
-“El uso compulsivo y el género son significativos (p&nbsp;&lt;&nbsp;.05). El tiempo de pantalla no es significativo.”
-</p>
-<div class="veredicto">
-✓ Correcto. Pero todavía no dijiste nada sobre el mundo. <strong>1 punto.</strong>
-</div>
-</div>
-<div class="carta carta-n3">
-<span class="nivel-tag">NIVEL 3 · INTERPRETACIÓN SUSTANTIVA</span>
-<p>
-“El deterioro no se asocia a <em>cuánto</em> tiempo se usa la pantalla, sino a <em>cómo</em> se usa: es el modo compulsivo, no la exposición, lo que importa. Una política centrada en limitar horas apuntaría al blanco equivocado.”
-</p>
-<div class="veredicto">
-✓ Interpretación con sustancia: conecta el hallazgo — incluido el nulo — con el fenómeno y sus implicancias. <strong>4 puntos.</strong>
-</div>
-</div>
-</div>
+<section id="el-problema-la-conversión-inversa" class="level2 seccion">
+<h2 class="seccion anchored" data-anchor-id="el-problema-la-conversión-inversa">El problema: la conversión inversa</h2>
+<p><span class="num-seccion">I — Diagnóstico</span></p>
+<p>El capital cultural en estado incorporado tiene, en Bourdieu, una propiedad definitoria: <strong>cuesta tiempo que debe invertirse personalmente</strong>. Nadie puede incorporar por otro la capacidad de sostener la atención, estructurar un argumento o interpretar un resultado. Esa imposibilidad de delegación es lo que la IA generativa parece prometer suspender.</p>
+<p>La externalización cognitiva — delegar la redacción, el resumen, la interpretación — no es un atajo neutral: es una <strong>conversión inversa de capital</strong>. El estudiante cambia acumulación futura de capital incorporado por alivio presente de esfuerzo. La literatura reciente lo llama “deuda cognitiva”; la teoría de los capitales permite decirlo con más precisión: es descapitalización en el estado del capital que sostiene a todos los demás.</p>
+<p>La evidencia empírica que origina este proyecto (estudio sobre habitus tecnológico y salud mental en 276 estudiantes de primer año) aporta dos matices que orientan el diseño:</p>
+<ul>
+<li><strong>Lo dañino no es la cantidad sino el circuito.</strong> El tiempo de pantalla no predice deterioro de salud mental; el patrón compulsivo de uso, sí. El problema no es la exposición a la tecnología: es el modo de relación instalado.</li>
+<li><strong>La delegación es un gradiente, no un destino.</strong> Los perfiles de uso severamente delegativo son minoritarios. La descapitalización es un riesgo estructural, no una condena — y por lo tanto es intervenible pedagógicamente.</li>
+</ul>
 </section>
-<section id="cuatro-niveles-de-profundidad" class="level2 seccion">
-<h2 class="seccion anchored" data-anchor-id="cuatro-niveles-de-profundidad">Cuatro niveles de profundidad</h2>
-<p>La progresión del juego operacionaliza una escalera validada por la investigación en educación estadística (Curcio; Shaughnessy; Garfield y Ben-Zvi): comprender un resultado no es un acto binario sino una profundización por capas. Haz clic en cada nivel para expandirlo.</p>
-<div class="escalera" id="escalera-niveles">
+<section id="dos-arquitecturas-de-uso" class="level2 seccion">
+<h2 class="seccion anchored" data-anchor-id="dos-arquitecturas-de-uso">Dos arquitecturas de uso</h2>
+<p><span class="num-seccion">II — La decisión de diseño</span></p>
+<p>Toda herramienta de aprendizaje con IA implementa, lo declare o no, una de dos arquitecturas. Cambia el modo y observa qué hace cada una con el trabajo cognitivo del estudiante.</p>
+<div class="diagrama">
+  <div class="modos" role="group" aria-label="Modo del diagrama">
+    <button class="modo activo-del" id="btn-del">▸ Arquitectura delegativa</button>
+    <button class="modo" id="btn-inc">▸ Arquitectura incorporativa</button>
+  </div>
 
-  <div class="peldano peldano-1" tabindex="0" role="button" aria-expanded="false">
-    <span class="peldano-n">N1</span>
-    <div>
-      <h3 class="anchored">Lectura técnica</h3>
-      <p>Decodificar el output correctamente: valores, significancia, escalas. Necesario, pero es el piso, no el techo.</p>
-      <div class="peldano-detalle">
-        Ejemplos de errores en este nivel: confundir el valor p con la probabilidad de que la hipótesis sea verdadera,
-        leer un coeficiente negativo como "no hay efecto", ignorar los intervalos de confianza.
-        El juego asigna 1 punto a las respuestas que solo alcanzan este nivel.
+  <svg viewbox="0 0 700 300" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Diagrama de dos arquitecturas de uso de IA">
+    <rect x="30" y="100" width="180" height="100" rx="8" fill="#FFFFFF" stroke="#14161A" stroke-width="1.5"></rect>
+    <text x="120" y="145" text-anchor="middle" font-family="Spectral,serif" font-weight="700" font-size="16" fill="#14161A">Estudiante</text>
+    <text x="120" y="168" text-anchor="middle" font-family="IBM Plex Mono,monospace" font-size="10" fill="#8A8F98">tiempo + atención</text>
+
+    <rect x="490" y="100" width="180" height="100" rx="8" fill="#FFFFFF" stroke="#14161A" stroke-width="1.5"></rect>
+    <text x="580" y="145" text-anchor="middle" font-family="Spectral,serif" font-weight="700" font-size="16" fill="#14161A">Modelo de IA</text>
+    <text x="580" y="168" text-anchor="middle" font-family="IBM Plex Mono,monospace" font-size="10" fill="#8A8F98">capacidad de producción</text>
+
+    <g class="flujo-del" id="fx-del">
+      <path d="M 490 125 C 400 90, 300 90, 215 122" stroke="#C8341F" stroke-width="3" fill="none" marker-end="url(#pR)"></path>
+      <text x="350" y="82" text-anchor="middle" font-family="IBM Plex Mono,monospace" font-size="11" fill="#C8341F">la IA produce el texto / la interpretación</text>
+      <path d="M 215 178 C 300 212, 400 212, 485 180" stroke="#C8341F" stroke-width="1.6" stroke-dasharray="5 4" fill="none" marker-end="url(#pR)"></path>
+      <text x="350" y="232" text-anchor="middle" font-family="IBM Plex Mono,monospace" font-size="11" fill="#C8341F">el estudiante solo valida (o ni eso)</text>
+      <text x="350" y="272" text-anchor="middle" font-family="Spectral,serif" font-style="italic" font-size="13" fill="#7E1F12">resultado: conversión inversa — capital por alivio</text>
+    </g>
+
+    <g class="flujo-inc" id="fx-inc" opacity="0.10">
+      <path d="M 215 125 C 300 90, 400 90, 485 122" stroke="#223A8F" stroke-width="3" fill="none" marker-end="url(#pA)"></path>
+      <text x="350" y="82" text-anchor="middle" font-family="IBM Plex Mono,monospace" font-size="11" fill="#223A8F">el estudiante produce la interpretación</text>
+      <path d="M 485 178 C 400 212, 300 212, 220 180" stroke="#223A8F" stroke-width="1.6" stroke-dasharray="5 4" fill="none" marker-end="url(#pA)"></path>
+      <text x="350" y="232" text-anchor="middle" font-family="IBM Plex Mono,monospace" font-size="11" fill="#223A8F">la IA evalúa con rúbrica y devuelve nivel, errores, preguntas</text>
+      <text x="350" y="272" text-anchor="middle" font-family="Spectral,serif" font-style="italic" font-size="13" fill="#16265F">resultado: la inversión de tiempo y atención queda intacta</text>
+    </g>
+
+    <defs>
+      <marker id="pA" markerwidth="8" markerheight="8" refx="6" refy="4" orient="auto"><path d="M0,0 L8,4 L0,8 z" fill="#223A8F"></path></marker>
+      <marker id="pR" markerwidth="8" markerheight="8" refx="6" refy="4" orient="auto"><path d="M0,0 L8,4 L0,8 z" fill="#C8341F"></path></marker>
+    </defs>
+  </svg>
+
+  <div class="leyenda" id="leyenda">
+    <span class="tag rojo">Arquitectura delegativa</span>
+    La IA realiza el trabajo cognitivo; el estudiante administra el producto.
+    La inversión personal de tiempo y atención — la condición del capital
+    incorporado — se suspende. <strong>Es la arquitectura por defecto de casi
+    todo uso educativo de IA generativa.</strong>
+  </div>
+</div>
+
+<script>
+(function(){
+  var leyenda = document.getElementById('leyenda');
+  var fxInc = document.getElementById('fx-inc'), fxDel = document.getElementById('fx-del');
+  var bInc = document.getElementById('btn-inc'), bDel = document.getElementById('btn-del');
+  if(!bInc) return;
+  bDel.addEventListener('click', function(){
+    fxDel.setAttribute('opacity','1'); fxInc.setAttribute('opacity','0.10');
+    bDel.className='modo activo-del'; bInc.className='modo';
+    leyenda.innerHTML = '<span class="tag rojo">Arquitectura delegativa</span> La IA realiza el trabajo cognitivo; el estudiante administra el producto. La inversión personal de tiempo y atención — la condición del capital incorporado — se suspende. <strong>Es la arquitectura por defecto de casi todo uso educativo de IA generativa.</strong>';
+  });
+  bInc.addEventListener('click', function(){
+    fxInc.setAttribute('opacity','1'); fxDel.setAttribute('opacity','0.10');
+    bInc.className='modo activo-inc'; bDel.className='modo';
+    leyenda.innerHTML = '<span class="tag azul">Arquitectura incorporativa</span> El estudiante produce; la IA opera solo sobre el producto ya realizado: evalúa contra rúbricas explícitas, detecta errores interpretativos y devuelve preguntas orientadoras. <strong>Sustancia está construido para que solo este circuito sea posible</strong>: no hay alternativas que seleccionar — la interpretación se escribe.';
+  });
+})();
+</script>
+<p>En Sustancia la arquitectura incorporativa no es una recomendación de uso: está <strong>forzada por el diseño</strong>. No existen preguntas de alternativas; el evaluador tiene prohibido redactar interpretaciones; su única salida es nivel alcanzado, errores detectados y preguntas que devuelven el trabajo al jugador.</p>
+</section>
+<section id="la-interpretación-sustantiva-como-capital" class="level2 seccion">
+<h2 class="seccion anchored" data-anchor-id="la-interpretación-sustantiva-como-capital">La interpretación sustantiva como capital</h2>
+<p><span class="num-seccion">III — Qué se entrena exactamente</span></p>
+<p>La competencia que el juego entrena — interpretar un resultado estadístico en profundidad — es un caso ejemplar de capital cultural incorporado: se adquiere lentamente, por ejercicio personal, y no puede transmitirse por delegación. Es, además, un capital de creciente valor: en un entorno donde generar análisis es barato, <strong>saber leer qué significa un análisis y qué no permite afirmar</strong> es la competencia que distingue.</p>
+<div class="cita-marco">
+El juego construye, deliberadamente, un régimen de valorización contrario al del campo de plataformas: su sistema de puntaje premia la profundidad sobre la velocidad — llegar a la interpretación sustantiva vale cuatro veces más que la lectura técnica correcta. Donde la plataforma valoriza el instante continuo, el juego valoriza el trabajo lento de la comprensión.
+</div>
+<p>Hasta la mecánica de los errores responde a esta lógica: cometer un error interpretativo resta puntos pero <strong>desbloquea su ficha</strong> — el error comprendido se acumula como conocimiento. Nada se pierde si se incorpora.</p>
+</section>
+<section id="el-fundamento-epistemológico" class="level2 seccion">
+<h2 class="seccion anchored" data-anchor-id="el-fundamento-epistemológico">El fundamento epistemológico</h2>
+<p><span class="num-seccion">IV — Simondon</span></p>
+<p>La progresión hacia el nivel N4 (interpretación crítica-reflexiva) sigue a Gilbert Simondon: la relación no alienada con un objeto técnico no consiste en operarlo sino en <strong>comprender su funcionamiento interno</strong>. Aplicado a la estadística: quien llega a N4 no lee resultados — reconstruye la cadena de decisiones que los produjo: por qué esta técnica, qué supuestos carga, qué impone el algoritmo a los datos, qué no permite afirmar el diseño.</p>
+<p>Ese es el sentido preciso en que Sustancia es un complemento pedagógico y no un sustituto: no busca que el estudiante obtenga interpretaciones, sino que se individúe como intérprete.</p>
+</section>
+<section id="síntesis" class="level2 seccion">
+<h2 class="seccion anchored" data-anchor-id="síntesis">Síntesis</h2>
+<p><span class="num-seccion">V — Las tres patas</span></p>
+<p>Pasa el cursor sobre cada tarjeta para ver cómo se traduce al diseño del juego.</p>
+<div class="flip-grid">
+
+  <div class="flip-card flip-card--deep" tabindex="0" role="button" aria-label="Fundamento sociológico — click para ver detalles">
+    <div class="flip-inner">
+      <div class="flip-front">
+        <div class="flip-label">Fundamento sociológico</div>
+        <div class="flip-titulo">Bourdieu</div>
+        <div class="flip-autor">Teoría de los capitales</div>
+        <div class="flip-hint">→ pasar el cursor para ver cómo se traduce</div>
+      </div>
+      <div class="flip-back">
+        <div class="flip-aporta">Aporta al diseño</div>
+        <div class="flip-texto">El diagnóstico: qué está en disputa y por qué la arquitectura de uso de la IA importa sociológicamente.</div>
+        <div class="flip-traduce">Arquitectura incorporativa forzada; régimen de valorización contrario al extractivo.</div>
       </div>
     </div>
   </div>
 
-  <div class="peldano peldano-2" tabindex="0" role="button" aria-expanded="false">
-    <span class="peldano-n">N2</span>
-    <div>
-      <h3 class="anchored">Interpretación estadística</h3>
-      <p>Traducir a lenguaje de relación: dirección, magnitud, comparación, condicionalidad ("controlando por…").</p>
-      <div class="peldano-detalle">
-        En este nivel el jugador ya no solo lee números: los compara entre sí, habla de magnitudes relativas
-        y usa el vocabulario correcto de la técnica. "Controlando por género, el uso compulsivo predice…"
-        es una oración de nivel 2. El juego asigna 2 puntos.
+  <div class="flip-card" tabindex="0" role="button" aria-label="Fundamento epistemológico — click para ver detalles">
+    <div class="flip-inner">
+      <div class="flip-front">
+        <div class="flip-label">Fundamento epistemológico</div>
+        <div class="flip-titulo">Simondon</div>
+        <div class="flip-autor">Modo de existencia de los objetos técnicos</div>
+        <div class="flip-hint">→ pasar el cursor para ver cómo se traduce</div>
+      </div>
+      <div class="flip-back">
+        <div class="flip-aporta">Aporta al diseño</div>
+        <div class="flip-texto">El horizonte: comprender la técnica desde dentro, no operarla como caja negra.</div>
+        <div class="flip-traduce">El nivel N4 y la reconstrucción de decisiones metodológicas como cima del juego.</div>
       </div>
     </div>
   </div>
 
-  <div class="peldano peldano-3" tabindex="0" role="button" aria-expanded="false">
-    <span class="peldano-n">N3</span>
-    <div>
-      <h3 class="anchored">Interpretación sustantiva</h3>
-      <p>Conectar el resultado con el fenómeno: ¿qué significa esto para el problema de investigación, la teoría, la intervención?</p>
-      <div class="peldano-detalle">
-        La marca distintiva del nivel 3 es la inferencia hacia el mundo: el resultado deja de ser un número
-        y se convierte en un argumento sobre la realidad. Los hallazgos nulos son especialmente formativos aquí:
-        "el tiempo de pantalla no predice" es tan informativo como lo que sí predice. El juego asigna 3–4 puntos.
+  <div class="flip-card" tabindex="0" role="button" aria-label="Fundamento pedagógico — click para ver detalles">
+    <div class="flip-inner">
+      <div class="flip-front">
+        <div class="flip-label">Fundamento pedagógico</div>
+        <div class="flip-titulo">Curcio · Shaughnessy · Garfield</div>
+        <div class="flip-autor">Educación estadística</div>
+        <div class="flip-hint">→ pasar el cursor para ver cómo se traduce</div>
       </div>
-    </div>
-  </div>
-
-  <div class="peldano peldano-4" tabindex="0" role="button" aria-expanded="false">
-    <span class="peldano-n">N4</span>
-    <div>
-      <h3 class="anchored">Interpretación crítica-reflexiva</h3>
-      <p>Reconstruir la cadena de decisiones que produjo el resultado: supuestos, límites del diseño, explicaciones alternativas.</p>
-      <div class="peldano-detalle">
-        Este nivel sigue a Simondon: la relación no alienada con un objeto técnico consiste en comprender
-        su funcionamiento interno. El jugador en N4 pregunta: ¿por qué esta técnica? ¿Qué supuestos carga?
-        ¿Qué alternativa de análisis habría dado un resultado distinto? ¿Qué no permite afirmar este diseño?
-        El juego asigna 5 puntos — el máximo de la rúbrica.
+      <div class="flip-back">
+        <div class="flip-aporta">Aporta al diseño</div>
+        <div class="flip-texto">La escalera medible de profundidad interpretativa, validada empíricamente.</div>
+        <div class="flip-traduce">Los niveles N1–N4, las rúbricas por ítem y la evaluación formativa con retroalimentación.</div>
       </div>
     </div>
   </div>
@@ -279,122 +294,30 @@ Tiempo de pantalla
 
 <script>
 (function(){
-  var peldanos = document.querySelectorAll('#escalera-niveles .peldano');
-  peldanos.forEach(function(p){
-    function toggle(){
-      var abierto = p.classList.contains('activo');
-      // cerrar todos
-      peldanos.forEach(function(q){ q.classList.remove('activo'); q.setAttribute('aria-expanded','false'); });
-      if(!abierto){ p.classList.add('activo'); p.setAttribute('aria-expanded','true'); }
-    }
-    p.addEventListener('click', toggle);
-    p.addEventListener('keydown', function(e){ if(e.key==='Enter'||e.key===' '){ e.preventDefault(); toggle(); } });
+  // Soporte touch / teclado para flip en móvil
+  document.querySelectorAll('.flip-card').forEach(function(card){
+    card.addEventListener('click', function(){
+      card.classList.toggle('flipped');
+    });
+    card.addEventListener('keydown', function(e){
+      if(e.key==='Enter'||e.key===' '){ e.preventDefault(); card.classList.toggle('flipped'); }
+    });
   });
 })();
 </script>
 </section>
-<section id="cómo-funciona" class="level2 seccion">
-<h2 class="seccion anchored" data-anchor-id="cómo-funciona">Cómo funciona</h2>
-<div class="tracker">
-  <div class="tracker-item reveal">
-    <div class="tracker-icon">✍️</div>
-    <div>
-      <div class="tracker-fase">1 · Elige contexto</div>
-      <div class="tracker-desc">El jugador selecciona disciplina y temática. El mismo esqueleto estadístico se presenta con datos y narrativas distintas.</div>
-    </div>
-    <span class="tracker-badge completo">activo</span>
-  </div>
-  <div class="tracker-item reveal">
-    <div class="tracker-icon">💬</div>
-    <div>
-      <div class="tracker-fase">2 · Interpreta en texto libre</div>
-      <div class="tracker-desc">Frente a un output real — tabla de regresión, perfiles de cluster, distribución — el jugador escribe su interpretación. No hay alternativas.</div>
-    </div>
-    <span class="tracker-badge completo">activo</span>
-  </div>
-  <div class="tracker-item reveal">
-    <div class="tracker-icon">📊</div>
-    <div>
-      <div class="tracker-fase">3 · Recibe evaluación formativa</div>
-      <div class="tracker-desc">Un modelo de lenguaje con rúbricas explícitas determina el nivel alcanzado, detecta errores y retroalimenta con el corpus metodológico del proyecto.</div>
-    </div>
-    <span class="tracker-badge completo">activo</span>
-  </div>
-  <div class="tracker-item reveal">
-    <div class="tracker-icon">🗂️</div>
-    <div>
-      <div class="tracker-fase">4 · Los errores se coleccionan</div>
-      <div class="tracker-desc">Cometer un error resta puntos pero desbloquea su ficha: causalidad espuria, reificación de tipologías, artefactos de composición. La colección completa es un logro.</div>
-    </div>
-    <span class="tracker-badge completo">activo</span>
-  </div>
-</div>
-</section>
-<section id="marco" class="level2 seccion">
-<h2 class="seccion anchored" data-anchor-id="marco">Marco</h2>
-<div class="cita-marco">
-La apuesta epistemológica sigue a Gilbert Simondon: el objetivo no es operar la técnica estadística como caja negra, sino comprender su funcionamiento interno — qué decide el investigador, qué transforma el algoritmo, qué supuestos carga el modelo. Esa comprensión es una relación no alienada con el instrumento.
-</div>
-<p>El corpus inicial del juego proviene de una investigación empírica real sobre habitus tecnológico y salud mental en estudiantes universitarios de primer año (n = 276), lo que permite que cada ítem tenga contexto, decisiones metodológicas documentadas y hallazgos genuinos — incluidos los nulos, que suelen ser los más formativos de interpretar.</p>
-</section>
-<section id="estado-del-proyecto" class="level2 seccion">
-<h2 class="seccion anchored" data-anchor-id="estado-del-proyecto">Estado del proyecto</h2>
-<div class="tracker">
-  <div class="tracker-item reveal">
-    <div class="tracker-icon">✅</div>
-    <div>
-      <div class="tracker-fase">Diseño pedagógico</div>
-      <div class="tracker-desc">Niveles, taxonomía de errores, rúbricas, ítems piloto</div>
-    </div>
-    <span class="tracker-badge completo">Completo v0.1</span>
-  </div>
-  <div class="tracker-item reveal">
-    <div class="tracker-icon">🔨</div>
-    <div>
-      <div class="tracker-fase">Prototipo Shiny</div>
-      <div class="tracker-desc">App funcional con evaluador vía API</div>
-    </div>
-    <span class="tracker-badge desarrollo">En desarrollo</span>
-  </div>
-  <div class="tracker-item reveal">
-    <div class="tracker-icon">⏳</div>
-    <div>
-      <div class="tracker-fase">Piloto</div>
-      <div class="tracker-desc">Prueba con estudiantes; calibración del evaluador</div>
-    </div>
-    <span class="tracker-badge proximo">Próximo</span>
-  </div>
-  <div class="tracker-item reveal">
-    <div class="tracker-icon">📋</div>
-    <div>
-      <div class="tracker-fase">Expansión</div>
-      <div class="tracker-desc">15 ítems, contextos alternativos, corpus ampliado</div>
-    </div>
-    <span class="tracker-badge proximo">Planificado</span>
-  </div>
-</div>
-
-<script>
-(function(){
-  if(!('IntersectionObserver' in window)) {
-    document.querySelectorAll('.reveal,.reveal-left').forEach(function(el){ el.classList.add('visible'); });
-    return;
-  }
-  var io = new IntersectionObserver(function(entries){
-    entries.forEach(function(e){
-      if(e.isIntersecting){
-        // delay escalonado según posición
-        var items = Array.from(e.target.parentElement.querySelectorAll('.reveal,.reveal-left'));
-        var idx = items.indexOf(e.target);
-        setTimeout(function(){ e.target.classList.add('visible'); }, idx * 90);
-        io.unobserve(e.target);
-      }
-    });
-  }, { threshold: 0.12 });
-  document.querySelectorAll('.reveal,.reveal-left').forEach(function(el){ io.observe(el); });
-})();
-</script>
-<p><a href="./fundamentacion.html">Leer la fundamentación completa →</a> · <a href="./pedagogia.html">Ver el diseño pedagógico →</a></p>
+<section id="referencias" class="level2 seccion">
+<h2 class="seccion anchored" data-anchor-id="referencias">Referencias</h2>
+<ul>
+<li>Bourdieu, P. (1987 [1979]). Los tres estados del capital cultural. <em>Sociológica</em>, 2(5).</li>
+<li>Bourdieu, P. y Wacquant, L. (2005 [1992]). <em>Una invitación a la sociología reflexiva</em>. Siglo XXI.</li>
+<li>Curcio, F. (1987). Comprehension of mathematical relationships expressed in graphs. <em>JRME</em>, 18(5).</li>
+<li>Garfield, J. y Ben-Zvi, D. (2008). <em>Developing Students’ Statistical Reasoning</em>. Springer.</li>
+<li>Ignatow, G. y Robinson, L. (2017). Pierre Bourdieu: theorizing the digital. <em>Information, Communication &amp; Society</em>, 20(7).</li>
+<li>Shaughnessy, J. M. (2007). Research on statistics learning and reasoning. En <em>Second Handbook of Research on Mathematics Teaching and Learning</em>.</li>
+<li>Simondon, G. (2007 [1958]). <em>El modo de existencia de los objetos técnicos</em>. Prometeo.</li>
+<li>Zuboff, S. (2020). <em>La era del capitalismo de la vigilancia</em>. Paidós.</li>
+</ul>
 
 
 </section>
