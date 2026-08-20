@@ -49,48 +49,6 @@
     "text": "Referencias\n\nBourdieu, P. (1987 [1979]). Los tres estados del capital cultural. Sociológica, 2(5).\nBourdieu, P. y Wacquant, L. (2005 [1992]). Una invitación a la sociología reflexiva. Siglo XXI.\nCurcio, F. (1987). Comprehension of mathematical relationships expressed in graphs. JRME, 18(5).\nGarfield, J. y Ben-Zvi, D. (2008). Developing Students’ Statistical Reasoning. Springer.\nIgnatow, G. y Robinson, L. (2017). Pierre Bourdieu: theorizing the digital. Information, Communication & Society, 20(7).\nShaughnessy, J. M. (2007). Research on statistics learning and reasoning. En Second Handbook of Research on Mathematics Teaching and Learning.\nSimondon, G. (2007 [1958]). El modo de existencia de los objetos técnicos. Prometeo.\nZuboff, S. (2020). La era del capitalismo de la vigilancia. Paidós."
   },
   {
-    "objectID": "index.html",
-    "href": "index.html",
-    "title": "Leer una tabla no es interpretarla.",
-    "section": "",
-    "text": "Sustancia · nombre provisorio · proyecto en desarrollo\n\n\n\n\nSustancia es un juego web para aprender a interpretar resultados estadísticos en contexto: sociología, psicología, política pública, salud. El jugador no elige alternativas — escribe su interpretación, y un evaluador con rúbricas explícitas le dice qué tan profundo llegó y qué le faltó."
-  },
-  {
-    "objectID": "index.html#mira-la-diferencia",
-    "href": "index.html#mira-la-diferencia",
-    "title": "Leer una tabla no es interpretarla.",
-    "section": "Mira la diferencia",
-    "text": "Mira la diferencia\nAmbas respuestas describen la misma tabla de un estudio real sobre tecnología y salud mental en estudiantes de primer año. Solo una de ellas dice algo sobre el mundo.\n\n\nModelo de regresión: deterioro de salud mental (fragmento ilustrativo)\n\n\n\n\nPredictor\n\n\nβ\n\n\np\n\n\n\n\n\n\nUso compulsivo (IDA)\n\n\n.38\n\n\n&lt; .001\n\n\n\n\nGénero (mujer)\n\n\n.24\n\n\n.002\n\n\n\n\nTiempo de pantalla\n\n\n.05\n\n\n.41\n\n\n\n\n\n\nNIVEL 1 · LECTURA TÉCNICA\n\n“El uso compulsivo y el género son significativos (p &lt; .05). El tiempo de pantalla no es significativo.”\n\n\n✓ Correcto. Pero todavía no dijiste nada sobre el mundo. 1 punto.\n\n\n\nNIVEL 3 · INTERPRETACIÓN SUSTANTIVA\n\n“El deterioro no se asocia a cuánto tiempo se usa la pantalla, sino a cómo se usa: es el modo compulsivo, no la exposición, lo que importa. Una política centrada en limitar horas apuntaría al blanco equivocado.”\n\n\n✓ Interpretación con sustancia: conecta el hallazgo — incluido el nulo — con el fenómeno y sus implicancias. 4 puntos."
-  },
-  {
-    "objectID": "index.html#cuatro-niveles-de-profundidad",
-    "href": "index.html#cuatro-niveles-de-profundidad",
-    "title": "Leer una tabla no es interpretarla.",
-    "section": "Cuatro niveles de profundidad",
-    "text": "Cuatro niveles de profundidad\nLa progresión del juego operacionaliza una escalera validada por la investigación en educación estadística (Curcio; Shaughnessy; Garfield y Ben-Zvi): comprender un resultado no es un acto binario sino una profundización por capas.\n\n\nN1\n\n\nLectura técnica\n\n\nDecodificar el output correctamente: valores, significancia, escalas. Necesario, pero es el piso, no el techo.\n\n\n\n\nN2\n\n\nInterpretación estadística\n\n\nTraducir a lenguaje de relación: dirección, magnitud, comparación, condicionalidad (“controlando por…”).\n\n\n\n\nN3\n\n\nInterpretación sustantiva\n\n\nConectar el resultado con el fenómeno: ¿qué significa esto para el problema de investigación, la teoría, la intervención?\n\n\n\n\nN4\n\n\nInterpretación crítica-reflexiva\n\n\nReconstruir la cadena de decisiones que produjo el resultado: supuestos, límites del diseño, explicaciones alternativas, qué no permite afirmar el análisis."
-  },
-  {
-    "objectID": "index.html#cómo-funciona",
-    "href": "index.html#cómo-funciona",
-    "title": "Leer una tabla no es interpretarla.",
-    "section": "Cómo funciona",
-    "text": "Cómo funciona\n\nElige contexto. El jugador selecciona disciplina y temática (tecnología, salud mental, política pública…). El mismo esqueleto estadístico se presenta con datos y narrativas distintas.\nInterpreta en texto libre. Frente a un output real — tabla de regresión, perfiles de cluster, distribución — el jugador escribe su interpretación. No hay alternativas: la interpretación se produce, no se selecciona.\nRecibe evaluación formativa. Un evaluador (modelo de lenguaje operando con rúbricas explícitas por ítem) determina el nivel alcanzado, detecta errores de una taxonomía de diez errores interpretativos clásicos, y retroalimenta citando el corpus metodológico del proyecto.\nLos errores se coleccionan. Cometer un error resta puntos pero desbloquea su ficha: causalidad espuria, reificación de tipologías, artefactos de composición. La colección completa es un logro en sí misma."
-  },
-  {
-    "objectID": "index.html#marco",
-    "href": "index.html#marco",
-    "title": "Leer una tabla no es interpretarla.",
-    "section": "Marco",
-    "text": "Marco\n\nLa apuesta epistemológica sigue a Gilbert Simondon: el objetivo no es operar la técnica estadística como caja negra, sino comprender su funcionamiento interno — qué decide el investigador, qué transforma el algoritmo, qué supuestos carga el modelo. Esa comprensión es una relación no alienada con el instrumento.\n\nEl corpus inicial del juego proviene de una investigación empírica real sobre habitus tecnológico y salud mental en estudiantes universitarios de primer año (n = 276), lo que permite que cada ítem tenga contexto, decisiones metodológicas documentadas y hallazgos genuinos — incluidos los nulos, que suelen ser los más formativos de interpretar."
-  },
-  {
-    "objectID": "index.html#estado-del-proyecto",
-    "href": "index.html#estado-del-proyecto",
-    "title": "Leer una tabla no es interpretarla.",
-    "section": "Estado del proyecto",
-    "text": "Estado del proyecto\n\n\n\n\n\n\n\n\nFase\nContenido\nEstado\n\n\n\n\nDiseño pedagógico\nNiveles, taxonomía de errores, rúbricas, ítems piloto\n✅ Completo (v0.1)\n\n\nPrototipo Shiny\nApp funcional con evaluador vía API\n🔨 En desarrollo\n\n\nPiloto\nPrueba con estudiantes; calibración del evaluador\n⏳ Próximo\n\n\nExpansión\n15 ítems, contextos alternativos, corpus ampliado\n⏳ Planificado\n\n\n\nLeer la fundamentación completa → · Ver el diseño pedagógico →"
-  },
-  {
     "objectID": "pedagogia.html",
     "href": "pedagogia.html",
     "title": "Diseño pedagógico",
