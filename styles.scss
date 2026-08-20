@@ -1,26 +1,16 @@
 /*-- scss:defaults --*/
 
-// ---------------------------------------------------------------
-// SUSTANCIA — identidad visual v2
-// Unificada con el cuaderno de arquitectura teórica de la tesis:
-// Spectral (display) + IBM Plex Sans/Mono, azul minuit, rojo señal.
-// La rampa cromática sigue codificando los niveles N1→N4, ahora
-// convergiendo hacia el minuit. El rojo señal marca lo extractivo
-// y los errores interpretativos.
-// ---------------------------------------------------------------
-
 @import url('https://fonts.googleapis.com/css2?family=Spectral:wght@400;500;600;800&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap');
 
-$paper:   #F7F7F2;
-$ink:     #14161A;
-$minuit:  #223A8F;   // color del proyecto = N4
+$paper:       #F7F7F2;
+$ink:         #14161A;
+$minuit:      #223A8F;
 $minuit-deep: #16265F;
-$signal:  #C8341F;   // extracción / errores
-$gris:    #8A8F98;
-$line:    #D8D8CF;
-$card:    #FFFFFF;
+$signal:      #C8341F;
+$gris:        #8A8F98;
+$line:        #D8D8CF;
+$card:        #FFFFFF;
 
-// Rampa de niveles: del gris técnico al minuit
 $n1: #8A8F98;
 $n2: #6B7AA8;
 $n3: #45589E;
@@ -36,6 +26,49 @@ $headings-font-weight: 800;
 
 /*-- scss:rules --*/
 
+// ---------------------------------------------------------------
+// ANIMACIONES GLOBALES
+// ---------------------------------------------------------------
+
+@keyframes fadeUp {
+  from { opacity: 0; transform: translateY(22px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+
+@keyframes slideLeft {
+  from { opacity: 0; transform: translateX(-18px); }
+  to   { opacity: 1; transform: translateX(0); }
+}
+
+@keyframes scaleIn {
+  from { opacity: 0; transform: scale(0.94); }
+  to   { opacity: 1; transform: scale(1); }
+}
+
+.reveal {
+  opacity: 0;
+  transform: translateY(22px);
+  transition: opacity 0.55s cubic-bezier(0.16, 1, 0.3, 1),
+              transform 0.55s cubic-bezier(0.16, 1, 0.3, 1);
+  &.visible { opacity: 1; transform: translateY(0); }
+}
+
+.reveal-left {
+  opacity: 0;
+  transform: translateX(-18px);
+  transition: opacity 0.5s ease, transform 0.5s ease;
+  &.visible { opacity: 1; transform: translateX(0); }
+}
+
+// ---------------------------------------------------------------
+// TIPOGRAFÍA BASE
+// ---------------------------------------------------------------
+
 h1, h2, h3 { letter-spacing: -0.01em; }
 
 .eyebrow {
@@ -47,11 +80,15 @@ h1, h2, h3 { letter-spacing: -0.01em; }
   margin-bottom: 0.85rem;
 }
 
-// ---------- Hero: un ítem del juego como portada ----------
+// ---------------------------------------------------------------
+// HERO
+// ---------------------------------------------------------------
+
 .hero {
   padding: 3.5rem 0 2.5rem 0;
   border-bottom: 3px solid $ink;
   margin-bottom: 1rem;
+  animation: fadeUp 0.7s cubic-bezier(0.16, 1, 0.3, 1) both;
 
   h1 {
     font-size: clamp(2.1rem, 5vw, 3.2rem);
@@ -68,10 +105,14 @@ h1, h2, h3 { letter-spacing: -0.01em; }
     font-weight: 500;
     max-width: 40rem;
     color: #33363D;
+    animation: fadeUp 0.7s 0.15s cubic-bezier(0.16, 1, 0.3, 1) both;
   }
 }
 
-// ---------- Tabla mini de regresión (demo) ----------
+// ---------------------------------------------------------------
+// TABLA DEMO DE REGRESIÓN
+// ---------------------------------------------------------------
+
 .demo-tabla {
   font-family: "IBM Plex Mono", monospace;
   font-size: 0.85rem;
@@ -80,15 +121,36 @@ h1, h2, h3 { letter-spacing: -0.01em; }
   width: 100%;
   max-width: 620px;
   background: $card;
+  border-radius: 6px;
+  overflow: hidden;
+  box-shadow: 0 1px 4px rgba(20,22,26, 0.07);
 
   th, td { padding: 0.5rem 0.85rem; text-align: left; }
-  thead th { border-bottom: 2px solid $ink; font-weight: 500; }
-  tbody tr { border-bottom: 1px solid $line; }
+  thead th {
+    border-bottom: 2px solid $ink;
+    font-weight: 500;
+    background: $ink;
+    color: $paper;
+  }
+  tbody tr {
+    border-bottom: 1px solid $line;
+    transition: background 0.18s;
+    &:hover { background: rgba(34,58,143, 0.05); }
+  }
   .fila-ns td { color: $signal; font-weight: 500; }
-  caption { caption-side: bottom; font-size: 0.75rem; color: $gris; padding-top: 0.5rem; text-align: left; }
+  caption {
+    caption-side: bottom;
+    font-size: 0.75rem;
+    color: $gris;
+    padding-top: 0.5rem;
+    text-align: left;
+  }
 }
 
-// ---------- Tarjetas de interpretación N1 vs N3 ----------
+// ---------------------------------------------------------------
+// TARJETAS N1 vs N3
+// ---------------------------------------------------------------
+
 .comparacion {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -101,6 +163,12 @@ h1, h2, h3 { letter-spacing: -0.01em; }
   border-radius: 8px;
   padding: 1.4rem 1.5rem;
   background: $card;
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+
+  &:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 24px rgba(20,22,26, 0.10);
+  }
 
   .nivel-tag {
     font-family: "IBM Plex Mono", monospace;
@@ -130,27 +198,83 @@ h1, h2, h3 { letter-spacing: -0.01em; }
   }
 }
 
-.carta-n1 { border: 1px solid $line;                .nivel-tag { background: $n1; } }
-.carta-n3 { border: 1px solid rgba($minuit, 0.5);   .nivel-tag { background: $n4; } }
+.carta-n1 { border: 1px solid $line;               .nivel-tag { background: $n1; } }
+.carta-n3 { border: 1px solid rgba(34,58,143,0.5); .nivel-tag { background: $n4; } }
 
-// ---------- Escalera de niveles ----------
+// ---------------------------------------------------------------
+// ESCALERA DE NIVELES — expandible
+// ---------------------------------------------------------------
+
 .escalera { margin: 2rem 0; }
 
 .peldano {
   display: grid;
   grid-template-columns: 64px 1fr;
   gap: 1.2rem;
-  padding: 1.1rem 0;
+  padding: 1.1rem 0.75rem;
   border-bottom: 1px solid $line;
-  align-items: baseline;
+  align-items: start;
+  cursor: pointer;
+  border-radius: 6px;
+  transition: background 0.2s, padding-left 0.2s;
+  position: relative;
+  user-select: none;
+
+  &:hover {
+    background: rgba(34,58,143, 0.04);
+    padding-left: 1.1rem;
+  }
+
+  &.activo {
+    background: rgba(34,58,143, 0.06);
+    padding-left: 1.1rem;
+    border-bottom-color: transparent;
+  }
 
   .peldano-n {
     font-family: "IBM Plex Mono", monospace;
     font-weight: 500;
     font-size: 1.3rem;
+    padding-top: 0.15rem;
   }
+
   h3 { font-size: 1.15rem; font-weight: 600; margin: 0 0 0.25rem 0; }
-  p { margin: 0; color: #4A4D54; font-size: 0.95rem; }
+  p  { margin: 0; color: #4A4D54; font-size: 0.95rem; }
+
+  .peldano-detalle {
+    max-height: 0;
+    overflow: hidden;
+    opacity: 0;
+    transition: max-height 0.38s ease, opacity 0.3s ease, margin-top 0.3s ease;
+    font-size: 0.85rem;
+    color: $gris;
+    font-family: "IBM Plex Mono", monospace;
+    line-height: 1.65;
+    grid-column: 2;
+  }
+
+  &.activo .peldano-detalle {
+    max-height: 300px;
+    opacity: 1;
+    margin-top: 0.6rem;
+  }
+
+  &::after {
+    content: '+';
+    position: absolute;
+    right: 0.75rem;
+    top: 1.15rem;
+    font-family: "IBM Plex Mono", monospace;
+    font-size: 1.1rem;
+    color: $gris;
+    transition: transform 0.25s, color 0.2s;
+    line-height: 1;
+  }
+
+  &.activo::after {
+    transform: rotate(45deg);
+    color: $minuit;
+  }
 }
 
 .peldano-1 .peldano-n { color: $n1; }
@@ -158,7 +282,10 @@ h1, h2, h3 { letter-spacing: -0.01em; }
 .peldano-3 .peldano-n { color: $n3; }
 .peldano-4 .peldano-n { color: $n4; }
 
-// ---------- Bloques ----------
+// ---------------------------------------------------------------
+// SECCIONES
+// ---------------------------------------------------------------
+
 .seccion { padding: 2.5rem 0 1rem 0; }
 
 .num-seccion {
@@ -171,24 +298,67 @@ h1, h2, h3 { letter-spacing: -0.01em; }
   margin-bottom: 0.5rem;
 }
 
+// ---------------------------------------------------------------
+// CITA MARCO
+// ---------------------------------------------------------------
+
 .cita-marco {
   font-family: "Spectral", serif;
   font-size: 1.25rem;
   line-height: 1.5;
   max-width: 52ch;
-  border-left: 3px solid $minuit;
+  border-left: 3px solid $line;
   padding-left: 1.4rem;
   margin: 2rem 0;
   color: #33363D;
+  transition: border-color 0.4s ease;
+
+  &:hover { border-color: $minuit; }
 }
 
-// ---------- Diagrama de dos arquitecturas (fundamentación) ----------
+// ---------------------------------------------------------------
+// TABLAS GENERALES
+// ---------------------------------------------------------------
+
+.quarto-float table,
+table {
+  border-collapse: collapse;
+  width: 100%;
+  font-size: 0.92rem;
+  margin: 1.5rem 0;
+
+  thead th {
+    background: $ink;
+    color: $paper;
+    padding: 0.6rem 1rem;
+    font-family: "IBM Plex Mono", monospace;
+    font-size: 0.78rem;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    font-weight: 500;
+  }
+
+  tbody tr {
+    border-bottom: 1px solid $line;
+    transition: background 0.15s;
+    &:nth-child(even) { background: rgba(216,216,207, 0.3); }
+    &:hover { background: rgba(34,58,143, 0.06); }
+  }
+
+  td { padding: 0.6rem 1rem; vertical-align: top; }
+}
+
+// ---------------------------------------------------------------
+// DIAGRAMA ARQUITECTURAS
+// ---------------------------------------------------------------
+
 .diagrama {
   background: $card;
   border: 1px solid $line;
   border-radius: 8px;
   padding: 1.4rem 1.1rem 0.75rem;
   margin-top: 0.5rem;
+  box-shadow: 0 2px 8px rgba(20,22,26, 0.06);
 }
 
 .modos { display: flex; gap: 0.5rem; margin-bottom: 0.9rem; flex-wrap: wrap; }
@@ -201,13 +371,16 @@ h1, h2, h3 { letter-spacing: -0.01em; }
   border-radius: 4px;
   background: $paper;
   cursor: pointer;
+  transition: background 0.2s, border-color 0.2s, transform 0.15s;
+
+  &:hover { transform: translateY(-1px); }
+  &:focus-visible { outline: 2px solid $minuit; outline-offset: 2px; }
+  &.activo-del { background: $signal; border-color: $signal; color: #fff; }
+  &.activo-inc { background: $minuit; border-color: $minuit; color: #fff; }
 }
-.modo:focus-visible { outline: 2px solid $minuit; outline-offset: 2px; }
-.modo.activo-del { background: $signal; border-color: $signal; color: #fff; }
-.modo.activo-inc { background: $minuit; border-color: $minuit; color: #fff; }
 
 .diagrama svg { width: 100%; height: auto; display: block; }
-.flujo-inc, .flujo-del { transition: opacity 0.35s; }
+.flujo-inc, .flujo-del { transition: opacity 0.4s cubic-bezier(0.16,1,0.3,1); }
 
 .leyenda {
   font-size: 0.92rem;
@@ -230,12 +403,188 @@ h1, h2, h3 { letter-spacing: -0.01em; }
   strong { color: $ink; }
 }
 
-// Accesibilidad
+// ---------------------------------------------------------------
+// CARDS FLIP — tabla de síntesis
+// ---------------------------------------------------------------
+
+.flip-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.25rem;
+  margin: 2rem 0;
+  perspective: 1200px;
+
+  @media (max-width: 800px) { grid-template-columns: 1fr; }
+}
+
+.flip-card {
+  height: 230px;
+  cursor: pointer;
+
+  &:hover .flip-inner,
+  &.flipped .flip-inner { transform: rotateY(180deg); }
+}
+
+.flip-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  transform-style: preserve-3d;
+  transition: transform 0.55s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.flip-front, .flip-back {
+  position: absolute;
+  inset: 0;
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+  border-radius: 8px;
+  padding: 1.4rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.flip-front {
+  background: $card;
+  border: 1px solid $line;
+
+  .flip-label {
+    font-family: "IBM Plex Mono", monospace;
+    font-size: 0.7rem;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: $gris;
+    margin-bottom: 0.75rem;
+  }
+
+  .flip-titulo {
+    font-family: "Spectral", serif;
+    font-size: 1.2rem;
+    font-weight: 800;
+    color: $ink;
+    line-height: 1.2;
+    margin-bottom: 0.5rem;
+  }
+
+  .flip-autor {
+    font-family: "IBM Plex Mono", monospace;
+    font-size: 0.78rem;
+    color: $gris;
+  }
+
+  .flip-hint {
+    font-family: "IBM Plex Mono", monospace;
+    font-size: 0.68rem;
+    color: $line;
+    margin-top: auto;
+    padding-top: 1rem;
+    letter-spacing: 0.05em;
+  }
+}
+
+.flip-back {
+  background: $minuit;
+  border: 1px solid $minuit-deep;
+  transform: rotateY(180deg);
+  color: rgba(255,255,255,0.92);
+
+  .flip-aporta {
+    font-family: "IBM Plex Mono", monospace;
+    font-size: 0.68rem;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: rgba(255,255,255,0.5);
+    margin-bottom: 0.5rem;
+  }
+
+  .flip-texto {
+    font-family: "Spectral", serif;
+    font-size: 0.95rem;
+    line-height: 1.5;
+    margin-bottom: 0.85rem;
+  }
+
+  .flip-traduce {
+    font-family: "IBM Plex Sans", sans-serif;
+    font-size: 0.8rem;
+    color: rgba(255,255,255,0.68);
+    border-top: 1px solid rgba(255,255,255,0.18);
+    padding-top: 0.7rem;
+    line-height: 1.45;
+  }
+}
+
+.flip-card--deep .flip-back { background: $minuit-deep; }
+
+// ---------------------------------------------------------------
+// TRACKER DE ESTADO
+// ---------------------------------------------------------------
+
+.tracker {
+  margin: 1.5rem 0 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+  border-top: 2px solid $ink;
+}
+
+.tracker-item {
+  display: grid;
+  grid-template-columns: 2.5rem 1fr auto;
+  gap: 1rem;
+  align-items: center;
+  padding: 1rem 0.75rem;
+  border-bottom: 1px solid $line;
+  border-radius: 0;
+  transition: background 0.18s, padding-left 0.18s;
+
+  &:hover {
+    background: rgba(34,58,143, 0.04);
+    padding-left: 1.1rem;
+  }
+
+  .tracker-icon { font-size: 1.15rem; text-align: center; }
+
+  .tracker-fase {
+    font-family: "IBM Plex Sans", sans-serif;
+    font-size: 0.95rem;
+    font-weight: 600;
+    color: $ink;
+    margin-bottom: 0.15rem;
+  }
+
+  .tracker-desc {
+    font-family: "IBM Plex Sans", sans-serif;
+    font-size: 0.82rem;
+    color: $gris;
+    line-height: 1.4;
+  }
+
+  .tracker-badge {
+    font-family: "IBM Plex Mono", monospace;
+    font-size: 0.7rem;
+    letter-spacing: 0.06em;
+    padding: 0.2rem 0.65rem;
+    border-radius: 100px;
+    white-space: nowrap;
+
+    &.completo   { background: rgba(34,58,143,0.10);  color: $n4;   border: 1px solid rgba(34,58,143,0.25); }
+    &.desarrollo { background: rgba(107,122,168,0.10); color: $n2;   border: 1px solid rgba(107,122,168,0.25); }
+    &.proximo    { background: rgba(138,143,152,0.10); color: $gris; border: 1px solid rgba(138,143,152,0.25); }
+  }
+}
+
+// ---------------------------------------------------------------
+// ACCESIBILIDAD
+// ---------------------------------------------------------------
+
 a:focus-visible, button:focus-visible {
   outline: 3px solid $minuit;
   outline-offset: 2px;
 }
 
 @media (prefers-reduced-motion: reduce) {
-  * { animation: none !important; transition: none !important; }
+  *, *::before, *::after { animation: none !important; transition: none !important; }
+  .reveal, .reveal-left { opacity: 1; transform: none; }
 }
