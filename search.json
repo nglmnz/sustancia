@@ -1,47 +1,5 @@
 [
   {
-    "objectID": "pedagogia.html",
-    "href": "pedagogia.html",
-    "title": "Diseño pedagógico",
-    "section": "",
-    "text": "La progresión del juego se basa en la taxonomía de comprensión de representaciones de datos de Curcio (1987), extendida por Shaughnessy (2007), y en la distinción entre alfabetización, razonamiento y pensamiento estadístico de Garfield y Ben-Zvi (2008). El juego no inventa niveles arbitrarios: operacionaliza una progresión que la literatura ya validó, y la convierte en mecánica lúdica.\n\n\n\n\n\n\n\n\nNivel\nNombre\nEquivalente en la literatura\n\n\n\n\nN1\nLectura técnica\nReading the data / alfabetización estadística\n\n\nN2\nInterpretación estadística\nReading between the data / razonamiento\n\n\nN3\nInterpretación sustantiva\nReading beyond the data\n\n\nN4\nInterpretación crítica-reflexiva\nReading behind the data / pensamiento estadístico\n\n\n\nLa regla de oro: una respuesta técnicamente correcta pero no sustantiva recibe puntaje parcial y retroalimentación explícita sobre qué le faltó. El puntaje es no lineal (N1=1, N2=2, N3=4, N4=7): la sustancia vale más que la técnica."
-  },
-  {
-    "objectID": "pedagogia.html#fundamento",
-    "href": "pedagogia.html#fundamento",
-    "title": "Diseño pedagógico",
-    "section": "",
-    "text": "La progresión del juego se basa en la taxonomía de comprensión de representaciones de datos de Curcio (1987), extendida por Shaughnessy (2007), y en la distinción entre alfabetización, razonamiento y pensamiento estadístico de Garfield y Ben-Zvi (2008). El juego no inventa niveles arbitrarios: operacionaliza una progresión que la literatura ya validó, y la convierte en mecánica lúdica.\n\n\n\n\n\n\n\n\nNivel\nNombre\nEquivalente en la literatura\n\n\n\n\nN1\nLectura técnica\nReading the data / alfabetización estadística\n\n\nN2\nInterpretación estadística\nReading between the data / razonamiento\n\n\nN3\nInterpretación sustantiva\nReading beyond the data\n\n\nN4\nInterpretación crítica-reflexiva\nReading behind the data / pensamiento estadístico\n\n\n\nLa regla de oro: una respuesta técnicamente correcta pero no sustantiva recibe puntaje parcial y retroalimentación explícita sobre qué le faltó. El puntaje es no lineal (N1=1, N2=2, N3=4, N4=7): la sustancia vale más que la técnica."
-  },
-  {
-    "objectID": "pedagogia.html#taxonomía-de-errores-interpretativos",
-    "href": "pedagogia.html#taxonomía-de-errores-interpretativos",
-    "title": "Diseño pedagógico",
-    "section": "Taxonomía de errores interpretativos",
-    "text": "Taxonomía de errores interpretativos\nCada error detectado es contenido pedagógico: el evaluador lo nombra, lo explica y lo fundamenta en el corpus.\n\n\n\nCódigo\nError\n\n\n\n\nE1\nCausalidad espuria (asociación → causa)\n\n\nE2\nConfusión significancia estadística / relevancia sustantiva\n\n\nE3\nSobregeneralización más allá del diseño muestral\n\n\nE4\nR² interpretado como explicación causal\n\n\nE5\nCeguera al hallazgo nulo teóricamente relevante\n\n\nE6\nReificación de tipologías (clusters como grupos naturales)\n\n\nE7\nArtefacto de composición atribuido a la variable equivocada\n\n\nE8\nDireccionalidad causal asumida sin justificación\n\n\nE9\nComparación de coeficientes no estandarizados\n\n\nE10\nFalacia ecológica / individualista"
-  },
-  {
-    "objectID": "pedagogia.html#anatomía-del-ítem",
-    "href": "pedagogia.html#anatomía-del-ítem",
-    "title": "Diseño pedagógico",
-    "section": "Anatomía del ítem",
-    "text": "Anatomía del ítem\nCada ítem presenta un output estadístico real en un contexto disciplinar elegible, una pregunta abierta con audiencia ficticia definida (“redacta para la Dirección de Asuntos Estudiantiles…”), una rúbrica con criterios observables por nivel, y fragmentos curados del corpus metodológico que fundamentan la retroalimentación.\nEl evaluador — un modelo de lenguaje operando con la rúbrica del ítem, la taxonomía de errores y respuestas ancla pre-clasificadas — devuelve: nivel alcanzado, criterios cumplidos, errores detectados, retroalimentación formativa y cita al corpus."
-  },
-  {
-    "objectID": "pedagogia.html#ítems-piloto",
-    "href": "pedagogia.html#ítems-piloto",
-    "title": "Diseño pedagógico",
-    "section": "Ítems piloto",
-    "text": "Ítems piloto\nLos cuatro ítems iniciales provienen de una investigación real:\n\nD1 — “El estudiante de 16 horas” (descriptiva): media vs. mediana con outliers; la decisión de winsorizar como contenido interpretativo.\nA1 — “¿Carreras distintas o composiciones distintas?” (control estadístico): un titular de prensa atribuye a la carrera un efecto que es composición de género.\nR1 — “Lo que la pantalla no dice” (regresión): el hallazgo central es el predictor no significativo — el tiempo de pantalla no predice deterioro; el modo compulsivo de uso, sí.\nC1 — “¿Existen tres tipos de estudiantes?” (clusters): desmontar la reificación — los perfiles de k-means son construcciones analíticas, “clases en el papel” (Bourdieu), no grupos naturales descubiertos."
-  },
-  {
-    "objectID": "pedagogia.html#referencias",
-    "href": "pedagogia.html#referencias",
-    "title": "Diseño pedagógico",
-    "section": "Referencias",
-    "text": "Referencias\n\nCurcio, F. (1987). Comprehension of mathematical relationships expressed in graphs. Journal for Research in Mathematics Education, 18(5).\nShaughnessy, J. M. (2007). Research on statistics learning and reasoning. En Second Handbook of Research on Mathematics Teaching and Learning.\nGarfield, J. y Ben-Zvi, D. (2008). Developing Students’ Statistical Reasoning. Springer.\nSimondon, G. (2007 [1958]). El modo de existencia de los objetos técnicos. Prometeo.\nBourdieu, P. (1990). ¿Cómo se hace una clase social? Sobre la existencia teórica y práctica de los grupos."
-  },
-  {
     "objectID": "fundamentacion.html",
     "href": "fundamentacion.html",
     "title": "La interpretación como capital que no se puede delegar",
@@ -91,41 +49,6 @@
     "text": "Referencias\n\nBourdieu, P. (1987 [1979]). Los tres estados del capital cultural. Sociológica, 2(5).\nBourdieu, P. y Wacquant, L. (2005 [1992]). Una invitación a la sociología reflexiva. Siglo XXI.\nCurcio, F. (1987). Comprehension of mathematical relationships expressed in graphs. JRME, 18(5).\nGarfield, J. y Ben-Zvi, D. (2008). Developing Students’ Statistical Reasoning. Springer.\nIgnatow, G. y Robinson, L. (2017). Pierre Bourdieu: theorizing the digital. Information, Communication & Society, 20(7).\nShaughnessy, J. M. (2007). Research on statistics learning and reasoning. En Second Handbook of Research on Mathematics Teaching and Learning.\nSimondon, G. (2007 [1958]). El modo de existencia de los objetos técnicos. Prometeo.\nZuboff, S. (2020). La era del capitalismo de la vigilancia. Paidós."
   },
   {
-    "objectID": "equipo.html",
-    "href": "equipo.html",
-    "title": "Proyecto y equipo",
-    "section": "",
-    "text": "Sustancia nace de una constatación simple: los programas de formación en ciencias sociales enseñan a ejecutar técnicas estadísticas, pero la competencia que distingue a un buen investigador — y a un buen lector de investigación — es la interpretación: qué significa un resultado para el fenómeno, qué permite afirmar y qué no.\nEl proyecto se inscribe en una tradición de laboratorio interdisciplinario: diseño pedagógico + desarrollo de software + investigación empírica sobre el propio instrumento. La app es a la vez herramienta de aprendizaje y objeto de estudio: el piloto incluye un diseño de evaluación pre/post de competencia interpretativa."
-  },
-  {
-    "objectID": "equipo.html#el-proyecto",
-    "href": "equipo.html#el-proyecto",
-    "title": "Proyecto y equipo",
-    "section": "",
-    "text": "Sustancia nace de una constatación simple: los programas de formación en ciencias sociales enseñan a ejecutar técnicas estadísticas, pero la competencia que distingue a un buen investigador — y a un buen lector de investigación — es la interpretación: qué significa un resultado para el fenómeno, qué permite afirmar y qué no.\nEl proyecto se inscribe en una tradición de laboratorio interdisciplinario: diseño pedagógico + desarrollo de software + investigación empírica sobre el propio instrumento. La app es a la vez herramienta de aprendizaje y objeto de estudio: el piloto incluye un diseño de evaluación pre/post de competencia interpretativa."
-  },
-  {
-    "objectID": "equipo.html#corpus-inicial",
-    "href": "equipo.html#corpus-inicial",
-    "title": "Proyecto y equipo",
-    "section": "Corpus inicial",
-    "text": "Corpus inicial\nEl primer conjunto de ítems se construye sobre la investigación Habitus tecnológico y salud mental en estudiantes de primer año (Universidad Alberto Hurtado, n = 276, cinco carreras), complementada con fuentes de datos públicas chilenas (ELSOC, CASEN) para las variantes de contexto disciplinar."
-  },
-  {
-    "objectID": "equipo.html#equipo",
-    "href": "equipo.html#equipo",
-    "title": "Proyecto y equipo",
-    "section": "Equipo",
-    "text": "Equipo\n\nAngel Muñoz  — Licenciado en Sociología, Universidad Alberto Hurtado. Diseño pedagógico, desarrollo (R/Shiny), corpus empírico.\n(Colaboraciones abiertas: diseño de ítems en otras disciplinas, pilotaje docente, diseño UX.)"
-  },
-  {
-    "objectID": "equipo.html#contacto",
-    "href": "equipo.html#contacto",
-    "title": "Proyecto y equipo",
-    "section": "Contacto",
-    "text": "Contacto\n(anmunozr@alumnos.uahurtado.cl / GitHub del proyecto)"
-  },
-  {
     "objectID": "index.html",
     "href": "index.html",
     "title": "Leer una tabla no es interpretarla.",
@@ -166,5 +89,82 @@
     "title": "Leer una tabla no es interpretarla.",
     "section": "Estado del proyecto",
     "text": "Estado del proyecto\n\n\n\n\n\n\n\n\nFase\nContenido\nEstado\n\n\n\n\nDiseño pedagógico\nNiveles, taxonomía de errores, rúbricas, ítems piloto\n✅ Completo (v0.1)\n\n\nPrototipo Shiny\nApp funcional con evaluador vía API\n🔨 En desarrollo\n\n\nPiloto\nPrueba con estudiantes; calibración del evaluador\n⏳ Próximo\n\n\nExpansión\n15 ítems, contextos alternativos, corpus ampliado\n⏳ Planificado\n\n\n\nLeer la fundamentación completa → · Ver el diseño pedagógico →"
+  },
+  {
+    "objectID": "pedagogia.html",
+    "href": "pedagogia.html",
+    "title": "Diseño pedagógico",
+    "section": "",
+    "text": "La progresión del juego se basa en la taxonomía de comprensión de representaciones de datos de Curcio (1987), extendida por Shaughnessy (2007), y en la distinción entre alfabetización, razonamiento y pensamiento estadístico de Garfield y Ben-Zvi (2008). El juego no inventa niveles arbitrarios: operacionaliza una progresión que la literatura ya validó, y la convierte en mecánica lúdica.\n\n\n\n\n\n\n\n\nNivel\nNombre\nEquivalente en la literatura\n\n\n\n\nN1\nLectura técnica\nReading the data / alfabetización estadística\n\n\nN2\nInterpretación estadística\nReading between the data / razonamiento\n\n\nN3\nInterpretación sustantiva\nReading beyond the data\n\n\nN4\nInterpretación crítica-reflexiva\nReading behind the data / pensamiento estadístico\n\n\n\nLa regla de oro: una respuesta técnicamente correcta pero no sustantiva recibe puntaje parcial y retroalimentación explícita sobre qué le faltó. El puntaje es no lineal (N1=1, N2=2, N3=4, N4=7): la sustancia vale más que la técnica."
+  },
+  {
+    "objectID": "pedagogia.html#fundamento",
+    "href": "pedagogia.html#fundamento",
+    "title": "Diseño pedagógico",
+    "section": "",
+    "text": "La progresión del juego se basa en la taxonomía de comprensión de representaciones de datos de Curcio (1987), extendida por Shaughnessy (2007), y en la distinción entre alfabetización, razonamiento y pensamiento estadístico de Garfield y Ben-Zvi (2008). El juego no inventa niveles arbitrarios: operacionaliza una progresión que la literatura ya validó, y la convierte en mecánica lúdica.\n\n\n\n\n\n\n\n\nNivel\nNombre\nEquivalente en la literatura\n\n\n\n\nN1\nLectura técnica\nReading the data / alfabetización estadística\n\n\nN2\nInterpretación estadística\nReading between the data / razonamiento\n\n\nN3\nInterpretación sustantiva\nReading beyond the data\n\n\nN4\nInterpretación crítica-reflexiva\nReading behind the data / pensamiento estadístico\n\n\n\nLa regla de oro: una respuesta técnicamente correcta pero no sustantiva recibe puntaje parcial y retroalimentación explícita sobre qué le faltó. El puntaje es no lineal (N1=1, N2=2, N3=4, N4=7): la sustancia vale más que la técnica."
+  },
+  {
+    "objectID": "pedagogia.html#taxonomía-de-errores-interpretativos",
+    "href": "pedagogia.html#taxonomía-de-errores-interpretativos",
+    "title": "Diseño pedagógico",
+    "section": "Taxonomía de errores interpretativos",
+    "text": "Taxonomía de errores interpretativos\nCada error detectado es contenido pedagógico: el evaluador lo nombra, lo explica y lo fundamenta en el corpus.\n\n\n\nCódigo\nError\n\n\n\n\nE1\nCausalidad espuria (asociación → causa)\n\n\nE2\nConfusión significancia estadística / relevancia sustantiva\n\n\nE3\nSobregeneralización más allá del diseño muestral\n\n\nE4\nR² interpretado como explicación causal\n\n\nE5\nCeguera al hallazgo nulo teóricamente relevante\n\n\nE6\nReificación de tipologías (clusters como grupos naturales)\n\n\nE7\nArtefacto de composición atribuido a la variable equivocada\n\n\nE8\nDireccionalidad causal asumida sin justificación\n\n\nE9\nComparación de coeficientes no estandarizados\n\n\nE10\nFalacia ecológica / individualista"
+  },
+  {
+    "objectID": "pedagogia.html#anatomía-del-ítem",
+    "href": "pedagogia.html#anatomía-del-ítem",
+    "title": "Diseño pedagógico",
+    "section": "Anatomía del ítem",
+    "text": "Anatomía del ítem\nCada ítem presenta un output estadístico real en un contexto disciplinar elegible, una pregunta abierta con audiencia ficticia definida (“redacta para la Dirección de Asuntos Estudiantiles…”), una rúbrica con criterios observables por nivel, y fragmentos curados del corpus metodológico que fundamentan la retroalimentación.\nEl evaluador — un modelo de lenguaje operando con la rúbrica del ítem, la taxonomía de errores y respuestas ancla pre-clasificadas — devuelve: nivel alcanzado, criterios cumplidos, errores detectados, retroalimentación formativa y cita al corpus."
+  },
+  {
+    "objectID": "pedagogia.html#ítems-piloto",
+    "href": "pedagogia.html#ítems-piloto",
+    "title": "Diseño pedagógico",
+    "section": "Ítems piloto",
+    "text": "Ítems piloto\nLos cuatro ítems iniciales provienen de una investigación real:\n\nD1 — “El estudiante de 16 horas” (descriptiva): media vs. mediana con outliers; la decisión de winsorizar como contenido interpretativo.\nA1 — “¿Carreras distintas o composiciones distintas?” (control estadístico): un titular de prensa atribuye a la carrera un efecto que es composición de género.\nR1 — “Lo que la pantalla no dice” (regresión): el hallazgo central es el predictor no significativo — el tiempo de pantalla no predice deterioro; el modo compulsivo de uso, sí.\nC1 — “¿Existen tres tipos de estudiantes?” (clusters): desmontar la reificación — los perfiles de k-means son construcciones analíticas, “clases en el papel” (Bourdieu), no grupos naturales descubiertos."
+  },
+  {
+    "objectID": "pedagogia.html#referencias",
+    "href": "pedagogia.html#referencias",
+    "title": "Diseño pedagógico",
+    "section": "Referencias",
+    "text": "Referencias\n\nCurcio, F. (1987). Comprehension of mathematical relationships expressed in graphs. Journal for Research in Mathematics Education, 18(5).\nShaughnessy, J. M. (2007). Research on statistics learning and reasoning. En Second Handbook of Research on Mathematics Teaching and Learning.\nGarfield, J. y Ben-Zvi, D. (2008). Developing Students’ Statistical Reasoning. Springer.\nSimondon, G. (2007 [1958]). El modo de existencia de los objetos técnicos. Prometeo.\nBourdieu, P. (1990). ¿Cómo se hace una clase social? Sobre la existencia teórica y práctica de los grupos."
+  },
+  {
+    "objectID": "equipo.html",
+    "href": "equipo.html",
+    "title": "Proyecto y equipo",
+    "section": "",
+    "text": "Sustancia nace de una constatación simple: los programas de formación en ciencias sociales enseñan a ejecutar técnicas estadísticas, pero la competencia que distingue a un buen investigador — y a un buen lector de investigación — es la interpretación: qué significa un resultado para el fenómeno, qué permite afirmar y qué no.\nEl proyecto se inscribe en una tradición de laboratorio interdisciplinario: diseño pedagógico + desarrollo de software + investigación empírica sobre el propio instrumento. La app es a la vez herramienta de aprendizaje y objeto de estudio: el piloto incluye un diseño de evaluación pre/post de competencia interpretativa."
+  },
+  {
+    "objectID": "equipo.html#el-proyecto",
+    "href": "equipo.html#el-proyecto",
+    "title": "Proyecto y equipo",
+    "section": "",
+    "text": "Sustancia nace de una constatación simple: los programas de formación en ciencias sociales enseñan a ejecutar técnicas estadísticas, pero la competencia que distingue a un buen investigador — y a un buen lector de investigación — es la interpretación: qué significa un resultado para el fenómeno, qué permite afirmar y qué no.\nEl proyecto se inscribe en una tradición de laboratorio interdisciplinario: diseño pedagógico + desarrollo de software + investigación empírica sobre el propio instrumento. La app es a la vez herramienta de aprendizaje y objeto de estudio: el piloto incluye un diseño de evaluación pre/post de competencia interpretativa."
+  },
+  {
+    "objectID": "equipo.html#corpus-inicial",
+    "href": "equipo.html#corpus-inicial",
+    "title": "Proyecto y equipo",
+    "section": "Corpus inicial",
+    "text": "Corpus inicial\nEl primer conjunto de ítems se construye sobre la investigación Habitus tecnológico y salud mental en estudiantes de primer año (Universidad Alberto Hurtado, n = 276, cinco carreras), complementada con fuentes de datos públicas chilenas (ELSOC, CASEN) para las variantes de contexto disciplinar."
+  },
+  {
+    "objectID": "equipo.html#equipo",
+    "href": "equipo.html#equipo",
+    "title": "Proyecto y equipo",
+    "section": "Equipo",
+    "text": "Equipo\n\nAngel Muñoz  — Licenciado en Sociología, Universidad Alberto Hurtado. Diseño pedagógico, desarrollo (R/Shiny), corpus empírico.\n(Colaboraciones abiertas: diseño de ítems en otras disciplinas, pilotaje docente, diseño UX.)"
+  },
+  {
+    "objectID": "equipo.html#contacto",
+    "href": "equipo.html#contacto",
+    "title": "Proyecto y equipo",
+    "section": "Contacto",
+    "text": "Contacto\n(anmunozr@alumnos.uahurtado.cl / GitHub del proyecto)"
   }
 ]
