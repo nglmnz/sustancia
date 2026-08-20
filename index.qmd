@@ -1,0 +1,248 @@
+---
+title: ""
+pagetitle: "Sustancia — aprender a interpretar estadística"
+---
+
+::: {.hero}
+<div class="eyebrow">Sustancia · nombre provisorio · proyecto en desarrollo</div>
+
+# Leer una tabla no es interpretarla.
+
+<p class="hero-sub">**Sustancia** es un juego web para aprender a interpretar resultados
+estadísticos en contexto: sociología, psicología, política pública, salud.
+El jugador no elige alternativas — escribe su interpretación, y un evaluador
+con rúbricas explícitas le dice qué tan profundo llegó y qué le faltó.</p>
+:::
+
+## Mira la diferencia {.seccion}
+
+Ambas respuestas describen la misma tabla de un estudio real sobre tecnología y
+salud mental en estudiantes de primer año. Solo una de ellas dice algo sobre el mundo.
+
+<table class="demo-tabla">
+<caption>Modelo de regresión: deterioro de salud mental (fragmento ilustrativo)</caption>
+<thead>
+<tr><th>Predictor</th><th>β</th><th>p</th></tr>
+</thead>
+<tbody>
+<tr><td>Uso compulsivo (IDA)</td><td>.38</td><td>&lt; .001</td></tr>
+<tr><td>Género (mujer)</td><td>.24</td><td>.002</td></tr>
+<tr class="fila-ns"><td>Tiempo de pantalla</td><td>.05</td><td>.41</td></tr>
+</tbody>
+</table>
+
+::: {.comparacion}
+<div class="carta carta-n1">
+<span class="nivel-tag">NIVEL 1 · LECTURA TÉCNICA</span>
+<p>"El uso compulsivo y el género son significativos (p&nbsp;&lt;&nbsp;.05).
+El tiempo de pantalla no es significativo."</p>
+<div class="veredicto">✓ Correcto. Pero todavía no dijiste nada sobre el mundo.
+<strong>1 punto.</strong></div>
+</div>
+
+<div class="carta carta-n3">
+<span class="nivel-tag">NIVEL 3 · INTERPRETACIÓN SUSTANTIVA</span>
+<p>"El deterioro no se asocia a <em>cuánto</em> tiempo se usa la pantalla,
+sino a <em>cómo</em> se usa: es el modo compulsivo, no la exposición, lo que
+importa. Una política centrada en limitar horas apuntaría al blanco equivocado."</p>
+<div class="veredicto">✓ Interpretación con sustancia: conecta el hallazgo — incluido
+el nulo — con el fenómeno y sus implicancias. <strong>4 puntos.</strong></div>
+</div>
+:::
+
+## Cuatro niveles de profundidad {.seccion}
+
+La progresión del juego operacionaliza una escalera validada por la investigación
+en educación estadística (Curcio; Shaughnessy; Garfield y Ben-Zvi): comprender un
+resultado no es un acto binario sino una profundización por capas.
+Haz clic en cada nivel para expandirlo.
+
+```{=html}
+<div class="escalera" id="escalera-niveles">
+
+  <div class="peldano peldano-1" tabindex="0" role="button" aria-expanded="false">
+    <span class="peldano-n">N1</span>
+    <div>
+      <h3>Lectura técnica</h3>
+      <p>Decodificar el output correctamente: valores, significancia, escalas. Necesario, pero es el piso, no el techo.</p>
+      <div class="peldano-detalle">
+        Ejemplos de errores en este nivel: confundir el valor p con la probabilidad de que la hipótesis sea verdadera,
+        leer un coeficiente negativo como "no hay efecto", ignorar los intervalos de confianza.
+        El juego asigna 1 punto a las respuestas que solo alcanzan este nivel.
+      </div>
+    </div>
+  </div>
+
+  <div class="peldano peldano-2" tabindex="0" role="button" aria-expanded="false">
+    <span class="peldano-n">N2</span>
+    <div>
+      <h3>Interpretación estadística</h3>
+      <p>Traducir a lenguaje de relación: dirección, magnitud, comparación, condicionalidad ("controlando por…").</p>
+      <div class="peldano-detalle">
+        En este nivel el jugador ya no solo lee números: los compara entre sí, habla de magnitudes relativas
+        y usa el vocabulario correcto de la técnica. "Controlando por género, el uso compulsivo predice…"
+        es una oración de nivel 2. El juego asigna 2 puntos.
+      </div>
+    </div>
+  </div>
+
+  <div class="peldano peldano-3" tabindex="0" role="button" aria-expanded="false">
+    <span class="peldano-n">N3</span>
+    <div>
+      <h3>Interpretación sustantiva</h3>
+      <p>Conectar el resultado con el fenómeno: ¿qué significa esto para el problema de investigación, la teoría, la intervención?</p>
+      <div class="peldano-detalle">
+        La marca distintiva del nivel 3 es la inferencia hacia el mundo: el resultado deja de ser un número
+        y se convierte en un argumento sobre la realidad. Los hallazgos nulos son especialmente formativos aquí:
+        "el tiempo de pantalla no predice" es tan informativo como lo que sí predice. El juego asigna 3–4 puntos.
+      </div>
+    </div>
+  </div>
+
+  <div class="peldano peldano-4" tabindex="0" role="button" aria-expanded="false">
+    <span class="peldano-n">N4</span>
+    <div>
+      <h3>Interpretación crítica-reflexiva</h3>
+      <p>Reconstruir la cadena de decisiones que produjo el resultado: supuestos, límites del diseño, explicaciones alternativas.</p>
+      <div class="peldano-detalle">
+        Este nivel sigue a Simondon: la relación no alienada con un objeto técnico consiste en comprender
+        su funcionamiento interno. El jugador en N4 pregunta: ¿por qué esta técnica? ¿Qué supuestos carga?
+        ¿Qué alternativa de análisis habría dado un resultado distinto? ¿Qué no permite afirmar este diseño?
+        El juego asigna 5 puntos — el máximo de la rúbrica.
+      </div>
+    </div>
+  </div>
+
+</div>
+
+<script>
+(function(){
+  var peldanos = document.querySelectorAll('#escalera-niveles .peldano');
+  peldanos.forEach(function(p){
+    function toggle(){
+      var abierto = p.classList.contains('activo');
+      // cerrar todos
+      peldanos.forEach(function(q){ q.classList.remove('activo'); q.setAttribute('aria-expanded','false'); });
+      if(!abierto){ p.classList.add('activo'); p.setAttribute('aria-expanded','true'); }
+    }
+    p.addEventListener('click', toggle);
+    p.addEventListener('keydown', function(e){ if(e.key==='Enter'||e.key===' '){ e.preventDefault(); toggle(); } });
+  });
+})();
+</script>
+```
+
+## Cómo funciona {.seccion}
+
+```{=html}
+<div class="tracker">
+  <div class="tracker-item reveal">
+    <div class="tracker-icon">✍️</div>
+    <div>
+      <div class="tracker-fase">1 · Elige contexto</div>
+      <div class="tracker-desc">El jugador selecciona disciplina y temática. El mismo esqueleto estadístico se presenta con datos y narrativas distintas.</div>
+    </div>
+    <span class="tracker-badge completo">activo</span>
+  </div>
+  <div class="tracker-item reveal">
+    <div class="tracker-icon">💬</div>
+    <div>
+      <div class="tracker-fase">2 · Interpreta en texto libre</div>
+      <div class="tracker-desc">Frente a un output real — tabla de regresión, perfiles de cluster, distribución — el jugador escribe su interpretación. No hay alternativas.</div>
+    </div>
+    <span class="tracker-badge completo">activo</span>
+  </div>
+  <div class="tracker-item reveal">
+    <div class="tracker-icon">📊</div>
+    <div>
+      <div class="tracker-fase">3 · Recibe evaluación formativa</div>
+      <div class="tracker-desc">Un modelo de lenguaje con rúbricas explícitas determina el nivel alcanzado, detecta errores y retroalimenta con el corpus metodológico del proyecto.</div>
+    </div>
+    <span class="tracker-badge completo">activo</span>
+  </div>
+  <div class="tracker-item reveal">
+    <div class="tracker-icon">🗂️</div>
+    <div>
+      <div class="tracker-fase">4 · Los errores se coleccionan</div>
+      <div class="tracker-desc">Cometer un error resta puntos pero desbloquea su ficha: causalidad espuria, reificación de tipologías, artefactos de composición. La colección completa es un logro.</div>
+    </div>
+    <span class="tracker-badge completo">activo</span>
+  </div>
+</div>
+```
+
+## Marco {.seccion}
+
+<div class="cita-marco">La apuesta epistemológica sigue a Gilbert Simondon: el
+objetivo no es operar la técnica estadística como caja negra, sino comprender su
+funcionamiento interno — qué decide el investigador, qué transforma el algoritmo,
+qué supuestos carga el modelo. Esa comprensión es una relación no alienada con
+el instrumento.</div>
+
+El corpus inicial del juego proviene de una investigación empírica real sobre
+habitus tecnológico y salud mental en estudiantes universitarios de primer año
+(n = 276), lo que permite que cada ítem tenga contexto, decisiones metodológicas
+documentadas y hallazgos genuinos — incluidos los nulos, que suelen ser los más
+formativos de interpretar.
+
+## Estado del proyecto {.seccion}
+
+```{=html}
+<div class="tracker">
+  <div class="tracker-item reveal">
+    <div class="tracker-icon">✅</div>
+    <div>
+      <div class="tracker-fase">Diseño pedagógico</div>
+      <div class="tracker-desc">Niveles, taxonomía de errores, rúbricas, ítems piloto</div>
+    </div>
+    <span class="tracker-badge completo">Completo v0.1</span>
+  </div>
+  <div class="tracker-item reveal">
+    <div class="tracker-icon">🔨</div>
+    <div>
+      <div class="tracker-fase">Prototipo Shiny</div>
+      <div class="tracker-desc">App funcional con evaluador vía API</div>
+    </div>
+    <span class="tracker-badge desarrollo">En desarrollo</span>
+  </div>
+  <div class="tracker-item reveal">
+    <div class="tracker-icon">⏳</div>
+    <div>
+      <div class="tracker-fase">Piloto</div>
+      <div class="tracker-desc">Prueba con estudiantes; calibración del evaluador</div>
+    </div>
+    <span class="tracker-badge proximo">Próximo</span>
+  </div>
+  <div class="tracker-item reveal">
+    <div class="tracker-icon">📋</div>
+    <div>
+      <div class="tracker-fase">Expansión</div>
+      <div class="tracker-desc">15 ítems, contextos alternativos, corpus ampliado</div>
+    </div>
+    <span class="tracker-badge proximo">Planificado</span>
+  </div>
+</div>
+
+<script>
+(function(){
+  if(!('IntersectionObserver' in window)) {
+    document.querySelectorAll('.reveal,.reveal-left').forEach(function(el){ el.classList.add('visible'); });
+    return;
+  }
+  var io = new IntersectionObserver(function(entries){
+    entries.forEach(function(e){
+      if(e.isIntersecting){
+        // delay escalonado según posición
+        var items = Array.from(e.target.parentElement.querySelectorAll('.reveal,.reveal-left'));
+        var idx = items.indexOf(e.target);
+        setTimeout(function(){ e.target.classList.add('visible'); }, idx * 90);
+        io.unobserve(e.target);
+      }
+    });
+  }, { threshold: 0.12 });
+  document.querySelectorAll('.reveal,.reveal-left').forEach(function(el){ io.observe(el); });
+})();
+</script>
+```
+
+[Leer la fundamentación completa →](fundamentacion.qmd) · [Ver el diseño pedagógico →](pedagogia.qmd)
