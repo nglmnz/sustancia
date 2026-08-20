@@ -5,21 +5,14 @@ on:
 
 name: Render and Publish
 
-permissions:
-  contents: read
-  pages: write
-  id-token: write
-
-concurrency:
-  group: pages
-  cancel-in-progress: false
-
 jobs:
   build-deploy:
     runs-on: ubuntu-latest
-    environment:
-      name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
+    permissions:
+      contents: write
+      pages: write
+      id-token: write
+
     steps:
       - name: Check out repository
         uses: actions/checkout@v4
@@ -27,7 +20,12 @@ jobs:
       - name: Set up Quarto
         uses: quarto-dev/quarto-actions/setup@v2
 
-      - name: Render and Publish
-        uses: quarto-dev/quarto-actions/publish@v2
+      - name: Render site
+        run: quarto render
+
+      - name: Deploy to gh-pages
+        uses: peaceiris/actions-gh-pages@v4
         with:
-          target: gh-pages
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./_site
+          publish_branch: gh-pages
