@@ -618,11 +618,11 @@ a:focus-visible, button:focus-visible {
 .marco-layout {
   display: flex;
   align-items: center;
-  gap: 2rem;
+  gap: 2.5rem;
   margin: 2rem 0;
 
   @media (max-width: 768px) {
-    flex-direction: column; /* En celulares pasa a una sola columna para que no se apriete */
+    flex-direction: column; 
   }
 }
 
@@ -631,14 +631,14 @@ a:focus-visible, button:focus-visible {
 }
 
 .marco-video {
-  flex: 0 0 280px; /* Ancho fijo y compacto para que el video no domine todo */
+  flex: 0 0 350px; /* Espacio reservado un poco más ancho */
   display: flex;
   justify-content: center;
 }
 
 .video-chico {
   width: 100%;
-  max-width: 260px; /* Tamaño chico, a la par del texto */
+  max-width: 340px; /* Video un poco más grande como pediste */
   border-radius: 8px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12);
 }
