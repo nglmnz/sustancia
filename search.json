@@ -51,42 +51,28 @@
   {
     "objectID": "index.html",
     "href": "index.html",
-    "title": "Leer una tabla no es interpretarla.",
+    "title": "Sustancia",
     "section": "",
-    "text": "Sustancia · nombre provisorio · proyecto en desarrollo\n\n\n\n\nSustancia es un juego web para aprender a interpretar resultados estadísticos en contexto: sociología, psicología, política pública, salud. El jugador no elige alternativas — escribe su interpretación, y un evaluador con rúbricas explícitas le dice qué tan profundo llegó y qué le faltó."
-  },
-  {
-    "objectID": "index.html#mira-la-diferencia",
-    "href": "index.html#mira-la-diferencia",
-    "title": "Leer una tabla no es interpretarla.",
-    "section": "Mira la diferencia",
-    "text": "Mira la diferencia\nAmbas respuestas describen la misma tabla de un estudio real sobre tecnología y salud mental en estudiantes de primer año. Solo una de ellas dice algo sobre el mundo.\n\n\nModelo de regresión: deterioro de salud mental (fragmento ilustrativo)\n\n\n\n\nPredictor\n\n\nβ\n\n\np\n\n\n\n\n\n\nUso compulsivo (IDA)\n\n\n.38\n\n\n&lt; .001\n\n\n\n\nGénero (mujer)\n\n\n.24\n\n\n.002\n\n\n\n\nTiempo de pantalla\n\n\n.05\n\n\n.41\n\n\n\n\n\n\nNIVEL 1 · LECTURA TÉCNICA\n\n“El uso compulsivo y el género son significativos (p &lt; .05). El tiempo de pantalla no es significativo.”\n\n\n✓ Correcto. Pero todavía no dijiste nada sobre el mundo. 1 punto.\n\n\n\nNIVEL 3 · INTERPRETACIÓN SUSTANTIVA\n\n“El deterioro no se asocia a cuánto tiempo se usa la pantalla, sino a cómo se usa: es el modo compulsivo, no la exposición, lo que importa. Una política centrada en limitar horas apuntaría al blanco equivocado.”\n\n\n✓ Interpretación con sustancia: conecta el hallazgo — incluido el nulo — con el fenómeno y sus implicancias. 4 puntos."
-  },
-  {
-    "objectID": "index.html#cuatro-niveles-de-profundidad",
-    "href": "index.html#cuatro-niveles-de-profundidad",
-    "title": "Leer una tabla no es interpretarla.",
-    "section": "Cuatro niveles de profundidad",
-    "text": "Cuatro niveles de profundidad\nLa progresión del juego operacionaliza una escalera validada por la investigación en educación estadística (Curcio; Shaughnessy; Garfield y Ben-Zvi): comprender un resultado no es un acto binario sino una profundización por capas. Haz clic en cada nivel para expandirlo.\n\n\n  \n    N1\n    \n      Lectura técnica\n      Decodificar el output correctamente: valores, significancia, escalas. Necesario, pero es el piso, no el techo.\n      \n        Ejemplos de errores en este nivel: confundir el valor p con la probabilidad de que la hipótesis sea verdadera,\n        leer un coeficiente negativo como \"no hay efecto\", ignorar los intervalos de confianza.\n        El juego asigna 1 punto a las respuestas que solo alcanzan este nivel.\n      \n    \n  \n\n  \n    N2\n    \n      Interpretación estadística\n      Traducir a lenguaje de relación: dirección, magnitud, comparación, condicionalidad (\"controlando por…\").\n      \n        En este nivel el jugador ya no solo lee números: los compara entre sí, habla de magnitudes relativas\n        y usa el vocabulario correcto de la técnica. \"Controlando por género, el uso compulsivo predice…\"\n        es una oración de nivel 2. El juego asigna 2 puntos.\n      \n    \n  \n\n  \n    N3\n    \n      Interpretación sustantiva\n      Conectar el resultado con el fenómeno: ¿qué significa esto para el problema de investigación, la teoría, la intervención?\n      \n        La marca distintiva del nivel 3 es la inferencia hacia el mundo: el resultado deja de ser un número\n        y se convierte en un argumento sobre la realidad. Los hallazgos nulos son especialmente formativos aquí:\n        \"el tiempo de pantalla no predice\" es tan informativo como lo que sí predice. El juego asigna 3–4 puntos.\n      \n    \n  \n\n  \n    N4\n    \n      Interpretación crítica-reflexiva\n      Reconstruir la cadena de decisiones que produjo el resultado: supuestos, límites del diseño, explicaciones alternativas.\n      \n        Este nivel sigue a Simondon: la relación no alienada con un objeto técnico consiste en comprender\n        su funcionamiento interno. El jugador en N4 pregunta: ¿por qué esta técnica? ¿Qué supuestos carga?\n        ¿Qué alternativa de análisis habría dado un resultado distinto? ¿Qué no permite afirmar este diseño?\n        El juego asigna 5 puntos — el máximo de la rúbrica."
+    "text": "**Sustancia** es un juego web para aprender a interpretar resultados\nestadísticos en contexto: sociología, psicología, política pública, salud.\nEl jugador no elige alternativas — escribe su interpretación, y un evaluador\ncon rúbricas explícitas le dice qué tan profundo llegó y qué le faltó."
   },
   {
     "objectID": "index.html#cómo-funciona",
     "href": "index.html#cómo-funciona",
-    "title": "Leer una tabla no es interpretarla.",
+    "title": "Sustancia",
     "section": "Cómo funciona",
     "text": "Cómo funciona\n\n  \n    ✍️\n    \n      1 · Elige contexto\n      El jugador selecciona disciplina y temática. El mismo esqueleto estadístico se presenta con datos y narrativas distintas.\n    \n    activo\n  \n  \n    💬\n    \n      2 · Interpreta en texto libre\n      Frente a un output real — tabla de regresión, perfiles de cluster, distribución — el jugador escribe su interpretación. No hay alternativas.\n    \n    activo\n  \n  \n    📊\n    \n      3 · Recibe evaluación formativa\n      Un modelo de lenguaje con rúbricas explícitas determina el nivel alcanzado, detecta errores y retroalimenta con el corpus metodológico del proyecto.\n    \n    activo\n  \n  \n    🗂️\n    \n      4 · Los errores se coleccionan\n      Cometer un error resta puntos pero desbloquea su ficha: causalidad espuria, reificación de tipologías, artefactos de composición. La colección completa es un logro.\n    \n    activo"
   },
   {
     "objectID": "index.html#marco",
     "href": "index.html#marco",
-    "title": "Leer una tabla no es interpretarla.",
+    "title": "Sustancia",
     "section": "Marco",
     "text": "Marco\n\nLa apuesta epistemológica sigue a Gilbert Simondon: el objetivo no es operar la técnica estadística como caja negra, sino comprender su funcionamiento interno — qué decide el investigador, qué transforma el algoritmo, qué supuestos carga el modelo. Esa comprensión es una relación no alienada con el instrumento.\n\nEl corpus inicial del juego proviene de una investigación empírica real sobre habitus tecnológico y salud mental en estudiantes universitarios de primer año (n = 276), lo que permite que cada ítem tenga contexto, decisiones metodológicas documentadas y hallazgos genuinos — incluidos los nulos, que suelen ser los más formativos de interpretar."
   },
   {
     "objectID": "index.html#estado-del-proyecto",
     "href": "index.html#estado-del-proyecto",
-    "title": "Leer una tabla no es interpretarla.",
+    "title": "Sustancia",
     "section": "Estado del proyecto",
     "text": "Estado del proyecto\n\n  \n    ✅\n    \n      Diseño pedagógico\n      Niveles, taxonomía de errores, rúbricas, ítems piloto\n    \n    Completo v0.1\n  \n  \n    🔨\n    \n      Prototipo Shiny\n      App funcional con evaluador vía API\n    \n    En desarrollo\n  \n  \n    ⏳\n    \n      Piloto\n      Prueba con estudiantes; calibración del evaluador\n    \n    Próximo\n  \n  \n    📋\n    \n      Expansión\n      15 ítems, contextos alternativos, corpus ampliado\n    \n    Planificado\n  \n\n\n\nLeer la fundamentación completa → · Ver el diseño pedagógico →"
   },
