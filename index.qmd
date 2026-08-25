@@ -200,6 +200,13 @@ objetivo no es operar la técnica estadística como caja negra, sino comprender 
 funcionamiento interno — qué decide el investigador, qué transforma el algoritmo,
 qué supuestos carga el modelo. Esa comprensión es una relación no alienada con
 el instrumento.</div>
+```{=html}
+<div class="video-marco-container">
+  <video autoplay loop muted playsinline class="video-loop">
+    <source src="maya.mp4" type="video/mp4">
+    Tu navegador no soporta la reproducción de videos.
+  </video>
+</div>
 
 El corpus inicial del juego proviene de una investigación empírica real sobre
 habitus tecnológico y salud mental en estudiantes universitarios de primer año
