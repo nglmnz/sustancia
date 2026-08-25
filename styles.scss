@@ -613,3 +613,18 @@ a:focus-visible, button:focus-visible {
   opacity: 0;
   pointer-events: none; 
 }
+
+```scss
+/* --- ESTILOS PARA EL VIDEO EN LA SECCIÓN MARCO --- */
+.video-marco-container {
+  display: flex;
+  justify-content: center;
+  margin: 2rem 0; /* Espacio arriba y abajo del video */
+}
+
+.video-loop {
+  width: 100%;
+  max-width: 650px; /* Tamaño máximo para que no se vea desproporcionado en pantallas grandes */
+  border-radius: 8px; /* Bordes levemente redondeados para que se vea pro */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15); /* Una sutil sombra */
+}
