@@ -2,7 +2,32 @@
 title: ""
 pagetitle: "Sustancia — aprender a interpretar estadística"
 ---
+```{=html}
+<!-- Contenedor del video -->
+<div id="intro-splash">
+  <video id="intro-video" autoplay muted playsinline>
+    <source src="video_entrada.mp4" type="video/mp4">
+  </video>
+</div>
 
+<!-- Script que oculta el video al terminar -->
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+    const splash = document.getElementById('intro-splash');
+    const video = document.getElementById('intro-video');
+
+    if(video && splash) {
+      video.addEventListener('ended', function() {
+        splash.classList.add('oculto');
+        
+        // Quita el elemento después de la transición para limpiar la página
+        setTimeout(() => {
+          splash.style.display = 'none';
+        }, 1000); 
+      });
+    }
+  });
+</script>
 ::: {.hero}
 <div class="eyebrow">Sustancia · nombre provisorio · proyecto en desarrollo</div>
 
