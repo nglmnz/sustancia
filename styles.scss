@@ -614,17 +614,31 @@ a:focus-visible, button:focus-visible {
   pointer-events: none; 
 }
 
-```scss
-/* --- ESTILOS PARA EL VIDEO EN LA SECCIÓN MARCO --- */
-.video-marco-container {
+/* --- DISEÑO DE DOS COLUMNAS PARA MARCO --- */
+.marco-layout {
   display: flex;
-  justify-content: center;
-  margin: 2rem 0; /* Espacio arriba y abajo del video */
+  align-items: center;
+  gap: 2rem;
+  margin: 2rem 0;
+
+  @media (max-width: 768px) {
+    flex-direction: column; /* En celulares pasa a una sola columna para que no se apriete */
+  }
 }
 
-.video-loop {
+.marco-texto {
+  flex: 1;
+}
+
+.marco-video {
+  flex: 0 0 280px; /* Ancho fijo y compacto para que el video no domine todo */
+  display: flex;
+  justify-content: center;
+}
+
+.video-chico {
   width: 100%;
-  max-width: 650px; /* Tamaño máximo para que no se vea desproporcionado en pantallas grandes */
-  border-radius: 8px; /* Bordes levemente redondeados para que se vea pro */
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15); /* Una sutil sombra */
+  max-width: 260px; /* Tamaño chico, a la par del texto */
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
