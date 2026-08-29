@@ -710,3 +710,36 @@ body {
 .navbar-nav, .navbar-container {
   align-items: center !important;
 }
+/* Estilos limpios para el logo sin recuadros ni brillos raros */
+.navbar-brand {
+  background: transparent !important;
+  box-shadow: none !important;
+  border: none !important;
+  padding: 0 !important;
+  margin-right: 1.5rem !important;
+  display: flex !important;
+  align-items: center !important;
+  
+  /* Quitar el fondo gris/azul que aparece al pasar el mouse (:hover) o estar activo */
+  &:hover, &:focus, &.active {
+    background: transparent !important;
+    background-color: transparent !important;
+    opacity: 0.9; /* Le da un efecto sutil de click bajando un pelín la opacidad */
+  }
+}
+
+/* Tamaño real del logo */
+.navbar-brand .navbar-logo {
+  max-height: 65px !important; /* Lo subimos un poco más para que luzca el arte precolombino */
+  height: 65px !important;
+  width: auto !important;
+}
+
+/* Centrar verticalmente el resto de las pestañas del menú */
+.navbar-nav {
+  align-items: center !important;
+}
+.navbar {
+  padding-top: 0.5rem !important;
+  padding-bottom: 0.5rem !important;
+}
