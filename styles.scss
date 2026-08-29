@@ -765,43 +765,47 @@ body {
 
 
 // ---------------------------------------------------------------
-// EFECTO VIDRIO ESMERILADO GLOBAL (GLASSMORPHISM)
+// EFECTO VIDRIO ESMERILADO GLOBAL CORREGIDO (¡AHORA SÍ!)
 // ---------------------------------------------------------------
 
-/* 1. Configuración del fondo transparente en el body general */
+/* 1. Asegurar que el fondo original de la web se mantenga visible y fijo */
 body {
-  background-color: transparent !important;
+  background-image: url('assets/fondo_web.png') !important;
+  background-size: cover !important;
+  background-repeat: no-repeat !important;
+  background-position: center center !important;
+  background-attachment: fixed !important;
+  background-color: $paper !important; /* Si la imagen falla, cae a este color */
 }
 
-/* 2. Forzar a Quarto a soltar los fondos sólidos que bloquean la transparencia */
+/* 2. Volver completamente transparentes las capas intermedias de Quarto que tapan el fondo */
 #quarto-content, 
-.page-columns, 
-.site-url,
-body.nav-fixed {
+#quarto-content > * {
   background: transparent !important;
   background-color: transparent !important;
-  background-image: none !important;
 }
 
-/* 3. El contenedor de lectura translúcido con desenfoque real */
-main.content,
+/* 3. Crear una sola tarjeta esmerilada unificada para todo el contenido principal */
+#quarto-document-content {
+  background: rgba(247, 247, 242, 0.78) !important; /* Color crema $paper al 78% */
+  backdrop-filter: blur(14px) !important;            /* El desenfoque real para el fondo */
+  -webkit-backdrop-filter: blur(14px) !important;    /* Compatibilidad con Safari */
+  
+  // Estilos de la tarjeta
+  padding: 3rem !important;
+  border-radius: 14px !important;
+  border: 1px solid rgba(216, 216, 207, 0.6) !important; /* Borde sutil usando tu variable $line */
+  box-shadow: 0 12px 40px rgba(20, 22, 26, 0.06) !important;
+  margin-top: 2.5rem !important;
+  margin-bottom: 3rem !important;
+}
+
+/* 4. Limpiar los bloques de títulos nativos de Quarto para que se fusionen dentro de la tarjeta */
 .quarto-title-block {
-  background: rgba(247, 247, 242, 0.75) !important; /* Color crema $paper a 75% de opacidad */
-  backdrop-filter: blur(14px) !important;            /* Desenfoque del patrón precolombino trasero */
-  -webkit-backdrop-filter: blur(14px) !important;    /* Soporte iOS/Safari */
-  border-radius: 12px !important;
-  border: 1px solid rgba(216, 216, 207, 0.5) !important; /* Borde sutil */
-  box-shadow: 0 8px 32px rgba(20, 22, 26, 0.04) !important;
-}
-
-/* Espaciados internos para que respire el texto */
-main.content {
-  padding: 2.5rem !important;
-  margin-top: 1rem !important;
+  background: transparent !important;
+  padding: 0 !important;
+  margin-top: 0 !important;
   margin-bottom: 2rem !important;
-}
-
-.quarto-title-block {
-  padding: 2rem 2.5rem 0.5rem 2.5rem !important;
-  margin-top: 2rem !important;
+  border: none !important;
+  box-shadow: none !important;
 }
