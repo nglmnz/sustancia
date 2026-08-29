@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Sustancia — aprender a interpretar estadística – Sustancia</title>
+<title>Sustancia</title>
 <style>
 /* Default styles provided by pandoc.
 ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
@@ -129,101 +129,132 @@ ul.task-list li input[type="checkbox"] {
 
 
 
-<!-- Contenedor del video -->
+<!-- Contenedor del video (Splash Screen) -->
 <div id="intro-splash">
-  <video id="intro-video" autoplay="" muted="" playsinline="">
-    <source src="video_entrada.mp4" type="video/mp4">
-  </video>
+<p><video id="intro-video" autoplay="" muted="" playsinline=""> <source src="video_entrada.mp4" type="video/mp4"> </video> <!-- BOTÓN PARA SALTAR LA INTRODUCCIÓN --> <button id="btn-saltar-intro">Saltar Introducción →</button></p>
 </div>
-
-<!-- Script que oculta el video al terminar -->
+<!-- Script que maneja el temporizador y el cierre del video -->
 <script>
   document.addEventListener('DOMContentLoaded', function() {
     const splash = document.getElementById('intro-splash');
     const video = document.getElementById('intro-video');
+    const btnSaltar = document.getElementById('btn-saltar-intro');
 
-    if(video && splash) {
-      video.addEventListener('ended', function() {
-        splash.classList.add('oculto');
-        
-        // Quita el elemento después de la transición para limpiar la página
-        setTimeout(() => {
-          splash.style.display = 'none';
-        }, 1000); 
-      });
+    // Función única para cerrar la intro de forma limpia
+    function finalizarIntro() {
+      splash.classList.add('oculto');
+      if (video) video.pause();
+      
+      // Quita el elemento después de la transición de CSS (1 segundo)
+      setTimeout(() => {
+        splash.style.display = 'none';
+        splash.remove(); // Limpia el DOM por completo
+      }, 1000); 
+    }
+
+    // 1. Mostrar el botón automáticamente al pasar los 4 segundos (4000ms)
+    setTimeout(() => {
+      if (btnSaltar) {
+        btnSaltar.classList.add('activo');
+      }
+    }, 4000);
+
+    // 2. Si clickean el botón, se acaba la intro al tiro
+    if (btnSaltar) {
+      btnSaltar.addEventListener('click', finalizarIntro);
+    }
+
+    // 3. Si el video termina solo antes, se cierra de forma automática
+    if (video) {
+      video.addEventListener('ended', finalizarIntro);
     }
   });
 </script>
-
-::: {.hero}
-<div class="eyebrow">Sustancia  · proyecto en desarrollo</div>
-
-# Leer una tabla no es interpretarla.
-
-<p class="hero-sub">**Sustancia** es un juego web para aprender a interpretar resultados
-estadísticos en contexto: sociología, psicología, política pública, salud.
-El jugador no elige alternativas — escribe su interpretación, y un evaluador
-con rúbricas explícitas le dice qué tan profundo llegó y qué le faltó.</p>
-::: ## Mira la diferencia {.seccion}
-
-Ambas respuestas describen la misma tabla de un estudio real sobre tecnología y
-salud mental en estudiantes de primer año. Solo una de ellas dice algo sobre el mundo.
-
-
-<table class="demo-tabla caption-top table">
-<caption>Modelo de regresión: deterioro de salud mental (fragmento ilustrativo)</caption>
+<div class="hero">
+<div class="eyebrow">
+Sustancia · proyecto en desarrollo
+</div>
+<section id="leer-una-tabla-no-es-interpretarla." class="level1">
+<h1>Leer una tabla no es interpretarla.</h1>
+<p class="hero-sub">
+<strong>Sustancia</strong> es un juego web para aprender a interpretar resultados estadísticos en contexto: sociología, psicología, política pública, salud. El jugador no elige alternativas — escribe su interpretación, y un evaluador con rúbricas explícitas le dice qué tan profundo llegó y qué le faltó.
+</p>
+<p>::: ## Mira la diferencia {.seccion}</p>
+<p>Ambas respuestas describen la misma tabla de un estudio real sobre tecnología y salud mental en estudiantes de primer año. Solo una de ellas dice algo sobre el mundo.</p>
+<table class="demo-tabla">
+<caption>
+Modelo de regresión: deterioro de salud mental (fragmento ilustrativo)
+</caption>
 <thead>
-<tr class="header">
-<th data-quarto-table-cell-role="th">Predictor</th>
-<th data-quarto-table-cell-role="th">β</th>
-<th data-quarto-table-cell-role="th">p</th>
+<tr>
+<th>
+Predictor
+</th>
+<th>
+β
+</th>
+<th>
+p
+</th>
 </tr>
 </thead>
 <tbody>
-<tr class="odd">
-<td>Uso compulsivo (IDA)</td>
-<td>.38</td>
-<td>&lt; .001</td>
+<tr>
+<td>
+Uso compulsivo (IDA)
+</td>
+<td>
+.38
+</td>
+<td>
+&lt; .001
+</td>
 </tr>
-<tr class="even">
-<td>Género (mujer)</td>
-<td>.24</td>
-<td>.002</td>
+<tr>
+<td>
+Género (mujer)
+</td>
+<td>
+.24
+</td>
+<td>
+.002
+</td>
 </tr>
-<tr class="fila-ns odd">
-<td>Tiempo de pantalla</td>
-<td>.05</td>
-<td>.41</td>
+<tr class="fila-ns">
+<td>
+Tiempo de pantalla
+</td>
+<td>
+.05
+</td>
+<td>
+.41
+</td>
 </tr>
 </tbody>
 </table>
-
-
-::: {.comparacion}
+<div class="comparacion">
 <div class="carta carta-n1">
 <span class="nivel-tag">NIVEL 1 · LECTURA TÉCNICA</span>
-<p>"El uso compulsivo y el género son significativos (p&nbsp;&lt;&nbsp;.05).
-El tiempo de pantalla no es significativo."</p>
-<div class="veredicto">✓ Correcto. Pero todavía no dijiste nada sobre el mundo.
-<strong>1 punto.</strong></div>
+<p>
+“El uso compulsivo y el género son significativos (p&nbsp;&lt;&nbsp;.05). El tiempo de pantalla no es significativo.”
+</p>
+<div class="veredicto">
+✓ Correcto. Pero todavía no dijiste nada sobre el mundo. <strong>1 punto.</strong>
 </div>
-
+</div>
 <div class="carta carta-n3">
 <span class="nivel-tag">NIVEL 3 · INTERPRETACIÓN SUSTANTIVA</span>
-<p>"El deterioro no se asocia a <em>cuánto</em> tiempo se usa la pantalla,
-sino a <em>cómo</em> se usa: es el modo compulsivo, no la exposición, lo que
-importa. Una política centrada en limitar horas apuntaría al blanco equivocado."</p>
-<div class="veredicto">✓ Interpretación con sustancia: conecta el hallazgo — incluido
-el nulo — con el fenómeno y sus implicancias. <strong>4 puntos.</strong></div>
+<p>
+“El deterioro no se asocia a <em>cuánto</em> tiempo se usa la pantalla, sino a <em>cómo</em> se usa: es el modo compulsivo, no la exposición, lo que importa. Una política centrada en limitar horas apuntaría al blanco equivocado.”
+</p>
+<div class="veredicto">
+✓ Interpretación con sustancia: conecta el hallazgo — incluido el nulo — con el fenómeno y sus implicancias. <strong>4 puntos.</strong>
 </div>
-::: ## Cuatro niveles de profundidad {.seccion}
-
-La progresión del juego operacionaliza una escalera validada por la investigación
-en educación estadística (Curcio; Shaughnessy; Garfield y Ben-Zvi): comprender un
-resultado no es un acto binario sino una profundización por capas.
-Haz clic en cada nivel para expandirlo.
-
-```{=html}
+</div>
+<p>::: ## Cuatro niveles de profundidad {.seccion}</p>
+<p>La progresión del juego operacionaliza una escalera validada por la investigación en educación estadística (Curcio; Shaughnessy; Garfield y Ben-Zvi): comprender un resultado no es un acto binario sino una profundización por capas. Haz clic en cada nivel para expandirlo.</p>
 <div class="escalera" id="escalera-niveles">
 
   <div class="peldano peldano-1" tabindex="0" role="button" aria-expanded="false">
@@ -420,6 +451,9 @@ formativos de interpretar.
 
 
 </section>
+</div>
+</section>
+</div>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">

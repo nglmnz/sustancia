@@ -51,21 +51,21 @@
   {
     "objectID": "index.html",
     "href": "index.html",
-    "title": "Sustancia",
+    "title": "Leer una tabla no es interpretarla.",
     "section": "",
-    "text": "**Sustancia** es un juego web para aprender a interpretar resultados\nestadísticos en contexto: sociología, psicología, política pública, salud.\nEl jugador no elige alternativas — escribe su interpretación, y un evaluador\ncon rúbricas explícitas le dice qué tan profundo llegó y qué le faltó."
+    "text": "Saltar Introducción →"
   },
   {
     "objectID": "index.html#cómo-funciona",
     "href": "index.html#cómo-funciona",
-    "title": "Sustancia",
+    "title": "Leer una tabla no es interpretarla.",
     "section": "Cómo funciona",
     "text": "Cómo funciona\n\n  \n    ✍️\n    \n      1 · Elige contexto\n      El jugador selecciona disciplina y temática. El mismo esqueleto estadístico se presenta con datos y narrativas distintas.\n    \n    activo\n  \n  \n    💬\n    \n      2 · Interpreta en texto libre\n      Frente a un output real — tabla de regresión, perfiles de cluster, distribución — el jugador escribe su interpretación. No hay alternativas.\n    \n    activo\n  \n  \n    📊\n    \n      3 · Recibe evaluación formativa\n      Un modelo de lenguaje con rúbricas explícitas determina el nivel alcanzado, detecta errores y retroalimenta con el corpus metodológico del proyecto.\n    \n    activo\n  \n  \n    🗂️\n    \n      4 · Los errores se coleccionan\n      Cometer un error resta puntos pero desbloquea su ficha: causalidad espuria, reificación de tipologías, artefactos de composición. La colección completa es un logro.\n    \n    activo"
   },
   {
     "objectID": "index.html#marco",
     "href": "index.html#marco",
-    "title": "Sustancia",
+    "title": "Leer una tabla no es interpretarla.",
     "section": "Marco",
     "text": "Marco\n\n  \n    La apuesta epistemológica sigue a Gilbert Simondon: el\n    objetivo no es operar la técnica estadística como caja negra, sino comprender su\n    funcionamiento interno — qué decide el investigador, qué transforma el algoritmo,\n    qué supuestos carga el modelo. Esa comprensión es una relación no alienada con\n    el instrumento.\n  \n  \n  \n    \n      \n      Tu navegador no soporta videos.\n    \n  \n\n\nEl corpus inicial del juego proviene de una investigación empírica real sobre\nhabitus tecnológico y salud mental en estudiantes universitarios de primer año\n(n = 276), lo que permite que cada ítem tenga contexto, decisiones metodológicas\ndocumentadas y hallazgos genuinos — incluidos los nulos, que suelen ser los más\nformativos de interpretar.\n\n## Estado del proyecto {.seccion}\n\n```{=html}\n\n  \n    ✅\n    \n      Diseño pedagógico\n      Niveles, taxonomía de errores, rúbricas, ítems piloto\n    \n    Completo v0.1\n  \n  \n    🔨\n    \n      Prototipo Shiny\n      App funcional con evaluador vía API\n    \n    En desarrollo\n  \n  \n    ⏳\n    \n      Piloto\n      Prueba con estudiantes; calibración del evaluador\n    \n    Próximo\n  \n  \n    📋\n    \n      Expansión\n      15 ítems, contextos alternativos, corpus ampliado\n    \n    Planificado\n  \n\n\n\nLeer la fundamentación completa → · Ver el diseño pedagógico →"
   },
