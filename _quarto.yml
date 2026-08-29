@@ -8,6 +8,9 @@ website:
   navbar:
     background: "#16265F"
     foreground: "#F7F7F2"
+    logo: assets/logo-sustancia.png     # <-- Agregamos el logo
+    logo-alt: "Sustancia - Inicio"      # <-- Texto alternativo
+    logo-href: index.qmd                # <-- Destino al hacer clic
     left:
       - href: index.qmd
         text: Inicio
