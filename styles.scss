@@ -695,3 +695,18 @@ body {
   padding-top: 0.8rem;
   padding-bottom: 0.8rem;
 }
+/* Ocultar el texto del título al lado del logo */
+.navbar-brand .navbar-title {
+  display: none !important;
+}
+/* Agrandar el logo y darle aire */
+.navbar-brand .navbar-logo {
+  max-height: 55px !important; /* Lo subimos a 55px para que se note el diseño */
+  height: 55px !important;
+  width: auto;
+}
+
+/* Alinear los links para que queden centrados con el logo nuevo */
+.navbar-nav, .navbar-container {
+  align-items: center !important;
+}
