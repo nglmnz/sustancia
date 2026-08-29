@@ -700,3 +700,54 @@ body {
   padding-top: 0.6rem !important;
   padding-bottom: 0.6rem !important;
 }
+// ---------------------------------------------------------------
+// MEJORAS DE LECTURABILIDAD (FONDO Y CONTENEDORES)
+// ---------------------------------------------------------------
+
+/* 1. Suavizar el fondo general reduciendo su opacidad */
+body {
+  position: relative;
+  
+  &::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('assets/fondo_web.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+    opacity: 0.35; /* Ajusta este valor (ej: 0.25 para menos presencia, 0.45 para más) */
+    z-index: -2; /* Se mantiene al fondo de todo */
+  }
+}
+
+/* 2. Capa base de fondo plano para Quarto (evita interferencias) */
+body.nav-fixed {
+  background-color: #F7F7F2 !important; /* Forzamos color base $paper */
+  background-image: none !important;    /* Quitamos el fondo antiguo directo en el body */
+}
+
+/* 3. Contenedor de lectura tipo "vidrio esmerilado" (Glassmorphism) */
+#quarto-document-content, 
+.page-columns .quarto-title-block,
+main.content {
+  background: rgba(247, 247, 242, 0.82) !important; /* Color $paper con 82% de opacidad */
+  backdrop-filter: blur(12px) !important;            /* Efecto de desenfoque al fondo */
+  -webkit-backdrop-filter: blur(12px) !important;    /* Soporte para Safari */
+  padding: 2.5rem !important;                        /* Aire interno para alejar el texto de los bordes */
+  border-radius: 12px !important;                    /* Bordes suaves */
+  border: 1px solid rgba(216, 216, 207, 0.6) !important; /* Borde sutil usando $line */
+  box-shadow: 0 8px 32px rgba(20, 22, 26, 0.05) !important; /* Sombra sutil para despegarlo del fondo */
+  margin-top: 2rem !important;
+  margin-bottom: 2rem !important;
+}
+
+/* Ajuste fino para que los títulos principales no se desalineen */
+.quarto-title-block {
+  padding: 1.5rem 2.5rem 0rem 2.5rem !important;
+  margin-top: 2rem !important;
+}
