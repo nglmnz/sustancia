@@ -3,7 +3,7 @@ project:
   output-dir: _site
 
 website:
-  title: "Sustancia"
+  title: false # <-- ESTA LÍNEA OCULTA EL TEXTO AL LADO DEL LOGO 🤘
   description: "Un juego para aprender a interpretar resultados estadísticos"
   navbar:
     background: "#16265F"
