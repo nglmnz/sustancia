@@ -650,96 +650,53 @@ body {
     background-attachment: fixed; /* Mantiene el fondo quieto al hacer scroll */
     min-height: 100vh;
 }
-/* 1. Estado normal del logo */
-.navbar-brand img {
-  height: 45px; /* Ajusta este valor si necesitas que sea más alto o bajo */
-  transition: 
-    filter 0.2s ease,
-    transform 0.2s ease;
-}
+/* --- NAVBAR: AJUSTES FINALES PARA EL LOGO Y MENÚ --- */
 
-/* 2. Estado HOVER (Mouse encima): Crece y activa la animación */
-.navbar-brand:hover img {
-  transform: scale(1.03);
-  animation: sustancia-glow 1s infinite alternate;
-}
-
-/* 3. La animación de pulso retro */
-@keyframes sustancia-glow {
-  from {
-    filter:
-      drop-shadow(0 0 3px #6ee7ff)
-      drop-shadow(0 0 7px #1597ff);
-  }
-  to {
-    filter:
-      drop-shadow(0 0 6px #6ee7ff)
-      drop-shadow(0 0 14px #1597ff)
-      drop-shadow(0 0 22px #0066ff);
-  }
-}
-
-/* Agrandar el logo de la barra de navegación */
-.navbar-brand .navbar-logo {
-  max-height: 45px; /* Ajusta este número (ej. 50px, 60px) hasta que te tinque */
-  height: auto;
-  width: auto;
-}
-
-/* Centrar verticalmente los links del menú si el logo es muy alto */
-.navbar-nav {
-  align-items: center;
-}
-/* Darle más altura y espacio a la navbar */
-.navbar {
-  padding-top: 0.8rem;
-  padding-bottom: 0.8rem;
-}
-/* Ocultar el texto del título al lado del logo */
+/* 1. Saca por completo el texto "Sustancia" repetido al lado del logo */
 .navbar-brand .navbar-title {
   display: none !important;
 }
-/* Agrandar el logo y darle aire */
-.navbar-brand .navbar-logo {
-  max-height: 55px !important; /* Lo subimos a 55px para que se note el diseño */
-  height: 55px !important;
-  width: auto;
-}
 
-/* Alinear los links para que queden centrados con el logo nuevo */
-.navbar-nav, .navbar-container {
-  align-items: center !important;
-}
-/* Estilos limpios para el logo sin recuadros ni brillos raros */
+/* 2. Limpia el contenedor del logo: elimina fondos, brillos nativos y recuadros feos */
 .navbar-brand {
   background: transparent !important;
+  background-color: transparent !important;
   box-shadow: none !important;
   border: none !important;
   padding: 0 !important;
-  margin-right: 1.5rem !important;
+  margin-right: 2rem !important;
   display: flex !important;
   align-items: center !important;
-  
-  /* Quitar el fondo gris/azul que aparece al pasar el mouse (:hover) o estar activo */
-  &:hover, &:focus, &.active {
+  filter: none !important; 
+
+  /* Controla el mouse encima: le damos un feedback limpio sin deformar ni destellar */
+  &:hover, &:focus, &:active, &.active {
     background: transparent !important;
     background-color: transparent !important;
-    opacity: 0.9; /* Le da un efecto sutil de click bajando un pelín la opacidad */
+    box-shadow: none !important;
+    filter: none !important; 
+    opacity: 0.85; /* Reduce la opacidad un pelín para que se note el click de forma sutil */
+    transition: opacity 0.2s ease;
   }
 }
 
-/* Tamaño real del logo */
-.navbar-brand .navbar-logo {
-  max-height: 65px !important; /* Lo subimos un poco más para que luzca el arte precolombino */
-  height: 65px !important;
+/* 3. Dale el tamaño real y aire al logo para que luzcan el jaguar y el quetzal */
+.navbar-brand .navbar-logo,
+.navbar-brand img {
+  max-height: 60px !important; /* Mantiene una proporción excelente en la barra */
+  height: 60px !important;
   width: auto !important;
+  transform: none !important;  /* Evita que se estire o pixele con distorsiones */
+  filter: none !important;
 }
 
-/* Centrar verticalmente el resto de las pestañas del menú */
-.navbar-nav {
+/* 4. Alinea verticalmente el menú (Fundamentación, Pedagogía, etc.) con el nuevo tamaño del logo */
+.navbar-nav, .navbar-container {
   align-items: center !important;
 }
+
+/* 5. Dale un pelín más de espacio a la barra azul para que respire el logo hacia arriba y abajo */
 .navbar {
-  padding-top: 0.5rem !important;
-  padding-bottom: 0.5rem !important;
+  padding-top: 0.6rem !important;
+  padding-bottom: 0.6rem !important;
 }
