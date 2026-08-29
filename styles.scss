@@ -595,23 +595,55 @@ a:focus-visible, button:focus-visible {
   left: 0;
   width: 100vw; 
   height: 100vh; 
-  background-color: #1a1a1a; /* Fondo oscuro para que combine con el video */
-  z-index: 9999; /* Por encima de todo el contenido de Quarto */
+  background-color: #1a1a1a !important; /* Tapamos el fondo_web de manera estricta */
+  z-index: 100000 !important; /* Aumentado para pasar por encima de la navbar de Quarto */
   display: flex;
   justify-content: center;
   align-items: center;
-  transition: opacity 1s ease-out; 
+  transition: opacity 0.8s ease-out; 
 }
 
 #intro-video {
   width: 100%;
   height: 100%;
-  object-fit: cover; 
+  object-fit: cover; /* Mantiene la proporción en celulares y monitores ultra-wide sin estirar */
+}
+
+/* Botón interactivo para saltar la intro */
+#btn-saltar-intro {
+  position: absolute;
+  bottom: 2rem;
+  right: 2rem;
+  background-color: rgba(247, 247, 242, 0.15); /* Tu color $paper con transparencia */
+  color: #F7F7F2;
+  border: 1px solid rgba(247, 247, 242, 0.4);
+  padding: 0.6rem 1.2rem;
+  font-family: "IBM Plex Sans", sans-serif;
+  font-size: 0.9rem;
+  border-radius: 50px;
+  cursor: pointer;
+  z-index: 100001;
+  opacity: 0; /* Oculto al inicio */
+  transform: translateY(10px);
+  transition: opacity 0.4s ease, transform 0.4s ease, background-color 0.2s;
+  pointer-events: none; /* Inactivo hasta que se vuelva visible */
+
+  /* Clase que activará JavaScript a los 4 segundos */
+  &.activo {
+    opacity: 1;
+    transform: translateY(0);
+    pointer-events: auto;
+  }
+
+  &:hover {
+    background-color: #F7F7F2; /* Invierte a $paper sólido */
+    color: #16265F; /* Texto en tu color $minuit-deep */
+  }
 }
 
 .oculto {
-  opacity: 0;
-  pointer-events: none; 
+  opacity: 0 !important;
+  pointer-events: none !important; 
 }
 
 /* --- DISEÑO DE DOS COLUMNAS PARA MARCO --- */
@@ -787,7 +819,7 @@ body {
 
 /* 3. Crear una sola tarjeta esmerilada unificada para todo el contenido principal */
 #quarto-document-content {
-  background: rgba(247, 247, 242, 0.78) !important; /* Color crema $paper al 78% */
+  background: rgba(247, 247, 242, 0.64) !important; /* Color crema $paper al 78% */
   backdrop-filter: blur(14px) !important;            /* El desenfoque real para el fondo */
   -webkit-backdrop-filter: blur(14px) !important;    /* Compatibilidad con Safari */
   
