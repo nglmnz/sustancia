@@ -679,3 +679,19 @@ body {
   }
 }
 
+/* Agrandar el logo de la barra de navegación */
+.navbar-brand .navbar-logo {
+  max-height: 45px; /* Ajusta este número (ej. 50px, 60px) hasta que te tinque */
+  height: auto;
+  width: auto;
+}
+
+/* Centrar verticalmente los links del menú si el logo es muy alto */
+.navbar-nav {
+  align-items: center;
+}
+/* Darle más altura y espacio a la navbar */
+.navbar {
+  padding-top: 0.8rem;
+  padding-bottom: 0.8rem;
+}
