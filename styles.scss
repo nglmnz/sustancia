@@ -593,22 +593,31 @@ a:focus-visible, button:focus-visible {
   position: fixed !important; 
   top: 0 !important;
   left: 0 !important;
-  width: 100vw !important;  /* Ocupa el 100% del ancho visible */
-  height: 100vh !important; /* Ocupa el 100% del alto visible */
-  background-color: #1a1a1a !important; /* Negro absoluto para que no se trasluzca nada */
-  z-index: 999999 !important; /* Número altísimo para sepultar la navbar y el fondo */
+  right: 0 !important;  /* NUEVO: Asegura que cubra hasta el borde derecho */
+  bottom: 0 !important; /* NUEVO: Asegura que cubra hasta el borde inferior */
+  width: 100vw !important;  
+  height: 100vh !important; 
+  background-color: #1a1a1a !important; 
+  
+  // EL CAMBIO MAESTRO: Subimos la capa a 9 millones para aplastar la navbar azul
+  z-index: 9999999 !important; 
+  
   display: flex !important;
   justify-content: center !important;
   align-items: center !important;
+  margin: 0 !important;   /* NUEVO: Elimina márgenes rebeldes de Quarto */
+  padding: 0 !important;  /* NUEVO: Elimina rellenos rebeldes de Quarto */
+  overflow: hidden !important; 
   transition: opacity 0.8s ease-out;
-  overflow: hidden !important; /* Evita que aparezcan barras de scroll internas */
 }
 
-
 #intro-video {
+  position: absolute !important; /* NUEVO: Se independiza del flujo de la página */
+  top: 0 !important;
+  left: 0 !important;
   width: 100% !important;
   height: 100% !important;
-  object-fit: cover !important; /* Recorta sutilmente los bordes del video para garantizar que no queden franjas blancas o vacías a los lados */
+  object-fit: cover !important; 
 }
 
 /* Botón interactivo para saltar la intro */
@@ -616,7 +625,7 @@ a:focus-visible, button:focus-visible {
   position: absolute;
   bottom: 2rem;
   right: 2rem;
-  background-color: rgba(247, 247, 242, 0.15); /* Tu color $paper con transparencia */
+  background-color: rgba(247, 247, 242, 0.15); 
   color: #F7F7F2;
   border: 1px solid rgba(247, 247, 242, 0.4);
   padding: 0.6rem 1.2rem;
@@ -624,13 +633,15 @@ a:focus-visible, button:focus-visible {
   font-size: 0.9rem;
   border-radius: 50px;
   cursor: pointer;
-  z-index: 100001;
-  opacity: 0; /* Oculto al inicio */
+  
+  // Lo ponemos por encima del video negro
+  z-index: 10000000 !important; 
+  
+  opacity: 0; 
   transform: translateY(10px);
   transition: opacity 0.4s ease, transform 0.4s ease, background-color 0.2s;
-  pointer-events: none; /* Inactivo hasta que se vuelva visible */
+  pointer-events: none; 
 
-  /* Clase que activará JavaScript a los 4 segundos */
   &.activo {
     opacity: 1;
     transform: translateY(0);
@@ -638,8 +649,8 @@ a:focus-visible, button:focus-visible {
   }
 
   &:hover {
-    background-color: #F7F7F2; /* Invierte a $paper sólido */
-    color: #16265F; /* Texto en tu color $minuit-deep */
+    background-color: #F7F7F2; 
+    color: #16265F; 
   }
 }
 
@@ -647,6 +658,7 @@ a:focus-visible, button:focus-visible {
   opacity: 0 !important;
   pointer-events: none !important; 
 }
+
 
 /* --- DISEÑO DE DOS COLUMNAS PARA MARCO --- */
 .marco-layout {
