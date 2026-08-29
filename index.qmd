@@ -55,7 +55,8 @@
 estadísticos en contexto: sociología, psicología, política pública, salud.
 El jugador no elige alternativas — escribe su interpretación, y un evaluador
 con rúbricas explícitas le dice qué tan profundo llegó y qué le faltó.</p>
-::: ## Mira la diferencia {.seccion}
+::: 
+## Mira la diferencia {.seccion}
 
 Ambas respuestas describen la misma tabla de un estudio real sobre tecnología y
 salud mental en estudiantes de primer año. Solo una de ellas dice algo sobre el mundo.
@@ -89,7 +90,8 @@ importa. Una política centrada en limitar horas apuntaría al blanco equivocado
 <div class="veredicto">✓ Interpretación con sustancia: conecta el hallazgo — incluido
 el nulo — con el fenómeno y sus implicancias. <strong>4 puntos.</strong></div>
 </div>
-::: ## Cuatro niveles de profundidad {.seccion}
+::: 
+## Cuatro niveles de profundidad {.seccion}
 
 La progresión del juego operacionaliza una escalera validada por la investigación
 en educación estadística (Curcio; Shaughnessy; Garfield y Ben-Zvi): comprender un
