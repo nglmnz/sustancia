@@ -701,53 +701,107 @@ body {
   padding-bottom: 0.6rem !important;
 }
 // ---------------------------------------------------------------
-// MEJORAS DE LECTURABILIDAD (FONDO Y CONTENEDORES)
+// NAVBAR: LOGO E INTERACTIVIDAD DEL AS DE LUZ
 // ---------------------------------------------------------------
 
-/* 1. Suavizar el fondo general reduciendo su opacidad */
-body {
+/* Ocultar el texto del título al lado del logo */
+.navbar-brand .navbar-title {
+  display: none !important;
+}
+
+/* Limpiar contenedor de la navbar */
+.navbar-brand {
+  background: transparent !important;
+  box-shadow: none !important;
+  border: none !important;
+  padding: 0 !important;
+  margin-right: 2rem !important;
+  display: flex !important;
+  align-items: center !important;
   position: relative;
-  
-  &::before {
-    content: "";
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-image: url('assets/fondo_web.png');
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center center;
-    background-attachment: fixed;
-    opacity: 0.35; /* Ajusta este valor (ej: 0.25 para menos presencia, 0.45 para más) */
-    z-index: -2; /* Se mantiene al fondo de todo */
-  }
+  overflow: hidden; /* Contiene el as de luz dentro del logo */
 }
 
-/* 2. Capa base de fondo plano para Quarto (evita interferencias) */
+/* Tamaño del logo */
+.navbar-brand .navbar-logo,
+.navbar-brand img {
+  max-height: 60px !important;
+  height: 60px !important;
+  width: auto !important;
+}
+
+/* El As de Luz (Brillo Interactivo de Baja Latencia) */
+.navbar-brand::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -150%;
+  width: 50%;
+  height: 100%;
+  background: linear-gradient(
+    90deg, 
+    rgba(255, 255, 255, 0) 0%, 
+    rgba(255, 255, 255, 0.25) 50%, /* Luz suave y sutil */
+    rgba(255, 255, 255, 0) 100%
+  );
+  transform: skewX(-20deg);
+  transition: none;
+}
+
+/* Al pasar el mouse, el haz pasa de forma suave y pausada */
+.navbar-brand:hover::after {
+  left: 150%;
+  transition: left 1.8s ease-in-out; /* Latencia elegante y fluida */
+}
+
+.navbar-nav, .navbar-container {
+  align-items: center !important;
+}
+
+.navbar {
+  padding-top: 0.6rem !important;
+  padding-bottom: 0.6rem !important;
+}
+
+
+// ---------------------------------------------------------------
+// EFECTO VIDRIO ESMERILADO GLOBAL (GLASSMORPHISM)
+// ---------------------------------------------------------------
+
+/* 1. Configuración del fondo transparente en el body general */
+body {
+  background-color: transparent !important;
+}
+
+/* 2. Forzar a Quarto a soltar los fondos sólidos que bloquean la transparencia */
+#quarto-content, 
+.page-columns, 
+.site-url,
 body.nav-fixed {
-  background-color: #F7F7F2 !important; /* Forzamos color base $paper */
-  background-image: none !important;    /* Quitamos el fondo antiguo directo en el body */
+  background: transparent !important;
+  background-color: transparent !important;
+  background-image: none !important;
 }
 
-/* 3. Contenedor de lectura tipo "vidrio esmerilado" (Glassmorphism) */
-#quarto-document-content, 
-.page-columns .quarto-title-block,
+/* 3. El contenedor de lectura translúcido con desenfoque real */
+main.content,
+.quarto-title-block {
+  background: rgba(247, 247, 242, 0.75) !important; /* Color crema $paper a 75% de opacidad */
+  backdrop-filter: blur(14px) !important;            /* Desenfoque del patrón precolombino trasero */
+  -webkit-backdrop-filter: blur(14px) !important;    /* Soporte iOS/Safari */
+  border-radius: 12px !important;
+  border: 1px solid rgba(216, 216, 207, 0.5) !important; /* Borde sutil */
+  box-shadow: 0 8px 32px rgba(20, 22, 26, 0.04) !important;
+}
+
+/* Espaciados internos para que respire el texto */
 main.content {
-  background: rgba(247, 247, 242, 0.82) !important; /* Color $paper con 82% de opacidad */
-  backdrop-filter: blur(12px) !important;            /* Efecto de desenfoque al fondo */
-  -webkit-backdrop-filter: blur(12px) !important;    /* Soporte para Safari */
-  padding: 2.5rem !important;                        /* Aire interno para alejar el texto de los bordes */
-  border-radius: 12px !important;                    /* Bordes suaves */
-  border: 1px solid rgba(216, 216, 207, 0.6) !important; /* Borde sutil usando $line */
-  box-shadow: 0 8px 32px rgba(20, 22, 26, 0.05) !important; /* Sombra sutil para despegarlo del fondo */
-  margin-top: 2rem !important;
+  padding: 2.5rem !important;
+  margin-top: 1rem !important;
   margin-bottom: 2rem !important;
 }
 
-/* Ajuste fino para que los títulos principales no se desalineen */
 .quarto-title-block {
-  padding: 1.5rem 2.5rem 0rem 2.5rem !important;
+  padding: 2rem 2.5rem 0.5rem 2.5rem !important;
   margin-top: 2rem !important;
 }
