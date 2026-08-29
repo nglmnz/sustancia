@@ -650,4 +650,32 @@ body {
     background-attachment: fixed; /* Mantiene el fondo quieto al hacer scroll */
     min-height: 100vh;
 }
+/* 1. Estado normal del logo */
+.navbar-brand img {
+  height: 45px; /* Ajusta este valor si necesitas que sea más alto o bajo */
+  transition: 
+    filter 0.2s ease,
+    transform 0.2s ease;
+}
+
+/* 2. Estado HOVER (Mouse encima): Crece y activa la animación */
+.navbar-brand:hover img {
+  transform: scale(1.03);
+  animation: sustancia-glow 1s infinite alternate;
+}
+
+/* 3. La animación de pulso retro */
+@keyframes sustancia-glow {
+  from {
+    filter:
+      drop-shadow(0 0 3px #6ee7ff)
+      drop-shadow(0 0 7px #1597ff);
+  }
+  to {
+    filter:
+      drop-shadow(0 0 6px #6ee7ff)
+      drop-shadow(0 0 14px #1597ff)
+      drop-shadow(0 0 22px #0066ff);
+  }
+}
 
