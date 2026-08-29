@@ -3,14 +3,15 @@ project:
   output-dir: _site
 
 website:
-  title: false # <-- ESTA LÍNEA OCULTA EL TEXTO AL LADO DEL LOGO 🤘
+  title: "Sustancia" # Aquí DEBE ser un texto, no "false"
   description: "Un juego para aprender a interpretar resultados estadísticos"
+  
   navbar:
     background: "#16265F"
     foreground: "#F7F7F2"
-    logo: assets/logo-sustancia.png     # <-- Agregamos el logo
-    logo-alt: "Sustancia - Inicio"      # <-- Texto alternativo
-    logo-href: index.qmd                # <-- Destino al hacer clic
+    logo: assets/logo-sustancia.png
+    logo-alt: "Sustancia - Inicio"
+    logo-href: index.qmd
     left:
       - href: index.qmd
         text: Inicio
@@ -20,6 +21,7 @@ website:
         text: Diseño pedagógico
       - href: equipo.qmd
         text: Proyecto y equipo
+
   page-footer:
     center: "Sustancia · Proyecto de investigación interdisciplinaria · Universidad Alberto Hurtado · 2026"
     background: "#14161A"
@@ -32,5 +34,4 @@ format:
     toc: false
     smooth-scroll: true
     link-external-newwindow: true
-
-lang: es
+    lang: es
