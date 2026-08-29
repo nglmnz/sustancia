@@ -140,10 +140,16 @@ ul.task-list li input[type="checkbox"] {
     const video = document.getElementById('intro-video');
     const btnSaltar = document.getElementById('btn-saltar-intro');
 
+    // 1. CONGELAR: Bloqueamos el scroll del navegador apenas entra el usuario
+    document.body.style.overflow = 'hidden';
+
     // Función única para cerrar la intro de forma limpia
     function finalizarIntro() {
       splash.classList.add('oculto');
       if (video) video.pause();
+      
+      // 2. LIBERAR: Le devolvemos el scroll al usuario para que pueda navegar por la web
+      document.body.style.overflow = 'auto';
       
       // Quita el elemento después de la transición de CSS (1 segundo)
       setTimeout(() => {
@@ -152,19 +158,19 @@ ul.task-list li input[type="checkbox"] {
       }, 1000); 
     }
 
-    // 1. Mostrar el botón automáticamente al pasar los 4 segundos (4000ms)
+    // 3. Temporizador: Mostrar el botón automáticamente a los 4 segundos
     setTimeout(() => {
       if (btnSaltar) {
         btnSaltar.classList.add('activo');
       }
     }, 4000);
 
-    // 2. Si clickean el botón, se acaba la intro al tiro
+    // 4. Si hacen click en el botón, se acaba la intro inmediatamente
     if (btnSaltar) {
       btnSaltar.addEventListener('click', finalizarIntro);
     }
 
-    // 3. Si el video termina solo antes, se cierra de forma automática
+    // 5. Si el video termina solo por su cuenta, se cierra de forma automática
     if (video) {
       video.addEventListener('ended', finalizarIntro);
     }
