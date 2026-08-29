@@ -1,30 +1,46 @@
----
-title: ""
-pagetitle: "Sustancia — aprender a interpretar estadística"
----
-```{=html}
-<!-- Contenedor del video -->
+<!-- Contenedor del video (Splash Screen) -->
 <div id="intro-splash">
   <video id="intro-video" autoplay muted playsinline>
     <source src="video_entrada.mp4" type="video/mp4">
   </video>
+  <!-- BOTÓN PARA SALTAR LA INTRODUCCIÓN -->
+  <button id="btn-saltar-intro">Saltar Introducción →</button>
 </div>
 
-<!-- Script que oculta el video al terminar -->
+<!-- Script que maneja el temporizador y el cierre del video -->
 <script>
   document.addEventListener('DOMContentLoaded', function() {
     const splash = document.getElementById('intro-splash');
     const video = document.getElementById('intro-video');
+    const btnSaltar = document.getElementById('btn-saltar-intro');
 
-    if(video && splash) {
-      video.addEventListener('ended', function() {
-        splash.classList.add('oculto');
-        
-        // Quita el elemento después de la transición para limpiar la página
-        setTimeout(() => {
-          splash.style.display = 'none';
-        }, 1000); 
-      });
+    // Función única para cerrar la intro de forma limpia
+    function finalizarIntro() {
+      splash.classList.add('oculto');
+      if (video) video.pause();
+      
+      // Quita el elemento después de la transición de CSS (1 segundo)
+      setTimeout(() => {
+        splash.style.display = 'none';
+        splash.remove(); // Limpia el DOM por completo
+      }, 1000); 
+    }
+
+    // 1. Mostrar el botón automáticamente al pasar los 4 segundos (4000ms)
+    setTimeout(() => {
+      if (btnSaltar) {
+        btnSaltar.classList.add('activo');
+      }
+    }, 4000);
+
+    // 2. Si clickean el botón, se acaba la intro al tiro
+    if (btnSaltar) {
+      btnSaltar.addEventListener('click', finalizarIntro);
+    }
+
+    // 3. Si el video termina solo antes, se cierra de forma automática
+    if (video) {
+      video.addEventListener('ended', finalizarIntro);
     }
   });
 </script>
@@ -33,6 +49,7 @@ pagetitle: "Sustancia — aprender a interpretar estadística"
 <div class="eyebrow">Sustancia  · proyecto en desarrollo</div>
 
 # Leer una tabla no es interpretarla.
+
 
 <p class="hero-sub">**Sustancia** es un juego web para aprender a interpretar resultados
 estadísticos en contexto: sociología, psicología, política pública, salud.
