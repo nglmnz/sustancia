@@ -19,6 +19,8 @@ website:
         text: Diseño pedagógico
       - href: equipo.qmd
         text: Proyecto y equipo
+      - href: piloto.qmd
+        text: Prueba el Piloto
 
   page-footer:
     center: "Sustancia · Proyecto de investigación interdisciplinaria · Universidad Alberto Hurtado · 2026"
