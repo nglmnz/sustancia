@@ -49,39 +49,39 @@
     "text": "Referencias\n\nBourdieu, P. (1987 [1979]). Los tres estados del capital cultural. Sociológica, 2(5).\nBourdieu, P. y Wacquant, L. (2005 [1992]). Una invitación a la sociología reflexiva. Siglo XXI.\nCurcio, F. (1987). Comprehension of mathematical relationships expressed in graphs. JRME, 18(5).\nGarfield, J. y Ben-Zvi, D. (2008). Developing Students’ Statistical Reasoning. Springer.\nIgnatow, G. y Robinson, L. (2017). Pierre Bourdieu: theorizing the digital. Information, Communication & Society, 20(7).\nShaughnessy, J. M. (2007). Research on statistics learning and reasoning. En Second Handbook of Research on Mathematics Teaching and Learning.\nSimondon, G. (2007 [1958]). El modo de existencia de los objetos técnicos. Prometeo.\nZuboff, S. (2020). La era del capitalismo de la vigilancia. Paidós."
   },
   {
-    "objectID": "index.html",
-    "href": "index.html",
-    "title": "Leer una tabla no es interpretarla.",
+    "objectID": "equipo.html",
+    "href": "equipo.html",
+    "title": "Proyecto y equipo",
     "section": "",
-    "text": "Saltar Introducción →"
+    "text": "Sustancia nace de una constatación simple: los programas de formación en ciencias sociales enseñan a ejecutar técnicas estadísticas, pero la competencia que distingue a un buen investigador — y a un buen lector de investigación — es la interpretación: qué significa un resultado para el fenómeno, qué permite afirmar y qué no.\nEl proyecto se inscribe en una tradición de laboratorio interdisciplinario: diseño pedagógico + desarrollo de software + investigación empírica sobre el propio instrumento. La app es a la vez herramienta de aprendizaje y objeto de estudio: el piloto incluye un diseño de evaluación pre/post de competencia interpretativa."
   },
   {
-    "objectID": "index.html#mira-la-diferencia",
-    "href": "index.html#mira-la-diferencia",
-    "title": "Leer una tabla no es interpretarla.",
-    "section": "Mira la diferencia",
-    "text": "Mira la diferencia\nAmbas respuestas describen la misma tabla de un estudio real sobre tecnología y salud mental en estudiantes de primer año. Solo una de ellas dice algo sobre el mundo.\n\n\nModelo de regresión: deterioro de salud mental (fragmento ilustrativo)\n\n\n\n\nPredictor\n\n\nβ\n\n\np\n\n\n\n\n\n\nUso compulsivo (IDA)\n\n\n.38\n\n\n&lt; .001\n\n\n\n\nGénero (mujer)\n\n\n.24\n\n\n.002\n\n\n\n\nTiempo de pantalla\n\n\n.05\n\n\n.41\n\n\n\n\n\n\nNIVEL 1 · LECTURA TÉCNICA\n\n“El uso compulsivo y el género son significativos (p &lt; .05). El tiempo de pantalla no es significativo.”\n\n\n✓ Correcto. Pero todavía no dijiste nada sobre el mundo. 1 punto.\n\n\n\nNIVEL 3 · INTERPRETACIÓN SUSTANTIVA\n\n“El deterioro no se asocia a cuánto tiempo se usa la pantalla, sino a cómo se usa: es el modo compulsivo, no la exposición, lo que importa. Una política centrada en limitar horas apuntaría al blanco equivocado.”\n\n\n✓ Interpretación con sustancia: conecta el hallazgo — incluido el nulo — con el fenómeno y sus implicancias. 4 puntos."
+    "objectID": "equipo.html#el-proyecto",
+    "href": "equipo.html#el-proyecto",
+    "title": "Proyecto y equipo",
+    "section": "",
+    "text": "Sustancia nace de una constatación simple: los programas de formación en ciencias sociales enseñan a ejecutar técnicas estadísticas, pero la competencia que distingue a un buen investigador — y a un buen lector de investigación — es la interpretación: qué significa un resultado para el fenómeno, qué permite afirmar y qué no.\nEl proyecto se inscribe en una tradición de laboratorio interdisciplinario: diseño pedagógico + desarrollo de software + investigación empírica sobre el propio instrumento. La app es a la vez herramienta de aprendizaje y objeto de estudio: el piloto incluye un diseño de evaluación pre/post de competencia interpretativa."
   },
   {
-    "objectID": "index.html#cuatro-niveles-de-profundidad",
-    "href": "index.html#cuatro-niveles-de-profundidad",
-    "title": "Leer una tabla no es interpretarla.",
-    "section": "Cuatro niveles de profundidad",
-    "text": "Cuatro niveles de profundidad\nLa progresión del juego operacionaliza una escalera validada por la investigación en educación estadística (Curcio; Shaughnessy; Garfield y Ben-Zvi): comprender un resultado no es un acto binario sino una profundización por capas. Haz clic en cada nivel para expandirlo.\n\n\n  \n    N1\n    \n      Lectura técnica\n      Decodificar el output correctamente: valores, significancia, escalas. Necesario, pero es el piso, no el techo.\n      \n        Ejemplos de errores en este nivel: confundir el valor p con la probabilidad de que la hipótesis sea verdadera,\n        leer un coeficiente negativo como \"no hay efecto\", ignorar los intervalos de confianza.\n        El juego asigna 1 punto a las respuestas que solo alcanzan este nivel.\n      \n    \n  \n\n  \n    N2\n    \n      Interpretación estadística\n      Traducir a lenguaje de relación: dirección, magnitud, comparación, condicionalidad (\"controlando por…\").\n      \n        En este nivel el jugador ya no solo lee números: los compara entre sí, habla de magnitudes relativas\n        y usa el vocabulario correcto de la técnica. \"Controlando por género, el uso compulsivo predice…\"\n        es una oración de nivel 2. El juego asigna 2 puntos.\n      \n    \n  \n\n  \n    N3\n    \n      Interpretación sustantiva\n      Conectar el resultado con el fenómeno: ¿qué significa esto para el problema de investigación, la teoría, la intervención?\n      \n        La marca distintiva del nivel 3 es la inferencia hacia el mundo: el resultado deja de ser un número\n        y se convierte en un argumento sobre la realidad. Los hallazgos nulos son especialmente formativos aquí:\n        \"el tiempo de pantalla no predice\" es tan informativo como lo que sí predice. El juego asigna 3–4 puntos.\n      \n    \n  \n\n  \n    N4\n    \n      Interpretación crítica-reflexiva\n      Reconstruir la cadena de decisiones que produjo el resultado: supuestos, límites del diseño, explicaciones alternativas.\n      \n        Este nivel sigue a Simondon: la relación no alienada con un objeto técnico consiste en comprender\n        su funcionamiento interno. El jugador en N4 pregunta: ¿por qué esta técnica? ¿Qué supuestos carga?\n        ¿Qué alternativa de análisis habría dado un resultado distinto? ¿Qué no permite afirmar este diseño?\n        El juego asigna 5 puntos — el máximo de la rúbrica."
+    "objectID": "equipo.html#corpus-inicial",
+    "href": "equipo.html#corpus-inicial",
+    "title": "Proyecto y equipo",
+    "section": "Corpus inicial",
+    "text": "Corpus inicial\nEl primer conjunto de ítems se construye sobre la investigación Habitus tecnológico y salud mental en estudiantes de primer año (Universidad Alberto Hurtado, n = 276, cinco carreras), complementada con fuentes de datos públicas chilenas (ELSOC, CASEN) para las variantes de contexto disciplinar."
   },
   {
-    "objectID": "index.html#cómo-funciona",
-    "href": "index.html#cómo-funciona",
-    "title": "Leer una tabla no es interpretarla.",
-    "section": "Cómo funciona",
-    "text": "Cómo funciona\n\n  \n    ✍️\n    \n      1 · Elige contexto\n      El jugador selecciona disciplina y temática. El mismo esqueleto estadístico se presenta con datos y narrativas distintas.\n    \n    activo\n  \n  \n    💬\n    \n      2 · Interpreta en texto libre\n      Frente a un output real — tabla de regresión, perfiles de cluster, distribución — el jugador escribe su interpretación. No hay alternativas.\n    \n    activo\n  \n  \n    📊\n    \n      3 · Recibe evaluación formativa\n      Un modelo de lenguaje con rúbricas explícitas determina el nivel alcanzado, detecta errores y retroalimenta con el corpus metodológico del proyecto.\n    \n    activo\n  \n  \n    🗂️\n    \n      4 · Los errores se coleccionan\n      Cometer un error resta puntos pero desbloquea su ficha: causalidad espuria, reificación de tipologías, artefactos de composición. La colección completa es un logro.\n    \n    activo"
+    "objectID": "equipo.html#equipo",
+    "href": "equipo.html#equipo",
+    "title": "Proyecto y equipo",
+    "section": "Equipo",
+    "text": "Equipo\n\nAngel Muñoz  — Licenciado en Sociología, Universidad Alberto Hurtado. Diseño pedagógico, desarrollo (R/Shiny), corpus empírico.\n(Colaboraciones abiertas: diseño de ítems en otras disciplinas, pilotaje docente, diseño UX.)"
   },
   {
-    "objectID": "index.html#marco",
-    "href": "index.html#marco",
-    "title": "Leer una tabla no es interpretarla.",
-    "section": "Marco",
-    "text": "Marco\n\n  \n    La apuesta epistemológica sigue a Gilbert Simondon: el\n    objetivo no es operar la técnica estadística como caja negra, sino comprender su\n    funcionamiento interno — qué decide el investigador, qué transforma el algoritmo,\n    qué supuestos carga el modelo. Esa comprensión es una relación no alienada con\n    el instrumento.\n  \n  \n  \n    \n      \n      Tu navegador no soporta videos.\n    \n  \n\n\nEl corpus inicial del juego proviene de una investigación empírica real sobre\nhabitus tecnológico y salud mental en estudiantes universitarios de primer año\n(n = 276), lo que permite que cada ítem tenga contexto, decisiones metodológicas\ndocumentadas y hallazgos genuinos — incluidos los nulos, que suelen ser los más\nformativos de interpretar.\n\n## Estado del proyecto {.seccion}\n\n```{=html}\n\n  \n    ✅\n    \n      Diseño pedagógico\n      Niveles, taxonomía de errores, rúbricas, ítems piloto\n    \n    Completo v0.1\n  \n  \n    🔨\n    \n      Prototipo Shiny\n      App funcional con evaluador vía API\n    \n    En desarrollo\n  \n  \n    ⏳\n    \n      Piloto\n      Prueba con estudiantes; calibración del evaluador\n    \n    Próximo\n  \n  \n    📋\n    \n      Expansión\n      15 ítems, contextos alternativos, corpus ampliado\n    \n    Planificado\n  \n\n\n\nLeer la fundamentación completa → · Ver el diseño pedagógico →"
+    "objectID": "equipo.html#contacto",
+    "href": "equipo.html#contacto",
+    "title": "Proyecto y equipo",
+    "section": "Contacto",
+    "text": "Contacto\n(anmunozr@alumnos.uahurtado.cl / GitHub del proyecto)"
   },
   {
     "objectID": "pedagogia.html",
@@ -126,38 +126,38 @@
     "text": "Referencias\n\nCurcio, F. (1987). Comprehension of mathematical relationships expressed in graphs. Journal for Research in Mathematics Education, 18(5).\nShaughnessy, J. M. (2007). Research on statistics learning and reasoning. En Second Handbook of Research on Mathematics Teaching and Learning.\nGarfield, J. y Ben-Zvi, D. (2008). Developing Students’ Statistical Reasoning. Springer.\nSimondon, G. (2007 [1958]). El modo de existencia de los objetos técnicos. Prometeo.\nBourdieu, P. (1990). ¿Cómo se hace una clase social? Sobre la existencia teórica y práctica de los grupos."
   },
   {
-    "objectID": "equipo.html",
-    "href": "equipo.html",
-    "title": "Proyecto y equipo",
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Leer una tabla no es interpretarla.",
     "section": "",
-    "text": "Sustancia nace de una constatación simple: los programas de formación en ciencias sociales enseñan a ejecutar técnicas estadísticas, pero la competencia que distingue a un buen investigador — y a un buen lector de investigación — es la interpretación: qué significa un resultado para el fenómeno, qué permite afirmar y qué no.\nEl proyecto se inscribe en una tradición de laboratorio interdisciplinario: diseño pedagógico + desarrollo de software + investigación empírica sobre el propio instrumento. La app es a la vez herramienta de aprendizaje y objeto de estudio: el piloto incluye un diseño de evaluación pre/post de competencia interpretativa."
+    "text": "Saltar Introducción →"
   },
   {
-    "objectID": "equipo.html#el-proyecto",
-    "href": "equipo.html#el-proyecto",
-    "title": "Proyecto y equipo",
-    "section": "",
-    "text": "Sustancia nace de una constatación simple: los programas de formación en ciencias sociales enseñan a ejecutar técnicas estadísticas, pero la competencia que distingue a un buen investigador — y a un buen lector de investigación — es la interpretación: qué significa un resultado para el fenómeno, qué permite afirmar y qué no.\nEl proyecto se inscribe en una tradición de laboratorio interdisciplinario: diseño pedagógico + desarrollo de software + investigación empírica sobre el propio instrumento. La app es a la vez herramienta de aprendizaje y objeto de estudio: el piloto incluye un diseño de evaluación pre/post de competencia interpretativa."
+    "objectID": "index.html#mira-la-diferencia",
+    "href": "index.html#mira-la-diferencia",
+    "title": "Leer una tabla no es interpretarla.",
+    "section": "Mira la diferencia",
+    "text": "Mira la diferencia\nAmbas respuestas describen la misma tabla de un estudio real sobre tecnología y salud mental en estudiantes de primer año. Solo una de ellas dice algo sobre el mundo.\n\n\nModelo de regresión: deterioro de salud mental (fragmento ilustrativo)\n\n\n\n\nPredictor\n\n\nβ\n\n\np\n\n\n\n\n\n\nUso compulsivo (IDA)\n\n\n.38\n\n\n&lt; .001\n\n\n\n\nGénero (mujer)\n\n\n.24\n\n\n.002\n\n\n\n\nTiempo de pantalla\n\n\n.05\n\n\n.41\n\n\n\n\n\n\nNIVEL 1 · LECTURA TÉCNICA\n\n“El uso compulsivo y el género son significativos (p &lt; .05). El tiempo de pantalla no es significativo.”\n\n\n✓ Correcto. Pero todavía no dijiste nada sobre el mundo. 1 punto.\n\n\n\nNIVEL 3 · INTERPRETACIÓN SUSTANTIVA\n\n“El deterioro no se asocia a cuánto tiempo se usa la pantalla, sino a cómo se usa: es el modo compulsivo, no la exposición, lo que importa. Una política centrada en limitar horas apuntaría al blanco equivocado.”\n\n\n✓ Interpretación con sustancia: conecta el hallazgo — incluido el nulo — con el fenómeno y sus implicancias. 4 puntos."
   },
   {
-    "objectID": "equipo.html#corpus-inicial",
-    "href": "equipo.html#corpus-inicial",
-    "title": "Proyecto y equipo",
-    "section": "Corpus inicial",
-    "text": "Corpus inicial\nEl primer conjunto de ítems se construye sobre la investigación Habitus tecnológico y salud mental en estudiantes de primer año (Universidad Alberto Hurtado, n = 276, cinco carreras), complementada con fuentes de datos públicas chilenas (ELSOC, CASEN) para las variantes de contexto disciplinar."
+    "objectID": "index.html#cuatro-niveles-de-profundidad",
+    "href": "index.html#cuatro-niveles-de-profundidad",
+    "title": "Leer una tabla no es interpretarla.",
+    "section": "Cuatro niveles de profundidad",
+    "text": "Cuatro niveles de profundidad\nLa progresión del juego operacionaliza una escalera validada por la investigación en educación estadística (Curcio; Shaughnessy; Garfield y Ben-Zvi): comprender un resultado no es un acto binario sino una profundización por capas. Haz clic en cada nivel para expandirlo.\n\n\n  \n    N1\n    \n      Lectura técnica\n      Decodificar el output correctamente: valores, significancia, escalas. Necesario, pero es el piso, no el techo.\n      \n        Ejemplos de errores en este nivel: confundir el valor p con la probabilidad de que la hipótesis sea verdadera,\n        leer un coeficiente negativo como \"no hay efecto\", ignorar los intervalos de confianza.\n        El juego asigna 1 punto a las respuestas que solo alcanzan este nivel.\n      \n    \n  \n\n  \n    N2\n    \n      Interpretación estadística\n      Traducir a lenguaje de relación: dirección, magnitud, comparación, condicionalidad (\"controlando por…\").\n      \n        En este nivel el jugador ya no solo lee números: los compara entre sí, habla de magnitudes relativas\n        y usa el vocabulario correcto de la técnica. \"Controlando por género, el uso compulsivo predice…\"\n        es una oración de nivel 2. El juego asigna 2 puntos.\n      \n    \n  \n\n  \n    N3\n    \n      Interpretación sustantiva\n      Conectar el resultado con el fenómeno: ¿qué significa esto para el problema de investigación, la teoría, la intervención?\n      \n        La marca distintiva del nivel 3 es la inferencia hacia el mundo: el resultado deja de ser un número\n        y se convierte en un argumento sobre la realidad. Los hallazgos nulos son especialmente formativos aquí:\n        \"el tiempo de pantalla no predice\" es tan informativo como lo que sí predice. El juego asigna 3–4 puntos.\n      \n    \n  \n\n  \n    N4\n    \n      Interpretación crítica-reflexiva\n      Reconstruir la cadena de decisiones que produjo el resultado: supuestos, límites del diseño, explicaciones alternativas.\n      \n        Este nivel sigue a Simondon: la relación no alienada con un objeto técnico consiste en comprender\n        su funcionamiento interno. El jugador en N4 pregunta: ¿por qué esta técnica? ¿Qué supuestos carga?\n        ¿Qué alternativa de análisis habría dado un resultado distinto? ¿Qué no permite afirmar este diseño?\n        El juego asigna 5 puntos — el máximo de la rúbrica."
   },
   {
-    "objectID": "equipo.html#equipo",
-    "href": "equipo.html#equipo",
-    "title": "Proyecto y equipo",
-    "section": "Equipo",
-    "text": "Equipo\n\nAngel Muñoz  — Licenciado en Sociología, Universidad Alberto Hurtado. Diseño pedagógico, desarrollo (R/Shiny), corpus empírico.\n(Colaboraciones abiertas: diseño de ítems en otras disciplinas, pilotaje docente, diseño UX.)"
+    "objectID": "index.html#cómo-funciona",
+    "href": "index.html#cómo-funciona",
+    "title": "Leer una tabla no es interpretarla.",
+    "section": "Cómo funciona",
+    "text": "Cómo funciona\n\n  \n    ✍️\n    \n      1 · Elige contexto\n      El jugador selecciona disciplina y temática. El mismo esqueleto estadístico se presenta con datos y narrativas distintas.\n    \n    activo\n  \n  \n    💬\n    \n      2 · Interpreta en texto libre\n      Frente a un output real — tabla de regresión, perfiles de cluster, distribución — el jugador escribe su interpretación. No hay alternativas.\n    \n    activo\n  \n  \n    📊\n    \n      3 · Recibe evaluación formativa\n      Un modelo de lenguaje con rúbricas explícitas determina el nivel alcanzado, detecta errores y retroalimenta con el corpus metodológico del proyecto.\n    \n    activo\n  \n  \n    🗂️\n    \n      4 · Los errores se coleccionan\n      Cometer un error resta puntos pero desbloquea su ficha: causalidad espuria, reificación de tipologías, artefactos de composición. La colección completa es un logro.\n    \n    activo"
   },
   {
-    "objectID": "equipo.html#contacto",
-    "href": "equipo.html#contacto",
-    "title": "Proyecto y equipo",
-    "section": "Contacto",
-    "text": "Contacto\n(anmunozr@alumnos.uahurtado.cl / GitHub del proyecto)"
+    "objectID": "index.html#marco",
+    "href": "index.html#marco",
+    "title": "Leer una tabla no es interpretarla.",
+    "section": "Marco",
+    "text": "Marco\n\n  \n    La apuesta epistemológica sigue a Gilbert Simondon: el\n    objetivo no es operar la técnica estadística como caja negra, sino comprender su\n    funcionamiento interno — qué decide el investigador, qué transforma el algoritmo,\n    qué supuestos carga el modelo. Esa comprensión es una relación no alienada con\n    el instrumento.\n  \n  \n  \n    \n      \n      Tu navegador no soporta videos.\n    \n  \n\n\nEl corpus inicial del juego proviene de una investigación empírica real sobre\nhabitus tecnológico y salud mental en estudiantes universitarios de primer año\n(n = 276), lo que permite que cada ítem tenga contexto, decisiones metodológicas\ndocumentadas y hallazgos genuinos — incluidos los nulos, que suelen ser los más\nformativos de interpretar.\n\n## Estado del proyecto {.seccion}\n\n```{=html}\n\n  \n    ✅\n    \n      Diseño pedagógico\n      Niveles, taxonomía de errores, rúbricas, ítems piloto\n    \n    Completo v0.1\n  \n  \n    🔨\n    \n      Prototipo Shiny\n      App funcional con evaluador vía API\n    \n    En desarrollo\n  \n  \n    ⏳\n    \n      Piloto\n      Prueba con estudiantes; calibración del evaluador\n    \n    Próximo\n  \n  \n    📋\n    \n      Expansión\n      15 ítems, contextos alternativos, corpus ampliado\n    \n    Planificado\n  \n\n\n\nLeer la fundamentación completa → · Ver el diseño pedagógico →"
   }
 ]
