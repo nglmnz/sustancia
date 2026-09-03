@@ -1,0 +1,11 @@
+---
+title: "Prueba el piloto"
+page-layout: full
+---
+
+<iframe 
+  src="https://tbu8oh-angel0dario-munoz0ra0iman.shinyapps.io/app_v2_0309/" 
+  width="100%" 
+  height="800px" 
+  style="border: none; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
+</iframe>
