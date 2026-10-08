@@ -35,8 +35,8 @@ La evidencia empírica que origina este proyecto (estudio sobre habitus
 tecnológico y salud mental en 276 estudiantes de primer año) aporta dos matices
 que orientan el diseño:
 
-- **Lo dañino no es la cantidad sino el circuito.** El tiempo de pantalla no
-predice deterioro de salud mental; el patrón compulsivo de uso, sí. El problema
+- **Lo dañino no es la cantidad sino el circuito.** En los modelos explorados en esa investigación, el tiempo de pantalla no
+mostró la misma asociación que el patrón compulsivo de uso. Estas asociaciones no prueban causalidad. El problema
 no es la exposición a la tecnología: es el modo de relación instalado.
 - **La delegación es un gradiente, no un destino.** Los perfiles de uso severamente
 delegativo son minoritarios. La descapitalización es un riesgo estructural, no
@@ -118,8 +118,7 @@ cognitivo del estudiante.
 </script>
 ```
 
-En Sustancia la arquitectura incorporativa no es una recomendación de uso: está
-**forzada por el diseño**. No existen preguntas de alternativas; el evaluador
+La propuesta de Sustancia prioriza una arquitectura incorporativa; su realización práctica deberá contrastarse en los prototipos y pilotos. No existen preguntas de alternativas; el evaluador
 tiene prohibido redactar interpretaciones; su única salida es nivel alcanzado,
 errores detectados y preguntas que devuelven el trabajo al jugador.
 
@@ -134,7 +133,7 @@ además, un capital de creciente valor: en un entorno donde generar análisis es
 barato, **saber leer qué significa un análisis y qué no permite afirmar** es la
 competencia que distingue.
 
-<div class="cita-marco">El juego construye, deliberadamente, un régimen de
+<div class="cita-marco">El diseño de Sustancia propone, deliberadamente, un régimen de
 valorización contrario al del campo de plataformas: su sistema de puntaje premia
 la profundidad sobre la velocidad — llegar a la interpretación sustantiva vale
 cuatro veces más que la lectura técnica correcta. Donde la plataforma valoriza
@@ -148,7 +147,7 @@ se acumula como conocimiento. Nada se pierde si se incorpora.
 
 <span class="num-seccion">IV — Simondon</span>
 
-La progresión hacia el nivel N4 (interpretación crítica-reflexiva) sigue a
+Una inspiración filosófica de la interpretación crítica-reflexiva (N4) es
 Gilbert Simondon: la relación no alienada con un objeto técnico no consiste en
 operarlo sino en **comprender su funcionamiento interno**. Aplicado a la
 estadística: quien llega a N4 no lee resultados — reconstruye la cadena de
@@ -243,3 +242,14 @@ Pasa el cursor sobre cada tarjeta para ver cómo se traduce al diseño del juego
 - Shaughnessy, J. M. (2007). Research on statistics learning and reasoning. En *Second Handbook of Research on Mathematics Teaching and Learning*.
 - Simondon, G. (2007 [1958]). *El modo de existencia de los objetos técnicos*. Prometeo.
 - Zuboff, S. (2020). *La era del capitalismo de la vigilancia*. Paidós.
+
+
+## Del fundamento al aprendizaje adaptativo {.seccion}
+
+El desarrollo actual amplía la lectura interpretativa N1–N4 con un **modelo de maestría multidimensional**: conceptos, operaciones estadísticas, errores recurrentes, prerrequisitos y cambios en la trayectoria. Los niveles N1–N4 representan profundidad interpretativa, no la totalidad del razonamiento estadístico.
+
+La secuencia proyectada de **respuesta inicial → retroalimentación → respuesta revisada → nueva evidencia** permite estudiar el trabajo intelectual que el propio estudiante realiza al reconsiderar su interpretación. No suponemos que la retroalimentación produzca automáticamente mejores resultados; el diseño requiere prueba, medición y revisión.
+
+Las actividades se vincularán al currículo mediante fuentes revisadas por el equipo humano. La IA podrá asistir en su extracción, clasificación y evaluación, mientras que las decisiones curriculares y los criterios de progresión se mantendrán explícitos y supervisados.
+
+[Ver el modelo pedagógico →](pedagogia.qmd) · [Conocer el recorrido de aprendizaje →](como-funciona.qmd)
