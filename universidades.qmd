@@ -1,0 +1,61 @@
+---
+title: "Sustancia para universidades"
+description: "Aplicaciones pedagógicas e investigación educativa del aprendizaje estadístico adaptativo."
+toc: true
+---
+
+::: {.hero}
+<div class="eyebrow">Vinculación académica · propuesta de aplicación</div>
+
+# Una herramienta para <em>aprender, enseñar e investigar</em>
+
+<p class="hero-sub">Pensamos Sustancia como un complemento de la formación estadística universitaria. El dominio piloto es Estadística I, con proyección hacia ciencias sociales, ciencias de la salud e ingeniería.</p>
+:::
+
+## Alineación curricular {.seccion}
+
+El modelo se organiza alrededor de contenidos y objetivos explícitos del curso, no de una secuencia arbitraria inventada por una IA. Para la primera etapa de diseño, tomamos como referencia un programa de Estadística I de 2022: conceptos básicos, variables categóricas, variables cuantitativas, distribución normal e inferencia introductoria. Cada incorporación institucional requerirá revisar su programa específico.
+
+<div class="v2-pill-grid"><span>I · Conceptos</span><span>II · Variables categóricas</span><span>III · Variables cuantitativas</span><span>IV · Curva normal</span><span>V · Inferencia básica</span></div>
+
+## Tres experiencias complementarias {.seccion}
+
+<div class="v2-card-grid">
+  <article class="v2-card">
+    <span class="v2-kicker">ESTUDIANTE</span>
+    <h3>Autoconocimiento</h3>
+    <p>Explorar fortalezas, dificultades y avances por diferentes operaciones y conceptos. El perfil ayuda a orientar el estudio sin reducir a la persona a una sola nota.</p>
+  </article>
+  <article class="v2-card">
+    <span class="v2-kicker">DOCENTE</span>
+    <h3>Acompañamiento</h3>
+    <p>Visualizar patrones de error y progreso de su curso, identificar contenidos que requieren refuerzo y revisar actividades propuestas para el banco.</p>
+  </article>
+  <article class="v2-card">
+    <span class="v2-kicker">INSTITUCIÓN</span>
+    <h3>Mejora continua</h3>
+    <p>Observar indicadores agregados por cohorte, curso o carrera para investigar trayectorias de aprendizaje y orientar el apoyo formativo.</p>
+  </article>
+</div>
+
+## ¿Qué aportaría al curso? {.seccion}
+
+- **Diagnóstico:** una aproximación inicial al bagaje matemático-estadístico de cada estudiante.
+- **Práctica situada:** actividades con datos y problemas relevantes para distintos campos profesionales.
+- **Aprendizaje recursivo:** respuesta inicial, retroalimentación, revisión y nueva evidencia.
+- **Trazabilidad curricular:** ejercicios asociados con conceptos, operaciones y fuentes revisadas.
+- **Investigación educativa:** posibilidad de estudiar la evolución del razonamiento estadístico mediante evidencia longitudinal.
+
+Estas son **capacidades de diseño**. No deben interpretarse como funcionalidades ya desplegadas ni como resultados de impacto comprobados.
+
+## Supervisión y datos {.seccion}
+
+Proponemos una separación de accesos por responsabilidad. El estudiante accedería a su propio perfil; el docente, a información pertinente para acompañar su curso; y la institución, a indicadores agregados. Los permisos, las bases legales, la minimización de datos, la retención y las salvaguardas deben definirse antes de un despliegue institucional.
+
+La IA puede asistir en la construcción y revisión de materiales, pero las decisiones curriculares y la aprobación de actividades permanecen bajo responsabilidad humana.
+
+## Estado y colaboración {.seccion}
+
+Sustancia se encuentra en desarrollo e investigación. Buscamos avanzar desde el prototipo existente hacia un piloto capaz de evaluar tanto su funcionamiento técnico como la pertinencia pedagógica de la experiencia.
+
+[Revisar el proyecto y su equipo →](equipo.qmd) · [Conocer el recorrido del estudiante →](como-funciona.qmd)

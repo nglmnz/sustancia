@@ -3,9 +3,8 @@ project:
   output-dir: _site
 
 website:
-  title: "Sustancia" # Aquí DEBE ser un texto, no "false"
-  description: "Un juego para aprender a interpretar resultados estadísticos"
-  
+  title: "Sustancia"
+  description: "Laboratorio de aprendizaje adaptativo del razonamiento estadístico"
   navbar:
     background: "#16265F"
     foreground: "#F7F7F2"
@@ -16,14 +15,17 @@ website:
       - href: fundamentacion.qmd
         text: Fundamentación
       - href: pedagogia.qmd
-        text: Diseño pedagógico
+        text: Modelo pedagógico
+      - href: como-funciona.qmd
+        text: Cómo funciona
+      - href: universidades.qmd
+        text: Universidades
       - href: equipo.qmd
-        text: Proyecto y equipo
+        text: Equipo
       - href: piloto.qmd
-        text: Prueba el Piloto
-
+        text: Prototipo
   page-footer:
-    center: "Sustancia · Proyecto de investigación interdisciplinaria · Universidad Alberto Hurtado · 2026"
+    center: "Sustancia · Proyecto interdisciplinario en investigación y desarrollo · 2026"
     background: "#14161A"
 
 format:
