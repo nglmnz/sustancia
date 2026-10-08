@@ -1,0 +1,40 @@
+name: Validate Quarto and interactive components
+on:
+  pull_request:
+    branches: [version-9-julio]
+  workflow_dispatch:
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+    steps:
+      - uses: actions/checkout@v4
+      - uses: quarto-dev/quarto-actions/setup@v2
+      - name: Check JavaScript syntax
+        run: node --check assets/sustancia-interactions.js
+      - name: Render complete website
+        run: quarto render
+      - name: Check generated pages and HTML components
+        run: |
+          python - <<'PY'
+          from pathlib import Path
+          pages = ["index", "pedagogia", "fundamentacion", "como-funciona", "universidades", "equipo", "piloto"]
+          for name in pages:
+              p = Path("_site") / (name + ".html")
+              assert p.exists(), f"Página faltante: {p}"
+              html = p.read_text(encoding="utf-8")
+              assert "quarto-bootstrap" in html, f"No se cargaron estilos Quarto: {name}"
+              assert "&lt;div class=" not in html, f"HTML visible como código en: {name}"
+              print(f"OK: {name}.html")
+          home = Path("_site/index.html").read_text(encoding="utf-8")
+          pedagogy = Path("_site/pedagogia.html").read_text(encoding="utf-8")
+          assert 'id="intro-splash"' in home and 'id="intro-video"' in home
+          assert 'class="cita-marco"' in home and '<video' in home
+          assert 'data-s3-examples' in home
+          assert 'data-s3-mastery' in pedagogy and 'data-s3-radar' in pedagogy
+          assert 'data-s3-dimensions' in pedagogy and 'data-s3-examples' in pedagogy
+          assert Path("_site/assets/sustancia-interactions.js").exists()
+          print("OK: interacción, video y componentes renderizados como HTML")
+          PY

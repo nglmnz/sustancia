@@ -18,58 +18,58 @@ Un estudiante puede calcular correctamente una media y, sin embargo, tener dific
 
 Por eso proponemos un **perfil de maestría multidimensional**: una estimación que reúne evidencias de capacidades específicas y evoluciona con la experiencia. **No es una nota ni un diagnóstico psicológico.**
 
-<div class="v2-mastery" id="v2-mastery">
-  <div class="v2-mastery-head">
-    <div><span class="v2-kicker">SIMULACIÓN INTERACTIVA</span><h3>Dos formas distintas de saber estadística</h3></div>
-    <div role="group" aria-label="Seleccionar perfil de ejemplo" class="v2-toggle">
-      <button type="button" id="v2-profile-a" aria-pressed="true" class="v2-active">Perfil A</button>
-      <button type="button" id="v2-profile-b" aria-pressed="false">Perfil B</button>
+```{=html}
+<div class="s3-mastery" data-s3-mastery>
+  <div class="s3-mastery-header">
+    <div><span class="v2-kicker">EXPLORADOR INTERACTIVO · DATOS SIMULADOS</span><h3>Un perfil no es una nota</h3><p>Compara dos estudiantes y explora distintos momentos hipotéticos de su trayectoria.</p></div>
+    <div class="s3-choice-group" role="group" aria-label="Seleccionar estudiante">
+      <button type="button" class="s3-selected" data-s3-profile="a" aria-pressed="true">Perfil A</button>
+      <button type="button" data-s3-profile="b" aria-pressed="false">Perfil B</button>
     </div>
   </div>
-  <p id="v2-profile-desc" aria-live="polite">Dominio técnico más desarrollado; contextualización y transferencia requieren práctica.</p>
-  <div id="v2-bars" class="v2-bars" role="img" aria-label="Valores simulados de operaciones del perfil de maestría">
-    <div class="v2-bar-row"><span>Reconocer</span><div class="v2-bar-track"><span style="width:88%"></span></div><b>88</b></div>
-    <div class="v2-bar-row"><span>Calcular</span><div class="v2-bar-track"><span style="width:91%"></span></div><b>91</b></div>
-    <div class="v2-bar-row"><span>Comparar</span><div class="v2-bar-track"><span style="width:67%"></span></div><b>67</b></div>
-    <div class="v2-bar-row"><span>Interpretar</span><div class="v2-bar-track"><span style="width:58%"></span></div><b>58</b></div>
-    <div class="v2-bar-row"><span>Contextualizar</span><div class="v2-bar-track"><span style="width:39%"></span></div><b>39</b></div>
-    <div class="v2-bar-row"><span>Criticar</span><div class="v2-bar-track"><span style="width:33%"></span></div><b>33</b></div>
-    <div class="v2-bar-row"><span>Transferir</span><div class="v2-bar-track"><span style="width:24%"></span></div><b>24</b></div>
+  <div class="s3-time-group" role="group" aria-label="Seleccionar momento simulado">
+    <button type="button" class="s3-selected" data-s3-moment="t0" aria-pressed="true">Entrada (t0)</button>
+    <button type="button" data-s3-moment="t2" aria-pressed="false">Después de práctica (t2 hipotético)</button>
   </div>
-  <p class="v2-small">Datos completamente simulados para ilustrar el modelo. No representan mediciones reales ni una escala validada.</p>
+  <div class="s3-profile-main">
+    <div class="s3-radar-pane">
+      <svg data-s3-radar class="s3-radar" viewBox="0 0 520 395" role="img" aria-label="Perfil multidimensional de operaciones, valores simulados"></svg>
+    </div>
+    <div class="s3-profile-detail">
+      <h4 data-s3-profile-title>Perfil A · cálculo sólido</h4>
+      <p data-s3-profile-description>Destaca en los procedimientos, pero necesita practicar interpretación y transferencia.</p>
+      <div class="s3-mini-bars" data-s3-bars aria-label="Valores simulados por operación"></div>
+      <p class="s3-next-activity" data-s3-next>Próximo desafío: contextualizar y transferir.</p>
+    </div>
+  </div>
+  <p class="s3-data-warning"><strong>Simulación, no medición:</strong> todos los valores y cambios son ficticios. No representan una escala calibrada ni implican que la retroalimentación produzca automáticamente mejoras.</p>
 </div>
+```
 
-<script>
-(function(){
-const data=[
- {label:'Reconocer',a:88,b:72},{label:'Calcular',a:91,b:43},{label:'Comparar',a:67,b:65},{label:'Interpretar',a:58,b:79},{label:'Contextualizar',a:39,b:82},{label:'Criticar',a:33,b:74},{label:'Transferir',a:24,b:69}
-];
-const bars=document.getElementById('v2-bars'),desc=document.getElementById('v2-profile-desc'),ba=document.getElementById('v2-profile-a'),bb=document.getElementById('v2-profile-b');
-if(!bars||!ba||!bb)return;
-function render(which){
- bars.replaceChildren();
- data.forEach(item=>{
-   const row=document.createElement('div'); row.className='v2-bar-row';
-   const label=document.createElement('span'); label.textContent=item.label;
-   const track=document.createElement('div'); track.className='v2-bar-track';
-   const fill=document.createElement('span');fill.style.width=item[which]+'%';track.appendChild(fill);
-   const val=document.createElement('b');val.textContent=item[which];
-   row.append(label,track,val);bars.appendChild(row);
- });
- bars.setAttribute('aria-label','Perfil '+which.toUpperCase()+': '+data.map(d=>d.label+' '+d[which]+' de 100').join(', '));
- desc.textContent=which==='a'?'Dominio técnico más desarrollado; contextualización y transferencia requieren práctica.':'Interpretación y pensamiento crítico más desarrollados; se propone reforzar procedimientos de cálculo.';
- ba.classList.toggle('v2-active',which==='a');bb.classList.toggle('v2-active',which==='b');
- ba.setAttribute('aria-pressed',String(which==='a'));bb.setAttribute('aria-pressed',String(which==='b'));
-}
-ba.addEventListener('click',()=>render('a'));bb.addEventListener('click',()=>render('b'));render('a');
-})();
-</script>
 
-### Dimensiones del perfil
 
-<div class="v2-pill-grid"><span>Conceptos</span><span>Operaciones</span><span>N1–N4</span><span>Errores recurrentes</span><span>Prerrequisitos</span><span>Trayectoria y revisión</span></div>
+### Explora cada dimensión del perfil
 
-El sistema deberá distinguir entre **dominio estimado**, **evidencia disponible** e **información todavía desconocida**. Para interpretar estos valores en estudiantes reales será necesario diseñar y validar instrumentos de evaluación.
+Toca cualquiera de las seis dimensiones para conocer **qué observa, qué pregunta responde y qué evidencia necesita**. Todas se conectan, pero ninguna sustituye a las otras.
+
+```{=html}
+<div class="s3-dimensions" data-s3-dimensions>
+  <div class="s3-dim-selector" role="group" aria-label="Explorar las dimensiones del vector de maestría">
+    <button type="button" class="s3-selected" data-s3-dim="conceptos" aria-pressed="true"><span>01</span>Conceptos</button>
+    <button type="button" data-s3-dim="operaciones" aria-pressed="false"><span>02</span>Operaciones</button>
+    <button type="button" data-s3-dim="profundidad" aria-pressed="false"><span>03</span>N1–N4</button>
+    <button type="button" data-s3-dim="errores" aria-pressed="false"><span>04</span>Errores</button>
+    <button type="button" data-s3-dim="requisitos" aria-pressed="false"><span>05</span>Prerrequisitos</button>
+    <button type="button" data-s3-dim="trayectoria" aria-pressed="false"><span>06</span>Trayectoria</button>
+  </div>
+  <section class="s3-dim-panel" data-s3-dim-panel aria-live="polite">
+    <h3>Conceptos estadísticos</h3>
+    <p>Qué sabe sobre variables, medidas, distribuciones, muestreo o probabilidad.</p>
+  </section>
+</div>
+```
+
+El sistema deberá diferenciar entre **dominio estimado, evidencia disponible e información desconocida**. Un valor ausente no equivale a cero ni a una dificultad demostrada.
 
 ## Laboratorio de operaciones estadísticas {.seccion}
 
@@ -103,15 +103,49 @@ Estos niveles se inspiran en investigaciones sobre comprensión de representacio
 
 ## Aprender también es revisar {.seccion}
 
-<div class="v2-cycle" aria-label="Ciclo de aprendizaje recursivo">
-<span>Respuesta inicial</span><i aria-hidden="true">→</i><span>Retroalimentación</span><i aria-hidden="true">→</i><span>Respuesta revisada</span><i aria-hidden="true">→</i><span>Nueva evidencia</span>
+**El feedback loop se comprende mejor cuando se ve funcionando.** Prueba distintas situaciones y recorre cada fase: desafío, producción, pregunta orientadora, revisión y nueva evidencia.
+
+```{=html}
+<div class="s3-examples" data-s3-examples>
+  <div class="s3-examples-top"><span class="v2-kicker">EXPLORA EL FEEDBACK LOOP</span><span class="s3-example-counter" data-s3-example-counter>1 de 5 · ejemplo simulado</span></div>
+  <div class="s3-example-choices" role="group" aria-label="Seleccionar campo disciplinar">
+    <button type="button" data-s3-example="ingresos" aria-pressed="true">Ingresos</button>
+    <button type="button" data-s3-example="salud" aria-pressed="false">Salud</button>
+    <button type="button" data-s3-example="encuestas" aria-pressed="false">Encuestas</button>
+    <button type="button" data-s3-example="ingenieria" aria-pressed="false">Ingeniería</button>
+  </div>
+  <div class="s3-example-timeline" role="group" aria-label="Seleccionar momento de aprendizaje">
+    <button type="button" data-s3-stage="0" aria-pressed="true">1. Desafío</button>
+    <button type="button" data-s3-stage="1" aria-pressed="false">2. Producción</button>
+    <button type="button" data-s3-stage="2" aria-pressed="false">3. Feedback</button>
+    <button type="button" data-s3-stage="3" aria-pressed="false">4. Revisión</button>
+    <button type="button" data-s3-stage="4" aria-pressed="false">5. Evidencia</button>
+  </div>
+  <div class="s3-example-panel" aria-live="polite">
+    <span class="v2-kicker" data-s3-example-role>Consigna del juego</span>
+    <h3 data-s3-example-heading>Ingresos y valores extremos</h3>
+    <p data-s3-example-text>En una comuna la media de ingresos es muy superior a la mediana. ¿Qué significa?</p>
+    <button type="button" data-s3-example-next class="s3-next">Ver el siguiente momento →</button>
+  </div>
+  <p class="v2-small">Las respuestas, preguntas y evidencias son ilustraciones del modelo pedagógico, no conversaciones de estudiantes reales.</p>
 </div>
+```
 
-El ejercicio no tiene por qué terminar al aparecer una equivocación. Una pregunta del sistema —«¿Qué parte de tu argumento cambiarías considerando esta diferencia?»— puede invitar al estudiante a producir una respuesta nueva y mejor fundamentada.
+### Las conversaciones epistemológicas
 
-El diseño de conversaciones epistemológicas contempla **fuente, problema, posición, contraste, transferencia y aplicación**. Estos recursos sirven para construir una discusión con la bibliografía y los datos, no para sustituir la reflexión del jugador. La calidad de la revisión será una dimensión de observación pedagógica, sin atribuir automáticamente rasgos personales como resiliencia o tolerancia a la frustración.
+La bibliografía y las representaciones estadísticas pueden convertirse en interlocutores. La conversación no busca que el modelo dé respuestas, sino que el estudiante examine sus propias afirmaciones. Explora las preguntas que puede movilizar el sistema:
 
-[Ver una conversación ilustrada →](como-funciona.qmd)
+```{=html}
+<div class="s3-epistemic">
+  <details><summary><strong>Fuente y problema</strong><span>¿Qué afirma el texto o el gráfico?</span></summary><p>Se identifica una afirmación verificable, su fuente y el problema al que pretende responder. Las actividades usan materiales revisados por el equipo académico.</p></details>
+  <details><summary><strong>Posición</strong><span>¿Cómo interpretas lo observado?</span></summary><p>El estudiante toma posición y debe explicar en sus propias palabras por qué cree que su interpretación es razonable.</p></details>
+  <details><summary><strong>Contraste</strong><span>¿Qué evidencia te haría cambiar de idea?</span></summary><p>Se confronta la explicación inicial con un límite, contraejemplo, diferencia de unidades o supuesto omitido.</p></details>
+  <details><summary><strong>Transferencia</strong><span>¿Se cumple en otro contexto?</span></summary><p>El principio deja su ejemplo original y se aplica, por ejemplo, a salud, encuestas, producción industrial o indicadores sociales.</p></details>
+  <details><summary><strong>Aplicación y revisión</strong><span>¿Cómo reescribirías tu respuesta?</span></summary><p>La persona produce otra interpretación. El sistema registra qué cambió, qué errores persistieron y cuáles son los próximos desafíos posibles.</p></details>
+</div>
+```
+
+La incorporación del feedback puede estudiarse como **calidad de revisión observada**. No inferimos automáticamente frustración, resiliencia o rasgos psicológicos a partir de un solo intento.
 
 ## Errores como objetos pedagógicos {.seccion}
 
@@ -132,3 +166,7 @@ Los materiales del curso son incorporados por el equipo y revisados antes de con
 - Garfield, J. y Ben-Zvi, D. (2008). *Developing Students' Statistical Reasoning*. Springer.
 - Bourdieu, P. (1987 [1979]). Los tres estados del capital cultural.
 - Simondon, G. (2007 [1958]). *El modo de existencia de los objetos técnicos*. Prometeo.
+
+```{=html}
+<script src="assets/sustancia-interactions.js" defer></script>
+```

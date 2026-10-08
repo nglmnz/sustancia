@@ -926,3 +926,136 @@ body {
  #quarto-document-content {padding:1.15rem!important;margin-top:1rem!important;}
 }
 @media (prefers-reduced-motion:reduce){.v2-bar-track span{transition:none;}}
+
+
+// -------------------------------------------------------
+// Sustancia 2.1: apertura cinematográfica e interfaces didácticas
+// -------------------------------------------------------
+#intro-splash.s3-intro {
+  position: fixed !important;
+  inset: 0 !important;
+  width: 100vw !important;
+  height: 100vh !important;
+  height: 100dvh !important;
+  z-index: 99999999 !important;
+  display: flex !important;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  background: #070911 !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  opacity: 1;
+  transition: opacity .85s ease;
+}
+#intro-video {
+  width: 100% !important;
+  height: 100% !important;
+  object-fit: cover !important;
+  object-position: center !important;
+  display: block !important;
+}
+#intro-splash.s3-splash-out { opacity: 0 !important; pointer-events: none !important; }
+#btn-saltar-intro.s3-skip {
+  display:block !important;opacity:1!important;pointer-events:auto!important;transform:none!important;
+  z-index:100000000!important;bottom:max(1.5rem,env(safe-area-inset-bottom))!important;
+  right:max(1.5rem,env(safe-area-inset-right))!important;
+  background:rgba(8,15,32,.68)!important;border:1px solid rgba(255,255,255,.75)!important;
+  color:white!important;backdrop-filter:blur(10px);
+  min-height:44px;
+}
+#btn-saltar-intro.s3-skip:hover,#btn-saltar-intro.s3-skip:focus-visible {background:#F7F7F2!important;color:#16265F!important;}
+body.s3-intro-lock {overflow:hidden!important;}
+.s3-examples,.s3-mastery,.s3-dimensions {margin:1.7rem 0 2.1rem;}
+.s3-examples {
+  border:1px solid rgba(22,38,95,.2);border-radius:16px;overflow:hidden;
+  background:rgba(255,255,255,.92);box-shadow:0 14px 30px rgba(12,25,65,.07);
+}
+.s3-examples-top {display:flex;align-items:center;justify-content:space-between;gap:.8rem;flex-wrap:wrap;padding:1.1rem 1.35rem;border-bottom:1px solid #dbe0e9;}
+.s3-example-counter {font-family:"IBM Plex Mono",monospace;font-size:.68rem;color:#596579;}
+.s3-example-choices {display:flex;gap:.5rem;flex-wrap:wrap;padding:1rem 1.2rem .6rem;}
+.s3-example-choices button,.s3-example-timeline button,.s3-choice-group button,.s3-time-group button,.s3-dim-selector button {
+  border:1px solid #d7dfeb;border-radius:8px;background:#fff;color:#24324e;
+  padding:.58rem .83rem;font-family:"IBM Plex Sans",sans-serif;font-size:.84rem;
+  cursor:pointer;transition:background .2s,border-color .2s;
+}
+.s3-example-choices button.s3-selected,.s3-example-timeline button.s3-selected,
+.s3-choice-group button.s3-selected,.s3-time-group button.s3-selected,.s3-dim-selector button.s3-selected {
+  background:#16265F;color:#fff;border-color:#16265F;
+}
+.s3-example-choices button:hover,.s3-example-timeline button:hover,.s3-choice-group button:hover,
+.s3-time-group button:hover,.s3-dim-selector button:hover {border-color:#16265F;}
+.s3-example-timeline {display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:.35rem;padding:.6rem 1.2rem 1rem;}
+.s3-example-timeline button {font-size:.73rem;padding:.65rem .25rem;line-height:1.25;}
+.s3-example-panel {
+  min-height:210px;padding:1.55rem;margin:0 1.2rem .7rem;border-radius:12px;
+  background:#e8eef4;border-left:5px solid #397F86;
+}
+.s3-example-panel h3 {font-size:1.26rem;margin:.55rem 0 1rem;color:#16265F;}
+.s3-example-panel p {font-family:"Spectral",serif;font-size:1.1rem;line-height:1.6;max-width:63ch;}
+.s3-next {border:0;background:#16265F;color:#fff;padding:.7rem 1rem;border-radius:8px;cursor:pointer;min-height:44px;font-weight:600;}
+.s3-next:hover {background:#223A8F;}
+.s3-examples > .v2-small {padding:.1rem 1.25rem .9rem;margin:0;}
+.s3-mastery {
+  padding:1.5rem;border-radius:18px;background:#f5f8fb;
+  border:1px solid #cbd7e4;box-shadow:0 15px 45px rgba(13,36,76,.10);
+}
+.s3-mastery-header {display:flex;justify-content:space-between;align-items:start;gap:1rem;flex-wrap:wrap;}
+.s3-mastery-header h3 {margin:.5rem 0 .4rem;font-size:1.7rem;}
+.s3-mastery-header p {font-size:.91rem;color:#4a5467;}
+.s3-choice-group,.s3-time-group {display:flex;align-items:center;gap:.45rem;flex-wrap:wrap;}
+.s3-time-group {margin:1.1rem 0;border-bottom:1px solid #dbe2ee;padding-bottom:1rem;}
+.s3-profile-main {display:grid;grid-template-columns:minmax(0,1.14fr) minmax(0,1fr);gap:.7rem;align-items:center;}
+.s3-radar-pane {min-width:0;}
+.s3-radar {display:block;width:100%;height:auto;max-height:410px;}
+.s3-profile-detail {background:#fff;border:1px solid #e3e8f0;border-radius:14px;padding:1.2rem;min-width:0;}
+.s3-profile-detail h4 {font-family:"Spectral",serif;font-size:1.25rem;color:#16265F;}
+.s3-profile-detail p {font-size:.87rem;color:#475367;}
+.s3-mini-bars {display:grid;gap:.68rem;margin:1.05rem 0;}
+.s3-minirow {display:grid;grid-template-columns:minmax(74px,120px) minmax(0,1fr) 45px;gap:.5rem;align-items:center;font-size:.74rem;color:#263452;}
+.s3-minirow b {font-family:"IBM Plex Mono",monospace;font-size:.68rem;text-align:right;}
+.s3-minitrack {background:#e7ecf3;border-radius:99px;height:10px;overflow:hidden;}
+.s3-minitrack span {display:block;height:100%;background:#397F86;border-radius:99px;}
+.s3-next-activity {background:#e6edf3;padding:.75rem .85rem;border-radius:8px;font-weight:600;}
+.s3-data-warning {border-top:1px solid #dce5ef;padding-top:1rem;margin-top:.9rem;color:#525d6e;font-size:.8rem;}
+.s3-dim-selector {display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:.55rem;}
+.s3-dim-selector button {text-align:left;padding:.8rem .9rem;display:flex;align-items:center;gap:.6rem;font-weight:600;}
+.s3-dim-selector button span {opacity:.6;font-family:"IBM Plex Mono",monospace;font-size:.72rem;}
+.s3-dim-panel {background:#fff;border:1px solid #cbd7e4;border-top:4px solid #397F86;border-radius:12px;padding:1.2rem 1.45rem;margin-top:1rem;min-height:205px;}
+.s3-dim-panel h3 {font-size:1.4rem;margin:0 0 .8rem;color:#16265F;}
+.s3-dim-panel p {line-height:1.65;margin:.65rem 0;}
+.s3-dim-panel strong {font-family:"IBM Plex Mono",monospace;font-size:.75rem;color:#397F86;letter-spacing:.07em;}
+.s3-dim-evidence {background:#edf2f6;padding:.8rem 1rem;border-radius:8px;font-size:.86rem;}
+.s3-epistemic {display:grid;gap:.6rem;margin:1.3rem 0;}
+.s3-epistemic details {background:#fff;border:1px solid #d4dae4;border-radius:10px;padding:.7rem 1rem;}
+.s3-epistemic details[open] {border-color:#397F86;box-shadow:0 4px 14px rgba(0,0,0,.04);}
+.s3-epistemic summary {cursor:pointer;display:flex;justify-content:space-between;align-items:center;gap:.8rem;flex-wrap:wrap;list-style:revert;}
+.s3-epistemic summary strong {color:#16265F;}
+.s3-epistemic summary span {font-size:.85rem;color:#556073;}
+.s3-epistemic details p {margin:1rem 0 .3rem;line-height:1.6;}
+.s3-status-grid {display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:1rem;margin:1.3rem 0 2rem;}
+.s3-status {padding:1.4rem;background:#fff;border:1px solid #d4dbe5;border-radius:12px;}
+.s3-status h3 {margin:.85rem 0 .3rem;font-size:1.3rem;}
+.s3-status p {line-height:1.55;color:#4b5667;font-size:.89rem;}
+.s3-badge {display:inline-block;font-family:"IBM Plex Mono",monospace;font-size:.66rem;padding:.34rem .6rem;border-radius:5px;letter-spacing:.06em;}
+.s3-now {background:#d5ebe6;color:#0c5d50;}
+.s3-next-state {background:#eee5f5;color:#653c7e;}
+.marco-layout .marco-texto {min-width:0;}
+.marco-layout .marco-video {min-width:0;}
+@media(max-width:900px) {
+  .s3-profile-main {grid-template-columns:1fr;}
+  .s3-radar {max-height:360px;}
+}
+@media(max-width:680px) {
+  .s3-mastery {padding:.85rem;}
+  .s3-example-timeline {grid-template-columns:repeat(3,minmax(0,1fr));}
+  .s3-dim-selector {grid-template-columns:repeat(2,minmax(0,1fr));}
+  .s3-status-grid {grid-template-columns:1fr;}
+  .s3-example-panel {margin:0 .7rem .7rem;padding:1rem;}
+  .s3-examples-top,.s3-example-choices,.s3-example-timeline {padding-left:.7rem;padding-right:.7rem;}
+  .s3-profile-detail {padding:.85rem;}
+  .marco-layout .marco-video {flex:0 1 auto;width:100%;}
+}
+@media(prefers-reduced-motion:reduce) {
+ #intro-splash.s3-intro {transition:none;}
+}

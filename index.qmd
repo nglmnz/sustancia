@@ -1,11 +1,13 @@
-<!-- Presentación audiovisual opcional. No bloquea la navegación. -->
-<details class="v2-intro">
-  <summary>▶ Ver presentación audiovisual de Sustancia</summary>
-  <video controls muted playsinline preload="none" poster="assets/portada sustancia.png" width="100%">
+<!-- Video de entrada restaurado: ocupa la ventana completa y termina con su montaje original. -->
+```{=html}
+<div id="intro-splash" class="s3-intro" aria-label="Presentación audiovisual de Sustancia">
+  <video id="intro-video" autoplay muted playsinline preload="auto" poster="assets/portada sustancia.png" aria-label="Video introductorio de Sustancia">
     <source src="video_entrada.mp4" type="video/mp4">
-    Tu navegador no soporta este video.
   </video>
-</details>
+  <button type="button" id="btn-saltar-intro" class="s3-skip">Saltar introducción →</button>
+</div>
+<noscript><style>#intro-splash{display:none!important}</style></noscript>
+```
 
 ::: {.hero}
 ![](assets/portada sustancia.png)
@@ -15,11 +17,11 @@
 # Leer una tabla no es interpretarla.
 
 
-<p class="hero-sub">**Sustancia** es un juego web para aprender a interpretar resultados
+<p class="hero-sub"><strong>Sustancia</strong> es un juego web para aprender a interpretar resultados
 estadísticos en contexto: sociología, psicología, política pública, salud.
 El prototipo actual invita a escribir interpretaciones y recibir retroalimentación. La siguiente etapa explora un diagnóstico inicial, un perfil multidimensional de maestría y actividades que se ajustan al recorrido de aprendizaje.</p>
 ::: 
-<p class="v2-lead">**Aprender estadística es aprender a pensar con los datos.** No basta con encontrar el resultado: también hay que comprenderlo, discutir sus límites y transferir lo aprendido.</p>
+<p class="v2-lead"><strong>Aprender estadística es aprender a pensar con los datos.</strong> No basta con encontrar el resultado: también hay que comprenderlo, discutir sus límites y transferir lo aprendido.</p>
 
 <div class="v2-actions"><a href="como-funciona.qmd" class="v2-btn v2-primary">Conoce cómo funcionará →</a><a href="piloto.qmd" class="v2-btn">Explora el prototipo actual ↗</a></div>
 
@@ -63,7 +65,7 @@ el nulo — con el fenómeno y sus implicancias. <strong>4 puntos.</strong></div
 Una respuesta puede ser correcta en el cálculo y débil en interpretación. Otra puede mostrar razonamiento crítico, pero necesitar refuerzo en el procedimiento. Por eso el nuevo modelo de Sustancia busca representar **conceptos, operaciones, profundidad interpretativa, errores y evolución**, sin reducirlos a una única nota.
 
 <div class="v2-card-grid">
-  <article class="v2-card"><span class="v2-kicker">01 · CONCEPTOS</span><h3>Qué comprendes</h3><p>Variables, medidas, gráficos, distribuciones y conceptos fundamentales de Estadística I.</p></article>
+  <article class="v2-card"><span class="v2-kicker">01 · CONCEPTOS</span><h3>Qué comprendes</h3><p>Variables, medidas, gráficos, distribuciones y conceptos estadísticos a través de distintos niveles formativos.</p></article>
   <article class="v2-card"><span class="v2-kicker">02 · OPERACIONES</span><h3>Qué puedes hacer</h3><p>Reconocer, describir, calcular, comparar, interpretar, contextualizar, criticar y transferir.</p></article>
   <article class="v2-card"><span class="v2-kicker">03 · INTERPRETACIÓN</span><h3>Hasta dónde profundizas</h3><p>N1 lectura técnica; N2 interpretación estadística; N3 interpretación sustantiva; N4 lectura crítica.</p></article>
   <article class="v2-card"><span class="v2-kicker">04 · TRAYECTORIA</span><h3>Cómo revisas y evolucionas</h3><p>La respuesta inicial, la retroalimentación y la producción revisada pueden aportar nueva evidencia de aprendizaje.</p></article>
@@ -73,9 +75,33 @@ Una respuesta puede ser correcta en el cálculo y débil en interpretación. Otr
 
 ## De la respuesta a la revisión {.seccion}
 
-<div class="v2-cycle" aria-label="Ciclo pedagógico proyectado"><span>Producción</span><i aria-hidden="true">→</i><span>Retroalimentación</span><i aria-hidden="true">→</i><span>Revisión</span><i aria-hidden="true">→</i><span>Nueva evidencia</span></div>
+**Una misma dinámica puede movilizar aprendizajes diferentes.** Elige entre cuatro contextos —ciencias sociales, salud, metodología e ingeniería— y recorre cinco momentos del ciclo. Observa cómo cambia la respuesta cuando el sistema devuelve una pregunta en lugar de entregar una conclusión.
 
-La evaluación no debería cerrar el ejercicio. Sustancia investiga cómo una pregunta orientadora puede ayudar al estudiante a reconstruir su explicación, reconocer sus supuestos y volver sobre su argumento.
+```{=html}
+<div class="s3-examples" data-s3-examples>
+  <div class="s3-examples-top"><span class="v2-kicker">LABORATORIO · CUATRO CONTEXTOS</span><span class="s3-example-counter" data-s3-example-counter>1 de 5 · ejemplo simulado</span></div>
+  <div class="s3-example-choices" role="group" aria-label="Elegir contexto estadístico">
+    <button type="button" data-s3-example="ingresos" aria-pressed="true">Ingresos</button>
+    <button type="button" data-s3-example="salud" aria-pressed="false">Salud</button>
+    <button type="button" data-s3-example="encuestas" aria-pressed="false">Encuestas</button>
+    <button type="button" data-s3-example="ingenieria" aria-pressed="false">Ingeniería</button>
+  </div>
+  <div class="s3-example-timeline" role="group" aria-label="Explorar el ciclo de aprendizaje">
+    <button type="button" data-s3-stage="0" aria-pressed="true">1. Desafío</button>
+    <button type="button" data-s3-stage="1" aria-pressed="false">2. Producción</button>
+    <button type="button" data-s3-stage="2" aria-pressed="false">3. Feedback</button>
+    <button type="button" data-s3-stage="3" aria-pressed="false">4. Revisión</button>
+    <button type="button" data-s3-stage="4" aria-pressed="false">5. Evidencia</button>
+  </div>
+  <div class="s3-example-panel" aria-live="polite">
+    <span class="v2-kicker" data-s3-example-role>Consigna del juego</span>
+    <h3 data-s3-example-heading>Ingresos y valores extremos · Ciencias sociales</h3>
+    <p data-s3-example-text>En una comuna la media de ingresos es muy superior a la mediana. ¿Qué significa?</p>
+    <button type="button" class="s3-next" data-s3-example-next>Ver el siguiente momento →</button>
+  </div>
+  <p class="v2-small">Ejemplos hipotéticos para entender el modelo; no son conversaciones reales ni demuestran eficacia. El estudiante produce la respuesta, no la IA.</p>
+</div>
+```
 
 ## Cómo funcionará {.seccion}
 
@@ -88,38 +114,34 @@ El diseño adaptativo proyecta un **diagnóstico inicial**, la estimación de un
 ```{=html}
 <div class="marco-layout">
   <div class="marco-texto">
-    <div class="cita-marco">La apuesta epistemológica sigue a Gilbert Simondon: el
-    objetivo no es operar la técnica estadística como caja negra, sino comprender su
-    funcionamiento interno — qué decide el investigador, qué transforma el algoritmo,
-    qué supuestos carga el modelo. Esa comprensión es una relación no alienada con
-    el instrumento.</div>
+    <div class="cita-marco">La apuesta epistemológica se inspira en Gilbert Simondon: aprender estadística no consiste solo en ejecutar técnicas, sino en comprender las decisiones que producen los resultados, sus supuestos y aquello que no permiten afirmar.</div>
   </div>
-  
   <div class="marco-video">
-    <video autoplay loop muted playsinline class="video-chico">
+    <video autoplay loop muted playsinline class="video-chico" aria-label="Video ilustrativo del proyecto">
       <source src="maya.mp4" type="video/mp4">
       Tu navegador no soporta videos.
     </video>
   </div>
 </div>
+```
 
-El corpus inicial del juego proviene de una investigación empírica real sobre
-habitus tecnológico y salud mental en estudiantes universitarios de primer año
-(n = 276), lo que permite que cada ítem tenga contexto, decisiones metodológicas
-documentadas y hallazgos genuinos — incluidos los nulos, que suelen ser los más
-formativos de interpretar.
+El corpus inicial del prototipo proviene de investigación empírica sobre habitus tecnológico y salud mental en estudiantes universitarios de primer año (*n* = 276). La propuesta formativa se amplía ahora hacia materiales y experiencias de estadística en diferentes campos.
 
 ## Estado del proyecto {.seccion}
 
-| Componente | Estado de desarrollo |
-|---|---|
-| Hipótesis pedagógica, niveles N1–N4 y taxonomía inicial | Documentados |
-| Prototipo interpretativo en Shiny | Experimental |
-| Diagnóstico de entrada y perfil multidimensional | Diseño en desarrollo |
-| Retroalimentación recursiva y adaptación | Desarrollo proyectado |
-| Agente de extracción y banco curricular revisado | Prototipado planificado |
-| Paneles docentes e institucionales | Etapa futura |
+No todas las piezas de Sustancia están disponibles al mismo tiempo. Estas etiquetas separan lo que ya se puede explorar de lo que estamos diseñando.
 
-Para preservar la trazabilidad del proyecto, distinguimos entre el **prototipo disponible** y las capacidades **aún no validadas**.
+```{=html}
+<div class="s3-status-grid">
+  <article class="s3-status"><span class="s3-badge s3-now">EXISTENTE</span><h3>Prototipo en Shiny</h3><p>Actividades de interpretación y una propuesta inicial de evaluación formativa.</p></article>
+  <article class="s3-status"><span class="s3-badge s3-now">DOCUMENTADO</span><h3>Marco pedagógico</h3><p>Taxonomía de errores, N1–N4 y fundamento teórico del proyecto.</p></article>
+  <article class="s3-status"><span class="s3-badge s3-next-state">EN DESARROLLO</span><h3>Vector de maestría</h3><p>Diagnóstico inicial y perfil multidimensional sustentado en evidencias.</p></article>
+  <article class="s3-status"><span class="s3-badge s3-next-state">PROYECTADO</span><h3>Adaptación y seguimiento</h3><p>Conversaciones recursivas, selección de actividades y paneles para docentes e instituciones.</p></article>
+</div>
+```
 
-[Leer la fundamentación completa →](fundamentacion.qmd) · [Ver el diseño pedagógico →](pedagogia.qmd)
+[Conocer la fundamentación →](fundamentacion.qmd) · [Explorar el modelo pedagógico →](pedagogia.qmd)
+
+```{=html}
+<script src="assets/sustancia-interactions.js" defer></script>
+```
