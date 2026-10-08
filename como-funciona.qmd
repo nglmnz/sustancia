@@ -1,0 +1,69 @@
+---
+title: "Cómo funciona"
+description: "Del diagnóstico inicial a la revisión del razonamiento: recorrido propuesto para Sustancia."
+toc: true
+---
+
+::: {.hero}
+<div class="eyebrow">Experiencia de aprendizaje · arquitectura proyectada</div>
+
+# Una trayectoria que <em>cambia contigo</em>
+
+<p class="hero-sub">Sustancia busca reconocer desde dónde comienza cada estudiante, proponer desafíos pertinentes y convertir la retroalimentación en una nueva oportunidad de pensar. Esta página muestra la experiencia prevista; no todas sus etapas están implementadas en el piloto actual.</p>
+:::
+
+## El recorrido del estudiante {.seccion}
+
+<div class="v2-steps" aria-label="Recorrido previsto de aprendizaje">
+  <div class="v2-step"><span class="v2-step-num">01</span><div><h3>Diagnóstico de entrada</h3><p>Actividades breves exploran conocimientos previos, familiaridad con conceptos estadísticos y diferentes formas de razonar. No buscamos etiquetar a una persona, sino comprender sus condiciones de partida.</p></div></div>
+  <div class="v2-step"><span class="v2-step-num">02</span><div><h3>Primer perfil de maestría</h3><p>Se estima un perfil inicial por conceptos, operaciones y profundidad interpretativa. Lo que todavía no se ha observado permanece como información desconocida, no como una incapacidad.</p></div></div>
+  <div class="v2-step"><span class="v2-step-num">03</span><div><h3>Comienza el juego</h3><p>El sistema presenta un desafío del curso: leer una tabla, calcular una medida, comparar resultados, interpretar un dato o discutir sus límites.</p></div></div>
+  <div class="v2-step"><span class="v2-step-num">04</span><div><h3>Producción propia</h3><p>El estudiante elabora una respuesta. Según la actividad, puede escribir una interpretación, completar una afirmación, justificar una comparación o resolver un cálculo.</p></div></div>
+  <div class="v2-step"><span class="v2-step-num">05</span><div><h3>Retroalimentación y conversación epistemológica</h3><p>El sistema señala una dificultad y ofrece preguntas que invitan a contrastar, reconsiderar o ampliar el argumento. La IA no debería actuar como un oráculo que entrega de inmediato la interpretación final.</p></div></div>
+  <div class="v2-step"><span class="v2-step-num">06</span><div><h3>Revisión y nueva evidencia</h3><p>La respuesta revisada permite observar qué cambió en el razonamiento: si se corrigió un error, si se incorporó nueva evidencia y si se logró transferir el concepto.</p></div></div>
+  <div class="v2-step"><span class="v2-step-num">07</span><div><h3>Próximo desafío</h3><p>El perfil se actualiza con las nuevas evidencias y orienta la siguiente actividad mediante criterios pedagógicos. La trayectoria puede reforzar, profundizar o explorar otro contexto.</p></div></div>
+</div>
+
+## Una revisión, no solo otra respuesta {.seccion}
+
+<div class="v2-dialog" aria-label="Ejemplo ilustrativo de conversación">
+  <div class="v2-dialog-header">EJEMPLO ILUSTRATIVO · MEDIA Y VALORES EXTREMOS</div>
+  <div class="v2-bubble v2-system"><strong>Actividad.</strong> En una distribución de ingresos, la media es muy superior a la mediana. ¿Qué podría explicar esa diferencia?</div>
+  <div class="v2-bubble v2-student"><strong>Primera respuesta.</strong> La media es mayor porque la mayoría gana esa cantidad.</div>
+  <div class="v2-bubble v2-system"><strong>Pregunta orientadora.</strong> ¿La media representa necesariamente el ingreso de la mayoría? ¿Qué pasaría si unas pocas personas tuvieran ingresos excepcionalmente altos?</div>
+  <div class="v2-bubble v2-student"><strong>Respuesta revisada.</strong> La media podría aumentar por pocos ingresos muy altos; no puedo afirmar que la mayoría recibe ese monto.</div>
+  <div class="v2-dialog-footer">El sistema puede registrar las dos producciones, la retroalimentación y el cambio observado, sin confundir una revisión puntual con dominio definitivo.</div>
+</div>
+
+Las conversaciones epistemológicas pueden partir de una **fuente**, identificar un **problema**, solicitar una **posición**, exigir **contraste**, promover **transferencia** y terminar en una **aplicación**. Es una caja de herramientas pedagógicas, no un cuestionario rígido.
+
+## ¿Qué cambia en el perfil? {.seccion}
+
+<div class="v2-panel">
+  <p>El vector de maestría no es una nota única. Reúne evidencias de lo que la persona sabe, puede hacer y necesita seguir practicando.</p>
+  <div class="v2-pill-grid"><span>Conceptos</span><span>Operaciones</span><span>Profundidad N1–N4</span><span>Errores recurrentes</span><span>Prerrequisitos</span><span>Trayectoria y revisión</span></div>
+  <p class="v2-small">Los indicadores requieren calibración y validación antes de utilizarse para tomar decisiones educativas reales.</p>
+</div>
+
+## ¿Quién hace qué? {.seccion}
+
+| Actor | Responsabilidad |
+|---|---|
+| Equipo y docentes | Definen el currículo, validan actividades y supervisan criterios pedagógicos. |
+| Agentes de apoyo | Recuperan material autorizado, proponen ejercicios y apoyan evaluaciones con reglas y rúbricas. |
+| Motor pedagógico | Selecciona actividades mediante criterios explícitos y el perfil estimado del estudiante. |
+| Estudiante | Responde, contrasta, revisa y construye su propio razonamiento. |
+
+**Importante:** los textos y programas del curso se incorporan y revisan desde el equipo académico. **El estudiante no tiene que subir documentos para jugar.**
+
+## Lo que existe y lo que estamos diseñando {.seccion}
+
+| Componente | Situación |
+|---|---|
+| Propuesta pedagógica, niveles N1–N4 y taxonomía inicial | Documentados en el proyecto |
+| Prototipo de juego con actividades interpretativas | Disponible para explorar, sujeto a disponibilidad del servicio |
+| Diagnóstico inicial y vector multidimensional operativo | En diseño y desarrollo |
+| Conversaciones con revisión sistemática y selección adaptativa | En desarrollo |
+| Banco curricular asistido por agentes y paneles de seguimiento | Proyectados |
+
+[Explorar el prototipo actual →](piloto.qmd) · [Conocer el modelo pedagógico →](pedagogia.qmd)
