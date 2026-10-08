@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="es" xml:lang="es"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.10.18">
+<meta name="generator" content="quarto-1.10.19">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
@@ -42,10 +42,10 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="site_libs/quarto-html/anchor.min.js"></script>
 <link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-fc6e5c1d973041ca1a9cf4d4c136f86c.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-7f8e8be3ef05ac97a47a627e7d3d7191.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-e4fb3f13fdfa86c1aa27c6024b51e48a.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-357f25b72c5962c353f8ee5658904763.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -105,15 +105,23 @@ ul.task-list li input[type="checkbox"] {
   </li>  
   <li class="nav-item">
     <a class="nav-link" href="./pedagogia.html"> 
-<span class="menu-text">Diseño pedagógico</span></a>
+<span class="menu-text">Modelo pedagógico</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="./como-funciona.html"> 
+<span class="menu-text">Cómo funciona</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="./universidades.html"> 
+<span class="menu-text">Universidades</span></a>
   </li>  
   <li class="nav-item">
     <a class="nav-link" href="./equipo.html"> 
-<span class="menu-text">Proyecto y equipo</span></a>
+<span class="menu-text">Equipo</span></a>
   </li>  
   <li class="nav-item">
     <a class="nav-link" href="./piloto.html"> 
-<span class="menu-text">Prueba el Piloto</span></a>
+<span class="menu-text">Prototipo</span></a>
   </li>  
 </ul>
           </div> <!-- /navcollapse -->
@@ -133,64 +141,32 @@ ul.task-list li input[type="checkbox"] {
 
 
 
-<!-- Contenedor del video (Splash Screen) -->
-<div id="intro-splash">
-<p><video id="intro-video" autoplay="" muted="" playsinline=""> <source src="video_entrada.mp4" type="video/mp4"> </video> <!-- BOTÓN PARA SALTAR LA INTRODUCCIÓN --> <button id="btn-saltar-intro">Saltar Introducción →</button></p>
-</div>
-<!-- Script que maneja el temporizador y el cierre del video -->
-<script>
-  document.addEventListener('DOMContentLoaded', function() {
-    const splash = document.getElementById('intro-splash');
-    const video = document.getElementById('intro-video');
-    const btnSaltar = document.getElementById('btn-saltar-intro');
-
-    // 1. CONGELAR: Bloqueamos el scroll del navegador apenas entra el usuario
-    document.body.style.overflow = 'hidden';
-
-    // Función única para cerrar la intro de forma limpia
-    function finalizarIntro() {
-      splash.classList.add('oculto');
-      if (video) video.pause();
-      
-      // 2. LIBERAR: Le devolvemos el scroll al usuario para que pueda navegar por la web
-      document.body.style.overflow = 'auto';
-      
-      // Quita el elemento después de la transición de CSS (1 segundo)
-      setTimeout(() => {
-        splash.style.display = 'none';
-        splash.remove(); // Limpia el DOM por completo
-      }, 1000); 
-    }
-
-    // 3. Temporizador: Mostrar el botón automáticamente a los 4 segundos
-    setTimeout(() => {
-      if (btnSaltar) {
-        btnSaltar.classList.add('activo');
-      }
-    }, 4000);
-
-    // 4. Si hacen click en el botón, se acaba la intro inmediatamente
-    if (btnSaltar) {
-      btnSaltar.addEventListener('click', finalizarIntro);
-    }
-
-    // 5. Si el video termina solo por su cuenta, se cierra de forma automática
-    if (video) {
-      video.addEventListener('ended', finalizarIntro);
-    }
-  });
-</script>
+<!-- Presentación audiovisual opcional. No bloquea la navegación. -->
+<details class="v2-intro">
+<summary>
+▶ Ver presentación audiovisual de Sustancia
+</summary>
+<video controls="" muted="" playsinline="" preload="none" poster="assets/portada sustancia.png" width="100%">
+<source src="video_entrada.mp4" type="video/mp4">
+Tu navegador no soporta este video. </video>
+</details>
 <div class="hero">
 <p><img src="assets/portada sustancia.png" class="img-fluid"></p>
 <div class="eyebrow">
-Sustancia · proyecto en desarrollo
+Sustancia · laboratorio de aprendizaje estadístico · en desarrollo
 </div>
 <section id="leer-una-tabla-no-es-interpretarla." class="level1">
 <h1>Leer una tabla no es interpretarla.</h1>
 <p class="hero-sub">
-<strong>Sustancia</strong> es un juego web para aprender a interpretar resultados estadísticos en contexto: sociología, psicología, política pública, salud. El jugador no elige alternativas — escribe su interpretación, y un evaluador con rúbricas explícitas le dice qué tan profundo llegó y qué le faltó.
+<strong>Sustancia</strong> es un juego web para aprender a interpretar resultados estadísticos en contexto: sociología, psicología, política pública, salud. El prototipo actual invita a escribir interpretaciones y recibir retroalimentación. La siguiente etapa explora un diagnóstico inicial, un perfil multidimensional de maestría y actividades que se ajustan al recorrido de aprendizaje.
 </p>
 </section>
+</div>
+<p class="v2-lead">
+<strong>Aprender estadística es aprender a pensar con los datos.</strong> No basta con encontrar el resultado: también hay que comprenderlo, discutir sus límites y transferir lo aprendido.
+</p>
+<div class="v2-actions">
+<a href="./como-funciona.html" class="v2-btn v2-primary">Conoce cómo funcionará →</a><a href="./piloto.html" class="v2-btn">Explora el prototipo actual ↗</a>
 </div>
 <section id="mira-la-diferencia" class="level2 seccion">
 <h2 class="seccion anchored" data-anchor-id="mira-la-diferencia">Mira la diferencia</h2>
@@ -269,202 +245,123 @@ Tiempo de pantalla
 </div>
 </div>
 </section>
-<section id="cuatro-niveles-de-profundidad" class="level2 seccion">
-<h2 class="seccion anchored" data-anchor-id="cuatro-niveles-de-profundidad">Cuatro niveles de profundidad</h2>
-<p>La progresión del juego operacionaliza una escalera validada por la investigación en educación estadística (Curcio; Shaughnessy; Garfield y Ben-Zvi): comprender un resultado no es un acto binario sino una profundización por capas. Haz clic en cada nivel para expandirlo.</p>
-<div class="escalera" id="escalera-niveles">
-
-  <div class="peldano peldano-1" tabindex="0" role="button" aria-expanded="false">
-    <span class="peldano-n">N1</span>
-    <div>
-      <h3 class="anchored">Lectura técnica</h3>
-      <p>Decodificar el output correctamente: valores, significancia, escalas. Necesario, pero es el piso, no el techo.</p>
-      <div class="peldano-detalle">
-        Ejemplos de errores en este nivel: confundir el valor p con la probabilidad de que la hipótesis sea verdadera,
-        leer un coeficiente negativo como "no hay efecto", ignorar los intervalos de confianza.
-        El juego asigna 1 punto a las respuestas que solo alcanzan este nivel.
-      </div>
-    </div>
-  </div>
-
-  <div class="peldano peldano-2" tabindex="0" role="button" aria-expanded="false">
-    <span class="peldano-n">N2</span>
-    <div>
-      <h3 class="anchored">Interpretación estadística</h3>
-      <p>Traducir a lenguaje de relación: dirección, magnitud, comparación, condicionalidad ("controlando por…").</p>
-      <div class="peldano-detalle">
-        En este nivel el jugador ya no solo lee números: los compara entre sí, habla de magnitudes relativas
-        y usa el vocabulario correcto de la técnica. "Controlando por género, el uso compulsivo predice…"
-        es una oración de nivel 2. El juego asigna 2 puntos.
-      </div>
-    </div>
-  </div>
-
-  <div class="peldano peldano-3" tabindex="0" role="button" aria-expanded="false">
-    <span class="peldano-n">N3</span>
-    <div>
-      <h3 class="anchored">Interpretación sustantiva</h3>
-      <p>Conectar el resultado con el fenómeno: ¿qué significa esto para el problema de investigación, la teoría, la intervención?</p>
-      <div class="peldano-detalle">
-        La marca distintiva del nivel 3 es la inferencia hacia el mundo: el resultado deja de ser un número
-        y se convierte en un argumento sobre la realidad. Los hallazgos nulos son especialmente formativos aquí:
-        "el tiempo de pantalla no predice" es tan informativo como lo que sí predice. El juego asigna 3–4 puntos.
-      </div>
-    </div>
-  </div>
-
-  <div class="peldano peldano-4" tabindex="0" role="button" aria-expanded="false">
-    <span class="peldano-n">N4</span>
-    <div>
-      <h3 class="anchored">Interpretación crítica-reflexiva</h3>
-      <p>Reconstruir la cadena de decisiones que produjo el resultado: supuestos, límites del diseño, explicaciones alternativas.</p>
-      <div class="peldano-detalle">
-        Este nivel sigue a Simondon: la relación no alienada con un objeto técnico consiste en comprender
-        su funcionamiento interno. El jugador en N4 pregunta: ¿por qué esta técnica? ¿Qué supuestos carga?
-        ¿Qué alternativa de análisis habría dado un resultado distinto? ¿Qué no permite afirmar este diseño?
-        El juego asigna 5 puntos — el máximo de la rúbrica.
-      </div>
-    </div>
-  </div>
-
+<section id="el-aprendizaje-tiene-varias-dimensiones" class="level2 seccion">
+<h2 class="seccion anchored" data-anchor-id="el-aprendizaje-tiene-varias-dimensiones">El aprendizaje tiene varias dimensiones</h2>
+<p>Una respuesta puede ser correcta en el cálculo y débil en interpretación. Otra puede mostrar razonamiento crítico, pero necesitar refuerzo en el procedimiento. Por eso el nuevo modelo de Sustancia busca representar <strong>conceptos, operaciones, profundidad interpretativa, errores y evolución</strong>, sin reducirlos a una única nota.</p>
+<div class="v2-card-grid">
+<article class="v2-card">
+<span class="v2-kicker">01 · CONCEPTOS</span>
+<h3 class="anchored">
+Qué comprendes
+</h3>
+<p>
+Variables, medidas, gráficos, distribuciones y conceptos fundamentales de Estadística I.
+</p>
+</article>
+<article class="v2-card">
+<span class="v2-kicker">02 · OPERACIONES</span>
+<h3 class="anchored">
+Qué puedes hacer
+</h3>
+<p>
+Reconocer, describir, calcular, comparar, interpretar, contextualizar, criticar y transferir.
+</p>
+</article>
+<article class="v2-card">
+<span class="v2-kicker">03 · INTERPRETACIÓN</span>
+<h3 class="anchored">
+Hasta dónde profundizas
+</h3>
+<p>
+N1 lectura técnica; N2 interpretación estadística; N3 interpretación sustantiva; N4 lectura crítica.
+</p>
+</article>
+<article class="v2-card">
+<span class="v2-kicker">04 · TRAYECTORIA</span>
+<h3 class="anchored">
+Cómo revisas y evolucionas
+</h3>
+<p>
+La respuesta inicial, la retroalimentación y la producción revisada pueden aportar nueva evidencia de aprendizaje.
+</p>
+</article>
 </div>
-
-<script>
-(function(){
-  var peldanos = document.querySelectorAll('#escalera-niveles .peldano');
-  peldanos.forEach(function(p){
-    function toggle(){
-      var abierto = p.classList.contains('activo');
-      // cerrar todos
-      peldanos.forEach(function(q){ q.classList.remove('activo'); q.setAttribute('aria-expanded','false'); });
-      if(!abierto){ p.classList.add('activo'); p.setAttribute('aria-expanded','true'); }
-    }
-    p.addEventListener('click', toggle);
-    p.addEventListener('keydown', function(e){ if(e.key==='Enter'||e.key===' '){ e.preventDefault(); toggle(); } });
-  });
-})();
-</script>
+<p><a href="./pedagogia.html">Explora dos perfiles simulados en el modelo pedagógico →</a></p>
 </section>
-<section id="cómo-funciona" class="level2 seccion">
-<h2 class="seccion anchored" data-anchor-id="cómo-funciona">Cómo funciona</h2>
-<div class="tracker">
-  <div class="tracker-item reveal">
-    <div class="tracker-icon">✍️</div>
-    <div>
-      <div class="tracker-fase">1 · Elige contexto</div>
-      <div class="tracker-desc">El jugador selecciona disciplina y temática. El mismo esqueleto estadístico se presenta con datos y narrativas distintas.</div>
-    </div>
-    <span class="tracker-badge completo">activo</span>
-  </div>
-  <div class="tracker-item reveal">
-    <div class="tracker-icon">💬</div>
-    <div>
-      <div class="tracker-fase">2 · Interpreta en texto libre</div>
-      <div class="tracker-desc">Frente a un output real — tabla de regresión, perfiles de cluster, distribución — el jugador escribe su interpretación. No hay alternativas.</div>
-    </div>
-    <span class="tracker-badge completo">activo</span>
-  </div>
-  <div class="tracker-item reveal">
-    <div class="tracker-icon">📊</div>
-    <div>
-      <div class="tracker-fase">3 · Recibe evaluación formativa</div>
-      <div class="tracker-desc">Un modelo de lenguaje con rúbricas explícitas determina el nivel alcanzado, detecta errores y retroalimenta con el corpus metodológico del proyecto.</div>
-    </div>
-    <span class="tracker-badge completo">activo</span>
-  </div>
-  <div class="tracker-item reveal">
-    <div class="tracker-icon">🗂️</div>
-    <div>
-      <div class="tracker-fase">4 · Los errores se coleccionan</div>
-      <div class="tracker-desc">Cometer un error resta puntos pero desbloquea su ficha: causalidad espuria, reificación de tipologías, artefactos de composición. La colección completa es un logro.</div>
-    </div>
-    <span class="tracker-badge completo">activo</span>
-  </div>
+<section id="de-la-respuesta-a-la-revisión" class="level2 seccion">
+<h2 class="seccion anchored" data-anchor-id="de-la-respuesta-a-la-revisión">De la respuesta a la revisión</h2>
+<div class="v2-cycle" aria-label="Ciclo pedagógico proyectado">
+<span>Producción</span><i aria-hidden="true">→</i><span>Retroalimentación</span><i aria-hidden="true">→</i><span>Revisión</span><i aria-hidden="true">→</i><span>Nueva evidencia</span>
+</div>
+<p>La evaluación no debería cerrar el ejercicio. Sustancia investiga cómo una pregunta orientadora puede ayudar al estudiante a reconstruir su explicación, reconocer sus supuestos y volver sobre su argumento.</p>
+</section>
+<section id="cómo-funcionará" class="level2 seccion">
+<h2 class="seccion anchored" data-anchor-id="cómo-funcionará">Cómo funcionará</h2>
+<p>El diseño adaptativo proyecta un <strong>diagnóstico inicial</strong>, la estimación de un <strong>vector de maestría</strong>, la selección de actividades curriculares y un ciclo de revisión guiada. El estudiante comienza jugando a partir de desafíos propuestos por el sistema; <strong>no necesita subir documentos</strong>. Las fuentes y ejercicios son curados por el equipo académico.</p>
+<div class="v2-actions">
+<a class="v2-btn v2-primary" href="./como-funciona.html">Sigue el recorrido del estudiante →</a><a class="v2-btn" href="./universidades.html">Aplicación universitaria →</a>
 </div>
 </section>
 <section id="marco" class="level2 seccion">
 <h2 class="seccion anchored" data-anchor-id="marco">Marco</h2>
 <div class="marco-layout">
-  <div class="marco-texto">
-    <div class="cita-marco">La apuesta epistemológica sigue a Gilbert Simondon: el
-    objetivo no es operar la técnica estadística como caja negra, sino comprender su
-    funcionamiento interno — qué decide el investigador, qué transforma el algoritmo,
-    qué supuestos carga el modelo. Esa comprensión es una relación no alienada con
-    el instrumento.</div>
-  </div>
-  
-  <div class="marco-video">
-    <video autoplay="" loop="" muted="" playsinline="" class="video-chico">
-      <source src="maya.mp4" type="video/mp4">
-      Tu navegador no soporta videos.
-    </video>
-  </div>
+<div class="marco-texto">
+<pre><code>&lt;div class="cita-marco"&gt;La apuesta epistemológica sigue a Gilbert Simondon: el
+objetivo no es operar la técnica estadística como caja negra, sino comprender su
+funcionamiento interno — qué decide el investigador, qué transforma el algoritmo,
+qué supuestos carga el modelo. Esa comprensión es una relación no alienada con
+el instrumento.&lt;/div&gt;</code></pre>
 </div>
-
-El corpus inicial del juego proviene de una investigación empírica real sobre
-habitus tecnológico y salud mental en estudiantes universitarios de primer año
-(n = 276), lo que permite que cada ítem tenga contexto, decisiones metodológicas
-documentadas y hallazgos genuinos — incluidos los nulos, que suelen ser los más
-formativos de interpretar.
-
-## Estado del proyecto {.seccion}
-
-```{=html}
-<div class="tracker">
-  <div class="tracker-item reveal">
-    <div class="tracker-icon">✅</div>
-    <div>
-      <div class="tracker-fase">Diseño pedagógico</div>
-      <div class="tracker-desc">Niveles, taxonomía de errores, rúbricas, ítems piloto</div>
-    </div>
-    <span class="tracker-badge completo">Completo v0.1</span>
-  </div>
-  <div class="tracker-item reveal">
-    <div class="tracker-icon">🔨</div>
-    <div>
-      <div class="tracker-fase">Prototipo Shiny</div>
-      <div class="tracker-desc">App funcional con evaluador vía API</div>
-    </div>
-    <span class="tracker-badge desarrollo">En desarrollo</span>
-  </div>
-  <div class="tracker-item reveal">
-    <div class="tracker-icon">⏳</div>
-    <div>
-      <div class="tracker-fase">Piloto</div>
-      <div class="tracker-desc">Prueba con estudiantes; calibración del evaluador</div>
-    </div>
-    <span class="tracker-badge proximo">Próximo</span>
-  </div>
-  <div class="tracker-item reveal">
-    <div class="tracker-icon">📋</div>
-    <div>
-      <div class="tracker-fase">Expansión</div>
-      <div class="tracker-desc">15 ítems, contextos alternativos, corpus ampliado</div>
-    </div>
-    <span class="tracker-badge proximo">Planificado</span>
-  </div>
+<div class="marco-video">
+<pre><code>&lt;video autoplay loop muted playsinline class="video-chico"&gt;
+  &lt;source src="maya.mp4" type="video/mp4"&gt;
+  Tu navegador no soporta videos.
+&lt;/video&gt;</code></pre>
 </div>
-
-<script>
-(function(){
-  if(!('IntersectionObserver' in window)) {
-    document.querySelectorAll('.reveal,.reveal-left').forEach(function(el){ el.classList.add('visible'); });
-    return;
-  }
-  var io = new IntersectionObserver(function(entries){
-    entries.forEach(function(e){
-      if(e.isIntersecting){
-        // delay escalonado según posición
-        var items = Array.from(e.target.parentElement.querySelectorAll('.reveal,.reveal-left'));
-        var idx = items.indexOf(e.target);
-        setTimeout(function(){ e.target.classList.add('visible'); }, idx * 90);
-        io.unobserve(e.target);
-      }
-    });
-  }, { threshold: 0.12 });
-  document.querySelectorAll('.reveal,.reveal-left').forEach(function(el){ io.observe(el); });
-})();
-</script>
+</div>
+<p>El corpus inicial del juego proviene de una investigación empírica real sobre habitus tecnológico y salud mental en estudiantes universitarios de primer año (n = 276), lo que permite que cada ítem tenga contexto, decisiones metodológicas documentadas y hallazgos genuinos — incluidos los nulos, que suelen ser los más formativos de interpretar.</p>
+</section>
+<section id="estado-del-proyecto" class="level2 seccion">
+<h2 class="seccion anchored" data-anchor-id="estado-del-proyecto">Estado del proyecto</h2>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 50%">
+<col style="width: 50%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Componente</th>
+<th>Estado de desarrollo</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Hipótesis pedagógica, niveles N1–N4 y taxonomía inicial</td>
+<td>Documentados</td>
+</tr>
+<tr class="even">
+<td>Prototipo interpretativo en Shiny</td>
+<td>Experimental</td>
+</tr>
+<tr class="odd">
+<td>Diagnóstico de entrada y perfil multidimensional</td>
+<td>Diseño en desarrollo</td>
+</tr>
+<tr class="even">
+<td>Retroalimentación recursiva y adaptación</td>
+<td>Desarrollo proyectado</td>
+</tr>
+<tr class="odd">
+<td>Agente de extracción y banco curricular revisado</td>
+<td>Prototipado planificado</td>
+</tr>
+<tr class="even">
+<td>Paneles docentes e institucionales</td>
+<td>Etapa futura</td>
+</tr>
+</tbody>
+</table>
+<p>Para preservar la trazabilidad del proyecto, distinguimos entre el <strong>prototipo disponible</strong> y las capacidades <strong>aún no validadas</strong>.</p>
 <p><a href="./fundamentacion.html">Leer la fundamentación completa →</a> · <a href="./pedagogia.html">Ver el diseño pedagógico →</a></p>
 
 
@@ -883,7 +780,7 @@ formativos de interpretar.
       &nbsp;
     </div>   
     <div class="nav-footer-center">
-<p>Sustancia · Proyecto de investigación interdisciplinaria · Universidad Alberto Hurtado · 2026</p>
+<p>Sustancia · Proyecto interdisciplinario en investigación y desarrollo · 2026</p>
 </div>
     <div class="nav-footer-right">
       &nbsp;
