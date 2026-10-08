@@ -118,9 +118,7 @@ cognitivo del estudiante.
 </script>
 ```
 
-La propuesta de Sustancia prioriza una arquitectura incorporativa; su realización práctica deberá contrastarse en los prototipos y pilotos. No existen preguntas de alternativas; el evaluador
-tiene prohibido redactar interpretaciones; su única salida es nivel alcanzado,
-errores detectados y preguntas que devuelven el trabajo al jugador.
+La propuesta de Sustancia prioriza una arquitectura incorporativa: el estudiante produce su propia interpretación y la retroalimentación le ayuda a revisarla. El prototipo actual privilegia la escritura y la evaluación formativa; la recursividad sistemática y la adaptación multidimensional deben implementarse y contrastarse en los pilotos.
 
 ## La interpretación sustantiva como capital {.seccion}
 
