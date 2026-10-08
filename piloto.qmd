@@ -1,11 +1,30 @@
 ---
-title: "Prueba el piloto"
+title: "Explora el prototipo"
+description: "Versión experimental del juego Sustancia."
 page-layout: full
 ---
 
-<iframe 
-  src="https://tbu8oh-angel0dario-munoz0ra0iman.shinyapps.io/app_v2_0309/" 
-  width="100%" 
-  height="800px" 
-  style="border: none; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
-</iframe>
+::: {.hero}
+<div class="eyebrow">Versión experimental</div>
+
+# Prueba el <em>prototipo actual</em>
+
+<p class="hero-sub">Esta experiencia permite explorar la interpretación de resultados estadísticos, la respuesta escrita y la retroalimentación formativa. El diagnóstico adaptativo, el vector de maestría longitudinal y los paneles institucionales forman parte de la siguiente etapa de desarrollo.</p>
+:::
+
+El siguiente espacio carga una aplicación externa desarrollada en Shiny. Su disponibilidad depende del servicio de alojamiento. **No ingreses datos personales ni información académica sensible en esta versión experimental.**
+
+<div class="v2-pilot-shell">
+  <iframe
+    src="https://tbu8oh-angel0dario-munoz0ra0iman.shinyapps.io/app_v2_0309/"
+    title="Prototipo experimental de Sustancia en Shiny"
+    loading="lazy"
+    width="100%"
+    height="780"
+    style="border:0;border-radius:10px;"
+  ></iframe>
+</div>
+
+[Si no carga el prototipo, ábrelo en una pestaña nueva ↗](https://tbu8oh-angel0dario-munoz0ra0iman.shinyapps.io/app_v2_0309/)
+
+[Conocer el recorrido adaptativo proyectado →](como-funciona.qmd)
