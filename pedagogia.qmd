@@ -1,75 +1,134 @@
 ---
-title: "Diseño pedagógico"
+title: "Modelo pedagógico"
+description: "Operaciones, profundidad interpretativa y perfil multidimensional de maestría en Sustancia."
 toc: true
 ---
 
-## Fundamento
+::: {.hero}
+<div class="eyebrow">Arquitectura pedagógica · diseño en evolución</div>
 
-La progresión del juego se basa en la taxonomía de comprensión de representaciones
-de datos de Curcio (1987), extendida por Shaughnessy (2007), y en la distinción
-entre alfabetización, razonamiento y pensamiento estadístico de Garfield y
-Ben-Zvi (2008). El juego no inventa niveles arbitrarios: **operacionaliza una
-progresión que la literatura ya validó**, y la convierte en mecánica lúdica.
+# Cada estudiante aprende desde un <em>punto de partida distinto</em>
 
-| Nivel | Nombre | Equivalente en la literatura |
-|---|---|---|
-| N1 | Lectura técnica | *Reading the data* / alfabetización estadística |
-| N2 | Interpretación estadística | *Reading between the data* / razonamiento |
-| N3 | Interpretación sustantiva | *Reading beyond the data* |
-| N4 | Interpretación crítica-reflexiva | *Reading behind the data* / pensamiento estadístico |
+<p class="hero-sub">No basta con saber si una respuesta está bien o mal. Sustancia busca comprender qué conceptos moviliza el estudiante, qué operaciones domina, cómo interpreta los resultados y qué logra revisar a partir de la retroalimentación.</p>
+:::
 
-La regla de oro: una respuesta técnicamente correcta pero no sustantiva recibe
-puntaje parcial y retroalimentación explícita sobre qué le faltó. El puntaje es
-no lineal (N1=1, N2=2, N3=4, N4=7): **la sustancia vale más que la técnica**.
+## El vector de maestría {.seccion}
 
-## Taxonomía de errores interpretativos
+Un estudiante puede calcular correctamente una media y, sin embargo, tener dificultades para explicar qué significa. Otro puede interpretar muy bien una distribución, pero necesitar apoyo para calcular su desviación estándar. Un único puntaje ocultaría esta diferencia.
 
-Cada error detectado es contenido pedagógico: el evaluador lo nombra, lo explica
-y lo fundamenta en el corpus.
+Por eso proponemos un **perfil de maestría multidimensional**: una estimación que reúne evidencias de capacidades específicas y evoluciona con la experiencia. **No es una nota ni un diagnóstico psicológico.**
 
-| Código | Error |
+<div class="v2-mastery" id="v2-mastery">
+  <div class="v2-mastery-head">
+    <div><span class="v2-kicker">SIMULACIÓN INTERACTIVA</span><h3>Dos formas distintas de saber estadística</h3></div>
+    <div role="group" aria-label="Seleccionar perfil de ejemplo" class="v2-toggle">
+      <button type="button" id="v2-profile-a" aria-pressed="true" class="v2-active">Perfil A</button>
+      <button type="button" id="v2-profile-b" aria-pressed="false">Perfil B</button>
+    </div>
+  </div>
+  <p id="v2-profile-desc" aria-live="polite">Dominio técnico más desarrollado; contextualización y transferencia requieren práctica.</p>
+  <div id="v2-bars" class="v2-bars" role="img" aria-label="Valores simulados de operaciones del perfil de maestría">
+    <div class="v2-bar-row"><span>Reconocer</span><div class="v2-bar-track"><span style="width:88%"></span></div><b>88</b></div>
+    <div class="v2-bar-row"><span>Calcular</span><div class="v2-bar-track"><span style="width:91%"></span></div><b>91</b></div>
+    <div class="v2-bar-row"><span>Comparar</span><div class="v2-bar-track"><span style="width:67%"></span></div><b>67</b></div>
+    <div class="v2-bar-row"><span>Interpretar</span><div class="v2-bar-track"><span style="width:58%"></span></div><b>58</b></div>
+    <div class="v2-bar-row"><span>Contextualizar</span><div class="v2-bar-track"><span style="width:39%"></span></div><b>39</b></div>
+    <div class="v2-bar-row"><span>Criticar</span><div class="v2-bar-track"><span style="width:33%"></span></div><b>33</b></div>
+    <div class="v2-bar-row"><span>Transferir</span><div class="v2-bar-track"><span style="width:24%"></span></div><b>24</b></div>
+  </div>
+  <p class="v2-small">Datos completamente simulados para ilustrar el modelo. No representan mediciones reales ni una escala validada.</p>
+</div>
+
+<script>
+(function(){
+const data=[
+ {label:'Reconocer',a:88,b:72},{label:'Calcular',a:91,b:43},{label:'Comparar',a:67,b:65},{label:'Interpretar',a:58,b:79},{label:'Contextualizar',a:39,b:82},{label:'Criticar',a:33,b:74},{label:'Transferir',a:24,b:69}
+];
+const bars=document.getElementById('v2-bars'),desc=document.getElementById('v2-profile-desc'),ba=document.getElementById('v2-profile-a'),bb=document.getElementById('v2-profile-b');
+if(!bars||!ba||!bb)return;
+function render(which){
+ bars.replaceChildren();
+ data.forEach(item=>{
+   const row=document.createElement('div'); row.className='v2-bar-row';
+   const label=document.createElement('span'); label.textContent=item.label;
+   const track=document.createElement('div'); track.className='v2-bar-track';
+   const fill=document.createElement('span');fill.style.width=item[which]+'%';track.appendChild(fill);
+   const val=document.createElement('b');val.textContent=item[which];
+   row.append(label,track,val);bars.appendChild(row);
+ });
+ bars.setAttribute('aria-label','Perfil '+which.toUpperCase()+': '+data.map(d=>d.label+' '+d[which]+' de 100').join(', '));
+ desc.textContent=which==='a'?'Dominio técnico más desarrollado; contextualización y transferencia requieren práctica.':'Interpretación y pensamiento crítico más desarrollados; se propone reforzar procedimientos de cálculo.';
+ ba.classList.toggle('v2-active',which==='a');bb.classList.toggle('v2-active',which==='b');
+ ba.setAttribute('aria-pressed',String(which==='a'));bb.setAttribute('aria-pressed',String(which==='b'));
+}
+ba.addEventListener('click',()=>render('a'));bb.addEventListener('click',()=>render('b'));render('a');
+})();
+</script>
+
+### Dimensiones del perfil
+
+<div class="v2-pill-grid"><span>Conceptos</span><span>Operaciones</span><span>N1–N4</span><span>Errores recurrentes</span><span>Prerrequisitos</span><span>Trayectoria y revisión</span></div>
+
+El sistema deberá distinguir entre **dominio estimado**, **evidencia disponible** e **información todavía desconocida**. Para interpretar estos valores en estudiantes reales será necesario diseñar y validar instrumentos de evaluación.
+
+## Laboratorio de operaciones estadísticas {.seccion}
+
+La estadística no es una sola habilidad. Proponemos trabajar con ocho familias de operaciones que pueden combinarse en una misma actividad.
+
+| Operación | ¿Qué hace el estudiante? |
 |---|---|
-| E1 | Causalidad espuria (asociación → causa) |
-| E2 | Confusión significancia estadística / relevancia sustantiva |
-| E3 | Sobregeneralización más allá del diseño muestral |
-| E4 | R² interpretado como explicación causal |
-| E5 | Ceguera al hallazgo nulo teóricamente relevante |
-| E6 | Reificación de tipologías (clusters como grupos naturales) |
-| E7 | Artefacto de composición atribuido a la variable equivocada |
-| E8 | Direccionalidad causal asumida sin justificación |
-| E9 | Comparación de coeficientes no estandarizados |
-| E10 | Falacia ecológica / individualista |
+| Reconocer | Identifica variables, unidades de análisis, población y muestra. |
+| Describir | Caracteriza una distribución o un patrón de datos. |
+| Calcular | Obtiene medidas y resultados mediante procedimientos pertinentes. |
+| Comparar | Contrasta grupos, medidas o indicadores. |
+| Interpretar | Explica qué significa el resultado estadístico. |
+| Contextualizar | Relaciona el resultado con el fenómeno y su contexto. |
+| Criticar | Examina supuestos, límites y posibles interpretaciones alternativas. |
+| Transferir | Aplica un principio aprendido a otra situación. |
 
-## Anatomía del ítem
+**Ejemplo con una media:** calcularla es solo una posibilidad. También podemos preguntarnos qué representa, cuándo resulta engañosa, en qué difiere de la mediana, qué cambiaría al retirar valores extremos y qué conclusión sería injustificada. Estas operaciones no son una escalera rígida ni categorías mutuamente excluyentes.
 
-Cada ítem presenta un output estadístico real en un contexto disciplinar elegible,
-una pregunta abierta con audiencia ficticia definida ("redacta para la Dirección
-de Asuntos Estudiantiles…"), una rúbrica con criterios observables por nivel, y
-fragmentos curados del corpus metodológico que fundamentan la retroalimentación.
+## Profundidad interpretativa: N1–N4 {.seccion}
 
-El evaluador — un modelo de lenguaje operando con la rúbrica del ítem, la taxonomía
-de errores y respuestas ancla pre-clasificadas — devuelve: nivel alcanzado,
-criterios cumplidos, errores detectados, retroalimentación formativa y cita al corpus.
+La progresión N1–N4 presente desde las primeras versiones de Sustancia **permanece**, pero ahora se entiende como un eje del perfil y no como su totalidad.
 
-## Ítems piloto
+| Nivel | Pregunta orientadora |
+|---|---|
+| **N1 · Lectura técnica** | ¿Qué muestra el dato, tabla o gráfico? |
+| **N2 · Interpretación estadística** | ¿Qué relación, magnitud o diferencia expresa? |
+| **N3 · Interpretación sustantiva** | ¿Qué significa para el fenómeno que estudiamos? |
+| **N4 · Lectura crítica-reflexiva** | ¿Qué supuestos y límites condicionan lo que podemos concluir? |
 
-Los cuatro ítems iniciales provienen de una investigación real:
+Estos niveles se inspiran en investigaciones sobre comprensión de representaciones y razonamiento estadístico (Curcio; Shaughnessy; Garfield y Ben-Zvi). **Su operacionalización específica en Sustancia es una propuesta que requiere validación**, no una escala universal ya demostrada. Los puntajes lúdicos del prototipo no deben confundirse con porcentajes de maestría.
 
-- **D1 — "El estudiante de 16 horas"** (descriptiva): media vs. mediana con
-outliers; la decisión de winsorizar como contenido interpretativo.
-- **A1 — "¿Carreras distintas o composiciones distintas?"** (control estadístico):
-un titular de prensa atribuye a la carrera un efecto que es composición de género.
-- **R1 — "Lo que la pantalla no dice"** (regresión): el hallazgo central es el
-predictor *no* significativo — el tiempo de pantalla no predice deterioro; el
-modo compulsivo de uso, sí.
-- **C1 — "¿Existen tres tipos de estudiantes?"** (clusters): desmontar la
-reificación — los perfiles de k-means son construcciones analíticas, "clases en
-el papel" (Bourdieu), no grupos naturales descubiertos.
+## Aprender también es revisar {.seccion}
 
-## Referencias
+<div class="v2-cycle" aria-label="Ciclo de aprendizaje recursivo">
+<span>Respuesta inicial</span><i aria-hidden="true">→</i><span>Retroalimentación</span><i aria-hidden="true">→</i><span>Respuesta revisada</span><i aria-hidden="true">→</i><span>Nueva evidencia</span>
+</div>
+
+El ejercicio no tiene por qué terminar al aparecer una equivocación. Una pregunta del sistema —«¿Qué parte de tu argumento cambiarías considerando esta diferencia?»— puede invitar al estudiante a producir una respuesta nueva y mejor fundamentada.
+
+El diseño de conversaciones epistemológicas contempla **fuente, problema, posición, contraste, transferencia y aplicación**. Estos recursos sirven para construir una discusión con la bibliografía y los datos, no para sustituir la reflexión del jugador. La calidad de la revisión será una dimensión de observación pedagógica, sin atribuir automáticamente rasgos personales como resiliencia o tolerancia a la frustración.
+
+[Ver una conversación ilustrada →](como-funciona.qmd)
+
+## Errores como objetos pedagógicos {.seccion}
+
+En Sustancia, un error puede orientar la siguiente pregunta, no solo disminuir un puntaje.
+
+La taxonomía inicial del prototipo incluye causalidad espuria, sobregeneralización, falacia ecológica y reificación de tipologías. Para Estadística I también será necesario catalogar errores como confundir frecuencia y porcentaje, media y mediana, o parámetro y estadístico. Los códigos definitivos se consolidarán antes de conectar estos datos con un vector real.
+
+## ¿Cómo se selecciona el próximo desafío? {.seccion}
+
+La arquitectura proyectada combina el mapa curricular del curso, un banco de actividades validadas y evidencias del perfil de maestría. Un motor pedagógico orienta la secuencia mediante criterios explícitos; la IA apoya la búsqueda, evaluación y retroalimentación, pero no define sola el currículo ni sustituye la supervisión docente.
+
+Los materiales del curso son incorporados por el equipo y revisados antes de convertirse en actividades. No corresponde al estudiante subir libros o PDFs.
+
+## Referencias {.seccion}
 
 - Curcio, F. (1987). Comprehension of mathematical relationships expressed in graphs. *Journal for Research in Mathematics Education*, 18(5).
 - Shaughnessy, J. M. (2007). Research on statistics learning and reasoning. En *Second Handbook of Research on Mathematics Teaching and Learning*.
 - Garfield, J. y Ben-Zvi, D. (2008). *Developing Students' Statistical Reasoning*. Springer.
+- Bourdieu, P. (1987 [1979]). Los tres estados del capital cultural.
 - Simondon, G. (2007 [1958]). *El modo de existencia de los objetos técnicos*. Prometeo.
-- Bourdieu, P. (1990). ¿Cómo se hace una clase social? Sobre la existencia teórica y práctica de los grupos.
