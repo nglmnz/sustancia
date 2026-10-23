@@ -15,7 +15,7 @@ jobs:
       - name: Check JavaScript syntax
         run: |
           node --check assets/sustancia-interactions.js
-          node --check assets/language-switch.html 2>/dev/null || grep -q "function init" assets/language-switch.html
+          node -e "const fs=require('fs'),vm=require('vm');const s=fs.readFileSync('assets/language-switch.html','utf8').replace(/^<script>\\s*|\\s*<\\/script>$/g,'');new vm.Script(s)"
       - name: Render complete website
         run: quarto render
       - name: Check generated pages and HTML components
@@ -44,6 +44,7 @@ jobs:
               p=Path("_site/en")/(name+".html")
               assert p.exists(), f"English page missing: {p}"
               html=p.read_text(encoding="utf-8")
+              assert 'lang="en"' in html[:500], f"English language metadata missing: {name}"
               assert '<html' in html
               assert '&lt;div class=' not in html, f"Escaped component in English page: {name}"
               assert 'language-switch' in html or 'Ver esta página' in html, f"Language switch missing: {name}"
@@ -56,5 +57,17 @@ jobs:
           assert 'data-s3-mastery' in enpedagogy
           assert 'data-s3-dimensions' in enpedagogy
           assert Path("_site/assets/sustancia-interactions.js").exists()
-          print("OK: both languages, seven equivalent sections, and interactive content")
+          # All local English-to-English links must resolve within the generated site.
+          import re
+          for name in pages:
+              p=Path("_site/en")/(name+".html")
+              html=p.read_text(encoding="utf-8")
+              for href in re.findall(r'href="([^"]+)"',html):
+                  if href.startswith(("http:","https:","#","mailto:","javascript:")):
+                      continue
+                  if href.endswith(".qmd"):
+                      raise AssertionError(f"Unrendered QMD link in {p}: {href}")
+                  if href.endswith(".html"):
+                      assert (p.parent/href).resolve().exists(), f"Broken internal link in {p}: {href}"
+          print("OK: both languages, translated HTML metadata, equivalent sections and working links")
           PY
