@@ -1,0 +1,24 @@
+---
+title: "Explore the prototype"
+description: "Sustancia's current experimental game prototype."
+lang: en
+page-layout: full
+---
+
+::: {.hero}
+<div class="eyebrow">Experimental version</div>
+
+# Explore the <em>current prototype</em>
+
+<p class="hero-sub">This experience currently focuses on interpreting statistical findings, writing responses, and receiving formative feedback. The adaptive diagnostic, longitudinal mastery profile, and institutional dashboards are part of a later development stage.</p>
+:::
+
+The embedded app below is hosted externally using R/Shiny; its availability depends on the hosting service. **The current game interface is in Spanish and has not yet been localized into English.** Please do not enter personal or sensitive academic information in this experimental version.
+
+<div class="v2-pilot-shell">
+  <iframe src="https://tbu8oh-angel0dario-munoz0ra0iman.shinyapps.io/app_v2_0309/" title="Sustancia experimental R/Shiny prototype — interface in Spanish" loading="lazy" width="100%" height="780" style="border:0;border-radius:10px;"></iframe>
+</div>
+
+[Open the prototype in a new tab if it does not load ↗](https://tbu8oh-angel0dario-munoz0ra0iman.shinyapps.io/app_v2_0309/)
+
+[Learn about the proposed adaptive learner journey →](como-funciona.qmd)
