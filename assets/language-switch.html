@@ -1,0 +1,58 @@
+<script>
+(function(){
+  "use strict";
+  var slugs=["index","fundamentacion","pedagogia","como-funciona","universidades","equipo","piloto"];
+  var englishLabels={
+    "fundamentacion":"Foundations",
+    "pedagogia":"Pedagogical model",
+    "como-funciona":"How it works",
+    "universidades":"Universities",
+    "equipo":"Team",
+    "piloto":"Prototype"
+  };
+  function init(){
+    var path=window.location.pathname;
+    var inEnglish=/\/en\/(?:[^\/]+)?$/.test(path);
+    var base=path.replace(/(?:en\/)?(?:[^\/]*)$/,"");
+    var file=(path.split("/").pop()||"index.html");
+    var slug=file.replace(/\.html$/,"");
+    if(slugs.indexOf(slug)<0)slug="index";
+    document.documentElement.setAttribute("lang",inEnglish?"en":"es");
+    var anchors=document.querySelectorAll(".navbar a[href]");
+    Array.prototype.forEach.call(anchors,function(a){
+      var label=a.textContent.trim();
+      if(label==="ES / EN"||label==="English"||label==="Español"){
+        a.textContent=inEnglish?"Español":"English";
+        a.setAttribute("href",base+(inEnglish?"":"en/")+slug+".html");
+        a.setAttribute("hreflang",inEnglish?"es":"en");
+        a.setAttribute("lang",inEnglish?"es":"en");
+        a.setAttribute("aria-label",inEnglish?"Ver esta página en español":"View this page in English");
+        a.classList.add("s3-language-switch");
+        return;
+      }
+      if(!inEnglish)return;
+      try{
+        var destination=new URL(a.getAttribute("href"),window.location.href);
+        var match=destination.pathname.match(/\/(index|fundamentacion|pedagogia|como-funciona|universidades|equipo|piloto)\.html$/);
+        if(!match)return;
+        var target=match[1];
+        a.setAttribute("href",base+"en/"+target+".html");
+        if(englishLabels[target])a.textContent=englishLabels[target];
+      }catch(e){}
+    });
+    if(inEnglish){
+      var footer=document.querySelector(".nav-footer-center");
+      if(footer)footer.textContent="Sustancia · Interdisciplinary research and development project · 2026";
+      var input=document.querySelector(".aa-Input");
+      if(input)input.setAttribute("placeholder","Search");
+    }
+    var alternate=document.createElement("link");
+    alternate.setAttribute("rel","alternate");
+    alternate.setAttribute("hreflang",inEnglish?"es":"en");
+    alternate.setAttribute("href",window.location.origin+base+(inEnglish?"":"en/")+slug+".html");
+    document.head.appendChild(alternate);
+  }
+  if(document.readyState==="loading")document.addEventListener("DOMContentLoaded",init,{once:true});
+  else init();
+})();
+</script>
