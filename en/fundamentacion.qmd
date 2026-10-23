@@ -1,0 +1,167 @@
+---
+title: "Theoretical foundations"
+pagetitle: "Foundations — Sustancia"
+lang: en
+---
+
+::: {.hero}
+<div class="eyebrow">Theoretical foundations</div>
+
+# Interpretation as <em>knowledge that cannot be delegated</em>
+
+<p class="hero-sub">Sustancia is not simply an AI-powered exercise app. It begins with a sociological hypothesis: if cognitive outsourcing can weaken the personal accumulation of knowledge and skills, the design of AI-assisted learning—who produces and who evaluates—is a question of how learning is organized, not merely which technology is used.</p>
+:::
+
+## The problem: an inverse conversion {.seccion}
+
+<span class="num-seccion">I — The diagnosis</span>
+
+In Bourdieu's account, embodied cultural capital has a defining feature: **it requires a personal investment of time**. No one can internalize on another person's behalf the ability to sustain attention, organize an argument, or interpret a result. Generative AI can seem to promise an escape from this individual effort.
+
+Outsourcing the writing, summarizing, or interpretation of evidence is therefore not necessarily a neutral shortcut. The project proposes the concept of an **inverse conversion of capital**: relief from effort in the present may come at the expense of accumulating embodied knowledge and skills in the future. This is a theoretical interpretation and research question, not an established causal effect of any particular AI use.
+
+The empirical study that motivated Sustancia examined technological habitus and mental health among 276 first-year university students. Two distinctions inform our design:
+
+- **Usage patterns matter, not only exposure time.** In the models examined, screen time did not show the same association as compulsive use. These associations do not establish causality. The quality of the relationship with technology is part of the question.
+- **Delegation varies.** Highly delegative patterns are not universal. A potential learning risk should not be treated as an inevitable outcome; educational designs may matter.
+
+## Two ways to design AI-assisted learning {.seccion}
+
+<span class="num-seccion">II — A design choice</span>
+
+AI can play very different roles in a learning activity. Compare two ideal-typical arrangements and consider who performs the intellectual work.
+
+```{=html}
+<div class="diagrama">
+  <div class="modos" role="group" aria-label="Compare learning architectures">
+    <button class="modo activo-del" id="btn-del" type="button">▸ Delegative architecture</button>
+    <button class="modo" id="btn-inc" type="button">▸ Incorporative architecture</button>
+  </div>
+  <svg viewBox="0 0 700 300" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Two models of AI-assisted learning">
+    <rect x="30" y="100" width="180" height="100" rx="8" fill="#FFFFFF" stroke="#14161A" stroke-width="1.5"/>
+    <text x="120" y="145" text-anchor="middle" font-family="Spectral,serif" font-weight="700" font-size="16" fill="#14161A">Student</text>
+    <text x="120" y="168" text-anchor="middle" font-family="IBM Plex Mono,monospace" font-size="10" fill="#8A8F98">time + attention</text>
+    <rect x="490" y="100" width="180" height="100" rx="8" fill="#FFFFFF" stroke="#14161A" stroke-width="1.5"/>
+    <text x="580" y="145" text-anchor="middle" font-family="Spectral,serif" font-weight="700" font-size="16" fill="#14161A">AI model</text>
+    <text x="580" y="168" text-anchor="middle" font-family="IBM Plex Mono,monospace" font-size="10" fill="#8A8F98">generation capacity</text>
+    <g class="flujo-del" id="fx-del">
+      <path d="M 490 125 C 400 90, 300 90, 215 122" stroke="#C8341F" stroke-width="3" fill="none" marker-end="url(#pR)"/>
+      <text x="350" y="82" text-anchor="middle" font-family="IBM Plex Mono,monospace" font-size="10" fill="#C8341F">AI produces the interpretation</text>
+      <path d="M 215 178 C 300 212, 400 212, 485 180" stroke="#C8341F" stroke-width="1.6" stroke-dasharray="5 4" fill="none" marker-end="url(#pR)"/>
+      <text x="350" y="232" text-anchor="middle" font-family="IBM Plex Mono,monospace" font-size="10" fill="#C8341F">Student approves or passes on</text>
+      <text x="350" y="272" text-anchor="middle" font-family="Spectral,serif" font-style="italic" font-size="13" fill="#7E1F12">possible loss of personal practice</text>
+    </g>
+    <g class="flujo-inc" id="fx-inc" opacity="0.10">
+      <path d="M 215 125 C 300 90, 400 90, 485 122" stroke="#223A8F" stroke-width="3" fill="none" marker-end="url(#pA)"/>
+      <text x="350" y="82" text-anchor="middle" font-family="IBM Plex Mono,monospace" font-size="10" fill="#223A8F">Student produces the interpretation</text>
+      <path d="M 485 178 C 400 212, 300 212, 220 180" stroke="#223A8F" stroke-width="1.6" stroke-dasharray="5 4" fill="none" marker-end="url(#pA)"/>
+      <text x="350" y="232" text-anchor="middle" font-family="IBM Plex Mono,monospace" font-size="10" fill="#223A8F">AI provides rubric-based feedback</text>
+      <text x="350" y="272" text-anchor="middle" font-family="Spectral,serif" font-style="italic" font-size="13" fill="#16265F">learning effort stays with the student</text>
+    </g>
+    <defs>
+      <marker id="pA" markerWidth="8" markerHeight="8" refX="6" refY="4" orient="auto"><path d="M0,0 L8,4 L0,8 z" fill="#223A8F"/></marker>
+      <marker id="pR" markerWidth="8" markerHeight="8" refX="6" refY="4" orient="auto"><path d="M0,0 L8,4 L0,8 z" fill="#C8341F"/></marker>
+    </defs>
+  </svg>
+  <div class="leyenda" id="leyenda">
+    <span class="tag rojo">Delegative architecture</span>
+    The AI produces the interpretation and the student mainly receives or accepts it. In this ideal type, the opportunity to practice constructing an argument can be reduced.
+  </div>
+</div>
+<script>
+(function(){
+  var legend=document.getElementById('leyenda');
+  var fxInc=document.getElementById('fx-inc'),fxDel=document.getElementById('fx-del');
+  var bInc=document.getElementById('btn-inc'),bDel=document.getElementById('btn-del');
+  if(!bInc||!bDel||!legend)return;
+  bDel.addEventListener('click',function(){
+    fxDel.setAttribute('opacity','1');fxInc.setAttribute('opacity','0.10');
+    bDel.className='modo activo-del';bInc.className='modo';
+    legend.innerHTML='<span class="tag rojo">Delegative architecture</span> The AI produces the interpretation, while the student largely accepts the result. Opportunities to practice constructing an argument may be reduced.';
+  });
+  bInc.addEventListener('click',function(){
+    fxInc.setAttribute('opacity','1');fxDel.setAttribute('opacity','0.10');
+    bInc.className='modo activo-inc';bDel.className='modo';
+    legend.innerHTML='<span class="tag azul">Incorporative architecture</span> The student formulates an interpretation; AI may assess it using explicit rubrics, identify errors, and return guiding questions. <strong>Sustancia aims to prioritize this second kind of interaction.</strong>';
+  });
+})();
+</script>
+```
+
+Sustancia prioritizes an incorporative learning architecture: students create interpretations and use feedback to review them. The experimental prototype emphasizes written responses and formative assessment; systematic recursive revision and multidimensional adaptation still need implementation and evaluation.
+
+## Substantive interpretation as embodied knowledge {.seccion}
+
+<span class="num-seccion">III — What learning involves</span>
+
+The ability to interpret a statistical finding in depth can be understood as embodied cultural capital: it develops through practice and cannot simply be transferred through delegation. As generating analyses becomes easier, **knowing what the findings mean—and what cannot be inferred from them—becomes particularly valuable**.
+
+<div class="cita-marco">Sustancia proposes a different way of valuing learning: more recognition for meaningful reasoning than for speed. The initial game's point system rewards substantive interpretation more than simply reading a table correctly. Rather than maximizing immediacy, the design seeks to reward the time needed to understand.</div>
+
+The treatment of errors follows a related logic. In the original game concept, a mistake can unlock an explanatory entry in an error catalogue. An understood error becomes part of what the student learns, not merely a penalty.
+
+## An epistemological foundation {.seccion}
+
+<span class="num-seccion">IV — Simondon</span>
+
+Gilbert Simondon offers an important philosophical inspiration for N4, critical-reflective interpretation. A non-alienated relation to a technical object means more than operating it: it also involves **understanding its internal workings**. Applied to statistics, this means asking why a method was chosen, what assumptions it carries, how a model transforms data, and what the research design does not permit us to claim.
+
+In this sense, Sustancia is intended as a pedagogical complement, not a substitute for the learner's own intellectual activity. The goal is not simply to obtain an interpretation, but to develop the capacity to become an interpreter.
+
+## Three foundations, one design {.seccion}
+
+<span class="num-seccion">V — A synthesis</span>
+
+Hover over each card, or select it using the keyboard or touch, to see how a theoretical foundation can shape the game.
+
+```{=html}
+<div class="flip-grid">
+  <div class="flip-card flip-card--deep" tabindex="0" role="button" aria-label="Sociological foundation, activate for details">
+    <div class="flip-inner">
+      <div class="flip-front"><div class="flip-label">Sociological foundation</div><div class="flip-titulo">Bourdieu</div><div class="flip-autor">Theory of forms of capital</div><div class="flip-hint">→ hover or select to read more</div></div>
+      <div class="flip-back"><div class="flip-aporta">Contribution</div><div class="flip-texto">Why personal intellectual effort matters, and why the roles of AI and students are a sociological question.</div><div class="flip-traduce">An architecture that prioritizes the student's own production of knowledge.</div></div>
+    </div>
+  </div>
+  <div class="flip-card" tabindex="0" role="button" aria-label="Epistemological foundation, activate for details">
+    <div class="flip-inner">
+      <div class="flip-front"><div class="flip-label">Epistemological foundation</div><div class="flip-titulo">Simondon</div><div class="flip-autor">Technical objects and their mode of existence</div><div class="flip-hint">→ hover or select to read more</div></div>
+      <div class="flip-back"><div class="flip-aporta">Contribution</div><div class="flip-texto">A horizon of understanding technical processes from within rather than using methods as black boxes.</div><div class="flip-traduce">N4 critical interpretation, including methodological assumptions and limitations.</div></div>
+    </div>
+  </div>
+  <div class="flip-card" tabindex="0" role="button" aria-label="Pedagogical foundation, activate for details">
+    <div class="flip-inner">
+      <div class="flip-front"><div class="flip-label">Pedagogical foundation</div><div class="flip-titulo">Curcio · Shaughnessy · Garfield</div><div class="flip-autor">Statistics education</div><div class="flip-hint">→ hover or select to read more</div></div>
+      <div class="flip-back"><div class="flip-aporta">Contribution</div><div class="flip-texto">Research on how learners read, interpret, and reason about data.</div><div class="flip-traduce">Inspiration for N1–N4, activity rubrics, and formative feedback; the specific scale requires validation.</div></div>
+    </div>
+  </div>
+</div>
+<script>
+(function(){
+  document.querySelectorAll('.flip-card').forEach(function(card){
+    card.addEventListener('click',function(){card.classList.toggle('flipped');});
+    card.addEventListener('keydown',function(e){if(e.key==='Enter'||e.key===' '){e.preventDefault();card.classList.toggle('flipped');}});
+  });
+})();
+</script>
+```
+
+## References {.seccion}
+
+- Bourdieu, P. (1987 [1979]). The three states of cultural capital. *Sociológica*, 2(5).
+- Bourdieu, P., & Wacquant, L. (2005 [1992]). *An Invitation to Reflexive Sociology*.
+- Curcio, F. (1987). Comprehension of mathematical relationships expressed in graphs. *JRME*, 18(5).
+- Garfield, J., & Ben-Zvi, D. (2008). *Developing Students' Statistical Reasoning*. Springer.
+- Ignatow, G., & Robinson, L. (2017). Pierre Bourdieu: theorizing the digital. *Information, Communication & Society*, 20(7).
+- Shaughnessy, J. M. (2007). Research on statistics learning and reasoning. In *Second Handbook of Research on Mathematics Teaching and Learning*.
+- Simondon, G. (2007 [1958]). *On the Mode of Existence of Technical Objects*.
+- Zuboff, S. (2020). *The Age of Surveillance Capitalism*.
+
+## From foundations to adaptive learning {.seccion}
+
+The design extends interpretive depth N1–N4 with a **multidimensional mastery model** that separates concepts, statistical operations, recurring errors, prerequisites, and changes in a student's learning path. Interpretive depth is one dimension of statistical reasoning, not the whole construct.
+
+The proposed cycle—**initial response → feedback → revised response → new evidence**—may enable researchers to observe students' intellectual work as they reconsider an explanation. Better learning cannot be assumed to follow automatically from feedback: these claims need to be tested.
+
+Curriculum-linked activities are derived from sources reviewed by the human team. AI may assist with discovery, extraction, classification, and assessment, but pedagogical progression and curricular approval remain explicit and human-supervised.
+
+[Explore the pedagogical model →](pedagogia.qmd) · [See how it works →](como-funciona.qmd)

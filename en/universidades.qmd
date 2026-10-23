@@ -1,0 +1,50 @@
+---
+title: "Sustancia for universities"
+description: "Potential applications of adaptive statistical learning in higher education and educational research."
+lang: en
+toc: true
+---
+
+::: {.hero}
+<div class="eyebrow">Academic partnerships · proposed applications</div>
+
+# A tool for <em>learning, teaching, and research</em>
+
+<p class="hero-sub">Sustancia is designed to complement university statistics education. The first curricular domain is introductory statistics, with potential applications in social sciences, health sciences, and engineering.</p>
+:::
+
+## Curriculum alignment {.seccion}
+
+The model follows explicit learning outcomes and course content rather than an arbitrary AI-generated sequence. Its initial design draws on a 2022 introductory statistics syllabus covering foundational concepts, categorical and quantitative data, the normal distribution, and introductory inference. Each institutional implementation would require review of its own curriculum.
+
+<div class="v2-pill-grid"><span>I · Foundations</span><span>II · Categorical data</span><span>III · Quantitative data</span><span>IV · Normal distribution</span><span>V · Introductory inference</span></div>
+
+## Three complementary perspectives {.seccion}
+
+<div class="v2-card-grid">
+  <article class="v2-card"><span class="v2-kicker">STUDENT</span><h3>Understanding one's learning</h3><p>Explore strengths, difficulties, and progress across statistical concepts and operations without being reduced to a single grade.</p></article>
+  <article class="v2-card"><span class="v2-kicker">INSTRUCTOR</span><h3>Supporting learning</h3><p>Identify recurring misconceptions and areas requiring reinforcement, follow class-level progress, and review proposed activities.</p></article>
+  <article class="v2-card"><span class="v2-kicker">INSTITUTION</span><h3>Continuous improvement</h3><p>Study aggregated indicators by cohort, course, or program to investigate learning paths and direct educational support.</p></article>
+</div>
+
+## What could Sustancia contribute? {.seccion}
+
+- **Initial diagnostic:** an evidence-based approximation of each student's mathematical and statistical starting point.
+- **Situated practice:** exercises drawing on data and problems relevant to different disciplines.
+- **Recursive learning:** first response, feedback, revision, and new evidence.
+- **Curricular traceability:** activities linked to concepts, operations, and reviewed sources.
+- **Educational research:** potential longitudinal analyses of students' statistical reasoning.
+
+These are **design goals**, not features already deployed or impact results already demonstrated.
+
+## Oversight and data access {.seccion}
+
+Access should reflect responsibilities: students to their own profiles, instructors to course-relevant information, and institutions to aggregated indicators. Permissions, lawful basis, data minimization, retention, and safeguards must be defined before institutional deployment.
+
+AI may support content discovery and review, but human educators remain responsible for curricular decisions and final approval of activities.
+
+## Development and collaboration {.seccion}
+
+Sustancia is under development and research. The aim is to progress from the existing prototype to a pilot that can evaluate technical feasibility, pedagogical suitability, and ultimately evidence of learning.
+
+[Meet the team →](equipo.qmd) · [See the learner's journey →](como-funciona.qmd)

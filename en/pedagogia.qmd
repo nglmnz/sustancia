@@ -1,0 +1,166 @@
+---
+title: "Pedagogical model"
+description: "Statistical operations, interpretive depth, and the multidimensional mastery profile proposed by Sustancia."
+lang: en
+toc: true
+---
+
+::: {.hero}
+<div class="eyebrow">Pedagogical architecture · evolving design</div>
+
+# Every learner starts from a <em>different place</em>
+
+<p class="hero-sub">Knowing whether an answer is right or wrong is not enough. Sustancia seeks to understand the concepts a student uses, the statistical operations they can perform, how they interpret findings, and what they can revise after feedback.</p>
+:::
+
+## The mastery profile {.seccion}
+
+One student might calculate a mean correctly but struggle to explain its significance. Another may interpret a distribution convincingly but need help calculating standard deviation. A single score would conceal these differences.
+
+We therefore propose a **multidimensional mastery profile**: an evolving estimate based on evidence of specific abilities. **It is neither a grade nor a psychological diagnosis.**
+
+```{=html}
+<div class="s3-mastery" data-s3-mastery>
+  <div class="s3-mastery-header">
+    <div><span class="v2-kicker">INTERACTIVE EXPLORER · SIMULATED DATA</span><h3>A profile is not a grade</h3><p>Compare two fictional learners and two hypothetical moments in their development.</p></div>
+    <div class="s3-choice-group" role="group" aria-label="Choose a learner profile">
+      <button type="button" class="s3-selected" data-s3-profile="a" aria-pressed="true">Profile A</button>
+      <button type="button" data-s3-profile="b" aria-pressed="false">Profile B</button>
+    </div>
+  </div>
+  <div class="s3-time-group" role="group" aria-label="Choose a simulated moment">
+    <button type="button" class="s3-selected" data-s3-moment="t0" aria-pressed="true">Starting point (t0)</button>
+    <button type="button" data-s3-moment="t2" aria-pressed="false">After practice (hypothetical t2)</button>
+  </div>
+  <div class="s3-profile-main">
+    <div class="s3-radar-pane"><svg data-s3-radar class="s3-radar" viewBox="0 0 520 395" role="img" aria-label="Simulated multidimensional mastery profile"></svg></div>
+    <div class="s3-profile-detail">
+      <h4 data-s3-profile-title>Profile A · stronger computation</h4>
+      <p data-s3-profile-description>Comfortable with procedures but still developing contextual interpretation and transfer.</p>
+      <div class="s3-mini-bars" data-s3-bars aria-label="Simulated values for statistical operations"></div>
+      <p class="s3-next-activity" data-s3-next>Next hypothetical challenge: contextualize and transfer.</p>
+    </div>
+  </div>
+  <p class="s3-data-warning"><strong>Simulation, not measurement:</strong> every value and change is fictional. These scores are not a calibrated assessment and do not imply that feedback automatically improves mastery.</p>
+</div>
+```
+
+### Explore each dimension
+
+Select a dimension to see **what it describes, an example, and the evidence needed to assess it**. The dimensions are connected but cannot substitute for one another.
+
+```{=html}
+<div class="s3-dimensions" data-s3-dimensions>
+  <div class="s3-dim-selector" role="group" aria-label="Explore mastery dimensions">
+    <button type="button" class="s3-selected" data-s3-dim="conceptos" aria-pressed="true"><span>01</span>Concepts</button>
+    <button type="button" data-s3-dim="operaciones" aria-pressed="false"><span>02</span>Operations</button>
+    <button type="button" data-s3-dim="profundidad" aria-pressed="false"><span>03</span>N1–N4</button>
+    <button type="button" data-s3-dim="errores" aria-pressed="false"><span>04</span>Errors</button>
+    <button type="button" data-s3-dim="requisitos" aria-pressed="false"><span>05</span>Prerequisites</button>
+    <button type="button" data-s3-dim="trayectoria" aria-pressed="false"><span>06</span>Learning path</button>
+  </div>
+  <section class="s3-dim-panel" data-s3-dim-panel aria-live="polite">
+    <h3>Statistical concepts</h3><p>Knowledge of variables, measures, distributions, sampling, and probability.</p>
+  </section>
+</div>
+```
+
+The system should distinguish **estimated mastery, available evidence, and information not yet observed**. A missing value is not the same as a zero score or a demonstrated weakness.
+
+## The statistical operations laboratory {.seccion}
+
+Statistics is not a single skill. We propose eight families of operations that can be combined within a learning activity.
+
+| Operation | What the student does |
+|---|---|
+| Recognize | Identifies variables, units of analysis, populations, and samples. |
+| Describe | Characterizes a distribution or pattern in data. |
+| Calculate | Obtains measures and results using appropriate methods. |
+| Compare | Contrasts groups, measures, and indicators. |
+| Interpret | Explains what a statistical result means. |
+| Contextualize | Connects findings to the substantive phenomenon and its context. |
+| Critique | Examines assumptions, limitations, and competing explanations. |
+| Transfer | Applies a learned principle in a different situation. |
+
+**Consider the mean:** calculating it is only one task. We can also ask what it represents, when it might be misleading, how it differs from the median, what happens after removing outliers, or what conclusions it does not support. These operations are neither a rigid hierarchy nor mutually exclusive categories.
+
+## Interpretive depth: N1–N4 {.seccion}
+
+The original N1–N4 progression remains part of Sustancia, but it is now **one dimension of the mastery profile**, not the entire model.
+
+| Level | Guiding question |
+|---|---|
+| **N1 · Technical reading** | What is displayed in the data, table, or graph? |
+| **N2 · Statistical interpretation** | What relationship, magnitude, or difference is expressed? |
+| **N3 · Substantive interpretation** | What does this mean for the phenomenon being studied? |
+| **N4 · Critical and reflective reading** | What assumptions and limitations shape the conclusion? |
+
+These levels draw on research into reading representations and statistical reasoning (Curcio, Shaughnessy, Garfield and Ben-Zvi). **The specific Sustancia framework still requires validation**; it is not a universally validated scale. Points in the current game are not mastery percentages.
+
+## Learning also means revising {.seccion}
+
+**The feedback loop becomes clearer when you see it in action.** Choose a context and step through the challenge, first response, guiding feedback, revised response, and new evidence.
+
+```{=html}
+<div class="s3-examples" data-s3-examples>
+  <div class="s3-examples-top"><span class="v2-kicker">EXPLORE THE FEEDBACK LOOP</span><span class="s3-example-counter" data-s3-example-counter>1 of 5 · simulated example</span></div>
+  <div class="s3-example-choices" role="group" aria-label="Choose a disciplinary context">
+    <button type="button" data-s3-example="ingresos" aria-pressed="true">Income</button>
+    <button type="button" data-s3-example="salud" aria-pressed="false">Health</button>
+    <button type="button" data-s3-example="encuestas" aria-pressed="false">Surveys</button>
+    <button type="button" data-s3-example="ingenieria" aria-pressed="false">Engineering</button>
+  </div>
+  <div class="s3-example-timeline" role="group" aria-label="Select a learning stage">
+    <button type="button" data-s3-stage="0" aria-pressed="true">1. Challenge</button>
+    <button type="button" data-s3-stage="1" aria-pressed="false">2. Response</button>
+    <button type="button" data-s3-stage="2" aria-pressed="false">3. Feedback</button>
+    <button type="button" data-s3-stage="3" aria-pressed="false">4. Revision</button>
+    <button type="button" data-s3-stage="4" aria-pressed="false">5. Evidence</button>
+  </div>
+  <div class="s3-example-panel" aria-live="polite">
+    <span class="v2-kicker" data-s3-example-role>Learning challenge</span>
+    <h3 data-s3-example-heading>Income and outliers</h3>
+    <p data-s3-example-text>In a municipality, mean income is much higher than median income. What might this mean?</p>
+    <button type="button" data-s3-example-next class="s3-next">See the next stage →</button>
+  </div>
+  <p class="v2-small">These responses, questions, and observations illustrate the pedagogical model. They are not real student conversations.</p>
+</div>
+```
+
+### Epistemological conversations
+
+Sources and statistical representations can become material for dialogue. Instead of providing answers, the system asks students to examine their own claims.
+
+```{=html}
+<div class="s3-epistemic">
+  <details><summary><strong>Source and problem</strong><span>What is the text or chart claiming?</span></summary><p>Identify the claim, its source, and the problem it seeks to address. The academic team reviews the materials used for activities.</p></details>
+  <details><summary><strong>Position</strong><span>What is your interpretation?</span></summary><p>Students take a position and explain, in their own words, why it seems reasonable.</p></details>
+  <details><summary><strong>Contrast</strong><span>What evidence might change your mind?</span></summary><p>A counterexample, measurement discrepancy, omitted assumption, or limitation challenges the initial explanation.</p></details>
+  <details><summary><strong>Transfer</strong><span>Does the principle hold in another context?</span></summary><p>Students explore the concept in health, surveys, industrial production, or social indicators.</p></details>
+  <details><summary><strong>Application and revision</strong><span>How would you rewrite your answer?</span></summary><p>The student creates another interpretation. The system can capture changes, persistent errors, and possible next steps.</p></details>
+</div>
+```
+
+How learners use feedback can be studied as **observable revision quality**. We do not infer frustration, resilience, or psychological traits from a single attempt.
+
+## Errors as learning opportunities {.seccion}
+
+An error can guide the next question rather than merely reduce a score. The initial prototype's taxonomy includes unjustified causal inference, overgeneralization, ecological fallacy, and reification of categories. Foundational statistics may add confusion between frequencies and percentages, mean and median, or population parameters and sample statistics. A unified classification must be established before connecting errors to a real mastery profile.
+
+## How might the next challenge be selected? {.seccion}
+
+The proposed architecture combines the course curriculum, a validated activity bank, and evidence from the student's mastery profile. An explicit pedagogical engine guides progression. AI can support retrieval, evaluation, and feedback, but it does not independently determine the curriculum or replace faculty oversight.
+
+The team collects and reviews course materials. **Students do not upload textbooks or PDF documents to play.**
+
+## References {.seccion}
+
+- Curcio, F. (1987). Comprehension of mathematical relationships expressed in graphs. *Journal for Research in Mathematics Education*, 18(5).
+- Shaughnessy, J. M. (2007). Research on statistics learning and reasoning. In *Second Handbook of Research on Mathematics Teaching and Learning*.
+- Garfield, J., & Ben-Zvi, D. (2008). *Developing Students' Statistical Reasoning*. Springer.
+- Bourdieu, P. (1987 [1979]). The three states of cultural capital.
+- Simondon, G. (2007 [1958]). *On the Mode of Existence of Technical Objects*.
+
+```{=html}
+<script src="../assets/sustancia-interactions.js" defer></script>
+```
