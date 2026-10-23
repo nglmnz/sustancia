@@ -112,46 +112,165 @@
     "text": "Referencias\n\nCurcio, F. (1987). Comprehension of mathematical relationships expressed in graphs. Journal for Research in Mathematics Education, 18(5).\nShaughnessy, J. M. (2007). Research on statistics learning and reasoning. En Second Handbook of Research on Mathematics Teaching and Learning.\nGarfield, J. y Ben-Zvi, D. (2008). Developing Students’ Statistical Reasoning. Springer.\nBourdieu, P. (1987 [1979]). Los tres estados del capital cultural.\nSimondon, G. (2007 [1958]). El modo de existencia de los objetos técnicos. Prometeo."
   },
   {
-    "objectID": "universidades.html",
-    "href": "universidades.html",
-    "title": "Sustancia para universidades",
+    "objectID": "en/piloto.html",
+    "href": "en/piloto.html",
+    "title": "Explore the prototype",
     "section": "",
-    "text": "Vinculación académica · propuesta de aplicación\n\n\n\n\nPensamos Sustancia como un complemento de la formación estadística universitaria. El dominio piloto es Estadística I, con proyección hacia ciencias sociales, ciencias de la salud e ingeniería."
+    "text": "Experimental version\n\n\nExplore the current prototype\n\nThis experience currently focuses on interpreting statistical findings, writing responses, and receiving formative feedback. The adaptive diagnostic, longitudinal mastery profile, and institutional dashboards are part of a later development stage.\n\n\n\nThe embedded app below is hosted externally using R/Shiny; its availability depends on the hosting service. The current game interface is in Spanish and has not yet been localized into English. Please do not enter personal or sensitive academic information in this experimental version.\n\n\n\nOpen the prototype in a new tab if it does not load ↗\nLearn about the proposed adaptive learner journey →"
   },
   {
-    "objectID": "universidades.html#alineación-curricular",
-    "href": "universidades.html#alineación-curricular",
-    "title": "Sustancia para universidades",
-    "section": "Alineación curricular",
-    "text": "Alineación curricular\nEl modelo se organiza alrededor de contenidos y objetivos explícitos del curso, no de una secuencia arbitraria inventada por una IA. Para la primera etapa de diseño, tomamos como referencia un programa de Estadística I de 2022: conceptos básicos, variables categóricas, variables cuantitativas, distribución normal e inferencia introductoria. Cada incorporación institucional requerirá revisar su programa específico.\n\nI · ConceptosII · Variables categóricasIII · Variables cuantitativasIV · Curva normalV · Inferencia básica"
+    "objectID": "en/como-funciona.html",
+    "href": "en/como-funciona.html",
+    "title": "How it works",
+    "section": "",
+    "text": "Learning experience · proposed architecture\n\n\n\n\nSustancia aims to recognize each student’s starting point, offer relevant challenges, and turn feedback into another opportunity to think. This page describes the intended experience: not every component has been implemented in the current pilot."
   },
   {
-    "objectID": "universidades.html#tres-experiencias-complementarias",
-    "href": "universidades.html#tres-experiencias-complementarias",
-    "title": "Sustancia para universidades",
-    "section": "Tres experiencias complementarias",
-    "text": "Tres experiencias complementarias\n\n\nESTUDIANTE\n\nAutoconocimiento\n\n\nExplorar fortalezas, dificultades y avances por diferentes operaciones y conceptos. El perfil ayuda a orientar el estudio sin reducir a la persona a una sola nota.\n\n\n\nDOCENTE\n\nAcompañamiento\n\n\nVisualizar patrones de error y progreso de su curso, identificar contenidos que requieren refuerzo y revisar actividades propuestas para el banco.\n\n\n\nINSTITUCIÓN\n\nMejora continua\n\n\nObservar indicadores agregados por cohorte, curso o carrera para investigar trayectorias de aprendizaje y orientar el apoyo formativo."
+    "objectID": "en/como-funciona.html#the-learners-journey",
+    "href": "en/como-funciona.html#the-learners-journey",
+    "title": "How it works",
+    "section": "The learner’s journey",
+    "text": "The learner’s journey\n\n\n01\n\n\nInitial diagnostic\n\n\nBrief activities explore prior knowledge, familiarity with statistical concepts, and ways of reasoning. The aim is to understand a starting point, not assign a permanent label.\n\n\n\n\n02\n\n\nInitial mastery profile\n\n\nAn initial estimate covers concepts, operations, and interpretive depth. What has not been observed remains unknown rather than being treated as inability.\n\n\n\n\n03\n\n\nThe game begins\n\n\nA curriculum-linked challenge invites the student to read a table, calculate a measure, compare results, interpret data, or examine limitations.\n\n\n\n\n04\n\n\nIndependent response\n\n\nThe learner produces an answer: a written interpretation, a completed statement, an explained comparison, or a calculation, depending on the activity.\n\n\n\n\n05\n\n\nFeedback and epistemological conversation\n\n\nThe system points to a difficulty and poses questions that invite contrast, reconsideration, or further justification. AI should not simply supply a final interpretation.\n\n\n\n\n06\n\n\nRevision and fresh evidence\n\n\nThe revised answer can reveal whether an error was corrected, new evidence was incorporated, or a principle was transferred to another context.\n\n\n\n\n07\n\n\nThe next challenge\n\n\nNew evidence informs an updated profile and an explicitly governed activity selection. Learning can reinforce a prerequisite, explore a deeper interpretation, or change context."
   },
   {
-    "objectID": "universidades.html#qué-aportaría-al-curso",
-    "href": "universidades.html#qué-aportaría-al-curso",
-    "title": "Sustancia para universidades",
-    "section": "¿Qué aportaría al curso?",
-    "text": "¿Qué aportaría al curso?\n\nDiagnóstico: una aproximación inicial al bagaje matemático-estadístico de cada estudiante.\nPráctica situada: actividades con datos y problemas relevantes para distintos campos profesionales.\nAprendizaje recursivo: respuesta inicial, retroalimentación, revisión y nueva evidencia.\nTrazabilidad curricular: ejercicios asociados con conceptos, operaciones y fuentes revisadas.\nInvestigación educativa: posibilidad de estudiar la evolución del razonamiento estadístico mediante evidencia longitudinal.\n\nEstas son capacidades de diseño. No deben interpretarse como funcionalidades ya desplegadas ni como resultados de impacto comprobados."
+    "objectID": "en/como-funciona.html#revisingnot-merely-trying-again",
+    "href": "en/como-funciona.html#revisingnot-merely-trying-again",
+    "title": "How it works",
+    "section": "Revising—not merely trying again",
+    "text": "Revising—not merely trying again\n\n\nILLUSTRATIVE EXAMPLE · MEANS AND OUTLIERS\n\n\nChallenge. Mean income is substantially higher than median income. What could explain this?\n\n\nFirst response. The mean is higher because most people earn that amount.\n\n\nGuiding question. Does the mean necessarily describe what most people earn? What if a small number of people earn exceptionally high incomes?\n\n\nRevised response. A few high incomes could pull up the mean; I cannot conclude that most people receive that amount.\n\n\nThe proposed system could capture both responses, the feedback, and the change observed—without treating one revision as proof of stable mastery.\n\n\nAn epistemological conversation may involve a source, a problem, a position, contrast, transfer, and application. These are pedagogical moves, not a rigid six-question checklist."
   },
   {
-    "objectID": "universidades.html#supervisión-y-datos",
-    "href": "universidades.html#supervisión-y-datos",
-    "title": "Sustancia para universidades",
-    "section": "Supervisión y datos",
-    "text": "Supervisión y datos\nProponemos una separación de accesos por responsabilidad. El estudiante accedería a su propio perfil; el docente, a información pertinente para acompañar su curso; y la institución, a indicadores agregados. Los permisos, las bases legales, la minimización de datos, la retención y las salvaguardas deben definirse antes de un despliegue institucional.\nLa IA puede asistir en la construcción y revisión de materiales, pero las decisiones curriculares y la aprobación de actividades permanecen bajo responsabilidad humana."
+    "objectID": "en/como-funciona.html#what-changes-in-the-profile",
+    "href": "en/como-funciona.html#what-changes-in-the-profile",
+    "title": "How it works",
+    "section": "What changes in the profile?",
+    "text": "What changes in the profile?\n\n\nThe mastery vector is not a single grade. It combines evidence of what the learner knows, can do, and still needs to practice.\n\n\nConceptsOperationsN1–N4 depthRecurring errorsPrerequisitesLearning path and revision\n\n\nThese indicators require calibration and validation before informing real educational decisions."
   },
   {
-    "objectID": "universidades.html#estado-y-colaboración",
-    "href": "universidades.html#estado-y-colaboración",
-    "title": "Sustancia para universidades",
-    "section": "Estado y colaboración",
-    "text": "Estado y colaboración\nSustancia se encuentra en desarrollo e investigación. Buscamos avanzar desde el prototipo existente hacia un piloto capaz de evaluar tanto su funcionamiento técnico como la pertinencia pedagógica de la experiencia.\nRevisar el proyecto y su equipo → · Conocer el recorrido del estudiante →"
+    "objectID": "en/como-funciona.html#who-does-what",
+    "href": "en/como-funciona.html#who-does-what",
+    "title": "How it works",
+    "section": "Who does what?",
+    "text": "Who does what?\n\n\n\n\n\n\n\nParticipant\nResponsibility\n\n\n\n\nAcademic team and faculty\nDefine the curriculum, validate activities, and oversee pedagogical decisions.\n\n\nSupporting AI agents\nRetrieve approved materials, propose exercises, and assist evaluation within rubrics and safeguards.\n\n\nPedagogical engine\nSelects activities using explicit criteria and the student’s estimated profile.\n\n\nStudent\nProduces, compares, revises, and develops their own reasoning.\n\n\n\nImportant: the academic team introduces and reviews the course texts and programs. Students do not upload documents to play."
+  },
+  {
+    "objectID": "en/como-funciona.html#available-now-vs.-under-development",
+    "href": "en/como-funciona.html#available-now-vs.-under-development",
+    "title": "How it works",
+    "section": "Available now vs. under development",
+    "text": "Available now vs. under development\n\n\n\n\n\n\n\nComponent\nStatus\n\n\n\n\nPedagogical concept, N1–N4, and initial error taxonomy\nDocumented\n\n\nPrototype featuring interpretive activities\nExperimental; availability depends on the hosted service\n\n\nInitial diagnostic and operational multidimensional mastery profile\nIn design and development\n\n\nSystematic revision conversations and adaptive selection\nIn development\n\n\nAgent-assisted curricular bank and institutional dashboards\nPlanned\n\n\n\nExplore the current prototype → · Read about the pedagogical model →"
+  },
+  {
+    "objectID": "en/equipo.html",
+    "href": "en/equipo.html",
+    "title": "Project and team",
+    "section": "",
+    "text": "Interdisciplinary project · in development\n\n\n\n\nSustancia brings together social research, statistics education, and software development to explore how learners can reason with data while retaining ownership of the intellectual work."
+  },
+  {
+    "objectID": "en/equipo.html#where-the-project-comes-from",
+    "href": "en/equipo.html#where-the-project-comes-from",
+    "title": "Project and team",
+    "section": "Where the project comes from",
+    "text": "Where the project comes from\nSustancia began with a question: what happens when analytical tools and generative models make it easier to obtain statistical results without guaranteeing that users understand their meaning? The project proposes a learning architecture in which students interpret findings, receive formative feedback, and revise their reasoning.\nThe prototype’s initial dataset comes from research on technological habitus and mental health among first-year university students (n = 276, five degree programs). The project is now expanding toward curriculum-linked statistical learning. The design distinguishes performing a procedure, interpreting the resulting data, and recognizing the limits of a conclusion."
+  },
+  {
+    "objectID": "en/equipo.html#our-team",
+    "href": "en/equipo.html#our-team",
+    "title": "Project and team",
+    "section": "Our team",
+    "text": "Our team\n\n\nSOCIOLOGY · UAH\n\nÁngel Muñoz\n\n\nBachelor’s degree in Sociology, Universidad Alberto Hurtado.\n\n\nPedagogical design, initial R/Shiny development, and empirical material.\n\n\n\nSOCIOLOGY · UAH\n\nTamara Gómez\n\n\nSociology, Universidad Alberto Hurtado.\n\n\nSpecific project responsibilities to be confirmed.\n\n\n\nSOCIOLOGY · UC\n\nNicolás Williams\n\n\nMaster’s degree in Sociology, Pontificia Universidad Católica de Chile.\n\n\nSpecific project responsibilities to be confirmed.\n\n\n\nCOMPUTER ENGINEERING · DUOC UC\n\nNicolás Ayarza\n\n\nComputer Engineer, DUOC UC.\n\n\nSpecific project responsibilities to be confirmed.\n\n\n\nAcademic affiliations describe individual educational backgrounds. They do not imply institutional sponsorship, endorsement, or formal representation."
+  },
+  {
+    "objectID": "en/equipo.html#research-and-development",
+    "href": "en/equipo.html#research-and-development",
+    "title": "Project and team",
+    "section": "Research and development",
+    "text": "Research and development\nSustancia is conceived both as a learning tool and as a potential environment for research on educational processes. Questions of interest include the persistence of misconceptions, differences between statistical operations, how arguments change after feedback, and whether principles transfer to new contexts.\nThe next stages envisage a human-reviewed curricular activity bank, an initial diagnostic, a multidimensional mastery profile, and explicit activity-selection rules. These components have not yet been fully implemented or validated."
+  },
+  {
+    "objectID": "en/equipo.html#contact",
+    "href": "en/equipo.html#contact",
+    "title": "Project and team",
+    "section": "Contact",
+    "text": "Contact\nContact the project · Sustancia on GitHub"
+  },
+  {
+    "objectID": "como-funciona.html",
+    "href": "como-funciona.html",
+    "title": "Cómo funciona",
+    "section": "",
+    "text": "Experiencia de aprendizaje · arquitectura proyectada\n\n\n\n\nSustancia busca reconocer desde dónde comienza cada estudiante, proponer desafíos pertinentes y convertir la retroalimentación en una nueva oportunidad de pensar. Esta página muestra la experiencia prevista; no todas sus etapas están implementadas en el piloto actual."
+  },
+  {
+    "objectID": "como-funciona.html#el-recorrido-del-estudiante",
+    "href": "como-funciona.html#el-recorrido-del-estudiante",
+    "title": "Cómo funciona",
+    "section": "El recorrido del estudiante",
+    "text": "El recorrido del estudiante\n\n\n01\n\n\nDiagnóstico de entrada\n\n\nActividades breves exploran conocimientos previos, familiaridad con conceptos estadísticos y diferentes formas de razonar. No buscamos etiquetar a una persona, sino comprender sus condiciones de partida.\n\n\n\n\n02\n\n\nPrimer perfil de maestría\n\n\nSe estima un perfil inicial por conceptos, operaciones y profundidad interpretativa. Lo que todavía no se ha observado permanece como información desconocida, no como una incapacidad.\n\n\n\n\n03\n\n\nComienza el juego\n\n\nEl sistema presenta un desafío del curso: leer una tabla, calcular una medida, comparar resultados, interpretar un dato o discutir sus límites.\n\n\n\n\n04\n\n\nProducción propia\n\n\nEl estudiante elabora una respuesta. Según la actividad, puede escribir una interpretación, completar una afirmación, justificar una comparación o resolver un cálculo.\n\n\n\n\n05\n\n\nRetroalimentación y conversación epistemológica\n\n\nEl sistema señala una dificultad y ofrece preguntas que invitan a contrastar, reconsiderar o ampliar el argumento. La IA no debería actuar como un oráculo que entrega de inmediato la interpretación final.\n\n\n\n\n06\n\n\nRevisión y nueva evidencia\n\n\nLa respuesta revisada permite observar qué cambió en el razonamiento: si se corrigió un error, si se incorporó nueva evidencia y si se logró transferir el concepto.\n\n\n\n\n07\n\n\nPróximo desafío\n\n\nEl perfil se actualiza con las nuevas evidencias y orienta la siguiente actividad mediante criterios pedagógicos. La trayectoria puede reforzar, profundizar o explorar otro contexto."
+  },
+  {
+    "objectID": "como-funciona.html#una-revisión-no-solo-otra-respuesta",
+    "href": "como-funciona.html#una-revisión-no-solo-otra-respuesta",
+    "title": "Cómo funciona",
+    "section": "Una revisión, no solo otra respuesta",
+    "text": "Una revisión, no solo otra respuesta\n\n\nEJEMPLO ILUSTRATIVO · MEDIA Y VALORES EXTREMOS\n\n\nActividad. En una distribución de ingresos, la media es muy superior a la mediana. ¿Qué podría explicar esa diferencia?\n\n\nPrimera respuesta. La media es mayor porque la mayoría gana esa cantidad.\n\n\nPregunta orientadora. ¿La media representa necesariamente el ingreso de la mayoría? ¿Qué pasaría si unas pocas personas tuvieran ingresos excepcionalmente altos?\n\n\nRespuesta revisada. La media podría aumentar por pocos ingresos muy altos; no puedo afirmar que la mayoría recibe ese monto.\n\n\nEl sistema puede registrar las dos producciones, la retroalimentación y el cambio observado, sin confundir una revisión puntual con dominio definitivo.\n\n\nLas conversaciones epistemológicas pueden partir de una fuente, identificar un problema, solicitar una posición, exigir contraste, promover transferencia y terminar en una aplicación. Es una caja de herramientas pedagógicas, no un cuestionario rígido."
+  },
+  {
+    "objectID": "como-funciona.html#qué-cambia-en-el-perfil",
+    "href": "como-funciona.html#qué-cambia-en-el-perfil",
+    "title": "Cómo funciona",
+    "section": "¿Qué cambia en el perfil?",
+    "text": "¿Qué cambia en el perfil?\n\n\nEl vector de maestría no es una nota única. Reúne evidencias de lo que la persona sabe, puede hacer y necesita seguir practicando.\n\n\nConceptosOperacionesProfundidad N1–N4Errores recurrentesPrerrequisitosTrayectoria y revisión\n\n\nLos indicadores requieren calibración y validación antes de utilizarse para tomar decisiones educativas reales."
+  },
+  {
+    "objectID": "como-funciona.html#quién-hace-qué",
+    "href": "como-funciona.html#quién-hace-qué",
+    "title": "Cómo funciona",
+    "section": "¿Quién hace qué?",
+    "text": "¿Quién hace qué?\n\n\n\n\n\n\n\nActor\nResponsabilidad\n\n\n\n\nEquipo y docentes\nDefinen el currículo, validan actividades y supervisan criterios pedagógicos.\n\n\nAgentes de apoyo\nRecuperan material autorizado, proponen ejercicios y apoyan evaluaciones con reglas y rúbricas.\n\n\nMotor pedagógico\nSelecciona actividades mediante criterios explícitos y el perfil estimado del estudiante.\n\n\nEstudiante\nResponde, contrasta, revisa y construye su propio razonamiento.\n\n\n\nImportante: los textos y programas del curso se incorporan y revisan desde el equipo académico. El estudiante no tiene que subir documentos para jugar."
+  },
+  {
+    "objectID": "como-funciona.html#lo-que-existe-y-lo-que-estamos-diseñando",
+    "href": "como-funciona.html#lo-que-existe-y-lo-que-estamos-diseñando",
+    "title": "Cómo funciona",
+    "section": "Lo que existe y lo que estamos diseñando",
+    "text": "Lo que existe y lo que estamos diseñando\n\n\n\n\n\n\n\nComponente\nSituación\n\n\n\n\nPropuesta pedagógica, niveles N1–N4 y taxonomía inicial\nDocumentados en el proyecto\n\n\nPrototipo de juego con actividades interpretativas\nDisponible para explorar, sujeto a disponibilidad del servicio\n\n\nDiagnóstico inicial y vector multidimensional operativo\nEn diseño y desarrollo\n\n\nConversaciones con revisión sistemática y selección adaptativa\nEn desarrollo\n\n\nBanco curricular asistido por agentes y paneles de seguimiento\nProyectados\n\n\n\nExplorar el prototipo actual → · Conocer el modelo pedagógico →"
+  },
+  {
+    "objectID": "equipo.html",
+    "href": "equipo.html",
+    "title": "Proyecto y equipo",
+    "section": "",
+    "text": "Proyecto interdisciplinario · en desarrollo\n\n\n\n\nSustancia une investigación social, educación estadística y desarrollo tecnológico para explorar cómo aprender a razonar con datos sin delegar el trabajo intelectual."
+  },
+  {
+    "objectID": "equipo.html#origen-del-proyecto",
+    "href": "equipo.html#origen-del-proyecto",
+    "title": "Proyecto y equipo",
+    "section": "Origen del proyecto",
+    "text": "Origen del proyecto\nSustancia nace de una pregunta: ¿qué ocurre cuando las herramientas de análisis y los modelos generativos facilitan obtener un resultado, pero no garantizan comprender su significado? El proyecto propone una arquitectura de aprendizaje donde el estudiante interpreta, recibe retroalimentación y revisa su propio razonamiento.\nEl corpus inicial proviene de la investigación sobre habitus tecnológico y salud mental en estudiantes universitarios de primer año (n = 276, cinco carreras), con proyección hacia materiales curriculares de Estadística I. El diseño busca distinguir entre ejecutar procedimientos, interpretar resultados y reconocer los límites de las conclusiones."
+  },
+  {
+    "objectID": "equipo.html#equipo",
+    "href": "equipo.html#equipo",
+    "title": "Proyecto y equipo",
+    "section": "Equipo",
+    "text": "Equipo\n\n\nSOCIOLOGÍA · UAH\n\nÁngel Muñoz\n\n\nLicenciado en Sociología, Universidad Alberto Hurtado.\n\n\nDiseño pedagógico, desarrollo inicial en R/Shiny y corpus empírico.\n\n\n\nSOCIOLOGÍA · UAH\n\nTamara Gómez\n\n\nSociología, Universidad Alberto Hurtado.\n\n\nFunciones específicas en el proyecto por confirmar.\n\n\n\nSOCIOLOGÍA · UC\n\nNicolás Williams\n\n\nMagíster en Sociología, Pontificia Universidad Católica de Chile.\n\n\nFunciones específicas en el proyecto por confirmar.\n\n\n\nINGENIERÍA INFORMÁTICA · DUOC UC\n\nNicolás Ayarza\n\n\nIngeniero Informático, DUOC UC.\n\n\nFunciones específicas en el proyecto por confirmar.\n\n\n\nLa formación académica de los integrantes identifica su trayectoria. No implica patrocinio, convenio ni representación institucional de las entidades mencionadas."
+  },
+  {
+    "objectID": "equipo.html#investigación-y-desarrollo",
+    "href": "equipo.html#investigación-y-desarrollo",
+    "title": "Proyecto y equipo",
+    "section": "Investigación y desarrollo",
+    "text": "Investigación y desarrollo\nLa plataforma se concibe como una herramienta formativa y, a la vez, un entorno para investigar procesos de aprendizaje. Entre las preguntas del proyecto están la persistencia de errores, las diferencias entre operaciones estadísticas, la revisión de argumentos después de recibir retroalimentación y la transferencia hacia otros contextos.\nEl siguiente desarrollo contempla un banco curricular revisado por humanos, un diagnóstico de entrada, un vector multidimensional y reglas explícitas de selección de actividades. Estas capacidades aún requieren implementación y validación."
+  },
+  {
+    "objectID": "equipo.html#contacto",
+    "href": "equipo.html#contacto",
+    "title": "Proyecto y equipo",
+    "section": "Contacto",
+    "text": "Contacto\nEscribir al proyecto · Repositorio de Sustancia"
   },
   {
     "objectID": "index.html",
@@ -203,81 +322,249 @@
     "text": "Estado del proyecto\nNo todas las piezas de Sustancia están disponibles al mismo tiempo. Estas etiquetas separan lo que ya se puede explorar de lo que estamos diseñando.\n\n  EXISTENTEPrototipo en ShinyActividades de interpretación y una propuesta inicial de evaluación formativa.\n  DOCUMENTADOMarco pedagógicoTaxonomía de errores, N1–N4 y fundamento teórico del proyecto.\n  EN DESARROLLOVector de maestríaDiagnóstico inicial y perfil multidimensional sustentado en evidencias.\n  PROYECTADOAdaptación y seguimientoConversaciones recursivas, selección de actividades y paneles para docentes e instituciones.\n\nConocer la fundamentación → · Explorar el modelo pedagógico →"
   },
   {
-    "objectID": "equipo.html",
-    "href": "equipo.html",
-    "title": "Proyecto y equipo",
+    "objectID": "universidades.html",
+    "href": "universidades.html",
+    "title": "Sustancia para universidades",
     "section": "",
-    "text": "Proyecto interdisciplinario · en desarrollo\n\n\n\n\nSustancia une investigación social, educación estadística y desarrollo tecnológico para explorar cómo aprender a razonar con datos sin delegar el trabajo intelectual."
+    "text": "Vinculación académica · propuesta de aplicación\n\n\n\n\nPensamos Sustancia como un complemento de la formación estadística universitaria. El dominio piloto es Estadística I, con proyección hacia ciencias sociales, ciencias de la salud e ingeniería."
   },
   {
-    "objectID": "equipo.html#origen-del-proyecto",
-    "href": "equipo.html#origen-del-proyecto",
-    "title": "Proyecto y equipo",
-    "section": "Origen del proyecto",
-    "text": "Origen del proyecto\nSustancia nace de una pregunta: ¿qué ocurre cuando las herramientas de análisis y los modelos generativos facilitan obtener un resultado, pero no garantizan comprender su significado? El proyecto propone una arquitectura de aprendizaje donde el estudiante interpreta, recibe retroalimentación y revisa su propio razonamiento.\nEl corpus inicial proviene de la investigación sobre habitus tecnológico y salud mental en estudiantes universitarios de primer año (n = 276, cinco carreras), con proyección hacia materiales curriculares de Estadística I. El diseño busca distinguir entre ejecutar procedimientos, interpretar resultados y reconocer los límites de las conclusiones."
+    "objectID": "universidades.html#alineación-curricular",
+    "href": "universidades.html#alineación-curricular",
+    "title": "Sustancia para universidades",
+    "section": "Alineación curricular",
+    "text": "Alineación curricular\nEl modelo se organiza alrededor de contenidos y objetivos explícitos del curso, no de una secuencia arbitraria inventada por una IA. Para la primera etapa de diseño, tomamos como referencia un programa de Estadística I de 2022: conceptos básicos, variables categóricas, variables cuantitativas, distribución normal e inferencia introductoria. Cada incorporación institucional requerirá revisar su programa específico.\n\nI · ConceptosII · Variables categóricasIII · Variables cuantitativasIV · Curva normalV · Inferencia básica"
   },
   {
-    "objectID": "equipo.html#equipo",
-    "href": "equipo.html#equipo",
-    "title": "Proyecto y equipo",
-    "section": "Equipo",
-    "text": "Equipo\n\n\nSOCIOLOGÍA · UAH\n\nÁngel Muñoz\n\n\nLicenciado en Sociología, Universidad Alberto Hurtado.\n\n\nDiseño pedagógico, desarrollo inicial en R/Shiny y corpus empírico.\n\n\n\nSOCIOLOGÍA · UAH\n\nTamara Gómez\n\n\nSociología, Universidad Alberto Hurtado.\n\n\nFunciones específicas en el proyecto por confirmar.\n\n\n\nSOCIOLOGÍA · UC\n\nNicolás Williams\n\n\nMagíster en Sociología, Pontificia Universidad Católica de Chile.\n\n\nFunciones específicas en el proyecto por confirmar.\n\n\n\nINGENIERÍA INFORMÁTICA · DUOC UC\n\nNicolás Ayarza\n\n\nIngeniero Informático, DUOC UC.\n\n\nFunciones específicas en el proyecto por confirmar.\n\n\n\nLa formación académica de los integrantes identifica su trayectoria. No implica patrocinio, convenio ni representación institucional de las entidades mencionadas."
+    "objectID": "universidades.html#tres-experiencias-complementarias",
+    "href": "universidades.html#tres-experiencias-complementarias",
+    "title": "Sustancia para universidades",
+    "section": "Tres experiencias complementarias",
+    "text": "Tres experiencias complementarias\n\n\nESTUDIANTE\n\nAutoconocimiento\n\n\nExplorar fortalezas, dificultades y avances por diferentes operaciones y conceptos. El perfil ayuda a orientar el estudio sin reducir a la persona a una sola nota.\n\n\n\nDOCENTE\n\nAcompañamiento\n\n\nVisualizar patrones de error y progreso de su curso, identificar contenidos que requieren refuerzo y revisar actividades propuestas para el banco.\n\n\n\nINSTITUCIÓN\n\nMejora continua\n\n\nObservar indicadores agregados por cohorte, curso o carrera para investigar trayectorias de aprendizaje y orientar el apoyo formativo."
   },
   {
-    "objectID": "equipo.html#investigación-y-desarrollo",
-    "href": "equipo.html#investigación-y-desarrollo",
-    "title": "Proyecto y equipo",
-    "section": "Investigación y desarrollo",
-    "text": "Investigación y desarrollo\nLa plataforma se concibe como una herramienta formativa y, a la vez, un entorno para investigar procesos de aprendizaje. Entre las preguntas del proyecto están la persistencia de errores, las diferencias entre operaciones estadísticas, la revisión de argumentos después de recibir retroalimentación y la transferencia hacia otros contextos.\nEl siguiente desarrollo contempla un banco curricular revisado por humanos, un diagnóstico de entrada, un vector multidimensional y reglas explícitas de selección de actividades. Estas capacidades aún requieren implementación y validación."
+    "objectID": "universidades.html#qué-aportaría-al-curso",
+    "href": "universidades.html#qué-aportaría-al-curso",
+    "title": "Sustancia para universidades",
+    "section": "¿Qué aportaría al curso?",
+    "text": "¿Qué aportaría al curso?\n\nDiagnóstico: una aproximación inicial al bagaje matemático-estadístico de cada estudiante.\nPráctica situada: actividades con datos y problemas relevantes para distintos campos profesionales.\nAprendizaje recursivo: respuesta inicial, retroalimentación, revisión y nueva evidencia.\nTrazabilidad curricular: ejercicios asociados con conceptos, operaciones y fuentes revisadas.\nInvestigación educativa: posibilidad de estudiar la evolución del razonamiento estadístico mediante evidencia longitudinal.\n\nEstas son capacidades de diseño. No deben interpretarse como funcionalidades ya desplegadas ni como resultados de impacto comprobados."
   },
   {
-    "objectID": "equipo.html#contacto",
-    "href": "equipo.html#contacto",
-    "title": "Proyecto y equipo",
-    "section": "Contacto",
-    "text": "Contacto\nEscribir al proyecto · Repositorio de Sustancia"
+    "objectID": "universidades.html#supervisión-y-datos",
+    "href": "universidades.html#supervisión-y-datos",
+    "title": "Sustancia para universidades",
+    "section": "Supervisión y datos",
+    "text": "Supervisión y datos\nProponemos una separación de accesos por responsabilidad. El estudiante accedería a su propio perfil; el docente, a información pertinente para acompañar su curso; y la institución, a indicadores agregados. Los permisos, las bases legales, la minimización de datos, la retención y las salvaguardas deben definirse antes de un despliegue institucional.\nLa IA puede asistir en la construcción y revisión de materiales, pero las decisiones curriculares y la aprobación de actividades permanecen bajo responsabilidad humana."
   },
   {
-    "objectID": "como-funciona.html",
-    "href": "como-funciona.html",
-    "title": "Cómo funciona",
+    "objectID": "universidades.html#estado-y-colaboración",
+    "href": "universidades.html#estado-y-colaboración",
+    "title": "Sustancia para universidades",
+    "section": "Estado y colaboración",
+    "text": "Estado y colaboración\nSustancia se encuentra en desarrollo e investigación. Buscamos avanzar desde el prototipo existente hacia un piloto capaz de evaluar tanto su funcionamiento técnico como la pertinencia pedagógica de la experiencia.\nRevisar el proyecto y su equipo → · Conocer el recorrido del estudiante →"
+  },
+  {
+    "objectID": "en/index.html",
+    "href": "en/index.html",
+    "title": "Sustancia",
     "section": "",
-    "text": "Experiencia de aprendizaje · arquitectura proyectada\n\n\n\n\nSustancia busca reconocer desde dónde comienza cada estudiante, proponer desafíos pertinentes y convertir la retroalimentación en una nueva oportunidad de pensar. Esta página muestra la experiencia prevista; no todas sus etapas están implementadas en el piloto actual."
+    "text": "Skip introduction →\nLearning statistics means learning to think with data. Reaching a numerical result is not enough: we must also understand its meaning, question its limitations, and transfer what we have learned."
   },
   {
-    "objectID": "como-funciona.html#el-recorrido-del-estudiante",
-    "href": "como-funciona.html#el-recorrido-del-estudiante",
-    "title": "Cómo funciona",
-    "section": "El recorrido del estudiante",
-    "text": "El recorrido del estudiante\n\n\n01\n\n\nDiagnóstico de entrada\n\n\nActividades breves exploran conocimientos previos, familiaridad con conceptos estadísticos y diferentes formas de razonar. No buscamos etiquetar a una persona, sino comprender sus condiciones de partida.\n\n\n\n\n02\n\n\nPrimer perfil de maestría\n\n\nSe estima un perfil inicial por conceptos, operaciones y profundidad interpretativa. Lo que todavía no se ha observado permanece como información desconocida, no como una incapacidad.\n\n\n\n\n03\n\n\nComienza el juego\n\n\nEl sistema presenta un desafío del curso: leer una tabla, calcular una medida, comparar resultados, interpretar un dato o discutir sus límites.\n\n\n\n\n04\n\n\nProducción propia\n\n\nEl estudiante elabora una respuesta. Según la actividad, puede escribir una interpretación, completar una afirmación, justificar una comparación o resolver un cálculo.\n\n\n\n\n05\n\n\nRetroalimentación y conversación epistemológica\n\n\nEl sistema señala una dificultad y ofrece preguntas que invitan a contrastar, reconsiderar o ampliar el argumento. La IA no debería actuar como un oráculo que entrega de inmediato la interpretación final.\n\n\n\n\n06\n\n\nRevisión y nueva evidencia\n\n\nLa respuesta revisada permite observar qué cambió en el razonamiento: si se corrigió un error, si se incorporó nueva evidencia y si se logró transferir el concepto.\n\n\n\n\n07\n\n\nPróximo desafío\n\n\nEl perfil se actualiza con las nuevas evidencias y orienta la siguiente actividad mediante criterios pedagógicos. La trayectoria puede reforzar, profundizar o explorar otro contexto."
+    "objectID": "en/index.html#see-the-difference",
+    "href": "en/index.html#see-the-difference",
+    "title": "Sustancia",
+    "section": "See the difference",
+    "text": "See the difference\nThese two responses refer to the same table from an empirical study on technology use and mental health among first-year university students. Both read the figures; only one relates them to the world.\n\n\nRegression model: poorer mental health (illustrative excerpt)\n\n\n\n\nPredictor\n\n\nβ\n\n\np\n\n\n\n\n\n\nCompulsive use (IDA)\n\n\n.38\n\n\n&lt; .001\n\n\n\n\nGender (woman)\n\n\n.24\n\n\n.002\n\n\n\n\nScreen time\n\n\n.05\n\n\n.41\n\n\n\n\n\n\nLEVEL 1 · TECHNICAL READING\n\n“Compulsive use and gender are statistically significant (p &lt; .05). Screen time is not statistically significant.”\n\n\n✓ A technically correct reading, but it does not yet explain the phenomenon. 1 point.\n\n\n\nLEVEL 3 · SUBSTANTIVE INTERPRETATION\n\n“In this model, poorer mental health is associated less with how long students use screens than with how they use them: compulsive patterns, rather than exposure time alone, are associated with the outcome. A policy focused only on limiting screen hours could miss an important part of the issue.”\n\n\n✓ A richer interpretation: it connects the findings—including a non-significant result—to the research problem, without asserting causality. 4 points."
   },
   {
-    "objectID": "como-funciona.html#una-revisión-no-solo-otra-respuesta",
-    "href": "como-funciona.html#una-revisión-no-solo-otra-respuesta",
-    "title": "Cómo funciona",
-    "section": "Una revisión, no solo otra respuesta",
-    "text": "Una revisión, no solo otra respuesta\n\n\nEJEMPLO ILUSTRATIVO · MEDIA Y VALORES EXTREMOS\n\n\nActividad. En una distribución de ingresos, la media es muy superior a la mediana. ¿Qué podría explicar esa diferencia?\n\n\nPrimera respuesta. La media es mayor porque la mayoría gana esa cantidad.\n\n\nPregunta orientadora. ¿La media representa necesariamente el ingreso de la mayoría? ¿Qué pasaría si unas pocas personas tuvieran ingresos excepcionalmente altos?\n\n\nRespuesta revisada. La media podría aumentar por pocos ingresos muy altos; no puedo afirmar que la mayoría recibe ese monto.\n\n\nEl sistema puede registrar las dos producciones, la retroalimentación y el cambio observado, sin confundir una revisión puntual con dominio definitivo.\n\n\nLas conversaciones epistemológicas pueden partir de una fuente, identificar un problema, solicitar una posición, exigir contraste, promover transferencia y terminar en una aplicación. Es una caja de herramientas pedagógicas, no un cuestionario rígido."
+    "objectID": "en/index.html#learning-has-multiple-dimensions",
+    "href": "en/index.html#learning-has-multiple-dimensions",
+    "title": "Sustancia",
+    "section": "Learning has multiple dimensions",
+    "text": "Learning has multiple dimensions\nA learner may get the calculation right but struggle to interpret it. Someone else may reason critically yet need more practice with procedures. Sustancia’s proposed mastery profile therefore separates concepts, operations, interpretive depth, recurring errors, and development over time, rather than reducing learning to one grade.\n\n\n01 · CONCEPTS\n\nWhat you understand\n\n\nVariables, measures, graphs, distributions, and statistical concepts at different levels of study.\n\n\n\n02 · OPERATIONS\n\nWhat you can do\n\n\nRecognize, describe, calculate, compare, interpret, contextualize, critique, and transfer.\n\n\n\n03 · INTERPRETATION\n\nHow deeply you reason\n\n\nN1 technical reading; N2 statistical interpretation; N3 substantive interpretation; N4 critical reflection.\n\n\n\n04 · LEARNING PATH\n\nHow your thinking changes\n\n\nInitial responses, feedback, and revisions can provide fresh evidence of learning.\n\n\n\nExplore two simulated mastery profiles →"
   },
   {
-    "objectID": "como-funciona.html#qué-cambia-en-el-perfil",
-    "href": "como-funciona.html#qué-cambia-en-el-perfil",
-    "title": "Cómo funciona",
-    "section": "¿Qué cambia en el perfil?",
-    "text": "¿Qué cambia en el perfil?\n\n\nEl vector de maestría no es una nota única. Reúne evidencias de lo que la persona sabe, puede hacer y necesita seguir practicando.\n\n\nConceptosOperacionesProfundidad N1–N4Errores recurrentesPrerrequisitosTrayectoria y revisión\n\n\nLos indicadores requieren calibración y validación antes de utilizarse para tomar decisiones educativas reales."
+    "objectID": "en/index.html#from-responding-to-revising",
+    "href": "en/index.html#from-responding-to-revising",
+    "title": "Sustancia",
+    "section": "From responding to revising",
+    "text": "From responding to revising\nThe same learning cycle can support different kinds of reasoning. Select a case—from social sciences, health, survey research, or engineering—and move through five stages. See how feedback can invite a learner to rethink an answer instead of receiving a ready-made conclusion.\n\n  LABORATORY · FOUR CONTEXTS1 of 5 · simulated example\n  \n    Income\n    Health\n    Surveys\n    Engineering\n  \n  \n    1. Challenge\n    2. Response\n    3. Feedback\n    4. Revision\n    5. Evidence\n  \n  \n    Learning challenge\n    Income and outliers · Social sciences\n    In a municipality, mean income is much higher than median income. What might this mean?\n    See the next stage →\n  \n  Hypothetical demonstrations, not real student conversations or evidence of effectiveness. Students produce their own answers; the AI does not do that work for them."
   },
   {
-    "objectID": "como-funciona.html#quién-hace-qué",
-    "href": "como-funciona.html#quién-hace-qué",
-    "title": "Cómo funciona",
-    "section": "¿Quién hace qué?",
-    "text": "¿Quién hace qué?\n\n\n\n\n\n\n\nActor\nResponsabilidad\n\n\n\n\nEquipo y docentes\nDefinen el currículo, validan actividades y supervisan criterios pedagógicos.\n\n\nAgentes de apoyo\nRecuperan material autorizado, proponen ejercicios y apoyan evaluaciones con reglas y rúbricas.\n\n\nMotor pedagógico\nSelecciona actividades mediante criterios explícitos y el perfil estimado del estudiante.\n\n\nEstudiante\nResponde, contrasta, revisa y construye su propio razonamiento.\n\n\n\nImportante: los textos y programas del curso se incorporan y revisan desde el equipo académico. El estudiante no tiene que subir documentos para jugar."
+    "objectID": "en/index.html#how-it-is-intended-to-work",
+    "href": "en/index.html#how-it-is-intended-to-work",
+    "title": "Sustancia",
+    "section": "How it is intended to work",
+    "text": "How it is intended to work\nThe adaptive design envisages an initial diagnostic, a multidimensional mastery profile, curriculum-linked activity selection, and a guided revision cycle. Students begin by taking on challenges provided by the system; they do not upload documents. Course materials and exercises are reviewed by the academic team.\n\nFollow the student’s journey →For universities →"
   },
   {
-    "objectID": "como-funciona.html#lo-que-existe-y-lo-que-estamos-diseñando",
-    "href": "como-funciona.html#lo-que-existe-y-lo-que-estamos-diseñando",
-    "title": "Cómo funciona",
-    "section": "Lo que existe y lo que estamos diseñando",
-    "text": "Lo que existe y lo que estamos diseñando\n\n\n\n\n\n\n\nComponente\nSituación\n\n\n\n\nPropuesta pedagógica, niveles N1–N4 y taxonomía inicial\nDocumentados en el proyecto\n\n\nPrototipo de juego con actividades interpretativas\nDisponible para explorar, sujeto a disponibilidad del servicio\n\n\nDiagnóstico inicial y vector multidimensional operativo\nEn diseño y desarrollo\n\n\nConversaciones con revisión sistemática y selección adaptativa\nEn desarrollo\n\n\nBanco curricular asistido por agentes y paneles de seguimiento\nProyectados\n\n\n\nExplorar el prototipo actual → · Conocer el modelo pedagógico →"
+    "objectID": "en/index.html#the-intellectual-foundation",
+    "href": "en/index.html#the-intellectual-foundation",
+    "title": "Sustancia",
+    "section": "The intellectual foundation",
+    "text": "The intellectual foundation\n\n  The project takes inspiration from Gilbert Simondon: learning statistics means more than operating techniques. It involves understanding the decisions that produce results, the assumptions behind them, and the conclusions they cannot support.\n  Your browser does not support video.\n\nThe prototype’s original material comes from an empirical study of technological habitus and mental health among first-year university students (n = 276). The broader educational proposal now extends to statistical learning across disciplines."
+  },
+  {
+    "objectID": "en/index.html#project-status",
+    "href": "en/index.html#project-status",
+    "title": "Sustancia",
+    "section": "Project status",
+    "text": "Project status\nNot all components of Sustancia are available yet. The following distinctions separate what can be explored today from what is under design.\n\n  AVAILABLEShiny prototypeInterpretation tasks and an initial approach to formative feedback.\n  DOCUMENTEDPedagogical frameworkError taxonomy, N1–N4, and the project's theoretical foundations.\n  IN DEVELOPMENTMastery profileInitial diagnostic and a multidimensional profile grounded in evidence.\n  PLANNEDAdaptation and dashboardsRecursive feedback, activity selection, and tools for educators and institutions.\n\nRead the theoretical foundations → · Explore the pedagogical model →"
+  },
+  {
+    "objectID": "en/universidades.html",
+    "href": "en/universidades.html",
+    "title": "Sustancia for universities",
+    "section": "",
+    "text": "Academic partnerships · proposed applications\n\n\n\n\nSustancia is designed to complement university statistics education. The first curricular domain is introductory statistics, with potential applications in social sciences, health sciences, and engineering."
+  },
+  {
+    "objectID": "en/universidades.html#curriculum-alignment",
+    "href": "en/universidades.html#curriculum-alignment",
+    "title": "Sustancia for universities",
+    "section": "Curriculum alignment",
+    "text": "Curriculum alignment\nThe model follows explicit learning outcomes and course content rather than an arbitrary AI-generated sequence. Its initial design draws on a 2022 introductory statistics syllabus covering foundational concepts, categorical and quantitative data, the normal distribution, and introductory inference. Each institutional implementation would require review of its own curriculum.\n\nI · FoundationsII · Categorical dataIII · Quantitative dataIV · Normal distributionV · Introductory inference"
+  },
+  {
+    "objectID": "en/universidades.html#three-complementary-perspectives",
+    "href": "en/universidades.html#three-complementary-perspectives",
+    "title": "Sustancia for universities",
+    "section": "Three complementary perspectives",
+    "text": "Three complementary perspectives\n\n\nSTUDENT\n\nUnderstanding one’s learning\n\n\nExplore strengths, difficulties, and progress across statistical concepts and operations without being reduced to a single grade.\n\n\n\nINSTRUCTOR\n\nSupporting learning\n\n\nIdentify recurring misconceptions and areas requiring reinforcement, follow class-level progress, and review proposed activities.\n\n\n\nINSTITUTION\n\nContinuous improvement\n\n\nStudy aggregated indicators by cohort, course, or program to investigate learning paths and direct educational support."
+  },
+  {
+    "objectID": "en/universidades.html#what-could-sustancia-contribute",
+    "href": "en/universidades.html#what-could-sustancia-contribute",
+    "title": "Sustancia for universities",
+    "section": "What could Sustancia contribute?",
+    "text": "What could Sustancia contribute?\n\nInitial diagnostic: an evidence-based approximation of each student’s mathematical and statistical starting point.\nSituated practice: exercises drawing on data and problems relevant to different disciplines.\nRecursive learning: first response, feedback, revision, and new evidence.\nCurricular traceability: activities linked to concepts, operations, and reviewed sources.\nEducational research: potential longitudinal analyses of students’ statistical reasoning.\n\nThese are design goals, not features already deployed or impact results already demonstrated."
+  },
+  {
+    "objectID": "en/universidades.html#oversight-and-data-access",
+    "href": "en/universidades.html#oversight-and-data-access",
+    "title": "Sustancia for universities",
+    "section": "Oversight and data access",
+    "text": "Oversight and data access\nAccess should reflect responsibilities: students to their own profiles, instructors to course-relevant information, and institutions to aggregated indicators. Permissions, lawful basis, data minimization, retention, and safeguards must be defined before institutional deployment.\nAI may support content discovery and review, but human educators remain responsible for curricular decisions and final approval of activities."
+  },
+  {
+    "objectID": "en/universidades.html#development-and-collaboration",
+    "href": "en/universidades.html#development-and-collaboration",
+    "title": "Sustancia for universities",
+    "section": "Development and collaboration",
+    "text": "Development and collaboration\nSustancia is under development and research. The aim is to progress from the existing prototype to a pilot that can evaluate technical feasibility, pedagogical suitability, and ultimately evidence of learning.\nMeet the team → · See the learner’s journey →"
+  },
+  {
+    "objectID": "en/pedagogia.html",
+    "href": "en/pedagogia.html",
+    "title": "Pedagogical model",
+    "section": "",
+    "text": "Pedagogical architecture · evolving design\n\n\n\n\nKnowing whether an answer is right or wrong is not enough. Sustancia seeks to understand the concepts a student uses, the statistical operations they can perform, how they interpret findings, and what they can revise after feedback."
+  },
+  {
+    "objectID": "en/pedagogia.html#the-mastery-profile",
+    "href": "en/pedagogia.html#the-mastery-profile",
+    "title": "Pedagogical model",
+    "section": "The mastery profile",
+    "text": "The mastery profile\nOne student might calculate a mean correctly but struggle to explain its significance. Another may interpret a distribution convincingly but need help calculating standard deviation. A single score would conceal these differences.\nWe therefore propose a multidimensional mastery profile: an evolving estimate based on evidence of specific abilities. It is neither a grade nor a psychological diagnosis.\n\n  \n    INTERACTIVE EXPLORER · SIMULATED DATAA profile is not a gradeCompare two fictional learners and two hypothetical moments in their development.\n    \n      Profile A\n      Profile B\n    \n  \n  \n    Starting point (t0)\n    After practice (hypothetical t2)\n  \n  \n    \n    \n      Profile A · stronger computation\n      Comfortable with procedures but still developing contextual interpretation and transfer.\n      \n      Next hypothetical challenge: contextualize and transfer.\n    \n  \n  Simulation, not measurement: every value and change is fictional. These scores are not a calibrated assessment and do not imply that feedback automatically improves mastery.\n\n\nExplore each dimension\nSelect a dimension to see what it describes, an example, and the evidence needed to assess it. The dimensions are connected but cannot substitute for one another.\n\n  \n    01Concepts\n    02Operations\n    03N1–N4\n    04Errors\n    05Prerequisites\n    06Learning path\n  \n  \n    Statistical conceptsKnowledge of variables, measures, distributions, sampling, and probability.\n  \n\nThe system should distinguish estimated mastery, available evidence, and information not yet observed. A missing value is not the same as a zero score or a demonstrated weakness."
+  },
+  {
+    "objectID": "en/pedagogia.html#the-statistical-operations-laboratory",
+    "href": "en/pedagogia.html#the-statistical-operations-laboratory",
+    "title": "Pedagogical model",
+    "section": "The statistical operations laboratory",
+    "text": "The statistical operations laboratory\nStatistics is not a single skill. We propose eight families of operations that can be combined within a learning activity.\n\n\n\n\n\n\n\nOperation\nWhat the student does\n\n\n\n\nRecognize\nIdentifies variables, units of analysis, populations, and samples.\n\n\nDescribe\nCharacterizes a distribution or pattern in data.\n\n\nCalculate\nObtains measures and results using appropriate methods.\n\n\nCompare\nContrasts groups, measures, and indicators.\n\n\nInterpret\nExplains what a statistical result means.\n\n\nContextualize\nConnects findings to the substantive phenomenon and its context.\n\n\nCritique\nExamines assumptions, limitations, and competing explanations.\n\n\nTransfer\nApplies a learned principle in a different situation.\n\n\n\nConsider the mean: calculating it is only one task. We can also ask what it represents, when it might be misleading, how it differs from the median, what happens after removing outliers, or what conclusions it does not support. These operations are neither a rigid hierarchy nor mutually exclusive categories."
+  },
+  {
+    "objectID": "en/pedagogia.html#interpretive-depth-n1n4",
+    "href": "en/pedagogia.html#interpretive-depth-n1n4",
+    "title": "Pedagogical model",
+    "section": "Interpretive depth: N1–N4",
+    "text": "Interpretive depth: N1–N4\nThe original N1–N4 progression remains part of Sustancia, but it is now one dimension of the mastery profile, not the entire model.\n\n\n\n\n\n\n\nLevel\nGuiding question\n\n\n\n\nN1 · Technical reading\nWhat is displayed in the data, table, or graph?\n\n\nN2 · Statistical interpretation\nWhat relationship, magnitude, or difference is expressed?\n\n\nN3 · Substantive interpretation\nWhat does this mean for the phenomenon being studied?\n\n\nN4 · Critical and reflective reading\nWhat assumptions and limitations shape the conclusion?\n\n\n\nThese levels draw on research into reading representations and statistical reasoning (Curcio, Shaughnessy, Garfield and Ben-Zvi). The specific Sustancia framework still requires validation; it is not a universally validated scale. Points in the current game are not mastery percentages."
+  },
+  {
+    "objectID": "en/pedagogia.html#learning-also-means-revising",
+    "href": "en/pedagogia.html#learning-also-means-revising",
+    "title": "Pedagogical model",
+    "section": "Learning also means revising",
+    "text": "Learning also means revising\nThe feedback loop becomes clearer when you see it in action. Choose a context and step through the challenge, first response, guiding feedback, revised response, and new evidence.\n\n  EXPLORE THE FEEDBACK LOOP1 of 5 · simulated example\n  \n    Income\n    Health\n    Surveys\n    Engineering\n  \n  \n    1. Challenge\n    2. Response\n    3. Feedback\n    4. Revision\n    5. Evidence\n  \n  \n    Learning challenge\n    Income and outliers\n    In a municipality, mean income is much higher than median income. What might this mean?\n    See the next stage →\n  \n  These responses, questions, and observations illustrate the pedagogical model. They are not real student conversations.\n\n\nEpistemological conversations\nSources and statistical representations can become material for dialogue. Instead of providing answers, the system asks students to examine their own claims.\n\n  Source and problemWhat is the text or chart claiming?Identify the claim, its source, and the problem it seeks to address. The academic team reviews the materials used for activities.\n  PositionWhat is your interpretation?Students take a position and explain, in their own words, why it seems reasonable.\n  ContrastWhat evidence might change your mind?A counterexample, measurement discrepancy, omitted assumption, or limitation challenges the initial explanation.\n  TransferDoes the principle hold in another context?Students explore the concept in health, surveys, industrial production, or social indicators.\n  Application and revisionHow would you rewrite your answer?The student creates another interpretation. The system can capture changes, persistent errors, and possible next steps.\n\nHow learners use feedback can be studied as observable revision quality. We do not infer frustration, resilience, or psychological traits from a single attempt."
+  },
+  {
+    "objectID": "en/pedagogia.html#errors-as-learning-opportunities",
+    "href": "en/pedagogia.html#errors-as-learning-opportunities",
+    "title": "Pedagogical model",
+    "section": "Errors as learning opportunities",
+    "text": "Errors as learning opportunities\nAn error can guide the next question rather than merely reduce a score. The initial prototype’s taxonomy includes unjustified causal inference, overgeneralization, ecological fallacy, and reification of categories. Foundational statistics may add confusion between frequencies and percentages, mean and median, or population parameters and sample statistics. A unified classification must be established before connecting errors to a real mastery profile."
+  },
+  {
+    "objectID": "en/pedagogia.html#how-might-the-next-challenge-be-selected",
+    "href": "en/pedagogia.html#how-might-the-next-challenge-be-selected",
+    "title": "Pedagogical model",
+    "section": "How might the next challenge be selected?",
+    "text": "How might the next challenge be selected?\nThe proposed architecture combines the course curriculum, a validated activity bank, and evidence from the student’s mastery profile. An explicit pedagogical engine guides progression. AI can support retrieval, evaluation, and feedback, but it does not independently determine the curriculum or replace faculty oversight.\nThe team collects and reviews course materials. Students do not upload textbooks or PDF documents to play."
+  },
+  {
+    "objectID": "en/pedagogia.html#references",
+    "href": "en/pedagogia.html#references",
+    "title": "Pedagogical model",
+    "section": "References",
+    "text": "References\n\nCurcio, F. (1987). Comprehension of mathematical relationships expressed in graphs. Journal for Research in Mathematics Education, 18(5).\nShaughnessy, J. M. (2007). Research on statistics learning and reasoning. In Second Handbook of Research on Mathematics Teaching and Learning.\nGarfield, J., & Ben-Zvi, D. (2008). Developing Students’ Statistical Reasoning. Springer.\nBourdieu, P. (1987 [1979]). The three states of cultural capital.\nSimondon, G. (2007 [1958]). On the Mode of Existence of Technical Objects."
+  },
+  {
+    "objectID": "en/fundamentacion.html",
+    "href": "en/fundamentacion.html",
+    "title": "Theoretical foundations",
+    "section": "",
+    "text": "Theoretical foundations\n\n\n\n\nSustancia is not simply an AI-powered exercise app. It begins with a sociological hypothesis: if cognitive outsourcing can weaken the personal accumulation of knowledge and skills, the design of AI-assisted learning—who produces and who evaluates—is a question of how learning is organized, not merely which technology is used."
+  },
+  {
+    "objectID": "en/fundamentacion.html#the-problem-an-inverse-conversion",
+    "href": "en/fundamentacion.html#the-problem-an-inverse-conversion",
+    "title": "Theoretical foundations",
+    "section": "The problem: an inverse conversion",
+    "text": "The problem: an inverse conversion\nI — The diagnosis\nIn Bourdieu’s account, embodied cultural capital has a defining feature: it requires a personal investment of time. No one can internalize on another person’s behalf the ability to sustain attention, organize an argument, or interpret a result. Generative AI can seem to promise an escape from this individual effort.\nOutsourcing the writing, summarizing, or interpretation of evidence is therefore not necessarily a neutral shortcut. The project proposes the concept of an inverse conversion of capital: relief from effort in the present may come at the expense of accumulating embodied knowledge and skills in the future. This is a theoretical interpretation and research question, not an established causal effect of any particular AI use.\nThe empirical study that motivated Sustancia examined technological habitus and mental health among 276 first-year university students. Two distinctions inform our design:\n\nUsage patterns matter, not only exposure time. In the models examined, screen time did not show the same association as compulsive use. These associations do not establish causality. The quality of the relationship with technology is part of the question.\nDelegation varies. Highly delegative patterns are not universal. A potential learning risk should not be treated as an inevitable outcome; educational designs may matter."
+  },
+  {
+    "objectID": "en/fundamentacion.html#two-ways-to-design-ai-assisted-learning",
+    "href": "en/fundamentacion.html#two-ways-to-design-ai-assisted-learning",
+    "title": "Theoretical foundations",
+    "section": "Two ways to design AI-assisted learning",
+    "text": "Two ways to design AI-assisted learning\nII — A design choice\nAI can play very different roles in a learning activity. Compare two ideal-typical arrangements and consider who performs the intellectual work.\n\n  \n    ▸ Delegative architecture\n    ▸ Incorporative architecture\n  \n  \n    \n    Student\n    time + attention\n    \n    AI model\n    generation capacity\n    \n      \n      AI produces the interpretation\n      \n      Student approves or passes on\n      possible loss of personal practice\n    \n    \n      \n      Student produces the interpretation\n      \n      AI provides rubric-based feedback\n      learning effort stays with the student\n    \n    \n      \n      \n    \n  \n  \n    Delegative architecture\n    The AI produces the interpretation and the student mainly receives or accepts it. In this ideal type, the opportunity to practice constructing an argument can be reduced.\n  \n\n\nSustancia prioritizes an incorporative learning architecture: students create interpretations and use feedback to review them. The experimental prototype emphasizes written responses and formative assessment; systematic recursive revision and multidimensional adaptation still need implementation and evaluation."
+  },
+  {
+    "objectID": "en/fundamentacion.html#substantive-interpretation-as-embodied-knowledge",
+    "href": "en/fundamentacion.html#substantive-interpretation-as-embodied-knowledge",
+    "title": "Theoretical foundations",
+    "section": "Substantive interpretation as embodied knowledge",
+    "text": "Substantive interpretation as embodied knowledge\nIII — What learning involves\nThe ability to interpret a statistical finding in depth can be understood as embodied cultural capital: it develops through practice and cannot simply be transferred through delegation. As generating analyses becomes easier, knowing what the findings mean—and what cannot be inferred from them—becomes particularly valuable.\n\nSustancia proposes a different way of valuing learning: more recognition for meaningful reasoning than for speed. The initial game’s point system rewards substantive interpretation more than simply reading a table correctly. Rather than maximizing immediacy, the design seeks to reward the time needed to understand.\n\nThe treatment of errors follows a related logic. In the original game concept, a mistake can unlock an explanatory entry in an error catalogue. An understood error becomes part of what the student learns, not merely a penalty."
+  },
+  {
+    "objectID": "en/fundamentacion.html#an-epistemological-foundation",
+    "href": "en/fundamentacion.html#an-epistemological-foundation",
+    "title": "Theoretical foundations",
+    "section": "An epistemological foundation",
+    "text": "An epistemological foundation\nIV — Simondon\nGilbert Simondon offers an important philosophical inspiration for N4, critical-reflective interpretation. A non-alienated relation to a technical object means more than operating it: it also involves understanding its internal workings. Applied to statistics, this means asking why a method was chosen, what assumptions it carries, how a model transforms data, and what the research design does not permit us to claim.\nIn this sense, Sustancia is intended as a pedagogical complement, not a substitute for the learner’s own intellectual activity. The goal is not simply to obtain an interpretation, but to develop the capacity to become an interpreter."
+  },
+  {
+    "objectID": "en/fundamentacion.html#three-foundations-one-design",
+    "href": "en/fundamentacion.html#three-foundations-one-design",
+    "title": "Theoretical foundations",
+    "section": "Three foundations, one design",
+    "text": "Three foundations, one design\nV — A synthesis\nHover over each card, or select it using the keyboard or touch, to see how a theoretical foundation can shape the game.\n\n  \n    \n      Sociological foundationBourdieuTheory of forms of capital→ hover or select to read more\n      ContributionWhy personal intellectual effort matters, and why the roles of AI and students are a sociological question.An architecture that prioritizes the student's own production of knowledge.\n    \n  \n  \n    \n      Epistemological foundationSimondonTechnical objects and their mode of existence→ hover or select to read more\n      ContributionA horizon of understanding technical processes from within rather than using methods as black boxes.N4 critical interpretation, including methodological assumptions and limitations.\n    \n  \n  \n    \n      Pedagogical foundationCurcio · Shaughnessy · GarfieldStatistics education→ hover or select to read more\n      ContributionResearch on how learners read, interpret, and reason about data.Inspiration for N1–N4, activity rubrics, and formative feedback; the specific scale requires validation."
+  },
+  {
+    "objectID": "en/fundamentacion.html#references",
+    "href": "en/fundamentacion.html#references",
+    "title": "Theoretical foundations",
+    "section": "References",
+    "text": "References\n\nBourdieu, P. (1987 [1979]). The three states of cultural capital. Sociológica, 2(5).\nBourdieu, P., & Wacquant, L. (2005 [1992]). An Invitation to Reflexive Sociology.\nCurcio, F. (1987). Comprehension of mathematical relationships expressed in graphs. JRME, 18(5).\nGarfield, J., & Ben-Zvi, D. (2008). Developing Students’ Statistical Reasoning. Springer.\nIgnatow, G., & Robinson, L. (2017). Pierre Bourdieu: theorizing the digital. Information, Communication & Society, 20(7).\nShaughnessy, J. M. (2007). Research on statistics learning and reasoning. In Second Handbook of Research on Mathematics Teaching and Learning.\nSimondon, G. (2007 [1958]). On the Mode of Existence of Technical Objects.\nZuboff, S. (2020). The Age of Surveillance Capitalism."
+  },
+  {
+    "objectID": "en/fundamentacion.html#from-foundations-to-adaptive-learning",
+    "href": "en/fundamentacion.html#from-foundations-to-adaptive-learning",
+    "title": "Theoretical foundations",
+    "section": "From foundations to adaptive learning",
+    "text": "From foundations to adaptive learning\nThe design extends interpretive depth N1–N4 with a multidimensional mastery model that separates concepts, statistical operations, recurring errors, prerequisites, and changes in a student’s learning path. Interpretive depth is one dimension of statistical reasoning, not the whole construct.\nThe proposed cycle—initial response → feedback → revised response → new evidence—may enable researchers to observe students’ intellectual work as they reconsider an explanation. Better learning cannot be assumed to follow automatically from feedback: these claims need to be tested.\nCurriculum-linked activities are derived from sources reviewed by the human team. AI may assist with discovery, extraction, classification, and assessment, but pedagogical progression and curricular approval remain explicit and human-supervised.\nExplore the pedagogical model → · See how it works →"
   },
   {
     "objectID": "piloto.html",
