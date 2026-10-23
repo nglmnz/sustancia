@@ -1059,3 +1059,25 @@ body.s3-intro-lock {overflow:hidden!important;}
 @media(prefers-reduced-motion:reduce) {
  #intro-splash.s3-intro {transition:none;}
 }
+
+
+// Bilingual site navigation: clear, keyboard-accessible language control.
+.navbar .s3-language-switch {
+  font-family: "IBM Plex Sans", sans-serif;
+  font-size: .9rem;
+  font-weight: 700;
+  letter-spacing: .01em;
+  border: 1px solid rgba(255,255,255,.65);
+  padding: .34rem .78rem !important;
+  border-radius: 100px;
+  margin-left: .4rem;
+  color: #fff !important;
+}
+.navbar .s3-language-switch:hover,
+.navbar .s3-language-switch:focus-visible {
+  background: rgba(255,255,255,.17);
+  border-color: #fff;
+}
+@media (max-width: 992px) {
+  .navbar .s3-language-switch {display:inline-block;margin:.4rem 0;}
+}
