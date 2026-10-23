@@ -1,0 +1,70 @@
+---
+title: "How it works"
+description: "From initial assessment to revising statistical reasoning: Sustancia's proposed learning journey."
+lang: en
+toc: true
+---
+
+::: {.hero}
+<div class="eyebrow">Learning experience · proposed architecture</div>
+
+# A learning journey that <em>adapts with you</em>
+
+<p class="hero-sub">Sustancia aims to recognize each student's starting point, offer relevant challenges, and turn feedback into another opportunity to think. This page describes the intended experience: not every component has been implemented in the current pilot.</p>
+:::
+
+## The learner's journey {.seccion}
+
+<div class="v2-steps" aria-label="Proposed learning journey">
+  <div class="v2-step"><span class="v2-step-num">01</span><div><h3>Initial diagnostic</h3><p>Brief activities explore prior knowledge, familiarity with statistical concepts, and ways of reasoning. The aim is to understand a starting point, not assign a permanent label.</p></div></div>
+  <div class="v2-step"><span class="v2-step-num">02</span><div><h3>Initial mastery profile</h3><p>An initial estimate covers concepts, operations, and interpretive depth. What has not been observed remains unknown rather than being treated as inability.</p></div></div>
+  <div class="v2-step"><span class="v2-step-num">03</span><div><h3>The game begins</h3><p>A curriculum-linked challenge invites the student to read a table, calculate a measure, compare results, interpret data, or examine limitations.</p></div></div>
+  <div class="v2-step"><span class="v2-step-num">04</span><div><h3>Independent response</h3><p>The learner produces an answer: a written interpretation, a completed statement, an explained comparison, or a calculation, depending on the activity.</p></div></div>
+  <div class="v2-step"><span class="v2-step-num">05</span><div><h3>Feedback and epistemological conversation</h3><p>The system points to a difficulty and poses questions that invite contrast, reconsideration, or further justification. AI should not simply supply a final interpretation.</p></div></div>
+  <div class="v2-step"><span class="v2-step-num">06</span><div><h3>Revision and fresh evidence</h3><p>The revised answer can reveal whether an error was corrected, new evidence was incorporated, or a principle was transferred to another context.</p></div></div>
+  <div class="v2-step"><span class="v2-step-num">07</span><div><h3>The next challenge</h3><p>New evidence informs an updated profile and an explicitly governed activity selection. Learning can reinforce a prerequisite, explore a deeper interpretation, or change context.</p></div></div>
+</div>
+
+## Revising—not merely trying again {.seccion}
+
+<div class="v2-dialog" aria-label="Illustrative epistemological conversation">
+  <div class="v2-dialog-header">ILLUSTRATIVE EXAMPLE · MEANS AND OUTLIERS</div>
+  <div class="v2-bubble v2-system"><strong>Challenge.</strong> Mean income is substantially higher than median income. What could explain this?</div>
+  <div class="v2-bubble v2-student"><strong>First response.</strong> The mean is higher because most people earn that amount.</div>
+  <div class="v2-bubble v2-system"><strong>Guiding question.</strong> Does the mean necessarily describe what most people earn? What if a small number of people earn exceptionally high incomes?</div>
+  <div class="v2-bubble v2-student"><strong>Revised response.</strong> A few high incomes could pull up the mean; I cannot conclude that most people receive that amount.</div>
+  <div class="v2-dialog-footer">The proposed system could capture both responses, the feedback, and the change observed—without treating one revision as proof of stable mastery.</div>
+</div>
+
+An epistemological conversation may involve a **source**, a **problem**, a **position**, **contrast**, **transfer**, and **application**. These are pedagogical moves, not a rigid six-question checklist.
+
+## What changes in the profile? {.seccion}
+
+<div class="v2-panel">
+  <p>The mastery vector is not a single grade. It combines evidence of what the learner knows, can do, and still needs to practice.</p>
+  <div class="v2-pill-grid"><span>Concepts</span><span>Operations</span><span>N1–N4 depth</span><span>Recurring errors</span><span>Prerequisites</span><span>Learning path and revision</span></div>
+  <p class="v2-small">These indicators require calibration and validation before informing real educational decisions.</p>
+</div>
+
+## Who does what? {.seccion}
+
+| Participant | Responsibility |
+|---|---|
+| Academic team and faculty | Define the curriculum, validate activities, and oversee pedagogical decisions. |
+| Supporting AI agents | Retrieve approved materials, propose exercises, and assist evaluation within rubrics and safeguards. |
+| Pedagogical engine | Selects activities using explicit criteria and the student's estimated profile. |
+| Student | Produces, compares, revises, and develops their own reasoning. |
+
+**Important:** the academic team introduces and reviews the course texts and programs. **Students do not upload documents to play.**
+
+## Available now vs. under development {.seccion}
+
+| Component | Status |
+|---|---|
+| Pedagogical concept, N1–N4, and initial error taxonomy | Documented |
+| Prototype featuring interpretive activities | Experimental; availability depends on the hosted service |
+| Initial diagnostic and operational multidimensional mastery profile | In design and development |
+| Systematic revision conversations and adaptive selection | In development |
+| Agent-assisted curricular bank and institutional dashboards | Planned |
+
+[Explore the current prototype →](piloto.qmd) · [Read about the pedagogical model →](pedagogia.qmd)
