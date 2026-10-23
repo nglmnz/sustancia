@@ -1,0 +1,40 @@
+---
+title: "Project and team"
+description: "The interdisciplinary team and research goals behind Sustancia."
+lang: en
+---
+
+::: {.hero}
+<div class="eyebrow">Interdisciplinary project · in development</div>
+
+# Interpreting data means <em>developing judgment</em>
+
+<p class="hero-sub">Sustancia brings together social research, statistics education, and software development to explore how learners can reason with data while retaining ownership of the intellectual work.</p>
+:::
+
+## Where the project comes from {.seccion}
+
+Sustancia began with a question: what happens when analytical tools and generative models make it easier to obtain statistical results without guaranteeing that users understand their meaning? The project proposes a learning architecture in which students interpret findings, receive formative feedback, and revise their reasoning.
+
+The prototype's initial dataset comes from research on technological habitus and mental health among first-year university students (*n* = 276, five degree programs). The project is now expanding toward curriculum-linked statistical learning. The design distinguishes performing a procedure, interpreting the resulting data, and recognizing the limits of a conclusion.
+
+## Our team {.seccion}
+
+<div class="v2-card-grid v2-team">
+  <article class="v2-card"><span class="v2-kicker">SOCIOLOGY · UAH</span><h3>Ángel Muñoz</h3><p>Bachelor's degree in Sociology, Universidad Alberto Hurtado.</p><p class="v2-small">Pedagogical design, initial R/Shiny development, and empirical material.</p></article>
+  <article class="v2-card"><span class="v2-kicker">SOCIOLOGY · UAH</span><h3>Tamara Gómez</h3><p>Sociology, Universidad Alberto Hurtado.</p><p class="v2-small">Specific project responsibilities to be confirmed.</p></article>
+  <article class="v2-card"><span class="v2-kicker">SOCIOLOGY · UC</span><h3>Nicolás Williams</h3><p>Master's degree in Sociology, Pontificia Universidad Católica de Chile.</p><p class="v2-small">Specific project responsibilities to be confirmed.</p></article>
+  <article class="v2-card"><span class="v2-kicker">COMPUTER ENGINEERING · DUOC UC</span><h3>Nicolás Ayarza</h3><p>Computer Engineer, DUOC UC.</p><p class="v2-small">Specific project responsibilities to be confirmed.</p></article>
+</div>
+
+Academic affiliations describe individual educational backgrounds. **They do not imply institutional sponsorship, endorsement, or formal representation.**
+
+## Research and development {.seccion}
+
+Sustancia is conceived both as a learning tool and as a potential environment for research on educational processes. Questions of interest include the persistence of misconceptions, differences between statistical operations, how arguments change after feedback, and whether principles transfer to new contexts.
+
+The next stages envisage a human-reviewed curricular activity bank, an initial diagnostic, a multidimensional mastery profile, and explicit activity-selection rules. These components have not yet been fully implemented or validated.
+
+## Contact {.seccion}
+
+[Contact the project](mailto:anmunozr@alumnos.uahurtado.cl) · [Sustancia on GitHub](https://github.com/nglmnz/sustancia)
