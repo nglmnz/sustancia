@@ -24,6 +24,9 @@ website:
         text: Equipo
       - href: piloto.qmd
         text: Prototipo
+    right:
+      - href: en/index.qmd
+        text: English
   page-footer:
     center: "Sustancia · Proyecto interdisciplinario en investigación y desarrollo · 2026"
     background: "#14161A"
@@ -37,3 +40,5 @@ format:
     smooth-scroll: true
     link-external-newwindow: true
     lang: es
+    include-after-body:
+      - assets/language-switch.html
