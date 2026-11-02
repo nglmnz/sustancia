@@ -20,13 +20,15 @@ El corpus inicial proviene de la investigación sobre habitus tecnológico y sal
 ## Equipo {.seccion}
 
 <div class="v2-card-grid v2-team">
-  <article class="v2-card"><span class="v2-kicker">SOCIOLOGÍA · UAH</span><h3>Ángel Muñoz</h3><p>Licenciado en Sociología, Universidad Alberto Hurtado.</p><p class="v2-small">Diseño pedagógico, desarrollo inicial en R/Shiny y corpus empírico.</p></article>
-  <article class="v2-card"><span class="v2-kicker">SOCIOLOGÍA · UAH</span><h3>Tamara Gómez</h3><p>Sociología, Universidad Alberto Hurtado.</p><p class="v2-small">Funciones específicas en el proyecto por confirmar.</p></article>
-  <article class="v2-card"><span class="v2-kicker">SOCIOLOGÍA · UC</span><h3>Nicolás Williams</h3><p>Magíster en Sociología, Pontificia Universidad Católica de Chile.</p><p class="v2-small">Funciones específicas en el proyecto por confirmar.</p></article>
-  <article class="v2-card"><span class="v2-kicker">INGENIERÍA INFORMÁTICA · DUOC UC</span><h3>Nicolás Ayarza</h3><p>Ingeniero Informático, DUOC UC.</p><p class="v2-small">Funciones específicas en el proyecto por confirmar.</p></article>
+  <article class="v2-card"><span class="v2-kicker">DISEÑO PEDAGÓGICO · UAH</span><h3>Ángel Muñoz</h3><p>Sociología, Universidad Alberto Hurtado.</p><p class="v2-small">Coordinación del proyecto, modelo pedagógico y prototipo en R/Shiny. Junto con Nicolás Ayarza, desarrollo de los agentes especializados y del acervo curricular estructurado.</p></article>
+  <article class="v2-card"><span class="v2-kicker">INVESTIGACIÓN · UAH</span><h3>Tamara Gómez</h3><p>Sociología, Universidad Alberto Hurtado.</p><p class="v2-small">Desarrollo académico e investigativo, revisión de literatura, documentación y apoyo a la evaluación y validación humana en conjunto con Nicolás Williams.</p></article>
+  <article class="v2-card"><span class="v2-kicker">METODOLOGÍA Y VALIDACIÓN · UC</span><h3>Nicolás Williams</h3><p>Magíster en Sociología, Pontificia Universidad Católica de Chile.</p><p class="v2-small">Diseño y ejecución metodológica: comparación de codificaciones humanas y del evaluador, cálculo del kappa de Cohen, análisis de discrepancias y mejoras iterativas de las rúbricas, con el apoyo de Tamara Gómez.</p></article>
+  <article class="v2-card"><span class="v2-kicker">AGENTES Y ACERVO · DUOC UC</span><h3>Nicolás Ayarza</h3><p>Ingeniero Informático, DUOC UC.</p><p class="v2-small">Desarrollo junto con Ángel Muñoz de agentes especializados, procesamiento de fuentes y base estructurada de conocimiento estadístico, con trazabilidad y revisión curricular humana.</p></article>
 </div>
 
 La formación académica de los integrantes identifica su trayectoria. **No implica patrocinio, convenio ni representación institucional de las entidades mencionadas.**
+
+<p class="s3-team-note"><strong>Frentes de trabajo actuales.</strong> La validación metodológica comparará las codificaciones humanas expertas con el evaluador automatizado mediante kappa de Cohen (ponderado cuando corresponda a categorías ordinales). En paralelo, el desarrollo técnico organizará textos de estadística con derechos de uso adecuados, trazabilidad de fuentes y supervisión humana para construir un acervo curricular estructurado. Son tareas en desarrollo, no resultados de validación ya obtenidos.</p>
 
 ## Investigación y desarrollo {.seccion}
 

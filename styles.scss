@@ -1081,3 +1081,35 @@ body.s3-intro-lock {overflow:hidden!important;}
 @media (max-width: 992px) {
   .navbar .s3-language-switch {display:inline-block;margin:.4rem 0;}
 }
+
+
+// 2026-11: texto introductorio antes de la imagen y encuadre multidimensional
+.hero .s3-opening-thesis {
+  max-width: 66ch;
+  font-family: "IBM Plex Sans", sans-serif;
+  font-size: clamp(1rem, 1.7vw, 1.18rem);
+  line-height: 1.65;
+  color: #333C50;
+  margin: 1.25rem 0 1.55rem;
+}
+.hero img.s3-hero-art {
+  display: block;
+  width: 100%;
+  max-width: 950px;
+  height: auto;
+  margin: 1.6rem auto .3rem;
+  border-radius: 14px;
+  box-shadow: 0 8px 28px rgba(20,22,26,.10);
+}
+.s3-example-note, .s3-team-note {
+  max-width: 76ch;
+  line-height: 1.65;
+  padding: .9rem 1.1rem;
+  margin: 1.2rem 0 1.7rem;
+  border-left: 3px solid #223A8F;
+  background: rgba(34,58,143,.045);
+}
+@media (max-width: 700px) {
+  .hero img.s3-hero-art {border-radius: 8px; margin-top: 1rem;}
+  .s3-example-note, .s3-team-note {padding: .75rem .9rem;}
+}

@@ -45,6 +45,12 @@ Las conversaciones epistemológicas pueden partir de una **fuente**, identificar
   <p class="v2-small">Los indicadores requieren calibración y validación antes de utilizarse para tomar decisiones educativas reales.</p>
 </div>
 
+## Del acervo estadístico a las actividades {.seccion}
+
+El equipo construirá un **acervo de conocimiento estadístico** a partir de programas de asignatura, manuales, artículos y otros recursos cuyo uso esté autorizado. Los agentes especializados apoyarán la extracción de conceptos, ejemplos, operaciones y ejercicios con su referencia de origen. **Ningún texto extraído se incorpora automáticamente como actividad validada:** el equipo deberá revisar la exactitud estadística, la pertinencia curricular y los derechos de uso antes de incluirlo en el banco.
+
+Este proceso alimentará el modelo de dominio y las actividades que luego podrá seleccionar el motor pedagógico. El modelo adaptativo y el repositorio curricular aún están en desarrollo; no deben confundirse con capacidades plenamente operativas del prototipo.
+
 ## ¿Quién hace qué? {.seccion}
 
 | Actor | Responsabilidad |

@@ -46,6 +46,12 @@ An epistemological conversation may involve a **source**, a **problem**, a **pos
   <p class="v2-small">These indicators require calibration and validation before informing real educational decisions.</p>
 </div>
 
+## From statistical sources to learning activities {.seccion}
+
+The team will build a **structured statistical knowledge base** from syllabi, textbooks, articles, and other materials with suitable rights of use. Specialized agents will help extract concepts, worked examples, operations, and exercises while keeping traceable source references. **Extracted material does not automatically become a validated activity:** the team must review statistical accuracy, curricular relevance, and reuse rights before it enters the activity bank.
+
+This process is intended to inform the domain model and the activities later selected by the pedagogical engine. The adaptive model and curricular knowledge base remain under development; they should not be mistaken for fully operational prototype features.
+
 ## Who does what? {.seccion}
 
 | Participant | Responsibility |

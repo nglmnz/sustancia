@@ -15,25 +15,44 @@ lang: en
 ```
 
 ::: {.hero}
-![](../assets/portada sustancia.png)
-
 <div class="eyebrow">Sustancia · statistical learning laboratory · in development</div>
 
 # Reading a table is not the same as interpreting it.
 
 <p class="hero-sub"><strong>Sustancia</strong> is a web-based learning game that helps students interpret statistical results in context, across sociology, psychology, public policy, health, and other fields. The current prototype invites players to write their own interpretations and receive formative feedback. Its next stage explores an initial diagnostic, a multidimensional mastery profile, and activities that respond to students' learning trajectories.</p>
+
+<p class="s3-opening-thesis">Statistical reasoning is not a straight climb from a simple answer to a complex one. It brings together knowledge of concepts, statistical operations, interpretation, critical judgment, and the ability to revise an argument. Sustancia explores how to learn across these connected dimensions.</p>
+
+![](../assets/portada sustancia.png){.s3-hero-art alt="Sustancia project visual identity"}
 :::
 
 <p class="v2-lead"><strong>Learning statistics means learning to think with data.</strong> Reaching a numerical result is not enough: we must also understand its meaning, question its limitations, and transfer what we have learned.</p>
 
 <div class="v2-actions"><a href="como-funciona.qmd" class="v2-btn v2-primary">How learning will work →</a><a href="piloto.qmd" class="v2-btn">Explore the current prototype ↗</a></div>
 
+## Statistical reasoning has more than one dimension {.seccion}
+
+**Statistical reasoning is not a single skill, and learning it is not a universal linear path.** It involves understanding concepts, selecting and applying procedures, interpreting evidence in context, examining uncertainty and assumptions, and revising arguments. A learner may be strong in one area while still developing another.
+
+**N1–N4 describes interpretive depth—only one dimension of the proposed mastery profile.** It is a useful lens for comparing interpretations of a particular output, not a four-step sequence through which all statistical learning must pass.
+
+A learner may get the calculation right but struggle to interpret it. Someone else may reason critically yet need more practice with procedures. Sustancia's proposed mastery profile therefore separates **concepts, operations, interpretive depth, recurring errors, and development over time**, rather than reducing learning to one grade.
+
+<div class="v2-card-grid">
+  <article class="v2-card"><span class="v2-kicker">01 · CONCEPTS</span><h3>What you understand</h3><p>Variables, measures, graphs, distributions, and statistical concepts at different levels of study.</p></article>
+  <article class="v2-card"><span class="v2-kicker">02 · OPERATIONS</span><h3>What you can do</h3><p>Recognize, describe, calculate, compare, interpret, contextualize, critique, and transfer.</p></article>
+  <article class="v2-card"><span class="v2-kicker">03 · INTERPRETATION</span><h3>How deeply you reason</h3><p>N1 technical reading; N2 statistical interpretation; N3 substantive interpretation; N4 critical reflection.</p></article>
+  <article class="v2-card"><span class="v2-kicker">04 · LEARNING PATH</span><h3>How your thinking changes</h3><p>Initial responses, feedback, and revisions can provide fresh evidence of learning.</p></article>
+</div>
+
+[Explore two simulated mastery profiles →](pedagogia.qmd)
+
 ## See the difference {.seccion}
 
-These two responses refer to the same table from an empirical study on technology use and mental health among first-year university students. Both read the figures; only one relates them to the world.
+Consider **one dimension of this broader model: interpretive depth**. The two responses below use the same illustrative regression table. Their comparison shows different ways of interpreting a result; it does **not** define a mandatory N1 → N4 path or capture the entirety of statistical reasoning.
 
 <table class="demo-tabla">
-<caption>Regression model: poorer mental health (illustrative excerpt)</caption>
+<caption>Illustrative regression example for teaching purposes; figures are not presented as verified estimates from the study.</caption>
 <thead><tr><th>Predictor</th><th>β</th><th>p</th></tr></thead>
 <tbody>
 <tr><td>Compulsive use (IDA)</td><td>.38</td><td>&lt; .001</td></tr>
@@ -46,28 +65,17 @@ These two responses refer to the same table from an empirical study on technolog
 <div class="carta carta-n1">
 <span class="nivel-tag">LEVEL 1 · TECHNICAL READING</span>
 <p>"Compulsive use and gender are statistically significant (p&nbsp;&lt;&nbsp;.05). Screen time is not statistically significant."</p>
-<div class="veredicto">✓ A technically correct reading, but it does not yet explain the phenomenon. <strong>1 point.</strong></div>
+<div class="veredicto">Technical reading: identifies the reported statistical significance without yet discussing the substantive question.</div>
 </div>
 
 <div class="carta carta-n3">
 <span class="nivel-tag">LEVEL 3 · SUBSTANTIVE INTERPRETATION</span>
-<p>"In this model, poorer mental health is associated less with <em>how long</em> students use screens than with <em>how</em> they use them: compulsive patterns, rather than exposure time alone, are associated with the outcome. A policy focused only on limiting screen hours could miss an important part of the issue."</p>
-<div class="veredicto">✓ A richer interpretation: it connects the findings—including a non-significant result—to the research problem, without asserting causality. <strong>4 points.</strong></div>
+<p>"In this illustrative model, compulsive use shows a positive association with poorer mental health, while screen time has no statistically significant coefficient. This raises questions about patterns of use as well as duration, without proving causality or showing that screen time has no effect."</p>
+<div class="veredicto">Substantive interpretation: relates the estimates to a research question and states what the evidence cannot establish.</div>
 </div>
 :::
 
-## Learning has multiple dimensions {.seccion}
-
-A learner may get the calculation right but struggle to interpret it. Someone else may reason critically yet need more practice with procedures. Sustancia's proposed mastery profile therefore separates **concepts, operations, interpretive depth, recurring errors, and development over time**, rather than reducing learning to one grade.
-
-<div class="v2-card-grid">
-  <article class="v2-card"><span class="v2-kicker">01 · CONCEPTS</span><h3>What you understand</h3><p>Variables, measures, graphs, distributions, and statistical concepts at different levels of study.</p></article>
-  <article class="v2-card"><span class="v2-kicker">02 · OPERATIONS</span><h3>What you can do</h3><p>Recognize, describe, calculate, compare, interpret, contextualize, critique, and transfer.</p></article>
-  <article class="v2-card"><span class="v2-kicker">03 · INTERPRETATION</span><h3>How deeply you reason</h3><p>N1 technical reading; N2 statistical interpretation; N3 substantive interpretation; N4 critical reflection.</p></article>
-  <article class="v2-card"><span class="v2-kicker">04 · LEARNING PATH</span><h3>How your thinking changes</h3><p>Initial responses, feedback, and revisions can provide fresh evidence of learning.</p></article>
-</div>
-
-[Explore two simulated mastery profiles →](pedagogia.qmd)
+<p class="s3-example-note"><strong>What this comparison does—and does not—show:</strong> N1 and N3 are examples of interpretive depth, not ranks of the learner as a whole. A non-significant p-value is not evidence of zero effect, and an association by itself does not establish causality. Different statistical tasks mobilize other dimensions of the mastery profile.</p>
 
 ## From responding to revising {.seccion}
 

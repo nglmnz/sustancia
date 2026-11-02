@@ -10,8 +10,6 @@
 ```
 
 ::: {.hero}
-![](assets/portada sustancia.png)
-
 <div class="eyebrow">Sustancia · laboratorio de aprendizaje estadístico · en desarrollo</div>
 
 # Leer una tabla no es interpretarla.
@@ -20,18 +18,38 @@
 <p class="hero-sub"><strong>Sustancia</strong> es un juego web para aprender a interpretar resultados
 estadísticos en contexto: sociología, psicología, política pública, salud.
 El prototipo actual invita a escribir interpretaciones y recibir retroalimentación. La siguiente etapa explora un diagnóstico inicial, un perfil multidimensional de maestría y actividades que se ajustan al recorrido de aprendizaje.</p>
+
+<p class="s3-opening-thesis">Razonar estadísticamente no es subir una escalera desde una respuesta simple hasta otra compleja. Es movilizar conceptos, operaciones, interpretación, juicio crítico y capacidad de revisar los propios argumentos. Sustancia explora cómo aprender en esas dimensiones conectadas.</p>
+
+![](assets/portada sustancia.png){.s3-hero-art alt="Identidad visual del proyecto Sustancia"}
 ::: 
 <p class="v2-lead"><strong>Aprender estadística es aprender a pensar con los datos.</strong> No basta con encontrar el resultado: también hay que comprenderlo, discutir sus límites y transferir lo aprendido.</p>
 
 <div class="v2-actions"><a href="como-funciona.qmd" class="v2-btn v2-primary">Conoce cómo funcionará →</a><a href="piloto.qmd" class="v2-btn">Explora el prototipo actual ↗</a></div>
 
+## El razonamiento estadístico es multidimensional {.seccion}
+
+**Razonar estadísticamente no es dominar una única habilidad ni avanzar por un camino idéntico para todas las personas.** Supone comprender conceptos, realizar operaciones, interpretar evidencias en su contexto, examinar incertidumbres y supuestos, y revisar los propios argumentos. Se puede destacar en una dimensión y necesitar apoyo en otra.
+
+**N1–N4 describe la profundidad interpretativa: es solo un eje del perfil de maestría.** Sirve para examinar distintas formas de interpretar un resultado, pero no representa cuatro etapas obligatorias de todo el aprendizaje estadístico.
+
+Una respuesta puede ser correcta en el cálculo y débil en interpretación. Otra puede mostrar razonamiento crítico, pero necesitar refuerzo en el procedimiento. Por eso el nuevo modelo de Sustancia busca representar **conceptos, operaciones, profundidad interpretativa, errores y evolución**, sin reducirlos a una única nota.
+
+<div class="v2-card-grid">
+  <article class="v2-card"><span class="v2-kicker">01 · CONCEPTOS</span><h3>Qué comprendes</h3><p>Variables, medidas, gráficos, distribuciones y conceptos estadísticos a través de distintos niveles formativos.</p></article>
+  <article class="v2-card"><span class="v2-kicker">02 · OPERACIONES</span><h3>Qué puedes hacer</h3><p>Reconocer, describir, calcular, comparar, interpretar, contextualizar, criticar y transferir.</p></article>
+  <article class="v2-card"><span class="v2-kicker">03 · INTERPRETACIÓN</span><h3>Hasta dónde profundizas</h3><p>N1 lectura técnica; N2 interpretación estadística; N3 interpretación sustantiva; N4 lectura crítica.</p></article>
+  <article class="v2-card"><span class="v2-kicker">04 · TRAYECTORIA</span><h3>Cómo revisas y evolucionas</h3><p>La respuesta inicial, la retroalimentación y la producción revisada pueden aportar nueva evidencia de aprendizaje.</p></article>
+</div>
+
+[Explora dos perfiles simulados en el modelo pedagógico →](pedagogia.qmd)
+
 ## Mira la diferencia {.seccion}
 
-Ambas respuestas describen la misma tabla de un estudio real sobre tecnología y
-salud mental en estudiantes de primer año. Solo una de ellas dice algo sobre el mundo.
+Veamos **una dimensión del modelo: la profundidad interpretativa**. Las dos respuestas siguientes usan una misma tabla ilustrativa de regresión. Permiten comparar formas de interpretar un resultado; **no** representan una trayectoria obligatoria N1 → N4 ni todas las capacidades que intervienen en el razonamiento estadístico.
 
 <table class="demo-tabla">
-<caption>Modelo de regresión: deterioro de salud mental (fragmento ilustrativo)</caption>
+<caption>Ejemplo didáctico de regresión con cifras ilustrativas; no se presentan como estimaciones verificadas del estudio.</caption>
 <thead>
 <tr><th>Predictor</th><th>β</th><th>p</th></tr>
 </thead>
@@ -47,31 +65,17 @@ salud mental en estudiantes de primer año. Solo una de ellas dice algo sobre el
 <span class="nivel-tag">NIVEL 1 · LECTURA TÉCNICA</span>
 <p>"El uso compulsivo y el género son significativos (p&nbsp;&lt;&nbsp;.05).
 El tiempo de pantalla no es significativo."</p>
-<div class="veredicto">✓ Correcto. Pero todavía no dijiste nada sobre el mundo.
-<strong>1 punto.</strong></div>
+<div class="veredicto">Lectura técnica: identifica la significación reportada, pero todavía no aborda la pregunta sustantiva.</div>
 </div>
 
 <div class="carta carta-n3">
 <span class="nivel-tag">NIVEL 3 · INTERPRETACIÓN SUSTANTIVA</span>
-<p>"El deterioro no se asocia a <em>cuánto</em> tiempo se usa la pantalla,
-sino a <em>cómo</em> se usa: es el modo compulsivo, no la exposición, lo que
-importa. Una política centrada en limitar horas apuntaría al blanco equivocado."</p>
-<div class="veredicto">✓ Interpretación con sustancia: conecta el hallazgo — incluido
-el nulo — con el fenómeno y sus implicancias. <strong>4 puntos.</strong></div>
+<p>"En este modelo ilustrativo, el uso compulsivo presenta una asociación positiva con el deterioro, mientras que el coeficiente del tiempo de pantalla no alcanza significación estadística. Esto invita a estudiar <em>cómo</em> se utilizan las pantallas, además de cuánto, sin demostrar causalidad ni descartar un posible papel del tiempo de uso."</p>
+<div class="veredicto">Interpretación sustantiva: relaciona los resultados con el problema investigado y reconoce los límites de la evidencia.</div>
 </div>
 ::: 
-## El aprendizaje tiene varias dimensiones {.seccion}
 
-Una respuesta puede ser correcta en el cálculo y débil en interpretación. Otra puede mostrar razonamiento crítico, pero necesitar refuerzo en el procedimiento. Por eso el nuevo modelo de Sustancia busca representar **conceptos, operaciones, profundidad interpretativa, errores y evolución**, sin reducirlos a una única nota.
-
-<div class="v2-card-grid">
-  <article class="v2-card"><span class="v2-kicker">01 · CONCEPTOS</span><h3>Qué comprendes</h3><p>Variables, medidas, gráficos, distribuciones y conceptos estadísticos a través de distintos niveles formativos.</p></article>
-  <article class="v2-card"><span class="v2-kicker">02 · OPERACIONES</span><h3>Qué puedes hacer</h3><p>Reconocer, describir, calcular, comparar, interpretar, contextualizar, criticar y transferir.</p></article>
-  <article class="v2-card"><span class="v2-kicker">03 · INTERPRETACIÓN</span><h3>Hasta dónde profundizas</h3><p>N1 lectura técnica; N2 interpretación estadística; N3 interpretación sustantiva; N4 lectura crítica.</p></article>
-  <article class="v2-card"><span class="v2-kicker">04 · TRAYECTORIA</span><h3>Cómo revisas y evolucionas</h3><p>La respuesta inicial, la retroalimentación y la producción revisada pueden aportar nueva evidencia de aprendizaje.</p></article>
-</div>
-
-[Explora dos perfiles simulados en el modelo pedagógico →](pedagogia.qmd)
+<p class="s3-example-note"><strong>Qué muestra —y qué no— este contraste:</strong> N1 y N3 son ejemplos de profundidad interpretativa, no niveles globales de una persona. Un resultado no significativo no demuestra ausencia de efecto y una asociación no establece causalidad. Otras tareas movilizan dimensiones diferentes del perfil de maestría.</p>
 
 ## De la respuesta a la revisión {.seccion}
 

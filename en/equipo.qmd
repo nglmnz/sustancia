@@ -21,13 +21,15 @@ The prototype's initial dataset comes from research on technological habitus and
 ## Our team {.seccion}
 
 <div class="v2-card-grid v2-team">
-  <article class="v2-card"><span class="v2-kicker">SOCIOLOGY · UAH</span><h3>Ángel Muñoz</h3><p>Bachelor's degree in Sociology, Universidad Alberto Hurtado.</p><p class="v2-small">Pedagogical design, initial R/Shiny development, and empirical material.</p></article>
-  <article class="v2-card"><span class="v2-kicker">SOCIOLOGY · UAH</span><h3>Tamara Gómez</h3><p>Sociology, Universidad Alberto Hurtado.</p><p class="v2-small">Specific project responsibilities to be confirmed.</p></article>
-  <article class="v2-card"><span class="v2-kicker">SOCIOLOGY · UC</span><h3>Nicolás Williams</h3><p>Master's degree in Sociology, Pontificia Universidad Católica de Chile.</p><p class="v2-small">Specific project responsibilities to be confirmed.</p></article>
-  <article class="v2-card"><span class="v2-kicker">COMPUTER ENGINEERING · DUOC UC</span><h3>Nicolás Ayarza</h3><p>Computer Engineer, DUOC UC.</p><p class="v2-small">Specific project responsibilities to be confirmed.</p></article>
+  <article class="v2-card"><span class="v2-kicker">PEDAGOGICAL DESIGN · UAH</span><h3>Ángel Muñoz</h3><p>Sociology, Universidad Alberto Hurtado.</p><p class="v2-small">Project coordination, pedagogical model and R/Shiny prototype. Co-develops the specialized agents and curricular knowledge base with Nicolás Ayarza.</p></article>
+  <article class="v2-card"><span class="v2-kicker">RESEARCH · UAH</span><h3>Tamara Gómez</h3><p>Sociology, Universidad Alberto Hurtado.</p><p class="v2-small">Academic and research development, literature review, documentation, and support for human evaluation and validation alongside Nicolás Williams.</p></article>
+  <article class="v2-card"><span class="v2-kicker">METHODOLOGY AND VALIDATION · UC</span><h3>Nicolás Williams</h3><p>Master's degree in Sociology, Pontificia Universidad Católica de Chile.</p><p class="v2-small">Methodological design and evaluation: human–AI coding comparisons, Cohen's kappa for inter-rater agreement, discrepancy analysis, and iterative improvement of the assessment rubric, in collaboration with Tamara Gómez.</p></article>
+  <article class="v2-card"><span class="v2-kicker">AGENTS AND KNOWLEDGE BASE · DUOC UC</span><h3>Nicolás Ayarza</h3><p>Computer Engineer, DUOC UC.</p><p class="v2-small">Co-develops specialized agents, source processing, and the structured statistical knowledge base with Ángel Muñoz, preserving provenance and human curricular review.</p></article>
 </div>
 
 Academic affiliations describe individual educational backgrounds. **They do not imply institutional sponsorship, endorsement, or formal representation.**
+
+<p class="s3-team-note"><strong>Current workstreams.</strong> Methodological validation will examine agreement between expert human coding and the automated evaluator, using Cohen's kappa (weighted when appropriate for ordered categories). In parallel, the technology workstream will curate authorized statistics texts, trace each source, and build structured learning activities through specialized agents. These are planned activities, not validated outcomes.</p>
 
 ## Research and development {.seccion}
 
