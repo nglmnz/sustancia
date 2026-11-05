@@ -102,7 +102,14 @@
     "href": "en/index.html",
     "title": "Sustancia",
     "section": "",
-    "text": "Skip introduction →\nLearning statistics means learning to think with data. Reaching a numerical result is not enough: we must also understand its meaning, question its limitations, and transfer what we have learned."
+    "text": "Skip intro →\nLearning statistics means learning to think with data. Reaching a numerical result is not enough: we must also understand its meaning, question its limitations, and transfer what we have learned."
+  },
+  {
+    "objectID": "en/index.html#arquitecturas-aprendizaje",
+    "href": "en/index.html#arquitecturas-aprendizaje",
+    "title": "Sustancia",
+    "section": "The difference is who does the intellectual work",
+    "text": "The difference is who does the intellectual work\nAI can deliver a finished answer or help someone revise their own interpretation. Sustancia proposes the second path: produce, receive feedback, and think again.\n\n  \n  \n    Delegate the answerThe output accumulates outside the learner; the opportunity to practise is skipped.\n    Build understandingThe learner produces, revises, and applies; knowledge develops within them.\n  \n\nExplore the conceptual foundations →"
   },
   {
     "objectID": "en/index.html#statistical-reasoning-has-more-than-one-dimension",
@@ -543,7 +550,14 @@
     "href": "index.html",
     "title": "Leer una tabla no es interpretarla.",
     "section": "",
-    "text": "Saltar introducción →\nAprender estadística es aprender a pensar con los datos. No basta con encontrar el resultado: también hay que comprenderlo, discutir sus límites y transferir lo aprendido."
+    "text": "Omitir intro →\nAprender estadística es aprender a pensar con los datos. No basta con encontrar el resultado: también hay que comprenderlo, discutir sus límites y transferir lo aprendido."
+  },
+  {
+    "objectID": "index.html#arquitecturas-aprendizaje",
+    "href": "index.html#arquitecturas-aprendizaje",
+    "title": "Leer una tabla no es interpretarla.",
+    "section": "La diferencia está en quién hace el trabajo intelectual",
+    "text": "La diferencia está en quién hace el trabajo intelectual\nLa IA puede entregar una respuesta terminada o ayudar a revisar una interpretación propia. Sustancia propone el segundo circuito: producir, recibir retroalimentación y volver a pensar.\n\n  \n  \n    Delegar la respuestaEl producto se acumula fuera; se omite la oportunidad de practicar.\n    Incorporar lo aprendidoEl usuario elabora, revisa y aplica; el conocimiento se construye en él.\n  \n\nVer las dos arquitecturas en movimiento →"
   },
   {
     "objectID": "index.html#el-razonamiento-estadístico-es-multidimensional",
