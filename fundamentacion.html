@@ -238,6 +238,44 @@ Sustancia no es una app de ejercicios con IA. Es un dispositivo diseñado desde 
   });
 })();
 </script>
+<section class="arquitecturas-video" id="arquitecturas-en-movimiento" aria-labelledby="arquitecturas-video-titulo">
+  <h3 id="arquitecturas-video-titulo" class="anchored">Dos circuitos, dos formas de aprender</h3>
+  <p>Observa quién realiza el trabajo intelectual en cada arquitectura. Cada animación dura 16 segundos y puede reproducirse, pausarse o ampliarse.</p>
+  <div class="arquitecturas-video-grid">
+    <figure class="figure">
+      <h4 id="video-delegativa-titulo" class="anchored">Arquitectura delegativa</h4>
+      <video controls="" playsinline="" preload="metadata" width="960" height="760" aria-labelledby="video-delegativa-titulo" aria-describedby="video-delegativa-descripcion">
+        <source src="assets/videos/delegacion-cognitiva.mp4" type="video/mp4">
+        Tu navegador no permite reproducir este video. <a href="assets/videos/delegacion-cognitiva.mp4">Abrir la animación delegativa</a>.
+      </video>
+      <figcaption id="video-delegativa-descripcion">La IA produce la respuesta y el usuario recibe el resultado. La sustancia que sale del personaje representa la oportunidad de practicar y desarrollar capacidades que se omite al delegar.</figcaption>
+      <details><summary>Leer la secuencia del video</summary><ol><li>Una tarea exige pensar.</li><li>El usuario delega su elaboración.</li><li>Llegan respuestas; se omite la práctica.</li><li>Resolver no equivale a aprender.</li></ol></details>
+    </figure>
+    <figure class="figure">
+      <h4 id="video-incorporativa-titulo" class="anchored">Arquitectura incorporativa</h4>
+      <video controls="" playsinline="" preload="metadata" width="960" height="760" aria-labelledby="video-incorporativa-titulo" aria-describedby="video-incorporativa-descripcion">
+        <source src="assets/videos/arquitectura-incorporativa.mp4" type="video/mp4">
+        Tu navegador no permite reproducir este video. <a href="assets/videos/arquitectura-incorporativa.mp4">Abrir la animación incorporativa</a>.
+      </video>
+      <figcaption id="video-incorporativa-descripcion">El usuario elabora, recibe preguntas y pistas, revisa y aplica. La estructura luminosa que crece en su interior representa el conocimiento que incorpora mediante su propio trabajo.</figcaption>
+      <details><summary>Leer la secuencia del video</summary><ol><li>El usuario construye una respuesta.</li><li>La IA devuelve preguntas y pistas.</li><li>El usuario revisa y conecta ideas.</li><li>Comprende y aplica lo aprendido.</li></ol></details>
+    </figure>
+  </div>
+  <p class="arquitecturas-video-nota">La sustancia es una metáfora del potencial de aprendizaje. Las escenas ilustran la lógica de diseño; no representan una medición ni garantizan por sí mismas resultados educativos.</p>
+</section>
+<style>
+.arquitecturas-video { margin-block: 2rem; }
+.arquitecturas-video-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 1.5rem; }
+.arquitecturas-video-grid figure { min-width: 0; margin: 0; }
+.arquitecturas-video-grid h4 { margin-block: 0 0.75rem; }
+.arquitecturas-video-grid video { display: block; width: 100%; height: auto; aspect-ratio: 24 / 19; background: #06172c; border-radius: 0.5rem; }
+.arquitecturas-video-grid figcaption { margin-top: 0.75rem; font-size: 1rem; line-height: 1.6; text-align: left; }
+.arquitecturas-video-grid details { margin-top: 0.75rem; }
+.arquitecturas-video-grid summary { cursor: pointer; }
+.arquitecturas-video-grid ol { padding-left: 1.4rem; margin-top: 0.75rem; }
+.arquitecturas-video-nota { margin-top: 1.25rem; font-size: 0.9rem; }
+@media (max-width: 767px) { .arquitecturas-video-grid { grid-template-columns: minmax(0, 1fr); gap: 2rem; } }
+</style>
 <p>La propuesta de Sustancia prioriza una arquitectura incorporativa: el estudiante produce su propia interpretación y la retroalimentación le ayuda a revisarla. El prototipo actual privilegia la escritura y la evaluación formativa; la recursividad sistemática y la adaptación multidimensional deben implementarse y contrastarse en los pilotos.</p>
 </section>
 <section id="la-interpretación-sustantiva-como-capital" class="level2 seccion">
