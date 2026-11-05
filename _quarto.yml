@@ -1,6 +1,8 @@
 project:
   type: website
   output-dir: _site
+  resources:
+    - assets/videos/*.mp4
 
 website:
   title: "Sustancia"
