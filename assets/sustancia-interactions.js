@@ -6,34 +6,67 @@
     var video = document.getElementById("intro-video");
     var skip = document.getElementById("btn-saltar-intro");
     if (!overlay || !video || !skip) return;
+    // Quarto's glass panel creates a containing block for fixed descendants.
+    // Keep the splash directly under body so its bounds are the viewport.
+    document.body.appendChild(overlay);
     var finished = false;
     var fallback;
+    var previousFocus = document.activeElement;
+    var background = [];
+    var reducedMotion = window.matchMedia && window.matchMedia("(prefers-reduced-motion: reduce)").matches;
     function close() {
       if (finished) return;
       finished = true;
       clearTimeout(fallback);
       video.pause();
       overlay.classList.add("s3-splash-out");
+      overlay.setAttribute("aria-hidden", "true");
       document.body.classList.remove("s3-intro-lock");
-      window.setTimeout(function () { overlay.remove(); }, 900);
+      document.documentElement.classList.remove("s3-intro-lock");
+      background.forEach(function (element) { element.inert = false; });
+      document.removeEventListener("keydown", onKeydown);
+      if (overlay.contains(document.activeElement)) {
+        var target = previousFocus && previousFocus !== document.body && previousFocus.isConnected
+          ? previousFocus : document.getElementById("quarto-document-content");
+        if (target) target.focus({preventScroll: true});
+      }
+      window.setTimeout(function () { overlay.remove(); }, reducedMotion ? 0 : 350);
+    }
+    function onKeydown(event) {
+      if (event.key === "Escape") { event.preventDefault(); close(); }
+      // The skip button is the only interactive control in this dialog.
+      if (event.key === "Tab") { event.preventDefault(); skip.focus(); }
     }
     skip.addEventListener("click", close);
     video.addEventListener("ended", close);
     video.addEventListener("error", close);
+    var source = video.querySelector("source");
+    if (source) source.addEventListener("error", close);
+    if (reducedMotion) { close(); return; }
+    Array.from(document.body.children).forEach(function (element) {
+      if (element !== overlay && !element.inert && !/^(SCRIPT|STYLE|LINK)$/.test(element.tagName)) {
+        element.inert = true;
+        background.push(element);
+      }
+    });
+    overlay.setAttribute("role", "dialog");
+    overlay.setAttribute("aria-modal", "true");
+    overlay.classList.add("s3-intro-ready");
     document.body.classList.add("s3-intro-lock");
-    if (window.matchMedia && window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
-      close(); return;
-    }
-    /* Cierre de seguridad si no carga / queda detenido, nunca corta un video que avanza. */
+    document.documentElement.classList.add("s3-intro-lock");
+    document.addEventListener("keydown", onKeydown);
+    skip.focus({preventScroll: true});
+    // A failed or stalled video must never prevent access to the site.
     var last = -1, stuck = 0;
     function watchdog() {
       if (finished) return;
       if (video.currentTime > last + 0.05) { stuck = 0; last = video.currentTime; }
       else stuck += 1;
-      if (stuck >= 12) close();
+      if (stuck >= 6) close();
       else fallback = window.setTimeout(watchdog, 2500);
     }
     fallback = window.setTimeout(watchdog, 2500);
+    video.muted = true;
     var attempt = video.play();
     if (attempt && typeof attempt.catch === "function") attempt.catch(close);
   }

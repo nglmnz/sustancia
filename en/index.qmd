@@ -9,7 +9,7 @@ lang: en
   <video id="intro-video" autoplay muted playsinline preload="auto" poster="../assets/portada sustancia.png" aria-label="Sustancia introduction video">
     <source src="../video_entrada.mp4" type="video/mp4">
   </video>
-  <button type="button" id="btn-saltar-intro" class="s3-skip">Skip introduction →</button>
+  <button type="button" id="btn-saltar-intro" class="s3-skip">Skip intro →</button>
 </div>
 <noscript><style>#intro-splash{display:none!important}</style></noscript>
 ```
@@ -29,6 +29,23 @@ lang: en
 <p class="v2-lead"><strong>Learning statistics means learning to think with data.</strong> Reaching a numerical result is not enough: we must also understand its meaning, question its limitations, and transfer what we have learned.</p>
 
 <div class="v2-actions"><a href="como-funciona.qmd" class="v2-btn v2-primary">How learning will work →</a><a href="piloto.qmd" class="v2-btn">Explore the current prototype ↗</a></div>
+
+
+## The difference is who does the intellectual work {.seccion #arquitecturas-aprendizaje}
+
+AI can deliver a finished answer or help someone revise their own interpretation. Sustancia proposes the second path: produce, receive feedback, and think again.
+
+```{=html}
+<figure class="s3-architecture-art">
+  <img src="../assets/arquitecturas-aprendizaje.webp" width="1536" height="1024" loading="lazy" decoding="async" alt="Two learning architectures in a pixel-art temple: on the left, a learner receives finished answers while their substance flows into a machine; on the right, they write, build, and strengthen their knowledge with AI questions and hints.">
+  <figcaption class="s3-architecture-captions">
+    <p><strong>Delegate the answer</strong>The output accumulates outside the learner; the opportunity to practise is skipped.</p>
+    <p><strong>Build understanding</strong>The learner produces, revises, and applies; knowledge develops within them.</p>
+  </figcaption>
+</figure>
+```
+
+[Explore the conceptual foundations →](fundamentacion.qmd)
 
 ## Statistical reasoning has more than one dimension {.seccion}
 

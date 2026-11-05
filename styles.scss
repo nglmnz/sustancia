@@ -1113,3 +1113,52 @@ body.s3-intro-lock {overflow:hidden!important;}
   .hero img.s3-hero-art {border-radius: 8px; margin-top: 1rem;}
   .s3-example-note, .s3-team-note {padding: .75rem .9rem;}
 }
+
+// Homepage intro: viewport positioning independent of the glass content panel.
+#intro-splash.s3-intro:not(.s3-intro-ready) { display: none !important; }
+body > #intro-splash.s3-intro {
+  position: fixed !important;
+  inset: 0 !important;
+  width: 100% !important;
+  height: 100vh !important;
+  height: 100dvh !important;
+  max-width: none !important;
+  max-height: none !important;
+  border: 0 !important;
+  border-radius: 0 !important;
+  transform: none !important;
+  transition: opacity .3s ease;
+  isolation: isolate;
+}
+#intro-splash.s3-intro #intro-video {
+  position: absolute !important;
+  inset: 0 !important;
+  width: 100% !important;
+  height: 100% !important;
+  max-width: none !important;
+  max-height: none !important;
+  margin: 0 !important;
+  border-radius: 0 !important;
+  object-fit: contain !important;
+  object-position: center !important;
+}
+#intro-splash #btn-saltar-intro.s3-skip {
+  position: absolute !important;
+  bottom: calc(1rem + env(safe-area-inset-bottom, 0px)) !important;
+  right: calc(1rem + env(safe-area-inset-right, 0px)) !important;
+  max-width: calc(100% - 2rem);
+  padding: .8rem 1.2rem;
+  font-size: 1rem;
+  font-weight: 600;
+  background: #101b32 !important;
+  border: 2px solid #f4d68b !important;
+}
+#intro-splash #btn-saltar-intro:focus-visible { outline: 3px solid white; outline-offset: 4px; }
+html.s3-intro-lock, body.s3-intro-lock { overflow: hidden !important; }
+.s3-architecture-art { margin: 1.5rem 0; }
+.s3-architecture-art img { display: block; width: 100%; height: auto; border-radius: 12px; }
+.s3-architecture-captions { display: grid; grid-template-columns: repeat(2, minmax(0,1fr)); gap: 1.5rem; margin-top: 1rem; }
+.s3-architecture-captions p { margin: 0; line-height: 1.6; font-size: 1rem; text-align: left; }
+.s3-architecture-captions strong { display: block; color: #16265f; margin-bottom: .35rem; }
+@media (max-width: 600px) { .s3-architecture-captions { grid-template-columns: 1fr; gap: 1rem; } }
+@media (prefers-reduced-motion: reduce) { body > #intro-splash.s3-intro { transition: none; } }

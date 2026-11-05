@@ -1,10 +1,10 @@
-<!-- Video de entrada restaurado: ocupa la ventana completa y termina con su montaje original. -->
+<!-- Intro moved to body by initSplash to avoid the glass panel containing block. -->
 ```{=html}
 <div id="intro-splash" class="s3-intro" aria-label="Presentación audiovisual de Sustancia">
   <video id="intro-video" autoplay muted playsinline preload="auto" poster="assets/portada sustancia.png" aria-label="Video introductorio de Sustancia">
     <source src="video_entrada.mp4" type="video/mp4">
   </video>
-  <button type="button" id="btn-saltar-intro" class="s3-skip">Saltar introducción →</button>
+  <button type="button" id="btn-saltar-intro" class="s3-skip">Omitir intro →</button>
 </div>
 <noscript><style>#intro-splash{display:none!important}</style></noscript>
 ```
@@ -26,6 +26,23 @@ El prototipo actual invita a escribir interpretaciones y recibir retroalimentaci
 <p class="v2-lead"><strong>Aprender estadística es aprender a pensar con los datos.</strong> No basta con encontrar el resultado: también hay que comprenderlo, discutir sus límites y transferir lo aprendido.</p>
 
 <div class="v2-actions"><a href="como-funciona.qmd" class="v2-btn v2-primary">Conoce cómo funcionará →</a><a href="piloto.qmd" class="v2-btn">Explora el prototipo actual ↗</a></div>
+
+
+## La diferencia está en quién hace el trabajo intelectual {.seccion #arquitecturas-aprendizaje}
+
+La IA puede entregar una respuesta terminada o ayudar a revisar una interpretación propia. Sustancia propone el segundo circuito: producir, recibir retroalimentación y volver a pensar.
+
+```{=html}
+<figure class="s3-architecture-art">
+  <img src="assets/arquitecturas-aprendizaje.webp" width="1536" height="1024" loading="lazy" decoding="async" alt="Dos arquitecturas en un templo pixel art: a la izquierda, un usuario recibe respuestas mientras su sustancia sale hacia la máquina; a la derecha, escribe, construye y fortalece su conocimiento con preguntas y pistas de la IA.">
+  <figcaption class="s3-architecture-captions">
+    <p><strong>Delegar la respuesta</strong>El producto se acumula fuera; se omite la oportunidad de practicar.</p>
+    <p><strong>Incorporar lo aprendido</strong>El usuario elabora, revisa y aplica; el conocimiento se construye en él.</p>
+  </figcaption>
+</figure>
+```
+
+[Ver las dos arquitecturas en movimiento →](fundamentacion.qmd#arquitecturas-en-movimiento)
 
 ## El razonamiento estadístico es multidimensional {.seccion}
 
