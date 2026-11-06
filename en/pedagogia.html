@@ -469,6 +469,21 @@ Knowing whether an answer is right or wrong is not enough. Sustancia seeks to un
 .s4-wetland[data-paused=true] *,.s4-wetland[data-away=true] *{animation-play-state:paused!important}
 @media(prefers-reduced-motion:reduce){.s4-wetland *{animation:none!important}}
 @media(max-width:600px){.s4-stage{width:150%;max-width:none;margin-left:-25%}.s4-wetland{overflow:hidden}}
+
+/* The habitat is the footer's background layer, not a section after it. */
+footer.footer.s4-habitat-footer{position:relative!important;isolation:isolate;background:transparent!important;border:0!important;overflow:hidden;min-height:clamp(230px,35vw,530px);padding:0!important;margin-top:-40px}
+footer.s4-habitat-footer .nav-footer{position:absolute;bottom:0;left:0;width:100%;z-index:2;background:transparent!important;border:0!important;color:#16265f!important;padding:10px 90px!important;min-height:44px}
+footer.s4-habitat-footer .nav-footer-center{color:#16265f!important;text-shadow:0 1px 2px #f7f7f2}
+footer.s4-habitat-footer .s4-wetland{position:absolute;inset:auto 0 0;max-width:none;margin:0;padding:0;z-index:0;pointer-events:none}
+footer.s4-habitat-footer .s4-stage{width:106%;margin-left:-3%;margin-bottom:-2.5%;aspect-ratio:1600/537}
+footer.s4-habitat-footer .s4-wetland button{pointer-events:auto;z-index:3;right:8px;bottom:8px;font-size:10px;padding:4px 6px;opacity:.8}
+footer.s4-habitat-footer .s4-capy{height:60%;top:20%}
+footer.s4-habitat-footer .s4-capy-small{height:40%;top:43%}
+@media(max-width:600px){
+ footer.footer.s4-habitat-footer{min-height:260px;margin-top:-25px}
+ footer.s4-habitat-footer .s4-stage{width:180%;margin-left:-40%;margin-bottom:-2%}
+ footer.s4-habitat-footer .nav-footer{padding:8px 80px 8px 12px!important;font-size:10px}
+}
 </style>
 <section class="s4-wetland" id="sustancia-wetland" aria-label="Humedal de Sustancia con capibaras caminando">
 <svg width="0" height="0" aria-hidden="true" style="position:absolute"><defs><filter id="s4-white-key" color-interpolation-filters="sRGB" x="0" y="0" width="100%" height="100%"><fecolormatrix type="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  -10 -10 -10 0 28" result="key"></fecolormatrix><fecomposite in="SourceGraphic" in2="key" operator="in"></fecomposite></filter></defs></svg>
@@ -486,7 +501,7 @@ const english=location.pathname.includes('/en/');
 const base=new URL(english?'../assets/':'assets/',location.href);
 scene.querySelector('.s4-land').src=new URL('wetland-pixel.jpeg',base).href;
 scene.querySelectorAll('.s4-sprite').forEach(el=>el.style.backgroundImage='url("'+new URL('capybara-walk.jpeg',base).href+'")');
-const footer=document.querySelector('footer.footer');if(footer)footer.after(scene);else document.body.appendChild(scene);
+const footer=document.querySelector('footer.footer');if(footer){footer.classList.add('s4-habitat-footer');footer.prepend(scene);}else document.body.appendChild(scene);
 const button=scene.querySelector('button');const media=matchMedia('(prefers-reduced-motion: reduce)');let paused=media.matches;
 function update(){scene.dataset.paused=String(paused||media.matches);button.setAttribute('aria-pressed',scene.dataset.paused);button.disabled=media.matches;button.textContent=media.matches?(english?'Reduced motion':'Movimiento reducido'):paused?(english?'Resume animation':'Reanudar animación'):(english?'Pause animation':'Pausar animación');}
 button.addEventListener('click',()=>{paused=!paused;update()});media.addEventListener('change',()=>{paused=media.matches;update()});update();
