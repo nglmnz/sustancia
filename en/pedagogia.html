@@ -454,119 +454,45 @@ Knowing whether an answer is right or wrong is not enough. Sustancia seeks to un
   else init();
 })();
 </script>
-<!-- Shared, self-contained wetland: no remote assets or animation dependencies. -->
 <style>
-.s4-wetland{position:relative;width:100%;flex-shrink:0;overflow:hidden;background:transparent;color:#16265f;isolation:isolate;margin:0 auto;max-width:1440px;padding-bottom:44px}
-.s4-wetland svg{display:block;width:100%;height:auto;overflow:visible;max-height:340px;shape-rendering:crispEdges;image-rendering:pixelated}
-.s4-wetland-bar{position:absolute;bottom:2px;right:clamp(18px,4vw,64px);display:flex;justify-content:flex-end;align-items:center;gap:16px;z-index:1}
-.s4-wetland button{font:500 12px/1.4 'IBM Plex Sans',sans-serif;color:#16265f;background:rgba(247,247,242,.9);border:1px solid #a6b0b8;border-radius:0;padding:7px 10px;cursor:pointer;min-height:40px}
-.s4-wetland button:hover{background:#e4e9e8}.s4-wetland button:focus-visible{outline:3px solid #f1cf83;outline-offset:3px}
-.s4-wetland .s4-walk{animation:s4-walk 16s steps(24, end) infinite}.s4-wetland .s4-young{animation:s4-chase 12s steps(24, end) infinite}.s4-wetland .s4-bob{animation:s4-bob 3s steps(24, end) infinite}.s4-wetland .s4-swim{animation:s4-swim 19s steps(24, end) infinite}.s4-wetland .s4-hop{animation:s4-hop 7s steps(24, end) infinite}.s4-wetland .s4-fly{animation:s4-fly 9s steps(24, end) infinite}.s4-wetland .s4-reed{transform-box:fill-box;transform-origin:bottom center;animation:s4-reed 5s steps(24, end) infinite alternate}.s4-wetland .s4-ripple{transform-box:fill-box;transform-origin:center;animation:s4-ripple 4s steps(8, end) infinite}.s4-wetland .s4-blink{animation:s4-blink 6s steps(1) infinite}
-.s4-wetland[data-paused=true] svg *, .s4-wetland[data-away=true] svg *{animation-play-state:paused!important}
-@keyframes s4-walk{0%,100%{transform:translateX(0)}50%{transform:translateX(80px)}}
-@keyframes s4-chase{0%,100%{transform:translate(0,0)}30%{transform:translate(62px,-5px)}55%{transform:translate(90px,0)}75%{transform:translate(28px,-7px)}}
-@keyframes s4-bob{0%,100%{transform:translateY(0)}50%{transform:translateY(-3px)}}
-@keyframes s4-swim{0%,100%{transform:translateX(0)}50%{transform:translateX(-95px)}}
-@keyframes s4-hop{0%,65%,100%{transform:translate(0,0)}72%{transform:translate(15px,-20px)}79%,90%{transform:translate(30px,0)}95%{transform:translate(15px,-16px)}}
-@keyframes s4-fly{0%,100%{transform:translate(0,0)}35%{transform:translate(55px,-13px)}70%{transform:translate(-20px,8px)}}
-@keyframes s4-reed{to{transform:translateX(2px)}}
-@keyframes s4-ripple{0%{opacity:.55;transform:scaleX(.8)}100%{opacity:.08;transform:scaleX(1.3)}}
-@keyframes s4-blink{0%,94%,100%{opacity:1}96%{opacity:0}}
-@media(max-width:600px){.s4-wetland svg{height:auto;max-height:none}.s4-wetland-bar{bottom:0;right:12px}.s4-wetland button{font-size:10px;padding:5px 8px}}
-@media(prefers-reduced-motion:reduce){.s4-wetland svg *{animation:none!important}}
-.s4-wetland-footer,.s4-wetland-footer .nav-footer{background:transparent!important;border:0!important;color:#16265f!important}
-.s4-wetland-footer .nav-footer{padding-top:12px}
+.s4-wetland{width:100%;max-width:1440px;margin:0 auto;position:relative;background:transparent;flex-shrink:0;padding:0 0 48px;isolation:isolate}
+.s4-stage{position:relative;width:100%;aspect-ratio:1600/537;overflow:hidden}
+.s4-land{display:block;width:100%;height:100%;filter:url(#s4-white-key);image-rendering:pixelated}
+.s4-capy{position:absolute;width:15%;height:40%;left:17%;top:38%;animation:s4-roam 22s linear infinite}
+.s4-capy-small{width:10%;height:26.67%;left:10%;top:56%;animation:s4-chase 19s linear infinite}
+.s4-sprite{width:100%;height:100%;background-size:400% 100%;background-repeat:no-repeat;filter:url(#s4-white-key);image-rendering:pixelated;animation:s4-frames .65s steps(4,end) infinite}
+@keyframes s4-frames{to{background-position:133.333333% 0}}
+@keyframes s4-roam{0%{transform:translateX(0) scaleX(1)}49%{transform:translateX(200%) scaleX(1)}50%{transform:translateX(200%) scaleX(-1)}99%{transform:translateX(0) scaleX(-1)}100%{transform:translateX(0) scaleX(1)}}
+@keyframes s4-chase{0%{transform:translate(0,0) scaleX(1)}49%{transform:translate(280%,-8%) scaleX(1)}50%{transform:translate(280%,-8%) scaleX(-1)}99%{transform:translate(0,0) scaleX(-1)}100%{transform:translate(0,0) scaleX(1)}}
+.s4-wetland button{position:absolute;right:20px;bottom:5px;min-height:40px;padding:7px 12px;background:#f7f7f2;color:#16265f;border:2px solid #16265f;font:12px monospace;cursor:pointer}
+.s4-wetland button:focus-visible{outline:3px solid #c8341f;outline-offset:3px}
+.s4-wetland[data-paused=true] *,.s4-wetland[data-away=true] *{animation-play-state:paused!important}
+@media(prefers-reduced-motion:reduce){.s4-wetland *{animation:none!important}}
+@media(max-width:600px){.s4-stage{width:150%;max-width:none;margin-left:-25%}.s4-wetland{overflow:hidden}}
 </style>
-<section class="s4-wetland" id="sustancia-wetland" aria-label="Humedal de Sustancia">
-<div class="s4-wetland-bar"><button type="button" aria-pressed="false" aria-controls="s4-wetland-scene">Pausar animación</button></div>
-<svg id="s4-wetland-scene" viewbox="0 100 1200 270" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="s4-scene-title s4-scene-desc">
-<title id="s4-scene-title">Un pequeño humedal lleno de vida</title><desc id="s4-scene-desc">Tres capibaras pasean, juegan y se bañan junto a un pato, una tortuga, una rana y libélulas, entre juncos y nenúfares.</desc>
-<defs>
-<clippath id="s4-bathing-clip"><path d="M-4-8H90V36L66 41H21L-4 36Z"></path></clippath>
-<clippath id="s4-earth-clip"><path d="M84 238h18v-18h38v-12h62v-12h64v-8h83v12h62v-8h92v-8h105v8h76v-12h80v12h84v12h78v12h54v16h40v16h20v24h-20v16h-44v16h-65v12h-86v12H712v8H603v-8H488v-8h-98v-12h-88v-12h-74v-12h-64v-12h-46v-16H84Z"></path></clippath>
-<pattern id="s4-earth-grain" width="48" height="32" patternunits="userSpaceOnUse"><path d="M4 7h6v3H4zM32 25h9v3h-9z" fill="#c09a5c" opacity=".3"></path><path d="M21 15h8v4h-8zM41 3h4v3h-4z" fill="#282c23" opacity=".3"></path></pattern>
-<pattern id="s4-grass-grain" width="39" height="29" patternunits="userSpaceOnUse"><path d="M2 5h6v3H2zM23 18h8v3h-8z" fill="#a7ab60" opacity=".6"></path><path d="M14 11h5v3h-5zM33 26h6v3h-6z" fill="#263f32" opacity=".6"></path></pattern>
-
-
-<g id="s4-capy" stroke="#3c3028" stroke-width="2" stroke-linejoin="miter">
-<path fill="#896347" d="M15 43h17v27H17zM64 44h17v26H65z"></path>
-<path fill="#b18a5b" d="M8 27h6V19h8v-4h35v4h9v7h9v27h-9v9H17v-8H7z"></path>
-<path fill="#c29b69" d="M58 13h8V4h24v6h8v7h6v27h-8v9H65v-7h-8z"></path>
-<path fill="#a67a51" d="M62 14V3h10l5 12M85 9V0h9l4 15"></path>
-<path fill="#d1ad79" stroke="none" d="M81 29h21v16H81z"></path>
-<path d="M95 42h7M21 62v7M69 62v7" fill="none"></path>
-<path class="s4-blink" d="M80 23h4v4h-4z" fill="#242c2c" stroke="none"></path><path d="M99 31h4v4h-4z" fill="#513e32" stroke="none"></path>
-<path d="M10 45h9v8h38v7H18v-6h-8zM59 34h6v11h31v6H64v-6h-5z" fill="#775233" stroke="none"></path>
-<path d="M20 19h30v4H20zM12 29h5v12h-5zM68 10h18v4H68z" fill="#dfb67d" stroke="none"></path>
-<path d="M18 29h5m8-3h7m-20 13h5m11 7h5m5-11h7m-22 17h5M69 17h5" stroke="#89603e" stroke-width="3"></path>
-</g>
-<g id="s4-reeds"><path d="M0 0v-64h-3v-8h6V0M8 0v-44h3v-12h3v56M-5 0v-18h-5v-10h-5v-8h-4v13h5v10h5V0M18 0v-20h5v-10h5v-6h4v10h-5v10h-4V0" fill="#668865"></path><path d="M-5-72h7v20h-7zM9-58h7v16H9z" fill="#bc9964"></path><path d="M-5-72h3v16h-3zM9-58h3v13H9z" fill="#dfb67d"></path></g>
-<g id="s4-flybug"><path d="M0 0l-11-7h-7l6 7 12 2-12 4h-6l7-8M0 0l11-7h7l-6 7-12 2 12 4h6l-7-8" fill="#a2c8c3" opacity=".8"></path><path d="M0-3v15" stroke="#e7c988" stroke-width="3"></path></g>
-</defs>
-<!-- Transparent surroundings; a textured patch of wetland on the page itself. -->
-<path d="M84 238h18v-18h38v-12h62v-12h64v-8h83v12h62v-8h92v-8h105v8h76v-12h80v12h84v12h78v12h54v16h40v16h20v24h-20v16h-44v16h-65v12h-86v12H712v8H603v-8H488v-8h-98v-12h-88v-12h-74v-12h-64v-12h-46v-16H84Z" fill="#4c3b2c" stroke="#302d24" stroke-width="3"></path>
-<g clip-path="url(#s4-earth-clip)">
-<path d="M60 185H1140V265L1050 290 900 318 725 327 530 313 320 290 130 268Z" fill="#79603d"></path>
-<path d="M60 175H1140V232L1050 255 900 283 740 298 590 286 405 272 250 250 95 248Z" fill="#5c7241"></path>
-<path d="M60 175H1140V232L1050 255 900 283 740 298 590 286 405 272 250 250 95 248Z" fill="url(#s4-grass-grain)"></path>
-<path d="M60 262L220 270 400 293 580 315 760 329 945 309 1140 260V360H60Z" fill="url(#s4-earth-grain)"></path>
-</g>
-<path d="M430 224h24v-12h44v-8h100v4h84v8h100v8h72v8h36v16h-24v12h-48v12h-80v8H610v-4h-72v-8h-60v-8h-36v-12h-12Z" fill="#37656b" stroke="#b1ad71" stroke-width="4"></path>
-<g fill="none" stroke="#9ec8bc" stroke-width="2" opacity=".65"><path class="s4-ripple" d="M480 243h74m21 25h85m100-29h64"></path><path class="s4-ripple" style="animation-delay:-2s" d="M541 218h60m96 48h103"></path></g>
-<g transform="translate(147 235) scale(1)"><g class="s4-reed"><use href="#s4-reeds"></use></g></g>
-<g transform="translate(177 211) scale(0.8)"><g class="s4-reed"><use href="#s4-reeds"></use></g></g>
-<g transform="translate(315 215) scale(0.75)"><g class="s4-reed"><use href="#s4-reeds"></use></g></g>
-<g transform="translate(416 225) scale(0.65)"><g class="s4-reed"><use href="#s4-reeds"></use></g></g>
-<g transform="translate(916 238) scale(1)"><g class="s4-reed"><use href="#s4-reeds"></use></g></g>
-<g transform="translate(1026 218) scale(0.8)"><g class="s4-reed"><use href="#s4-reeds"></use></g></g>
-<g transform="translate(1042 249) scale(1.1)"><g class="s4-reed"><use href="#s4-reeds"></use></g></g>
-
-<!-- Walking adult and playful youngster; fixed outer groups preserve layout. -->
-<g transform="translate(215 163)"><g class="s4-walk"><path d="M0 70h100v6H0z" fill="#32493b" opacity=".3"></path><g class="s4-bob"><use href="#s4-capy"></use></g></g></g>
-<g transform="translate(343 207) scale(.63)"><g class="s4-young"><path d="M0 70h100v6H0z" fill="#32493b" opacity=".3"></path><g class="s4-bob" style="animation-duration:.8s"><use href="#s4-capy"></use></g></g></g>
-<!-- Bathing capybara, lower body hidden by the water. -->
-<g transform="translate(601 204)"><g class="s4-bob"><g clip-path="url(#s4-bathing-clip)"><use href="#s4-capy" transform="scale(.78)"></use></g><path class="s4-ripple" d="M-8 41h16v4h68v-4h16" fill="none" stroke="#acd2bc" stroke-width="2"></path></g></g>
-<!-- Grid-built animal sprites: square pixels, stepped silhouettes, flat palette. -->
-<g transform="translate(795 221)"><g class="s4-swim"><g class="s4-bob"><path d="M-28 0h8v5h26v-5h5v-17h6v-5h14v5h5v17h-8v15h-7v6h-34v-6h-10v-7h-5Z" fill="#263c35"></path><path d="M-22 6h32v5h11v7h-34v-6h-9Z" fill="#d6c393"></path><path d="M15-15h15v14H15Z" fill="#668865"></path><path d="M30-9h12v5H30Z" fill="#d6a555"></path><path d="M24-13h3v3h-3Z" fill="#172d34"></path><path d="M-13 9h19v5h-19Z" fill="#ac986c"></path></g><path d="M-35 27h69" stroke="#a0c2b6" stroke-width="2" class="s4-ripple"></path></g></g>
-<g transform="translate(866 271)"><g class="s4-walk" style="animation-duration:32s"><path d="M-22 5h7v10h-7zM2 5h7v10H2zM13-2h15v10H13z" fill="#a9ad75"></path><path d="M-28 5v-13h6v-7h10v-5H2v5h9v7h5V5Z" fill="#405b43"></path><path d="M-22-7h6v-6h7v7h-7v8h-6zM-5-16h6v7h-6zM0-5h9v7H0z" fill="#819366"></path><path d="M24 0h3v3h-3Z" fill="#182f36"></path></g></g>
-<g transform="translate(530 284)"><g class="s4-hop"><path d="M-15 4v-16h10v5H5v-5h10V4h7v6H7V5H-7v5h-15V4Z" fill="#8b9a56"></path><path d="M-12-11h5v5h-5zM7-11h5v5H7zM-7-2H7v5H-7z" fill="#c4c98c"></path><path d="M-10-10h3v3h-3zM7-10h3v3H7z" fill="#213c38"></path></g></g>
-<g fill="#77956a"><path d="M464 240h10v-4h16v4h6v7h-8v4h-21v-4h-7v-5h13v-3Z"></path><path d="M722 267h10v-4h20v4h8v8h-10v4h-25v-4h-7v-5h14v-3Z"></path></g><path d="M739 263v-8h6v-6h5v7h7v7h-7v4h-5v-4Z" fill="#e3bfab"></path>
-<g transform="translate(475 151)"><g class="s4-fly"><use href="#s4-flybug"></use></g></g><g transform="translate(852 171) scale(.7)"><g class="s4-fly" style="animation-delay:-4s"><use href="#s4-flybug"></use></g></g>
-</svg></section>
+<section class="s4-wetland" id="sustancia-wetland" aria-label="Humedal de Sustancia con capibaras caminando">
+<svg width="0" height="0" aria-hidden="true" style="position:absolute"><defs><filter id="s4-white-key" color-interpolation-filters="sRGB" x="0" y="0" width="100%" height="100%"><fecolormatrix type="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  -10 -10 -10 0 28" result="key"></fecolormatrix><fecomposite in="SourceGraphic" in2="key" operator="in"></fecomposite></filter></defs></svg>
+<div class="s4-stage" role="img" aria-label="Dos capibaras pasean y juegan en un humedal pixel art con una rana y una tortuga">
+<img class="s4-land" alt="" width="1600" height="537">
+<div class="s4-capy"><div class="s4-sprite"></div></div>
+<div class="s4-capy s4-capy-small"><div class="s4-sprite" style="animation-delay:-.3s"></div></div>
+</div><button type="button" aria-pressed="false">Pausar animación</button>
+</section>
 <script>
 (function(){
-  'use strict';
-  function initWetland(){
-    var scene=document.getElementById('sustancia-wetland');
-    if(!scene)return;
-    // Let the site's existing background show through the habitat.
-    var footer=document.querySelector('footer.footer');
-    if(footer){footer.after(scene);footer.classList.add('s4-wetland-footer');}
-    else document.body.appendChild(scene);
-    var english=/\/en\//.test(location.pathname);
-    var button=scene.querySelector('button');
-    var media=window.matchMedia('(prefers-reduced-motion: reduce)');
-    var paused=media.matches;
-    function update(){
-      scene.dataset.paused=String(paused||media.matches);
-      button.setAttribute('aria-pressed',String(paused||media.matches));
-      button.textContent=media.matches?(english?'Motion reduced':'Movimiento reducido'):(paused?(english?'Resume animation':'Reanudar animación'):(english?'Pause animation':'Pausar animación'));
-      button.disabled=media.matches;
-    }
-    if(english){
-      scene.setAttribute('aria-label','Sustancia wetland');
-      scene.querySelector('title').textContent='A little wetland full of life';
-      scene.querySelector('desc').textContent='Three capybaras walk, play and bathe with a duck, a turtle, a frog and dragonflies among reeds and water lilies.';
-    }
-    button.addEventListener('click',function(){paused=!paused;update();});
-    media.addEventListener('change',function(){paused=media.matches;update();});
-    update();
-    var narrow=window.matchMedia('(max-width: 600px)');
-    function fit(){scene.querySelector('svg').setAttribute('viewBox',narrow.matches?'140 100 960 290':'0 100 1200 270');}
-    narrow.addEventListener('change',fit);fit();
-    if('IntersectionObserver' in window){new IntersectionObserver(function(entries){scene.dataset.away=String(!entries[0].isIntersecting);},{rootMargin:'80px'}).observe(scene);}
-  }
-  if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',initWetland,{once:true});else initWetland();
+function init(){
+const scene=document.getElementById('sustancia-wetland');if(!scene)return;
+const english=location.pathname.includes('/en/');
+const base=new URL(english?'../assets/':'assets/',location.href);
+scene.querySelector('.s4-land').src=new URL('wetland-pixel.jpeg',base).href;
+scene.querySelectorAll('.s4-sprite').forEach(el=>el.style.backgroundImage='url("'+new URL('capybara-walk.jpeg',base).href+'")');
+const footer=document.querySelector('footer.footer');if(footer)footer.after(scene);else document.body.appendChild(scene);
+const button=scene.querySelector('button');const media=matchMedia('(prefers-reduced-motion: reduce)');let paused=media.matches;
+function update(){scene.dataset.paused=String(paused||media.matches);button.setAttribute('aria-pressed',scene.dataset.paused);button.disabled=media.matches;button.textContent=media.matches?(english?'Reduced motion':'Movimiento reducido'):paused?(english?'Resume animation':'Reanudar animación'):(english?'Pause animation':'Pausar animación');}
+button.addEventListener('click',()=>{paused=!paused;update()});media.addEventListener('change',()=>{paused=media.matches;update()});update();
+if('IntersectionObserver'in window)new IntersectionObserver(entries=>{scene.dataset.away=String(!entries[0].isIntersecting)},{rootMargin:'80px'}).observe(scene);
+}
+if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',init,{once:true});else init();
 })();
 </script>
 <script id="quarto-html-after-body" type="application/javascript">
