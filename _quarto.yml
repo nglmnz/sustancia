@@ -3,6 +3,7 @@ project:
   output-dir: _site
   resources:
     - assets/videos/*.mp4
+    - assets/*.jpeg
 
 website:
   title: "Sustancia"
