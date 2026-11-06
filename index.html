@@ -46,7 +46,7 @@ ul.task-list li input[type="checkbox"] {
 <link href="site_libs/quarto-html/quarto-syntax-highlighting-4e220f1c46fbf15cd6b7314021729ad9.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-11c2e00e95b74da4fb3fea0d6b398998.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-35d85bf88cc0324d7698e7694a826fc7.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -439,12 +439,12 @@ Interpretación sustantiva: relaciona los resultados con el problema investigado
 </script>
 <!-- Shared, self-contained wetland: no remote assets or animation dependencies. -->
 <style>
-.s4-wetland{position:relative;width:100%;flex-shrink:0;overflow:hidden;background:transparent;color:#16265f;isolation:isolate;margin:0 auto;max-width:1440px}
-.s4-wetland svg{display:block;width:100%;height:auto;overflow:visible;max-height:340px;shape-rendering:crispEdges}
+.s4-wetland{position:relative;width:100%;flex-shrink:0;overflow:hidden;background:transparent;color:#16265f;isolation:isolate;margin:0 auto;max-width:1440px;padding-bottom:44px}
+.s4-wetland svg{display:block;width:100%;height:auto;overflow:visible;max-height:340px;shape-rendering:crispEdges;image-rendering:pixelated}
 .s4-wetland-bar{position:absolute;bottom:2px;right:clamp(18px,4vw,64px);display:flex;justify-content:flex-end;align-items:center;gap:16px;z-index:1}
-.s4-wetland button{font:500 12px/1.4 'IBM Plex Sans',sans-serif;color:#16265f;background:rgba(247,247,242,.9);border:1px solid #a6b0b8;border-radius:4px;padding:7px 10px;cursor:pointer;min-height:40px}
+.s4-wetland button{font:500 12px/1.4 'IBM Plex Sans',sans-serif;color:#16265f;background:rgba(247,247,242,.9);border:1px solid #a6b0b8;border-radius:0;padding:7px 10px;cursor:pointer;min-height:40px}
 .s4-wetland button:hover{background:#e4e9e8}.s4-wetland button:focus-visible{outline:3px solid #f1cf83;outline-offset:3px}
-.s4-wetland .s4-walk{animation:s4-walk 16s ease-in-out infinite}.s4-wetland .s4-young{animation:s4-chase 12s ease-in-out infinite}.s4-wetland .s4-bob{animation:s4-bob 3s ease-in-out infinite}.s4-wetland .s4-swim{animation:s4-swim 19s ease-in-out infinite}.s4-wetland .s4-hop{animation:s4-hop 7s ease-in-out infinite}.s4-wetland .s4-fly{animation:s4-fly 9s ease-in-out infinite}.s4-wetland .s4-reed{transform-box:fill-box;transform-origin:bottom center;animation:s4-reed 5s ease-in-out infinite alternate}.s4-wetland .s4-ripple{transform-box:fill-box;transform-origin:center;animation:s4-ripple 4s ease-out infinite}.s4-wetland .s4-blink{animation:s4-blink 6s steps(1) infinite}
+.s4-wetland .s4-walk{animation:s4-walk 16s steps(24, end) infinite}.s4-wetland .s4-young{animation:s4-chase 12s steps(24, end) infinite}.s4-wetland .s4-bob{animation:s4-bob 3s steps(24, end) infinite}.s4-wetland .s4-swim{animation:s4-swim 19s steps(24, end) infinite}.s4-wetland .s4-hop{animation:s4-hop 7s steps(24, end) infinite}.s4-wetland .s4-fly{animation:s4-fly 9s steps(24, end) infinite}.s4-wetland .s4-reed{transform-box:fill-box;transform-origin:bottom center;animation:s4-reed 5s steps(24, end) infinite alternate}.s4-wetland .s4-ripple{transform-box:fill-box;transform-origin:center;animation:s4-ripple 4s steps(8, end) infinite}.s4-wetland .s4-blink{animation:s4-blink 6s steps(1) infinite}
 .s4-wetland[data-paused=true] svg *, .s4-wetland[data-away=true] svg *{animation-play-state:paused!important}
 @keyframes s4-walk{0%,100%{transform:translateX(0)}50%{transform:translateX(80px)}}
 @keyframes s4-chase{0%,100%{transform:translate(0,0)}30%{transform:translate(62px,-5px)}55%{transform:translate(90px,0)}75%{transform:translate(28px,-7px)}}
@@ -452,7 +452,7 @@ Interpretación sustantiva: relaciona los resultados con el problema investigado
 @keyframes s4-swim{0%,100%{transform:translateX(0)}50%{transform:translateX(-95px)}}
 @keyframes s4-hop{0%,65%,100%{transform:translate(0,0)}72%{transform:translate(15px,-20px)}79%,90%{transform:translate(30px,0)}95%{transform:translate(15px,-16px)}}
 @keyframes s4-fly{0%,100%{transform:translate(0,0)}35%{transform:translate(55px,-13px)}70%{transform:translate(-20px,8px)}}
-@keyframes s4-reed{to{transform:rotate(4deg)}}
+@keyframes s4-reed{to{transform:translateX(2px)}}
 @keyframes s4-ripple{0%{opacity:.55;transform:scaleX(.8)}100%{opacity:.08;transform:scaleX(1.3)}}
 @keyframes s4-blink{0%,94%,100%{opacity:1}96%{opacity:0}}
 @media(max-width:600px){.s4-wetland svg{height:auto;max-height:none}.s4-wetland-bar{bottom:0;right:12px}.s4-wetland button{font-size:10px;padding:5px 8px}}
@@ -470,7 +470,7 @@ Interpretación sustantiva: relaciona los resultados con el problema investigado
 <pattern id="s4-earth-grain" width="48" height="32" patternunits="userSpaceOnUse"><path d="M4 7h6v3H4zM32 25h9v3h-9z" fill="#c09a5c" opacity=".3"></path><path d="M21 15h8v4h-8zM41 3h4v3h-4z" fill="#282c23" opacity=".3"></path></pattern>
 <pattern id="s4-grass-grain" width="39" height="29" patternunits="userSpaceOnUse"><path d="M2 5h6v3H2zM23 18h8v3h-8z" fill="#a7ab60" opacity=".6"></path><path d="M14 11h5v3h-5zM33 26h6v3h-6z" fill="#263f32" opacity=".6"></path></pattern>
 
-<lineargradient id="s4-water" x2="0" y2="1"><stop stop-color="#3d7779"></stop><stop offset="1" stop-color="#244e59"></stop></lineargradient>
+
 <g id="s4-capy" stroke="#3c3028" stroke-width="2" stroke-linejoin="miter">
 <path fill="#896347" d="M15 43h17v27H17zM64 44h17v26H65z"></path>
 <path fill="#b18a5b" d="M8 27h6V19h8v-4h35v4h9v7h9v27h-9v9H17v-8H7z"></path>
@@ -483,7 +483,7 @@ Interpretación sustantiva: relaciona los resultados con el problema investigado
 <path d="M20 19h30v4H20zM12 29h5v12h-5zM68 10h18v4H68z" fill="#dfb67d" stroke="none"></path>
 <path d="M18 29h5m8-3h7m-20 13h5m11 7h5m5-11h7m-22 17h5M69 17h5" stroke="#89603e" stroke-width="3"></path>
 </g>
-<g id="s4-reeds" fill="none" stroke-linecap="round"><path d="M0 0q-8-33-4-65M6 0q8-25 5-49M-5 0q-9-20-21-30M9 0q8-18 20-26" stroke="#668865" stroke-width="4"></path><path d="M-4-57v-16M11-43v-14" stroke="#bc9964" stroke-width="7"></path></g>
+<g id="s4-reeds"><path d="M0 0v-64h-3v-8h6V0M8 0v-44h3v-12h3v56M-5 0v-18h-5v-10h-5v-8h-4v13h5v10h5V0M18 0v-20h5v-10h5v-6h4v10h-5v10h-4V0" fill="#668865"></path><path d="M-5-72h7v20h-7zM9-58h7v16H9z" fill="#bc9964"></path><path d="M-5-72h3v16h-3zM9-58h3v13H9z" fill="#dfb67d"></path></g>
 <g id="s4-flybug"><path d="M0 0l-11-7h-7l6 7 12 2-12 4h-6l7-8M0 0l11-7h7l-6 7-12 2 12 4h6l-7-8" fill="#a2c8c3" opacity=".8"></path><path d="M0-3v15" stroke="#e7c988" stroke-width="3"></path></g>
 </defs>
 <!-- Transparent surroundings; a textured patch of wetland on the page itself. -->
@@ -494,7 +494,7 @@ Interpretación sustantiva: relaciona los resultados con el problema investigado
 <path d="M60 175H1140V232L1050 255 900 283 740 298 590 286 405 272 250 250 95 248Z" fill="url(#s4-grass-grain)"></path>
 <path d="M60 262L220 270 400 293 580 315 760 329 945 309 1140 260V360H60Z" fill="url(#s4-earth-grain)"></path>
 </g>
-<path d="M438 220C494 192 614 192 684 207S842 210 893 234 828 282 715 285 548 279 466 261 402 238 438 220Z" fill="url(#s4-water)" stroke="#b1ad71" stroke-width="4"></path>
+<path d="M430 224h24v-12h44v-8h100v4h84v8h100v8h72v8h36v16h-24v12h-48v12h-80v8H610v-4h-72v-8h-60v-8h-36v-12h-12Z" fill="#37656b" stroke="#b1ad71" stroke-width="4"></path>
 <g fill="none" stroke="#9ec8bc" stroke-width="2" opacity=".65"><path class="s4-ripple" d="M480 243h74m21 25h85m100-29h64"></path><path class="s4-ripple" style="animation-delay:-2s" d="M541 218h60m96 48h103"></path></g>
 <g transform="translate(147 235) scale(1)"><g class="s4-reed"><use href="#s4-reeds"></use></g></g>
 <g transform="translate(177 211) scale(0.8)"><g class="s4-reed"><use href="#s4-reeds"></use></g></g>
@@ -505,16 +505,15 @@ Interpretación sustantiva: relaciona los resultados con el problema investigado
 <g transform="translate(1042 249) scale(1.1)"><g class="s4-reed"><use href="#s4-reeds"></use></g></g>
 
 <!-- Walking adult and playful youngster; fixed outer groups preserve layout. -->
-<g transform="translate(215 163)"><g class="s4-walk"><ellipse cx="51" cy="73" rx="54" ry="6" fill="#32493b" opacity=".3"></ellipse><g class="s4-bob"><use href="#s4-capy"></use></g></g></g>
-<g transform="translate(343 207) scale(.63)"><g class="s4-young"><ellipse cx="51" cy="73" rx="54" ry="6" fill="#32493b" opacity=".3"></ellipse><g class="s4-bob" style="animation-duration:.8s"><use href="#s4-capy"></use></g></g></g>
+<g transform="translate(215 163)"><g class="s4-walk"><path d="M0 70h100v6H0z" fill="#32493b" opacity=".3"></path><g class="s4-bob"><use href="#s4-capy"></use></g></g></g>
+<g transform="translate(343 207) scale(.63)"><g class="s4-young"><path d="M0 70h100v6H0z" fill="#32493b" opacity=".3"></path><g class="s4-bob" style="animation-duration:.8s"><use href="#s4-capy"></use></g></g></g>
 <!-- Bathing capybara, lower body hidden by the water. -->
-<g transform="translate(601 204)"><g class="s4-bob"><g clip-path="url(#s4-bathing-clip)"><use href="#s4-capy" transform="scale(.78)"></use></g><path class="s4-ripple" d="M-8 41q48 13 100 0" fill="none" stroke="#acd2bc" stroke-width="2"></path></g></g>
-<!-- Duck. -->
-<g transform="translate(795 221)"><g class="s4-swim"><g class="s4-bob"><path d="M-28 1l10 7q23-17 38 1v8q-30 17-48-16" fill="#e3d7ab"></path><path d="M10 10V-5q2-14 14-10 10 3 4 14l-3 12" fill="#49664c"></path><path d="M27-6h13l-12 6" fill="#d6a555"></path><circle cx="23" cy="-8" r="2" fill="#172d34"></circle><path d="M-15 12q10-5 20 1" fill="none" stroke="#a69162" stroke-width="3"></path></g><path d="M-35 27h69" stroke="#a0c2b6" stroke-width="2" class="s4-ripple"></path></g></g>
-<!-- Turtle and frog on the near bank. -->
-<g transform="translate(866 271)"><g class="s4-walk" style="animation-duration:32s"><path d="M-20 6l-5 10m27-10 6 10" stroke="#8e9d6a" stroke-width="6"></path><ellipse cx="20" cy="3" rx="10" ry="7" fill="#a9ad75"></ellipse><path d="M-28 5q0-34 39-16l5 17Z" fill="#405b43" stroke="#b0b483" stroke-width="2"></path><path d="M-24-2h36M-10-19l-5 15 7 9M1-16l-2 12 9 10" fill="none" stroke="#819366" stroke-width="2"></path><circle cx="24" cy="1" r="1.7" fill="#182f36"></circle></g></g>
-<g transform="translate(530 284)"><g class="s4-hop"><ellipse cy="-1" rx="15" ry="10" fill="#9da963"></ellipse><circle cx="-9" cy="-10" r="6" fill="#b7bd79"></circle><circle cx="9" cy="-10" r="6" fill="#b7bd79"></circle><path d="M-9-12v3m18-3v3" stroke="#213c38" stroke-width="3"></path><path d="M-11 2l-11 8h13m20-8 11 8H9" fill="none" stroke="#8b9a56" stroke-width="5"></path></g></g>
-<g fill="#77956a"><path d="M476 246a16 7 0 1 0 7-10l-3 8Z"></path><path d="M734 273a19 7 0 1 0 8-10l-5 8Z"></path></g><path d="M749 262l-7-8 8 2 5-7 2 9 8-1-8 7Z" fill="#e3bfab"></path>
+<g transform="translate(601 204)"><g class="s4-bob"><g clip-path="url(#s4-bathing-clip)"><use href="#s4-capy" transform="scale(.78)"></use></g><path class="s4-ripple" d="M-8 41h16v4h68v-4h16" fill="none" stroke="#acd2bc" stroke-width="2"></path></g></g>
+<!-- Grid-built animal sprites: square pixels, stepped silhouettes, flat palette. -->
+<g transform="translate(795 221)"><g class="s4-swim"><g class="s4-bob"><path d="M-28 0h8v5h26v-5h5v-17h6v-5h14v5h5v17h-8v15h-7v6h-34v-6h-10v-7h-5Z" fill="#263c35"></path><path d="M-22 6h32v5h11v7h-34v-6h-9Z" fill="#d6c393"></path><path d="M15-15h15v14H15Z" fill="#668865"></path><path d="M30-9h12v5H30Z" fill="#d6a555"></path><path d="M24-13h3v3h-3Z" fill="#172d34"></path><path d="M-13 9h19v5h-19Z" fill="#ac986c"></path></g><path d="M-35 27h69" stroke="#a0c2b6" stroke-width="2" class="s4-ripple"></path></g></g>
+<g transform="translate(866 271)"><g class="s4-walk" style="animation-duration:32s"><path d="M-22 5h7v10h-7zM2 5h7v10H2zM13-2h15v10H13z" fill="#a9ad75"></path><path d="M-28 5v-13h6v-7h10v-5H2v5h9v7h5V5Z" fill="#405b43"></path><path d="M-22-7h6v-6h7v7h-7v8h-6zM-5-16h6v7h-6zM0-5h9v7H0z" fill="#819366"></path><path d="M24 0h3v3h-3Z" fill="#182f36"></path></g></g>
+<g transform="translate(530 284)"><g class="s4-hop"><path d="M-15 4v-16h10v5H5v-5h10V4h7v6H7V5H-7v5h-15V4Z" fill="#8b9a56"></path><path d="M-12-11h5v5h-5zM7-11h5v5H7zM-7-2H7v5H-7z" fill="#c4c98c"></path><path d="M-10-10h3v3h-3zM7-10h3v3H7z" fill="#213c38"></path></g></g>
+<g fill="#77956a"><path d="M464 240h10v-4h16v4h6v7h-8v4h-21v-4h-7v-5h13v-3Z"></path><path d="M722 267h10v-4h20v4h8v8h-10v4h-25v-4h-7v-5h14v-3Z"></path></g><path d="M739 263v-8h6v-6h5v7h7v7h-7v4h-5v-4Z" fill="#e3bfab"></path>
 <g transform="translate(475 151)"><g class="s4-fly"><use href="#s4-flybug"></use></g></g><g transform="translate(852 171) scale(.7)"><g class="s4-fly" style="animation-delay:-4s"><use href="#s4-flybug"></use></g></g>
 </svg></section>
 <script>
@@ -525,7 +524,7 @@ Interpretación sustantiva: relaciona los resultados con el problema investigado
     if(!scene)return;
     // Let the site's existing background show through the habitat.
     var footer=document.querySelector('footer.footer');
-    if(footer){footer.before(scene);footer.classList.add('s4-wetland-footer');}
+    if(footer){footer.after(scene);footer.classList.add('s4-wetland-footer');}
     else document.body.appendChild(scene);
     var english=/\/en\//.test(location.pathname);
     var button=scene.querySelector('button');
