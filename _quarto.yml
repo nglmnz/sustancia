@@ -44,3 +44,4 @@ format:
     lang: es
     include-after-body:
       - assets/language-switch.html
+      - assets/wetland-footer.html
