@@ -1,0 +1,42 @@
+---
+title: "Proiektua eta lantaldea"
+description: "Sustancia proiektuaren diziplinarteko taldea eta ikerketa-helburuak."
+lang: eu
+---
+
+::: {.hero}
+<div class="eyebrow">Diziplinarteko proiektua · garapen-fasean</div>
+
+# Datuak interpretatzea <em>irizpide propioa garatzea</em> da
+
+<p class="hero-sub">Sustanciak gizarte-ikerketa, estatistikaren didaktika eta software-garapena uztartzen ditu, ikasleek datuekin arrazoitzen ikas dezaten, lan intelektualaren ardura galdu gabe.</p>
+:::
+
+## Proiektuaren jatorria {.seccion}
+
+Sustancia galdera batetik sortu zen: zer gertatzen da tresna analitikoek eta eredu sortzaileek emaitza estatistikoak lortzea errazten dutenean, erabiltzaileek haien esanahia ulertuko dutela bermatu gabe? Proiektuak ikaskuntza-arkitektura bat proposatzen du: ikasleek emaitzak interpretatzen dituzte, atzeraelikadura formatiboa jasotzen dute eta beren arrazoibidea berrikusten dute.
+
+Prototipoaren hasierako datu-multzoa unibertsitateko lehen mailako ikasleen habitus teknologikoari eta osasun mentalari buruzko ikerketa batetik dator (*n* = 276, bost titulazio). Proiektua curriculumari lotutako estatistika-ikaskuntzara zabaltzen ari da. Diseinuak prozedura bat egitea, datuak interpretatzea eta ondorioen mugak ezagutzea bereizten ditu.
+
+## Gure lantaldea {.seccion}
+
+<div class="v2-card-grid v2-team">
+  <article class="v2-card"><span class="v2-kicker">DISEINU PEDAGOGIKOA · UAH</span><h3>Ángel Muñoz</h3><p>Soziologia, Universidad Alberto Hurtado.</p><p class="v2-small">Proiektuaren koordinazioa, eredu pedagogikoa eta R/Shiny prototipoa. Nicolás Ayarzarekin batera garatzen ditu agente espezializatuak eta ezagutza-base curricularra.</p></article>
+  <article class="v2-card"><span class="v2-kicker">IKERKETA · UAH</span><h3>Tamara Gómez</h3><p>Soziologia, Universidad Alberto Hurtado.</p><p class="v2-small">Garapen akademikoa eta ikerketa, literatura-berrikuspena, dokumentazioa eta giza ebaluazioaren eta baliozkotzearen laguntza, Nicolás Williamsekin batera.</p></article>
+  <article class="v2-card"><span class="v2-kicker">METODOLOGIA ETA BALIOZKOTZEA · UC</span><h3>Nicolás Williams</h3><p>Soziologiako masterra, Pontificia Universidad Católica de Chile.</p><p class="v2-small">Diseinu metodologikoa eta ebaluazioa: giza kodetzearen eta IAren arteko alderaketak, Cohen-en kappa, desadostasunen azterketa eta errubrikaren hobekuntza iteratiboa, Tamara Gómezekin batera.</p></article>
+  <article class="v2-card"><span class="v2-kicker">AGENTEAK ETA EZAGUTZA-BASEA · DUOC UC</span><h3>Nicolás Ayarza</h3><p>Informatika-ingeniaria, DUOC UC.</p><p class="v2-small">Agente espezializatuak, iturrien prozesamendua eta ezagutza-base estatistiko egituratua garatzen ditu Ángel Muñozekin, jatorria eta giza berrikuspena bermatuz.</p></article>
+</div>
+
+Afiliazio akademikoek taldekideen prestakuntza adierazten dute. **Ez dute erakundeen babes, berme edo ordezkaritza formalik esan nahi.**
+
+<p class="s3-team-note"><strong>Egungo lan-ildoak.</strong> Baliozkotze metodologikoak giza adituen eta ebaluatzaile automatikoaren arteko adostasuna aztertuko du, Cohen-en kappa erabiliz (haztatua, kategoria ordenatuetarako egokia denean). Aldi berean, lan teknologikoak baimendutako estatistika-testuak bildu, iturrien trazabilitatea gorde eta agenteen laguntzaz jarduera egituratuak garatuko ditu. Aurreikusitako lanak dira, ez baliozkotutako emaitzak.</p>
+
+## Ikerketa eta garapena {.seccion}
+
+Sustancia ikaskuntza-tresna gisa eta hezkuntza-prozesuei buruzko ikerketa-ingurune posible gisa ulertzen da. Besteak beste, gaizki-ulertuen iraunkortasuna, eragiketa estatistikoen arteko aldeak, atzeraelikaduraren ondoren argudioak nola aldatzen diren eta printzipioak beste testuinguru batzuetara transferitzen diren aztertu nahi dira.
+
+Hurrengo faseetan, gizakiek berrikusitako jarduera-bankua, hasierako diagnostikoa, dimentsio anitzeko profila eta jarduerak aukeratzeko arau esplizituak garatzea aurreikusten da. Osagai horiek ez daude oraindik guztiz inplementatuta edo baliozkotuta.
+
+## Harremanetarako {.seccion}
+
+[Jarri harremanetan proiektuarekin](mailto:anmunozr@alumnos.uahurtado.cl) · [Sustancia GitHuben](https://github.com/nglmnz/sustancia)
