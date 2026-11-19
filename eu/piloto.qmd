@@ -1,0 +1,24 @@
+---
+title: "Aztertu prototipoa"
+description: "Sustanciaren joko-prototipo esperimentala."
+lang: eu
+page-layout: full
+---
+
+::: {.hero}
+<div class="eyebrow">Bertsio esperimentala</div>
+
+# Probatu <em>egungo prototipoa</em>
+
+<p class="hero-sub">Esperientzia honek emaitza estatistikoak interpretatzea, erantzunak idaztea eta atzeraelikadura formatiboa jasotzea ahalbidetzen du. Diagnostiko egokitzailea, epe luzeko gaitasun-profila eta erakundeentzako panelak hurrengo garapen-fasekoak dira.</p>
+:::
+
+Jarraian agertzen den aplikazioa R/Shiny erabiliz garatu da eta kanpoko zerbitzari batean dago; haren erabilgarritasuna ostatu-zerbitzuaren araberakoa da. **Jokoaren egungo interfazea gaztelaniaz dago; oraindik ez dago euskarara itzulita. Ez sartu datu pertsonalik edo informazio akademiko sentikorrik bertsio esperimental honetan.**
+
+<div class="v2-pilot-shell">
+  <iframe src="https://tbu8oh-angel0dario-munoz0ra0iman.shinyapps.io/app_v2_0309/" title="Sustanciaren R/Shiny prototipo esperimentala — interfazea gaztelaniaz" loading="lazy" width="100%" height="780" style="border:0;border-radius:10px;"></iframe>
+</div>
+
+[Aplikazioa kargatzen ez bada, ireki beste fitxa batean ↗](https://tbu8oh-angel0dario-munoz0ra0iman.shinyapps.io/app_v2_0309/)
+
+[Ezagutu proposatutako ikaskuntza-ibilbide egokitzailea →](como-funciona.qmd)
