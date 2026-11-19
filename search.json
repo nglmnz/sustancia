@@ -238,6 +238,286 @@
     "text": "Estado del proyecto\nNo todas las piezas de Sustancia están disponibles al mismo tiempo. Estas etiquetas separan lo que ya se puede explorar de lo que estamos diseñando.\n\n  EXISTENTEPrototipo en ShinyActividades de interpretación y una propuesta inicial de evaluación formativa.\n  DOCUMENTADOMarco pedagógicoTaxonomía de errores, N1–N4 y fundamento teórico del proyecto.\n  EN DESARROLLOVector de maestríaDiagnóstico inicial y perfil multidimensional sustentado en evidencias.\n  PROYECTADOAdaptación y seguimientoConversaciones recursivas, selección de actividades y paneles para docentes e instituciones.\n\nConocer la fundamentación → · Explorar el modelo pedagógico →"
   },
   {
+    "objectID": "eu/equipo.html",
+    "href": "eu/equipo.html",
+    "title": "Proiektua eta lantaldea",
+    "section": "",
+    "text": "Diziplinarteko proiektua · garapen-fasean\n\n\n\n\nSustanciak gizarte-ikerketa, estatistikaren didaktika eta software-garapena uztartzen ditu, ikasleek datuekin arrazoitzen ikas dezaten, lan intelektualaren ardura galdu gabe."
+  },
+  {
+    "objectID": "eu/equipo.html#proiektuaren-jatorria",
+    "href": "eu/equipo.html#proiektuaren-jatorria",
+    "title": "Proiektua eta lantaldea",
+    "section": "Proiektuaren jatorria",
+    "text": "Proiektuaren jatorria\nSustancia galdera batetik sortu zen: zer gertatzen da tresna analitikoek eta eredu sortzaileek emaitza estatistikoak lortzea errazten dutenean, erabiltzaileek haien esanahia ulertuko dutela bermatu gabe? Proiektuak ikaskuntza-arkitektura bat proposatzen du: ikasleek emaitzak interpretatzen dituzte, atzeraelikadura formatiboa jasotzen dute eta beren arrazoibidea berrikusten dute.\nPrototipoaren hasierako datu-multzoa unibertsitateko lehen mailako ikasleen habitus teknologikoari eta osasun mentalari buruzko ikerketa batetik dator (n = 276, bost titulazio). Proiektua curriculumari lotutako estatistika-ikaskuntzara zabaltzen ari da. Diseinuak prozedura bat egitea, datuak interpretatzea eta ondorioen mugak ezagutzea bereizten ditu."
+  },
+  {
+    "objectID": "eu/equipo.html#gure-lantaldea",
+    "href": "eu/equipo.html#gure-lantaldea",
+    "title": "Proiektua eta lantaldea",
+    "section": "Gure lantaldea",
+    "text": "Gure lantaldea\n\n\nDISEINU PEDAGOGIKOA · UAH\n\nÁngel Muñoz\n\n\nSoziologia, Universidad Alberto Hurtado.\n\n\nProiektuaren koordinazioa, eredu pedagogikoa eta R/Shiny prototipoa. Nicolás Ayarzarekin batera garatzen ditu agente espezializatuak eta ezagutza-base curricularra.\n\n\n\nIKERKETA · UAH\n\nTamara Gómez\n\n\nSoziologia, Universidad Alberto Hurtado.\n\n\nGarapen akademikoa eta ikerketa, literatura-berrikuspena, dokumentazioa eta giza ebaluazioaren eta baliozkotzearen laguntza, Nicolás Williamsekin batera.\n\n\n\nMETODOLOGIA ETA BALIOZKOTZEA · UC\n\nNicolás Williams\n\n\nSoziologiako masterra, Pontificia Universidad Católica de Chile.\n\n\nDiseinu metodologikoa eta ebaluazioa: giza kodetzearen eta IAren arteko alderaketak, Cohen-en kappa, desadostasunen azterketa eta errubrikaren hobekuntza iteratiboa, Tamara Gómezekin batera.\n\n\n\nAGENTEAK ETA EZAGUTZA-BASEA · DUOC UC\n\nNicolás Ayarza\n\n\nInformatika-ingeniaria, DUOC UC.\n\n\nAgente espezializatuak, iturrien prozesamendua eta ezagutza-base estatistiko egituratua garatzen ditu Ángel Muñozekin, jatorria eta giza berrikuspena bermatuz.\n\n\n\nAfiliazio akademikoek taldekideen prestakuntza adierazten dute. Ez dute erakundeen babes, berme edo ordezkaritza formalik esan nahi.\n\nEgungo lan-ildoak. Baliozkotze metodologikoak giza adituen eta ebaluatzaile automatikoaren arteko adostasuna aztertuko du, Cohen-en kappa erabiliz (haztatua, kategoria ordenatuetarako egokia denean). Aldi berean, lan teknologikoak baimendutako estatistika-testuak bildu, iturrien trazabilitatea gorde eta agenteen laguntzaz jarduera egituratuak garatuko ditu. Aurreikusitako lanak dira, ez baliozkotutako emaitzak."
+  },
+  {
+    "objectID": "eu/equipo.html#ikerketa-eta-garapena",
+    "href": "eu/equipo.html#ikerketa-eta-garapena",
+    "title": "Proiektua eta lantaldea",
+    "section": "Ikerketa eta garapena",
+    "text": "Ikerketa eta garapena\nSustancia ikaskuntza-tresna gisa eta hezkuntza-prozesuei buruzko ikerketa-ingurune posible gisa ulertzen da. Besteak beste, gaizki-ulertuen iraunkortasuna, eragiketa estatistikoen arteko aldeak, atzeraelikaduraren ondoren argudioak nola aldatzen diren eta printzipioak beste testuinguru batzuetara transferitzen diren aztertu nahi dira.\nHurrengo faseetan, gizakiek berrikusitako jarduera-bankua, hasierako diagnostikoa, dimentsio anitzeko profila eta jarduerak aukeratzeko arau esplizituak garatzea aurreikusten da. Osagai horiek ez daude oraindik guztiz inplementatuta edo baliozkotuta."
+  },
+  {
+    "objectID": "eu/equipo.html#harremanetarako",
+    "href": "eu/equipo.html#harremanetarako",
+    "title": "Proiektua eta lantaldea",
+    "section": "Harremanetarako",
+    "text": "Harremanetarako\nJarri harremanetan proiektuarekin · Sustancia GitHuben"
+  },
+  {
+    "objectID": "eu/fundamentacion.html",
+    "href": "eu/fundamentacion.html",
+    "title": "Oinarri teorikoak",
+    "section": "",
+    "text": "Oinarri teorikoak\n\n\n\n\nSustancia ez da IA erabiltzen duen ariketa-aplikazio soil bat. Hipotesi soziologiko batetik abiatzen da: lan kognitiboa kanpora delegatzeak norberaren ezagutza eta trebetasunak metatzeko aukerak ahuldu baditzake, IA bidez lagundutako ikaskuntzaren diseinua —nork sortzen duen eta nork ebaluatzen duen— ikaskuntza nola antolatzen den ulertzeko galdera da."
+  },
+  {
+    "objectID": "eu/fundamentacion.html#arazoa-alderantzizko-bihurketa",
+    "href": "eu/fundamentacion.html#arazoa-alderantzizko-bihurketa",
+    "title": "Oinarri teorikoak",
+    "section": "Arazoa: alderantzizko bihurketa",
+    "text": "Arazoa: alderantzizko bihurketa\nI — Diagnostikoa\nBourdieuren ikuspegian, gorpuztutako kapital kulturalak ezaugarri nagusi bat du: denbora-inbertsio pertsonala eskatzen du. Inork ezin du beste pertsona baten ordez arreta mantentzeko, argudio bat antolatzeko edo emaitza bat interpretatzeko gaitasuna barneratu. IA sortzaileak ahalegin indibidual horretatik ihes egiteko aukera agintzen duela dirudi.\nTestu, laburpen edo ebidentzien interpretazioa delegatzea, hortaz, ez da beti lasterbide neutroa. Proiektuak kapitalaren alderantzizko bihurketa kontzeptua proposatzen du: gaurko ahalegina aurrezteak etorkizunean ezagutza eta trebetasun gorpuztuak metatzeko aukerak mugatu ditzake. Interpretazio teorikoa eta ikerketa-galdera da, ez IAren erabilera zehatz baten kausa-efektu frogatua.\nSustancia sortu zuen ikerketak unibertsitateko lehen mailako 276 ikasleren habitus teknologikoa eta osasun mentala aztertu zituen. Bi bereizketa garrantzitsu dira:\n\nErabilera-ereduek axola dute, ez soilik pantaila-denborak. Aztertutako ereduetan, pantaila-denborak ez zuen erabilera konpultsiboaren lotura bera erakutsi. Lotura horiek ez dute kausalitatea frogatzen.\nDelegazioa ez da unibertsala. Arrisku posible bat ez da ezinbesteko ondorio bat; hezkuntza-diseinuak aldea eragin dezake."
+  },
+  {
+    "objectID": "eu/fundamentacion.html#ia-bidez-lagundutako-ikaskuntza-diseinatzeko-bi-modu",
+    "href": "eu/fundamentacion.html#ia-bidez-lagundutako-ikaskuntza-diseinatzeko-bi-modu",
+    "title": "Oinarri teorikoak",
+    "section": "IA bidez lagundutako ikaskuntza diseinatzeko bi modu",
+    "text": "IA bidez lagundutako ikaskuntza diseinatzeko bi modu\nII — Diseinu-erabakia\nIAk oso rol desberdinak izan ditzake ikaskuntza-jarduera batean. Alderatu bi eredu ideal hauek eta erreparatu nork egiten duen lan intelektuala.\n\n  \n    ▸ Arkitektura delegatiboa\n    ▸ Arkitektura barneratzailea\n  \n  \n    \n    Ikaslea\n    denbora + arreta\n    \n    IA eredua\n    sortzeko gaitasuna\n    \n      \n      IAk interpretazioa sortzen du\n      \n      Ikasleak onartu edo errepikatu\n      praktika pertsonala galtzeko arriskua\n    \n    \n      \n      Ikasleak interpretazioa sortzen du\n      \n      IAk errubriketan oinarritutako atzeraelikadura ematen du\n      ikasteko ahalegina ikaslearena da\n    \n    \n      \n      \n    \n  \n  \n    Arkitektura delegatiboa\n    IAk interpretazioa sortzen du, eta ikasleak batez ere jaso edo onartzen du. Eredu ideal honetan, argudioak eraikitzeko praktika murriztu daiteke.\n  \n\n\nSustanciak arkitektura barneratzailea lehenesten du: ikasleak interpretazioa egiten du eta atzeraelikadura erabiltzen du berrikusteko. Prototipo esperimentalak idatzizko erantzunak eta ebaluazio formatiboa jorratzen ditu; berrikuspen errekurtsibo sistematikoa eta dimentsio anitzeko egokitzapena garatu eta ebaluatu behar dira oraindik."
+  },
+  {
+    "objectID": "eu/fundamentacion.html#interpretazio-substantiboa-ezagutza-gorpuztu-gisa",
+    "href": "eu/fundamentacion.html#interpretazio-substantiboa-ezagutza-gorpuztu-gisa",
+    "title": "Oinarri teorikoak",
+    "section": "Interpretazio substantiboa ezagutza gorpuztu gisa",
+    "text": "Interpretazio substantiboa ezagutza gorpuztu gisa\nIII — Zer den ikastea\nEmaitza estatistiko bat sakon interpretatzeko gaitasuna kapital kultural gorpuztu gisa uler daiteke: praktikaren bidez garatzen da, eta ezin da delegazio hutsaren bidez transferitu. Analisiak sortzea errazten den neurrian, emaitzek zer esan nahi duten —eta zer ezin den ondorioztatu— jakitea bereziki baliotsua da.\n\nSustanciak ikaskuntza baloratzeko beste modu bat proposatzen du: arrazoibide esanguratsua abiaduraren gainetik jartzea. Hasierako jokoan, interpretazio substantiboak puntu gehiago jasotzen ditu taula bat teknikoki irakurtzeak baino. Helburua ez da berehalakotasuna maximizatzea, ulertzeko behar den denbora aitortzea baizik.\n\nAkatsen tratamenduak logika bera jarraitzen du. Jatorrizko kontzeptuan, akats batek azalpen bat ireki dezake akatsen katalogoan: ulertutako akatsa ikaskuntzaren parte bihurtzen da, ez zigor hutsa."
+  },
+  {
+    "objectID": "eu/fundamentacion.html#oinarri-epistemologikoa",
+    "href": "eu/fundamentacion.html#oinarri-epistemologikoa",
+    "title": "Oinarri teorikoak",
+    "section": "Oinarri epistemologikoa",
+    "text": "Oinarri epistemologikoa\nIV — Simondon\nGilbert Simondonen filosofiak N4 interpretazio kritiko eta gogoetatsua inspiratzen du. Objektu tekniko batekin harreman ez-alienatua izateak ez du soilik hura erabiltzea esan nahi: barrutik nola funtzionatzen duen ulertzea ere badakar. Estatistikan, horrek esan nahi du galdetzea zergatik aukeratu den metodo bat, zer aurresuposizio dituen, eredu batek nola eraldatzen dituen datuak eta ikerketa-diseinuak zer baieztapen ez dituen ahalbidetzen.\nSustancia osagarri pedagogiko bat izan nahi da, ez ikaslearen jarduera intelektualaren ordezkoa. Helburua ez da interpretazio bat jasotzea bakarrik, interpretatzaile izateko gaitasuna garatzea baizik."
+  },
+  {
+    "objectID": "eu/fundamentacion.html#hiru-oinarri-diseinu-bakarra",
+    "href": "eu/fundamentacion.html#hiru-oinarri-diseinu-bakarra",
+    "title": "Oinarri teorikoak",
+    "section": "Hiru oinarri, diseinu bakarra",
+    "text": "Hiru oinarri, diseinu bakarra\nV — Sintesia\nJarri kurtsorea txartel bakoitzaren gainean edo hautatu teklatuarekin nahiz ukipenarekin, oinarri teoriko bakoitzak jokoaren diseinua nola bideratzen duen ikusteko.\n\n  \n    \n      Oinarri soziologikoaBourdieuKapital-formen teoria→ jarri kurtsorea gainean edo hautatu\n      EkarpenaNorberaren ahalegin intelektuala zergatik den garrantzitsua, eta IAren eta ikasleen rolak zergatik diren galdera soziologiko bat.Ikasleak berak ezagutza sortzeari lehentasuna ematen dion arkitektura.\n    \n  \n  \n    \n      Oinarri epistemologikoaSimondonObjektu teknikoak eta haien existentzia-modua→ jarri kurtsorea gainean edo hautatu\n      EkarpenaProzesu teknikoak barrutik ulertzeko ikuspegia, metodoak kutxa beltz gisa erabili beharrean.N4 interpretazio kritikoa, aurresuposizio eta muga metodologikoak barne.\n    \n  \n  \n    \n      Oinarri pedagogikoaCurcio · Shaughnessy · GarfieldEstatistikaren didaktika→ jarri kurtsorea gainean edo hautatu\n      EkarpenaIkasleek datuak nola irakurri, interpretatu eta horiekin arrazoitzen duten aztertzen duten ikerketak.N1–N4 mailen, jarduera-errubriken eta atzeraelikadura formatiboaren inspirazioa; eskala zehatza baliozkotu behar da."
+  },
+  {
+    "objectID": "eu/fundamentacion.html#erreferentziak",
+    "href": "eu/fundamentacion.html#erreferentziak",
+    "title": "Oinarri teorikoak",
+    "section": "Erreferentziak",
+    "text": "Erreferentziak\n\nBourdieu, P. (1987 [1979]). The three states of cultural capital. Sociológica, 2(5).\nBourdieu, P., & Wacquant, L. (2005 [1992]). An Invitation to Reflexive Sociology.\nCurcio, F. (1987). Comprehension of mathematical relationships expressed in graphs. JRME, 18(5).\nGarfield, J., & Ben-Zvi, D. (2008). Developing Students’ Statistical Reasoning. Springer.\nIgnatow, G., & Robinson, L. (2017). Pierre Bourdieu: theorizing the digital. Information, Communication & Society, 20(7).\nShaughnessy, J. M. (2007). Research on statistics learning and reasoning. In Second Handbook of Research on Mathematics Teaching and Learning.\nSimondon, G. (2007 [1958]). On the Mode of Existence of Technical Objects.\nZuboff, S. (2020). The Age of Surveillance Capitalism."
+  },
+  {
+    "objectID": "eu/fundamentacion.html#oinarrietatik-ikaskuntza-egokitzailera",
+    "href": "eu/fundamentacion.html#oinarrietatik-ikaskuntza-egokitzailera",
+    "title": "Oinarri teorikoak",
+    "section": "Oinarrietatik ikaskuntza egokitzailera",
+    "text": "Oinarrietatik ikaskuntza egokitzailera\nDiseinuak N1–N4 interpretazio-sakontasuna zabaltzen du, kontzeptuak, eragiketa estatistikoak, akats errepikatuak, aurrebaldintzak eta ikaskuntza-ibilbideko aldaketak bereizten dituen dimentsio anitzeko gaitasun-eredu batekin. Interpretazioaren sakontasuna arrazoibide estatistikoaren dimentsio bat da, ez gaitasun osoa.\nProposatutako zikloak —hasierako erantzuna → atzeraelikadura → berrikusitako erantzuna → ebidentzia berria— ikasleen lan intelektuala behatzeko aukera eman dezake. Atzeraelikadurak ez du automatikoki ikaskuntza hobea bermatzen: hipotesi horiek egiaztatu egin behar dira.\nCurriculumari lotutako jarduerak giza taldeak berrikusitako iturrietatik sortzen dira. IAk aurkikuntzan, erauzketan, sailkapenean eta ebaluazioan lagun dezake, baina erabaki pedagogikoek giza gainbegiratzea behar dute.\nAztertu eredu pedagogikoa → · Ikusi nola funtzionatzen duen →"
+  },
+  {
+    "objectID": "eu/universidades.html",
+    "href": "eu/universidades.html",
+    "title": "Sustancia unibertsitateentzat",
+    "section": "",
+    "text": "Lankidetza akademikoak · proposatutako aplikazioak\n\n\n\n\nSustancia unibertsitateko estatistika-irakaskuntza osatzeko diseinatzen ari da. Lehen arloa hasierako estatistika da, gizarte-zientzietan, osasun-zientzietan eta ingeniaritzan aplikatzeko aukerarekin."
+  },
+  {
+    "objectID": "eu/universidades.html#curriculumarekiko-lotura",
+    "href": "eu/universidades.html#curriculumarekiko-lotura",
+    "title": "Sustancia unibertsitateentzat",
+    "section": "Curriculumarekiko lotura",
+    "text": "Curriculumarekiko lotura\nEreduak ikaskuntza-emaitza eta ikasgaietako eduki esplizituak jarraitzen ditu, ez IAk modu arbitrarioan sortutako sekuentzia. Hasierako diseinuak 2022ko estatistikako sarrera-ikasprograma bat hartu du oinarri: oinarrizko kontzeptuak, datu kategoriko eta kuantitatiboak, banaketa normala eta inferentziarako sarrera. Erakunde bakoitzean, bere curriculuma berrikusi beharko da.\n\nI · OinarriakII · Datu kategorikoakIII · Datu kuantitatiboakIV · Banaketa normalaV · Inferentziarako sarrera"
+  },
+  {
+    "objectID": "eu/universidades.html#elkar-osatzen-duten-hiru-ikuspegi",
+    "href": "eu/universidades.html#elkar-osatzen-duten-hiru-ikuspegi",
+    "title": "Sustancia unibertsitateentzat",
+    "section": "Elkar osatzen duten hiru ikuspegi",
+    "text": "Elkar osatzen duten hiru ikuspegi\n\n\nIKASLEA\n\nNorberaren ikaskuntza ulertzea\n\n\nKontzeptu eta eragiketa estatistikoetako indarguneak, zailtasunak eta aurrerapena ikustea, nota bakarrera mugatu gabe.\n\n\n\nIRAKASLEA\n\nIkaskuntzari laguntzea\n\n\nErrepikatzen diren okerrak eta indartu beharreko arloak identifikatzea, taldearen bilakaera aztertzea eta jarduerak berrikustea.\n\n\n\nERAKUNDEA\n\nEtengabeko hobekuntza\n\n\nKohorte, ikasgai edo titulazioaren araberako adierazle agregatuak ikertzea, ikaskuntza-ibilbideak eta laguntza-neurriak ulertzeko."
+  },
+  {
+    "objectID": "eu/universidades.html#zer-ekar-dezake-sustanciak",
+    "href": "eu/universidades.html#zer-ekar-dezake-sustanciak",
+    "title": "Sustancia unibertsitateentzat",
+    "section": "Zer ekar dezake Sustanciak?",
+    "text": "Zer ekar dezake Sustanciak?\n\nHasierako diagnostikoa: ikasle bakoitzaren abiapuntu matematiko eta estatistikoa ebidentzietan oinarrituta ezagutzea.\nTestuinguruko praktika: diziplina bakoitzari dagozkion datu eta arazoetan oinarritutako ariketak.\nIkaskuntza errekurtsiboa: lehen erantzuna, atzeraelikadura, berrikuspena eta ebidentzia berria.\nCurriculumaren trazabilitatea: kontzeptu, eragiketa eta iturri berrikusiei lotutako jarduerak.\nHezkuntza-ikerketa: arrazoibide estatistikoaren bilakaera denboran aztertzeko aukera.\n\nHoriek diseinu-helburuak dira, ez dagoeneko zabaldu diren funtzionalitateak edo frogatutako eragin-emaitzak."
+  },
+  {
+    "objectID": "eu/universidades.html#gainbegiratzea-eta-datuetarako-sarbidea",
+    "href": "eu/universidades.html#gainbegiratzea-eta-datuetarako-sarbidea",
+    "title": "Sustancia unibertsitateentzat",
+    "section": "Gainbegiratzea eta datuetarako sarbidea",
+    "text": "Gainbegiratzea eta datuetarako sarbidea\nSarbideek ardurak islatu behar dituzte: ikasleek beren profilak ikusiko lituzkete, irakasleek ikastaroari dagokion informazioa, eta erakundeek adierazle agregatuak. Baimenak, oinarri juridikoa, datuen minimizazioa, gordetzeko epeak eta babes-neurriak zehaztu behar dira ezarpen instituzionala egin aurretik.\nIAk edukien bilaketa eta berrikuspena lagundu ditzake; irakasleek izaten jarraitzen dute curriculumeko erabakien eta jardueren azken onespenaren arduradun."
+  },
+  {
+    "objectID": "eu/universidades.html#garapena-eta-lankidetza",
+    "href": "eu/universidades.html#garapena-eta-lankidetza",
+    "title": "Sustancia unibertsitateentzat",
+    "section": "Garapena eta lankidetza",
+    "text": "Garapena eta lankidetza\nSustancia ikerketa- eta garapen-fasean dago. Helburua da egungo prototipotik bideragarritasun teknikoa eta egokitasun pedagogikoa aztertuko dituen pilotu batera igarotzea, eta ondoren ikaskuntzaren ebidentziak ebaluatzea.\nEzagutu lantaldea → · Ikusi ikaslearen ibilbidea →"
+  },
+  {
+    "objectID": "eu/como-funciona.html",
+    "href": "eu/como-funciona.html",
+    "title": "Nola funtzionatzen du?",
+    "section": "",
+    "text": "Ikaskuntza-esperientzia · proposatutako arkitektura\n\n\n\n\nSustanciaren helburua ikaslearen abiapuntua ezagutzea, erronka egokiak proposatzea eta atzeraelikadura berriro pentsatzeko aukera bihurtzea da. Hemen aurreikusitako esperientzia deskribatzen da: osagai guztiak ez daude oraindik egungo prototipoan inplementatuta."
+  },
+  {
+    "objectID": "eu/como-funciona.html#ikaslearen-ibilbidea",
+    "href": "eu/como-funciona.html#ikaslearen-ibilbidea",
+    "title": "Nola funtzionatzen du?",
+    "section": "Ikaslearen ibilbidea",
+    "text": "Ikaslearen ibilbidea\n\n\n01\n\n\nHasierako diagnostikoa\n\n\nJarduera laburrek aurretiko ezagutzak, kontzeptu estatistikoekiko ohitura eta arrazoitzeko moduak aztertzen dituzte. Helburua abiapuntua ulertzea da, ez ikasleari behin betiko etiketa jartzea.\n\n\n\n\n02\n\n\nHasierako gaitasun-profila\n\n\nKontzeptuei, eragiketei eta interpretazioaren sakontasunari buruzko lehen estimazioa osatzen da. Oraindik behatu ez dena ezezagun gisa jasotzen da, ez ezintasun gisa.\n\n\n\n\n03\n\n\nJokoa hasten da\n\n\nCurriculumarekin lotutako erronka batek taula irakurtzea, neurri bat kalkulatzea, emaitzak alderatzea, datuak interpretatzea edo mugak aztertzea eskatzen du.\n\n\n\n\n04\n\n\nNorberaren erantzuna\n\n\nIkasleak erantzun bat sortzen du: idatzizko interpretazioa, enuntziatu osatua, justifikatutako alderaketa edo kalkulua, jardueraren arabera.\n\n\n\n\n05\n\n\nAtzeraelikadura eta elkarrizketa epistemologikoa\n\n\nSistemak zailtasun bat seinalatzen du eta alderatzera, berriro aztertzera edo hobeto justifikatzera gonbidatzen duten galderak egiten ditu. IAk ez luke interpretazio bukatua besterik gabe eman behar.\n\n\n\n\n06\n\n\nBerrikuspena eta ebidentzia berria\n\n\nBerrikusitako erantzunak akats bat zuzendu den, argudio berriak txertatu diren edo printzipio bat beste testuinguru batera eraman den erakuts dezake.\n\n\n\n\n07\n\n\nHurrengo erronka\n\n\nEbidentzia berriak profila eguneratzeko eta jarduera pedagogikoki hautatzeko balio du. Ikaskuntzak aurrebaldintza bat sendotu, interpretazioan sakondu edo testuingurua alda dezake."
+  },
+  {
+    "objectID": "eu/como-funciona.html#berrikustea-ez-soilik-berriro-saiatzea",
+    "href": "eu/como-funciona.html#berrikustea-ez-soilik-berriro-saiatzea",
+    "title": "Nola funtzionatzen du?",
+    "section": "Berrikustea, ez soilik berriro saiatzea",
+    "text": "Berrikustea, ez soilik berriro saiatzea\n\n\nADIBIDE ILUSTRATIBOA · BATEZBESTEKOAK ETA MUTURREKO BALIOAK\n\n\nErronka. Batez besteko diru-sarrera mediana baino askoz handiagoa da. Zerk azal dezake?\n\n\nLehen erantzuna. Batezbestekoa handiagoa da jende gehienak kopuru hori irabazten duelako.\n\n\nGaldera gidaria. Batezbestekoak nahitaez adierazten al du gehienek zenbat irabazten duten? Eta pertsona gutxi batzuek oso diru-sarrera handiak badituzte?\n\n\nBerrikusitako erantzuna. Diru-sarrera oso altu gutxi batzuek batezbestekoa igo dezakete; ezin dut esan gehienek kopuru hori jasotzen dutenik.\n\n\nSistemak bi erantzunak, atzeraelikadura eta aldaketa jaso ditzake; baina berrikuspen bakar batek ez du gaitasun egonkorra frogatzen.\n\n\nElkarrizketa epistemologikoak iturriak, arazoa, jarrera, alderaketa, transferentzia eta aplikazioa uztar ditzake. Mugimendu pedagogikoak dira, ez sei galderako kontrol-zerrenda zurruna."
+  },
+  {
+    "objectID": "eu/como-funciona.html#zer-aldatzen-da-profilean",
+    "href": "eu/como-funciona.html#zer-aldatzen-da-profilean",
+    "title": "Nola funtzionatzen du?",
+    "section": "Zer aldatzen da profilean?",
+    "text": "Zer aldatzen da profilean?\n\n\nGaitasun-bektorea ez da nota bakarra: ikasleak dakienari, egin dezakeenari eta landu behar duenari buruzko ebidentziak uztartzen ditu.\n\n\nKontzeptuakEragiketakN1–N4 sakontasunaAkats errepikatuakAurrebaldintzakIkaskuntza-ibilbidea eta berrikuspena\n\n\nAdierazleek kalibrazioa eta baliozkotzea behar dute benetako hezkuntza-erabakietan erabili baino lehen."
+  },
+  {
+    "objectID": "eu/como-funciona.html#iturri-estatistikoetatik-ikaskuntza-jardueretara",
+    "href": "eu/como-funciona.html#iturri-estatistikoetatik-ikaskuntza-jardueretara",
+    "title": "Nola funtzionatzen du?",
+    "section": "Iturri estatistikoetatik ikaskuntza-jardueretara",
+    "text": "Iturri estatistikoetatik ikaskuntza-jardueretara\nTaldeak ezagutza-base estatistiko egituratu bat osatuko du, erabilera-eskubide egokiak dituzten ikasprograma, eskuliburu, artikulu eta beste material batzuetatik abiatuta. Agente espezializatuek kontzeptuak, adibideak, eragiketak eta ariketak ateratzen lagunduko dute, iturrien trazabilitatea gordez.\nMaterial bat automatikoki ateratzeak ez du jarduera baliozkotu bihurtzen: taldeak zehaztasun estatistikoa, curriculumarekiko egokitasuna eta berrerabiltzeko eskubideak aztertu behar ditu. Eredu egokitzailea eta ezagutza-basea garapenean daude oraindik."
+  },
+  {
+    "objectID": "eu/como-funciona.html#nork-egiten-du-zer",
+    "href": "eu/como-funciona.html#nork-egiten-du-zer",
+    "title": "Nola funtzionatzen du?",
+    "section": "Nork egiten du zer?",
+    "text": "Nork egiten du zer?\n\n\n\n\n\n\n\nParte-hartzailea\nArdura\n\n\n\n\nTalde akademikoa eta irakasleak\nCurriculuma zehaztu, jarduerak baliozkotu eta erabaki pedagogikoak gainbegiratu.\n\n\nIAko agente laguntzaileak\nOnartutako materialak bilatu, ariketak proposatu eta errubrikekin ebaluatzen lagundu, babes-neurriekin.\n\n\nMotor pedagogikoa\nJarduerak hautatu, irizpide esplizituetan eta ikaslearen estimatutako profilean oinarrituta.\n\n\nIkaslea\nBere arrazoibidea sortu, alderatu, berrikusi eta garatu.\n\n\n\nGarrantzitsua: talde akademikoak sartzen eta berrikusten ditu ikasmaterialak. Ikasleek ez dute dokumenturik igo behar jolasteko."
+  },
+  {
+    "objectID": "eu/como-funciona.html#orain-erabilgarri-eta-oraindik-garapenean",
+    "href": "eu/como-funciona.html#orain-erabilgarri-eta-oraindik-garapenean",
+    "title": "Nola funtzionatzen du?",
+    "section": "Orain erabilgarri eta oraindik garapenean",
+    "text": "Orain erabilgarri eta oraindik garapenean\n\n\n\n\n\n\n\nOsagaia\nEgoera\n\n\n\n\nKontzeptu pedagogikoa, N1–N4 eta hasierako akatsen sailkapena\nDokumentatuta\n\n\nInterpretazio-jarduerak dituen prototipoa\nEsperimentala; kanpoko zerbitzuaren araberakoa\n\n\nHasierako diagnostikoa eta dimentsio anitzeko profila\nDiseinuan eta garapenean\n\n\nBerrikuspen sistematikoa eta hautaketa egokitzailea\nGarapenean\n\n\nAgenteekin osatutako jarduera-bankua eta erakundeentzako panelak\nAurreikusita\n\n\n\nAztertu egungo prototipoa → · Irakurri eredu pedagogikoa →"
+  },
+  {
+    "objectID": "universidades.html",
+    "href": "universidades.html",
+    "title": "Sustancia para universidades",
+    "section": "",
+    "text": "Vinculación académica · propuesta de aplicación\n\n\n\n\nPensamos Sustancia como un complemento de la formación estadística universitaria. El dominio piloto es Estadística I, con proyección hacia ciencias sociales, ciencias de la salud e ingeniería."
+  },
+  {
+    "objectID": "universidades.html#alineación-curricular",
+    "href": "universidades.html#alineación-curricular",
+    "title": "Sustancia para universidades",
+    "section": "Alineación curricular",
+    "text": "Alineación curricular\nEl modelo se organiza alrededor de contenidos y objetivos explícitos del curso, no de una secuencia arbitraria inventada por una IA. Para la primera etapa de diseño, tomamos como referencia un programa de Estadística I de 2022: conceptos básicos, variables categóricas, variables cuantitativas, distribución normal e inferencia introductoria. Cada incorporación institucional requerirá revisar su programa específico.\n\nI · ConceptosII · Variables categóricasIII · Variables cuantitativasIV · Curva normalV · Inferencia básica"
+  },
+  {
+    "objectID": "universidades.html#tres-experiencias-complementarias",
+    "href": "universidades.html#tres-experiencias-complementarias",
+    "title": "Sustancia para universidades",
+    "section": "Tres experiencias complementarias",
+    "text": "Tres experiencias complementarias\n\n\nESTUDIANTE\n\nAutoconocimiento\n\n\nExplorar fortalezas, dificultades y avances por diferentes operaciones y conceptos. El perfil ayuda a orientar el estudio sin reducir a la persona a una sola nota.\n\n\n\nDOCENTE\n\nAcompañamiento\n\n\nVisualizar patrones de error y progreso de su curso, identificar contenidos que requieren refuerzo y revisar actividades propuestas para el banco.\n\n\n\nINSTITUCIÓN\n\nMejora continua\n\n\nObservar indicadores agregados por cohorte, curso o carrera para investigar trayectorias de aprendizaje y orientar el apoyo formativo."
+  },
+  {
+    "objectID": "universidades.html#qué-aportaría-al-curso",
+    "href": "universidades.html#qué-aportaría-al-curso",
+    "title": "Sustancia para universidades",
+    "section": "¿Qué aportaría al curso?",
+    "text": "¿Qué aportaría al curso?\n\nDiagnóstico: una aproximación inicial al bagaje matemático-estadístico de cada estudiante.\nPráctica situada: actividades con datos y problemas relevantes para distintos campos profesionales.\nAprendizaje recursivo: respuesta inicial, retroalimentación, revisión y nueva evidencia.\nTrazabilidad curricular: ejercicios asociados con conceptos, operaciones y fuentes revisadas.\nInvestigación educativa: posibilidad de estudiar la evolución del razonamiento estadístico mediante evidencia longitudinal.\n\nEstas son capacidades de diseño. No deben interpretarse como funcionalidades ya desplegadas ni como resultados de impacto comprobados."
+  },
+  {
+    "objectID": "universidades.html#supervisión-y-datos",
+    "href": "universidades.html#supervisión-y-datos",
+    "title": "Sustancia para universidades",
+    "section": "Supervisión y datos",
+    "text": "Supervisión y datos\nProponemos una separación de accesos por responsabilidad. El estudiante accedería a su propio perfil; el docente, a información pertinente para acompañar su curso; y la institución, a indicadores agregados. Los permisos, las bases legales, la minimización de datos, la retención y las salvaguardas deben definirse antes de un despliegue institucional.\nLa IA puede asistir en la construcción y revisión de materiales, pero las decisiones curriculares y la aprobación de actividades permanecen bajo responsabilidad humana."
+  },
+  {
+    "objectID": "universidades.html#estado-y-colaboración",
+    "href": "universidades.html#estado-y-colaboración",
+    "title": "Sustancia para universidades",
+    "section": "Estado y colaboración",
+    "text": "Estado y colaboración\nSustancia se encuentra en desarrollo e investigación. Buscamos avanzar desde el prototipo existente hacia un piloto capaz de evaluar tanto su funcionamiento técnico como la pertinencia pedagógica de la experiencia.\nRevisar el proyecto y su equipo → · Conocer el recorrido del estudiante →"
+  },
+  {
+    "objectID": "como-funciona.html",
+    "href": "como-funciona.html",
+    "title": "Cómo funciona",
+    "section": "",
+    "text": "Experiencia de aprendizaje · arquitectura proyectada\n\n\n\n\nSustancia busca reconocer desde dónde comienza cada estudiante, proponer desafíos pertinentes y convertir la retroalimentación en una nueva oportunidad de pensar. Esta página muestra la experiencia prevista; no todas sus etapas están implementadas en el piloto actual."
+  },
+  {
+    "objectID": "como-funciona.html#el-recorrido-del-estudiante",
+    "href": "como-funciona.html#el-recorrido-del-estudiante",
+    "title": "Cómo funciona",
+    "section": "El recorrido del estudiante",
+    "text": "El recorrido del estudiante\n\n\n01\n\n\nDiagnóstico de entrada\n\n\nActividades breves exploran conocimientos previos, familiaridad con conceptos estadísticos y diferentes formas de razonar. No buscamos etiquetar a una persona, sino comprender sus condiciones de partida.\n\n\n\n\n02\n\n\nPrimer perfil de maestría\n\n\nSe estima un perfil inicial por conceptos, operaciones y profundidad interpretativa. Lo que todavía no se ha observado permanece como información desconocida, no como una incapacidad.\n\n\n\n\n03\n\n\nComienza el juego\n\n\nEl sistema presenta un desafío del curso: leer una tabla, calcular una medida, comparar resultados, interpretar un dato o discutir sus límites.\n\n\n\n\n04\n\n\nProducción propia\n\n\nEl estudiante elabora una respuesta. Según la actividad, puede escribir una interpretación, completar una afirmación, justificar una comparación o resolver un cálculo.\n\n\n\n\n05\n\n\nRetroalimentación y conversación epistemológica\n\n\nEl sistema señala una dificultad y ofrece preguntas que invitan a contrastar, reconsiderar o ampliar el argumento. La IA no debería actuar como un oráculo que entrega de inmediato la interpretación final.\n\n\n\n\n06\n\n\nRevisión y nueva evidencia\n\n\nLa respuesta revisada permite observar qué cambió en el razonamiento: si se corrigió un error, si se incorporó nueva evidencia y si se logró transferir el concepto.\n\n\n\n\n07\n\n\nPróximo desafío\n\n\nEl perfil se actualiza con las nuevas evidencias y orienta la siguiente actividad mediante criterios pedagógicos. La trayectoria puede reforzar, profundizar o explorar otro contexto."
+  },
+  {
+    "objectID": "como-funciona.html#una-revisión-no-solo-otra-respuesta",
+    "href": "como-funciona.html#una-revisión-no-solo-otra-respuesta",
+    "title": "Cómo funciona",
+    "section": "Una revisión, no solo otra respuesta",
+    "text": "Una revisión, no solo otra respuesta\n\n\nEJEMPLO ILUSTRATIVO · MEDIA Y VALORES EXTREMOS\n\n\nActividad. En una distribución de ingresos, la media es muy superior a la mediana. ¿Qué podría explicar esa diferencia?\n\n\nPrimera respuesta. La media es mayor porque la mayoría gana esa cantidad.\n\n\nPregunta orientadora. ¿La media representa necesariamente el ingreso de la mayoría? ¿Qué pasaría si unas pocas personas tuvieran ingresos excepcionalmente altos?\n\n\nRespuesta revisada. La media podría aumentar por pocos ingresos muy altos; no puedo afirmar que la mayoría recibe ese monto.\n\n\nEl sistema puede registrar las dos producciones, la retroalimentación y el cambio observado, sin confundir una revisión puntual con dominio definitivo.\n\n\nLas conversaciones epistemológicas pueden partir de una fuente, identificar un problema, solicitar una posición, exigir contraste, promover transferencia y terminar en una aplicación. Es una caja de herramientas pedagógicas, no un cuestionario rígido."
+  },
+  {
+    "objectID": "como-funciona.html#qué-cambia-en-el-perfil",
+    "href": "como-funciona.html#qué-cambia-en-el-perfil",
+    "title": "Cómo funciona",
+    "section": "¿Qué cambia en el perfil?",
+    "text": "¿Qué cambia en el perfil?\n\n\nEl vector de maestría no es una nota única. Reúne evidencias de lo que la persona sabe, puede hacer y necesita seguir practicando.\n\n\nConceptosOperacionesProfundidad N1–N4Errores recurrentesPrerrequisitosTrayectoria y revisión\n\n\nLos indicadores requieren calibración y validación antes de utilizarse para tomar decisiones educativas reales."
+  },
+  {
+    "objectID": "como-funciona.html#del-acervo-estadístico-a-las-actividades",
+    "href": "como-funciona.html#del-acervo-estadístico-a-las-actividades",
+    "title": "Cómo funciona",
+    "section": "Del acervo estadístico a las actividades",
+    "text": "Del acervo estadístico a las actividades\nEl equipo construirá un acervo de conocimiento estadístico a partir de programas de asignatura, manuales, artículos y otros recursos cuyo uso esté autorizado. Los agentes especializados apoyarán la extracción de conceptos, ejemplos, operaciones y ejercicios con su referencia de origen. Ningún texto extraído se incorpora automáticamente como actividad validada: el equipo deberá revisar la exactitud estadística, la pertinencia curricular y los derechos de uso antes de incluirlo en el banco.\nEste proceso alimentará el modelo de dominio y las actividades que luego podrá seleccionar el motor pedagógico. El modelo adaptativo y el repositorio curricular aún están en desarrollo; no deben confundirse con capacidades plenamente operativas del prototipo."
+  },
+  {
+    "objectID": "como-funciona.html#quién-hace-qué",
+    "href": "como-funciona.html#quién-hace-qué",
+    "title": "Cómo funciona",
+    "section": "¿Quién hace qué?",
+    "text": "¿Quién hace qué?\n\n\n\n\n\n\n\nActor\nResponsabilidad\n\n\n\n\nEquipo y docentes\nDefinen el currículo, validan actividades y supervisan criterios pedagógicos.\n\n\nAgentes de apoyo\nRecuperan material autorizado, proponen ejercicios y apoyan evaluaciones con reglas y rúbricas.\n\n\nMotor pedagógico\nSelecciona actividades mediante criterios explícitos y el perfil estimado del estudiante.\n\n\nEstudiante\nResponde, contrasta, revisa y construye su propio razonamiento.\n\n\n\nImportante: los textos y programas del curso se incorporan y revisan desde el equipo académico. El estudiante no tiene que subir documentos para jugar."
+  },
+  {
+    "objectID": "como-funciona.html#lo-que-existe-y-lo-que-estamos-diseñando",
+    "href": "como-funciona.html#lo-que-existe-y-lo-que-estamos-diseñando",
+    "title": "Cómo funciona",
+    "section": "Lo que existe y lo que estamos diseñando",
+    "text": "Lo que existe y lo que estamos diseñando\n\n\n\n\n\n\n\nComponente\nSituación\n\n\n\n\nPropuesta pedagógica, niveles N1–N4 y taxonomía inicial\nDocumentados en el proyecto\n\n\nPrototipo de juego con actividades interpretativas\nDisponible para explorar, sujeto a disponibilidad del servicio\n\n\nDiagnóstico inicial y vector multidimensional operativo\nEn diseño y desarrollo\n\n\nConversaciones con revisión sistemática y selección adaptativa\nEn desarrollo\n\n\nBanco curricular asistido por agentes y paneles de seguimiento\nProyectados\n\n\n\nExplorar el prototipo actual → · Conocer el modelo pedagógico →"
+  },
+  {
+    "objectID": "piloto.html",
+    "href": "piloto.html",
+    "title": "Explora el prototipo",
+    "section": "",
+    "text": "Versión experimental\n\n\nPrueba el prototipo actual\n\nEsta experiencia permite explorar la interpretación de resultados estadísticos, la respuesta escrita y la retroalimentación formativa. El diagnóstico adaptativo, el vector de maestría longitudinal y los paneles institucionales forman parte de la siguiente etapa de desarrollo.\n\n\n\nEl siguiente espacio carga una aplicación externa desarrollada en Shiny. Su disponibilidad depende del servicio de alojamiento. No ingreses datos personales ni información académica sensible en esta versión experimental.\n\n\n\nSi no carga el prototipo, ábrelo en una pestaña nueva ↗\nConocer el recorrido adaptativo proyectado →"
+  },
+  {
     "objectID": "pedagogia.html",
     "href": "pedagogia.html",
     "title": "Modelo pedagógico",
@@ -294,102 +574,123 @@
     "text": "Referencias\n\nCurcio, F. (1987). Comprehension of mathematical relationships expressed in graphs. Journal for Research in Mathematics Education, 18(5).\nShaughnessy, J. M. (2007). Research on statistics learning and reasoning. En Second Handbook of Research on Mathematics Teaching and Learning.\nGarfield, J. y Ben-Zvi, D. (2008). Developing Students’ Statistical Reasoning. Springer.\nBourdieu, P. (1987 [1979]). Los tres estados del capital cultural.\nSimondon, G. (2007 [1958]). El modo de existencia de los objetos técnicos. Prometeo."
   },
   {
-    "objectID": "piloto.html",
-    "href": "piloto.html",
-    "title": "Explora el prototipo",
+    "objectID": "eu/piloto.html",
+    "href": "eu/piloto.html",
+    "title": "Aztertu prototipoa",
     "section": "",
-    "text": "Versión experimental\n\n\nPrueba el prototipo actual\n\nEsta experiencia permite explorar la interpretación de resultados estadísticos, la respuesta escrita y la retroalimentación formativa. El diagnóstico adaptativo, el vector de maestría longitudinal y los paneles institucionales forman parte de la siguiente etapa de desarrollo.\n\n\n\nEl siguiente espacio carga una aplicación externa desarrollada en Shiny. Su disponibilidad depende del servicio de alojamiento. No ingreses datos personales ni información académica sensible en esta versión experimental.\n\n\n\nSi no carga el prototipo, ábrelo en una pestaña nueva ↗\nConocer el recorrido adaptativo proyectado →"
+    "text": "Bertsio esperimentala\n\n\nProbatu egungo prototipoa\n\nEsperientzia honek emaitza estatistikoak interpretatzea, erantzunak idaztea eta atzeraelikadura formatiboa jasotzea ahalbidetzen du. Diagnostiko egokitzailea, epe luzeko gaitasun-profila eta erakundeentzako panelak hurrengo garapen-fasekoak dira.\n\n\n\nJarraian agertzen den aplikazioa R/Shiny erabiliz garatu da eta kanpoko zerbitzari batean dago; haren erabilgarritasuna ostatu-zerbitzuaren araberakoa da. Jokoaren egungo interfazea gaztelaniaz dago; oraindik ez dago euskarara itzulita. Ez sartu datu pertsonalik edo informazio akademiko sentikorrik bertsio esperimental honetan.\n\n\n\nAplikazioa kargatzen ez bada, ireki beste fitxa batean ↗\nEzagutu proposatutako ikaskuntza-ibilbide egokitzailea →"
   },
   {
-    "objectID": "como-funciona.html",
-    "href": "como-funciona.html",
-    "title": "Cómo funciona",
+    "objectID": "eu/pedagogia.html",
+    "href": "eu/pedagogia.html",
+    "title": "Eredu pedagogikoa",
     "section": "",
-    "text": "Experiencia de aprendizaje · arquitectura proyectada\n\n\n\n\nSustancia busca reconocer desde dónde comienza cada estudiante, proponer desafíos pertinentes y convertir la retroalimentación en una nueva oportunidad de pensar. Esta página muestra la experiencia prevista; no todas sus etapas están implementadas en el piloto actual."
+    "text": "Arkitektura pedagogikoa · garatzen ari den diseinua\n\n\n\n\nErantzun bat zuzena ala okerra den jakitea ez da nahikoa. Sustanciak ulertu nahi du ikasleak zer kontzeptu erabiltzen dituen, zer eragiketa estatistiko egin ditzakeen, nola interpretatzen dituen emaitzak eta zer berrikus dezakeen atzeraelikadura jaso ondoren."
   },
   {
-    "objectID": "como-funciona.html#el-recorrido-del-estudiante",
-    "href": "como-funciona.html#el-recorrido-del-estudiante",
-    "title": "Cómo funciona",
-    "section": "El recorrido del estudiante",
-    "text": "El recorrido del estudiante\n\n\n01\n\n\nDiagnóstico de entrada\n\n\nActividades breves exploran conocimientos previos, familiaridad con conceptos estadísticos y diferentes formas de razonar. No buscamos etiquetar a una persona, sino comprender sus condiciones de partida.\n\n\n\n\n02\n\n\nPrimer perfil de maestría\n\n\nSe estima un perfil inicial por conceptos, operaciones y profundidad interpretativa. Lo que todavía no se ha observado permanece como información desconocida, no como una incapacidad.\n\n\n\n\n03\n\n\nComienza el juego\n\n\nEl sistema presenta un desafío del curso: leer una tabla, calcular una medida, comparar resultados, interpretar un dato o discutir sus límites.\n\n\n\n\n04\n\n\nProducción propia\n\n\nEl estudiante elabora una respuesta. Según la actividad, puede escribir una interpretación, completar una afirmación, justificar una comparación o resolver un cálculo.\n\n\n\n\n05\n\n\nRetroalimentación y conversación epistemológica\n\n\nEl sistema señala una dificultad y ofrece preguntas que invitan a contrastar, reconsiderar o ampliar el argumento. La IA no debería actuar como un oráculo que entrega de inmediato la interpretación final.\n\n\n\n\n06\n\n\nRevisión y nueva evidencia\n\n\nLa respuesta revisada permite observar qué cambió en el razonamiento: si se corrigió un error, si se incorporó nueva evidencia y si se logró transferir el concepto.\n\n\n\n\n07\n\n\nPróximo desafío\n\n\nEl perfil se actualiza con las nuevas evidencias y orienta la siguiente actividad mediante criterios pedagógicos. La trayectoria puede reforzar, profundizar o explorar otro contexto."
+    "objectID": "eu/pedagogia.html#gaitasun-profila",
+    "href": "eu/pedagogia.html#gaitasun-profila",
+    "title": "Eredu pedagogikoa",
+    "section": "Gaitasun-profila",
+    "text": "Gaitasun-profila\nIkasle batek batezbestekoa zuzen kalkula dezake, baina haren esanahia azaltzeko zailtasunak izan. Beste batek banaketa bat ongi interpreta dezake, baina desbideratze estandarra kalkulatzeko laguntza behar. Nota bakar batek alde horiek ezkutatuko lituzke.\nHorregatik, dimentsio anitzeko gaitasun-profila proposatzen dugu: trebetasun zehatzen ebidentzietan oinarritutako estimazio ebolutiboa. Ez da nota bat, ezta diagnostiko psikologiko bat ere.\n\n  \n    ESPLORATZAILE INTERAKTIBOA · DATU SIMULATUAKProfila ez da nota batAlderatu bi ikasle fikzioren profilak eta haien bilakaerako bi une hipotetiko.\n    \n      A profila\n      B profila\n    \n  \n  \n    Abiapuntua (t0)\n    Praktikaren ondoren (t2 hipotetikoa)\n  \n  \n    \n    \n      A profila · kalkulu sendoagoa\n      Prozeduretan trebea, baina testuinguruko interpretazioa eta transferentzia landu behar ditu.\n      \n      Hurrengo erronka hipotetikoa: testuinguruan kokatu eta transferitu.\n    \n  \n  Simulazioa, ez neurketa: every value and change is fictional. Puntuazioak ez dira kalibratutako ebaluazioa, eta ez dute frogatzen atzeraelikadurak automatikoki gaitasuna hobetzen duenik.\n\n\nAztertu dimentsio bakoitza\nAukeratu dimentsio bat, zer deskribatzen duen, adibide bat eta ebaluatzeko zer ebidentzia behar den ikusteko. Dimentsioak elkarri lotuta daude, baina ezin dute elkar ordezkatu.\n\n  \n    01Kontzeptuak\n    02Eragiketak\n    03N1–N4\n    04Akatsak\n    05Aurrebaldintzak\n    06Ikaskuntza-ibilbidea\n  \n  \n    Kontzeptu estatistikoakAldagaiei, neurriei, banaketei, laginketari eta probabilitateari buruzko ezagutza.\n  \n\nSistemak estimatutako gaitasuna, eskuragarri dagoen ebidentzia eta oraindik behatu gabeko informazioa bereizi behar ditu. Balio bat falta izatea ez da zero puntu izatea edo ahulezia frogatua erakustea."
   },
   {
-    "objectID": "como-funciona.html#una-revisión-no-solo-otra-respuesta",
-    "href": "como-funciona.html#una-revisión-no-solo-otra-respuesta",
-    "title": "Cómo funciona",
-    "section": "Una revisión, no solo otra respuesta",
-    "text": "Una revisión, no solo otra respuesta\n\n\nEJEMPLO ILUSTRATIVO · MEDIA Y VALORES EXTREMOS\n\n\nActividad. En una distribución de ingresos, la media es muy superior a la mediana. ¿Qué podría explicar esa diferencia?\n\n\nPrimera respuesta. La media es mayor porque la mayoría gana esa cantidad.\n\n\nPregunta orientadora. ¿La media representa necesariamente el ingreso de la mayoría? ¿Qué pasaría si unas pocas personas tuvieran ingresos excepcionalmente altos?\n\n\nRespuesta revisada. La media podría aumentar por pocos ingresos muy altos; no puedo afirmar que la mayoría recibe ese monto.\n\n\nEl sistema puede registrar las dos producciones, la retroalimentación y el cambio observado, sin confundir una revisión puntual con dominio definitivo.\n\n\nLas conversaciones epistemológicas pueden partir de una fuente, identificar un problema, solicitar una posición, exigir contraste, promover transferencia y terminar en una aplicación. Es una caja de herramientas pedagógicas, no un cuestionario rígido."
+    "objectID": "eu/pedagogia.html#eragiketa-estatistikoen-laborategia",
+    "href": "eu/pedagogia.html#eragiketa-estatistikoen-laborategia",
+    "title": "Eredu pedagogikoa",
+    "section": "Eragiketa estatistikoen laborategia",
+    "text": "Eragiketa estatistikoen laborategia\nEstatistika ez da trebetasun bakarra. Ikaskuntza-jarduera berean uztar daitezkeen zortzi eragiketa-multzo proposatzen ditugu.\n\n\n\n\n\n\n\nEragiketa\nZer egiten du ikasleak?\n\n\n\n\nIdentifikatu\nAldagaiak, analisi-unitateak, populazioak eta laginak identifikatu.\n\n\nDeskribatu\nDatuen banaketa edo eredu bat ezaugarritu.\n\n\nKalkulatu\nMetodo egokiekin neurriak eta emaitzak lortu.\n\n\nAlderatu\nTaldeak, neurriak eta adierazleak konparatu.\n\n\nInterpretatu\nEmaitza estatistiko batek zer esan nahi duen azaldu.\n\n\nTestuinguruan kokatu\nEmaitzak aztertutako fenomenoarekin eta haren testuinguruarekin lotu.\n\n\nKritikatu\nAurresuposizioak, mugak eta azalpen alternatiboak aztertu.\n\n\nTransferitu\nIkasitako printzipioa beste egoera batean aplikatu.\n\n\n\nPentsa batezbestekoan: hura kalkulatzea zeregin bakarra da. Zer adierazten duen, noiz izan daitekeen engainagarria, medianatik zertan bereizten den edo muturreko balioak kenduta zer gertatzen den ere galde dezakegu. Eragiketok ez dira hierarkia zurrun edo kategoria baztertzaileak."
   },
   {
-    "objectID": "como-funciona.html#qué-cambia-en-el-perfil",
-    "href": "como-funciona.html#qué-cambia-en-el-perfil",
-    "title": "Cómo funciona",
-    "section": "¿Qué cambia en el perfil?",
-    "text": "¿Qué cambia en el perfil?\n\n\nEl vector de maestría no es una nota única. Reúne evidencias de lo que la persona sabe, puede hacer y necesita seguir practicando.\n\n\nConceptosOperacionesProfundidad N1–N4Errores recurrentesPrerrequisitosTrayectoria y revisión\n\n\nLos indicadores requieren calibración y validación antes de utilizarse para tomar decisiones educativas reales."
+    "objectID": "eu/pedagogia.html#interpretazioaren-sakontasuna-n1n4",
+    "href": "eu/pedagogia.html#interpretazioaren-sakontasuna-n1n4",
+    "title": "Eredu pedagogikoa",
+    "section": "Interpretazioaren sakontasuna: N1–N4",
+    "text": "Interpretazioaren sakontasuna: N1–N4\nJatorrizko N1–N4 proposamena Sustanciaren parte da oraindik, baina gaitasun-profilaren dimentsio bat besterik ez da.\n\n\n\n\n\n\n\nMaila\nGaldera gidaria\n\n\n\n\nN1 · Irakurketa teknikoa\nZer ageri da datuetan, taulan edo grafikoan?\n\n\nN2 · Interpretazio estatistikoa\nZer erlazio, magnitude edo alde adierazten da?\n\n\nN3 · Interpretazio substantiboa\nZer esan nahi du horrek aztertutako fenomenorako?\n\n\nN4 · Irakurketa kritiko eta gogoetatsua\nZer aurresuposizio eta mugak baldintzatzen dute ondorioa?\n\n\n\nMaila horiek datu-irudikapenen irakurketari eta arrazoibide estatistikoari buruzko ikerketetan oinarritzen dira (Curcio, Shaughnessy, Garfield eta Ben-Zvi). Sustanciaren eskala zehatzak baliozkotzea behar du oraindik; ez da unibertsalki baliozkotutako neurketa. Egungo jokoaren puntuak ez dira gaitasun-portzentajeak."
   },
   {
-    "objectID": "como-funciona.html#del-acervo-estadístico-a-las-actividades",
-    "href": "como-funciona.html#del-acervo-estadístico-a-las-actividades",
-    "title": "Cómo funciona",
-    "section": "Del acervo estadístico a las actividades",
-    "text": "Del acervo estadístico a las actividades\nEl equipo construirá un acervo de conocimiento estadístico a partir de programas de asignatura, manuales, artículos y otros recursos cuyo uso esté autorizado. Los agentes especializados apoyarán la extracción de conceptos, ejemplos, operaciones y ejercicios con su referencia de origen. Ningún texto extraído se incorpora automáticamente como actividad validada: el equipo deberá revisar la exactitud estadística, la pertinencia curricular y los derechos de uso antes de incluirlo en el banco.\nEste proceso alimentará el modelo de dominio y las actividades que luego podrá seleccionar el motor pedagógico. El modelo adaptativo y el repositorio curricular aún están en desarrollo; no deben confundirse con capacidades plenamente operativas del prototipo."
+    "objectID": "eu/pedagogia.html#ikastea-berrikustea-ere-bada",
+    "href": "eu/pedagogia.html#ikastea-berrikustea-ere-bada",
+    "title": "Eredu pedagogikoa",
+    "section": "Ikastea berrikustea ere bada",
+    "text": "Ikastea berrikustea ere bada\nAtzeraelikaduraren zikloa argiago ikusten da ekintzan. Aukeratu testuinguru bat eta jarraitu erronkari, hasierako erantzunari, galdera gidariari, berrikuspenari eta ebidentzia berriari.\n\n  AZTERTU ATZERAELIKADURAREN ZIKLOA1 / 5 · adibide simulatua\n  \n    Diru-sarrerak\n    Osasuna\n    Inkestak\n    Ingeniaritza\n  \n  \n    1. Erronka\n    2. Erantzuna\n    3. Atzeraelikadura\n    4. Berrikuspena\n    5. Ebidentzia\n  \n  \n    Ikaskuntza-erronka\n    Diru-sarrerak eta muturreko balioak\n    Udalerri batean, batez besteko diru-sarrera mediana baino askoz handiagoa da. Zer esan nahi du horrek?\n    Ikusi hurrengo urratsa →\n  \n  Erantzun, galdera eta behaketa horiek eredu pedagogikoa irudikatzen dute. Ez dira ikasleen benetako elkarrizketak.\n\n\nElkarrizketa epistemologikoak\nIturriak eta irudikapen estatistikoak elkarrizketarako material bihur daitezke. Erantzunak eman beharrean, sistemak ikasleari bere baieztapenak aztertzeko eskatzen dio.\n\n  Iturria eta arazoaZer adierazten du testuak edo grafikoak?Identifikatu baieztapena, iturria eta jorratzen duen arazoa. Talde akademikoak jardueretako materialak berrikusten ditu.\n  JarreraZein da zure interpretazioa?Ikasleek jarrera bat hartu eta, beren hitzekin, zergatik iruditzen zaien arrazoizkoa azaltzen dute.\n  KontrasteaZer ebidentziak alda lezake zure iritzia?Kontraadibide batek, neurketaren desberdintasunak, ahaztutako aurresuposizio batek edo muga batek hasierako azalpena zalantzan jartzen du.\n  TransferentziaPrintzipioak balio al du beste testuinguru batean?Ikasleek kontzeptua osasunean, inkestetan, industria-ekoizpenean edo gizarte-adierazleetan aztertzen dute.\n  Aplikazioa eta berrikuspenaNola idatziko zenuke berriro zure erantzuna?Ikasleak beste interpretazio bat sortzen du. Sistemak aldaketak, iraunkorrak diren akatsak eta hurrengo urratsak jaso ditzake.\n\nIkasleek atzeraelikadura nola erabiltzen duten ikus daitekeen berrikuspenaren kalitate gisa iker daiteke. Ez dugu saiakera bakarretik frustrazioa, erresilientzia edo ezaugarri psikologikorik ondorioztatzen."
   },
   {
-    "objectID": "como-funciona.html#quién-hace-qué",
-    "href": "como-funciona.html#quién-hace-qué",
-    "title": "Cómo funciona",
-    "section": "¿Quién hace qué?",
-    "text": "¿Quién hace qué?\n\n\n\n\n\n\n\nActor\nResponsabilidad\n\n\n\n\nEquipo y docentes\nDefinen el currículo, validan actividades y supervisan criterios pedagógicos.\n\n\nAgentes de apoyo\nRecuperan material autorizado, proponen ejercicios y apoyan evaluaciones con reglas y rúbricas.\n\n\nMotor pedagógico\nSelecciona actividades mediante criterios explícitos y el perfil estimado del estudiante.\n\n\nEstudiante\nResponde, contrasta, revisa y construye su propio razonamiento.\n\n\n\nImportante: los textos y programas del curso se incorporan y revisan desde el equipo académico. El estudiante no tiene que subir documentos para jugar."
+    "objectID": "eu/pedagogia.html#akatsak-ikasteko-aukera-gisa",
+    "href": "eu/pedagogia.html#akatsak-ikasteko-aukera-gisa",
+    "title": "Eredu pedagogikoa",
+    "section": "Akatsak ikasteko aukera gisa",
+    "text": "Akatsak ikasteko aukera gisa\nAkats batek hurrengo galdera bidera dezake, puntuazioa murriztu ordez. Hasierako prototipoaren sailkapenak kausalitatearen inferentzia justifikatu gabea, orokortze gehiegizkoa, falazia ekologikoa eta kategorien reifikazioa jasotzen ditu. Oinarrizko estatistikan beste nahaste batzuk ere ager daitezke: maiztasunak eta portzentajeak, batezbestekoa eta mediana, edo populazioaren parametroak eta laginaren estatistikoak. Akatsak benetako gaitasun-profilarekin lotu aurretik sailkapen bateratua behar da."
   },
   {
-    "objectID": "como-funciona.html#lo-que-existe-y-lo-que-estamos-diseñando",
-    "href": "como-funciona.html#lo-que-existe-y-lo-que-estamos-diseñando",
-    "title": "Cómo funciona",
-    "section": "Lo que existe y lo que estamos diseñando",
-    "text": "Lo que existe y lo que estamos diseñando\n\n\n\n\n\n\n\nComponente\nSituación\n\n\n\n\nPropuesta pedagógica, niveles N1–N4 y taxonomía inicial\nDocumentados en el proyecto\n\n\nPrototipo de juego con actividades interpretativas\nDisponible para explorar, sujeto a disponibilidad del servicio\n\n\nDiagnóstico inicial y vector multidimensional operativo\nEn diseño y desarrollo\n\n\nConversaciones con revisión sistemática y selección adaptativa\nEn desarrollo\n\n\nBanco curricular asistido por agentes y paneles de seguimiento\nProyectados\n\n\n\nExplorar el prototipo actual → · Conocer el modelo pedagógico →"
+    "objectID": "eu/pedagogia.html#nola-hautatuko-litzateke-hurrengo-erronka",
+    "href": "eu/pedagogia.html#nola-hautatuko-litzateke-hurrengo-erronka",
+    "title": "Eredu pedagogikoa",
+    "section": "Nola hautatuko litzateke hurrengo erronka?",
+    "text": "Nola hautatuko litzateke hurrengo erronka?\nProposatutako arkitekturak ikasgaiaren curriculuma, baliozkotutako jarduera-bankua eta ikaslearen profileko ebidentzia uztartzen ditu. Irizpide esplizituekin funtzionatzen duen motor pedagogikoak gidatzen du aurrerapena. IAk bilaketan, ebaluazioan eta atzeraelikaduran lagundu dezake, baina ez du curriculuma bere kabuz erabakitzen, ezta irakasleen gainbegiratzea ordezten ere.\nTaldeak ikasmaterialak bildu eta berrikusten ditu. Ikasleek ez dute liburu edo PDF dokumenturik igo behar jolasteko."
   },
   {
-    "objectID": "universidades.html",
-    "href": "universidades.html",
-    "title": "Sustancia para universidades",
+    "objectID": "eu/pedagogia.html#erreferentziak",
+    "href": "eu/pedagogia.html#erreferentziak",
+    "title": "Eredu pedagogikoa",
+    "section": "Erreferentziak",
+    "text": "Erreferentziak\n\nCurcio, F. (1987). Comprehension of mathematical relationships expressed in graphs. Journal for Research in Mathematics Education, 18(5).\nShaughnessy, J. M. (2007). Research on statistics learning and reasoning. In Second Handbook of Research on Mathematics Teaching and Learning.\nGarfield, J., & Ben-Zvi, D. (2008). Developing Students’ Statistical Reasoning. Springer.\nBourdieu, P. (1987 [1979]). The three states of cultural capital.\nSimondon, G. (2007 [1958]). On the Mode of Existence of Technical Objects."
+  },
+  {
+    "objectID": "eu/index.html",
+    "href": "eu/index.html",
+    "title": "Sustancia",
     "section": "",
-    "text": "Vinculación académica · propuesta de aplicación\n\n\n\n\nPensamos Sustancia como un complemento de la formación estadística universitaria. El dominio piloto es Estadística I, con proyección hacia ciencias sociales, ciencias de la salud e ingeniería."
+    "text": "Saltatu sarrera →\nEstatistika ikastea datuekin pentsatzen ikastea da. Emaitza lortzea ez da nahikoa: haren esanahia ulertu, mugak eztabaidatu eta ikasitakoa beste egoera batzuetara eraman behar da."
   },
   {
-    "objectID": "universidades.html#alineación-curricular",
-    "href": "universidades.html#alineación-curricular",
-    "title": "Sustancia para universidades",
-    "section": "Alineación curricular",
-    "text": "Alineación curricular\nEl modelo se organiza alrededor de contenidos y objetivos explícitos del curso, no de una secuencia arbitraria inventada por una IA. Para la primera etapa de diseño, tomamos como referencia un programa de Estadística I de 2022: conceptos básicos, variables categóricas, variables cuantitativas, distribución normal e inferencia introductoria. Cada incorporación institucional requerirá revisar su programa específico.\n\nI · ConceptosII · Variables categóricasIII · Variables cuantitativasIV · Curva normalV · Inferencia básica"
+    "objectID": "eu/index.html#arquitecturas-aprendizaje",
+    "href": "eu/index.html#arquitecturas-aprendizaje",
+    "title": "Sustancia",
+    "section": "Aldea da nork egiten duen lan intelektuala",
+    "text": "Aldea da nork egiten duen lan intelektuala\nIAk erantzun bukatua eman dezake, edo norberak egindako interpretazioa berrikusten lagundu. Sustanciak bigarren bidea proposatzen du: sortu, atzeraelikadura jaso eta berriro pentsatu.\n\n  \n  \n    Erantzuna delegatuEmaitza ikaslearengandik kanpo pilatzen da; praktikatzeko aukera murrizten da.\n    Ikasitakoa barneratuIkasleak sortu, berrikusi eta aplikatzen du; ezagutza bere baitan garatzen da.\n  \n\nEzagutu bi arkitekturen oinarriak →"
   },
   {
-    "objectID": "universidades.html#tres-experiencias-complementarias",
-    "href": "universidades.html#tres-experiencias-complementarias",
-    "title": "Sustancia para universidades",
-    "section": "Tres experiencias complementarias",
-    "text": "Tres experiencias complementarias\n\n\nESTUDIANTE\n\nAutoconocimiento\n\n\nExplorar fortalezas, dificultades y avances por diferentes operaciones y conceptos. El perfil ayuda a orientar el estudio sin reducir a la persona a una sola nota.\n\n\n\nDOCENTE\n\nAcompañamiento\n\n\nVisualizar patrones de error y progreso de su curso, identificar contenidos que requieren refuerzo y revisar actividades propuestas para el banco.\n\n\n\nINSTITUCIÓN\n\nMejora continua\n\n\nObservar indicadores agregados por cohorte, curso o carrera para investigar trayectorias de aprendizaje y orientar el apoyo formativo."
+    "objectID": "eu/index.html#arrazoibide-estatistikoak-hainbat-dimentsio-ditu",
+    "href": "eu/index.html#arrazoibide-estatistikoak-hainbat-dimentsio-ditu",
+    "title": "Sustancia",
+    "section": "Arrazoibide estatistikoak hainbat dimentsio ditu",
+    "text": "Arrazoibide estatistikoak hainbat dimentsio ditu\nArrazoibide estatistikoa ez da trebetasun bakarra, eta ikaskuntza ez da denontzat ibilbide lineal bera. Kontzeptuak ulertzea, prozedurak erabiltzea, ebidentziak interpretatzea, ziurgabetasuna aztertzea eta argudioak berrikustea eskatzen du.\nN1–N4 interpretazioaren sakontasuna deskribatzen duen ardatz bat da, ez ikaskuntza osoaren lau mailako eskailera. Kalkulua zuzena izan daiteke baina interpretazioa ahula; edo interpretazioa zorrotza izan arren prozeduran laguntza behar izatea.\n\n\n01 · KONTZEPTUAK\n\nZer ulertzen duzu?\n\n\nAldagaiak, neurriak, grafikoak, banaketak eta kontzeptu estatistikoak.\n\n\n\n02 · ERAGIKETAK\n\nZer egin dezakezu?\n\n\nIdentifikatu, deskribatu, kalkulatu, alderatu, interpretatu, testuinguruan kokatu, kritikatu eta transferitu.\n\n\n\n03 · INTERPRETAZIOA\n\nZenbateraino sakontzen duzu?\n\n\nN1 irakurketa teknikoa; N2 interpretazio estatistikoa; N3 interpretazio substantiboa; N4 irakurketa kritikoa.\n\n\n\n04 · IBILBIDEA\n\nNola berrikusten eta garatzen duzu?\n\n\nHasierako erantzunak, atzeraelikadurak eta berrikuspenek ikaskuntzari buruzko ebidentzia berria eman dezakete.\n\n\n\nAztertu bi profil simulatu eredu pedagogikoan →"
   },
   {
-    "objectID": "universidades.html#qué-aportaría-al-curso",
-    "href": "universidades.html#qué-aportaría-al-curso",
-    "title": "Sustancia para universidades",
-    "section": "¿Qué aportaría al curso?",
-    "text": "¿Qué aportaría al curso?\n\nDiagnóstico: una aproximación inicial al bagaje matemático-estadístico de cada estudiante.\nPráctica situada: actividades con datos y problemas relevantes para distintos campos profesionales.\nAprendizaje recursivo: respuesta inicial, retroalimentación, revisión y nueva evidencia.\nTrazabilidad curricular: ejercicios asociados con conceptos, operaciones y fuentes revisadas.\nInvestigación educativa: posibilidad de estudiar la evolución del razonamiento estadístico mediante evidencia longitudinal.\n\nEstas son capacidades de diseño. No deben interpretarse como funcionalidades ya desplegadas ni como resultados de impacto comprobados."
+    "objectID": "eu/index.html#ikusi-aldea",
+    "href": "eu/index.html#ikusi-aldea",
+    "title": "Sustancia",
+    "section": "Ikusi aldea",
+    "text": "Ikusi aldea\nKonpara ditzagun interpretazioaren sakontasunaren bi adibide, erregresio-taula ilustratibo berarekin. Ez dute pertsona baten gaitasun osoa neurtzen, ezta nahitaezko N1 → N4 ibilbiderik adierazten ere.\n\n\nIrakaskuntzarako erregresio-adibidea, asmatutako zifrekin; ez dira ikerketaren estimazio egiaztatuak.\n\n\n\n\nAldagai azaltzailea\n\n\nβ\n\n\np\n\n\n\n\n\n\nErabilera konpultsiboa (IDA)\n\n\n.38\n\n\n&lt; .001\n\n\n\n\nGeneroa (emakumea)\n\n\n.24\n\n\n.002\n\n\n\n\nPantaila-denbora\n\n\n.05\n\n\n.41\n\n\n\n\n\n\n1. MAILA · IRAKURKETA TEKNIKOA\n\n«Erabilera konpultsiboa eta generoa estatistikoki esanguratsuak dira (p &lt; .05). Pantaila-denbora ez da esanguratsua».\n\n\nIrakurketa teknikoa: adierazitako esangura identifikatzen du, baina ez dio ikerketa-galderari erantzuten.\n\n\n\n3. MAILA · INTERPRETAZIO SUBSTANTIBOA\n\n«Eredu ilustratibo honetan, erabilera konpultsiboak lotura positiboa du narriadurarekin; pantaila-denboraren koefizienteak, aldiz, ez du esangura estatistikorik lortzen. Horrek pantailak nola erabiltzen diren ikertzera gonbidatzen gaitu, zenbat erabiltzen diren aztertzeaz gain; baina ez du kausalitatea frogatzen».\n\n\nInterpretazio substantiboa: emaitzak ikerketa-arazoarekin lotzen ditu eta ebidentziaren mugak aitortzen ditu.\n\n\n\n\nZer erakusten du alderaketak? Interpretazioaren sakontasuna, ez pertsonaren maila orokorra. Emaitza ez-esanguratsu batek ez du efekturik eza frogatzen; korrelazioak ez du kausalitatea ezartzen."
   },
   {
-    "objectID": "universidades.html#supervisión-y-datos",
-    "href": "universidades.html#supervisión-y-datos",
-    "title": "Sustancia para universidades",
-    "section": "Supervisión y datos",
-    "text": "Supervisión y datos\nProponemos una separación de accesos por responsabilidad. El estudiante accedería a su propio perfil; el docente, a información pertinente para acompañar su curso; y la institución, a indicadores agregados. Los permisos, las bases legales, la minimización de datos, la retención y las salvaguardas deben definirse antes de un despliegue institucional.\nLa IA puede asistir en la construcción y revisión de materiales, pero las decisiones curriculares y la aprobación de actividades permanecen bajo responsabilidad humana."
+    "objectID": "eu/index.html#erantzunetik-berrikuspenera",
+    "href": "eu/index.html#erantzunetik-berrikuspenera",
+    "title": "Sustancia",
+    "section": "Erantzunetik berrikuspenera",
+    "text": "Erantzunetik berrikuspenera\nAukeratu lau testuinguruetako bat eta aztertu ikaskuntza-zikloaren bost uneak. Sistemak ondorio bukatua eman beharrean galdera bat itzultzen duenean, erantzuna nola aldatzen den ikus dezakezu.\n\n  LABORATEGIA · LAU TESTUINGURU1 / 5 · adibide simulatua\n  \n    Diru-sarrerak\n    Osasuna\n    Inkestak\n    Ingeniaritza\n  \n  \n    1. Erronka\n    2. Erantzuna\n    3. Atzeraelikadura\n    4. Berrikuspena\n    5. Ebidentzia\n  \n  \n    Jokoaren erronka\n    Diru-sarrerak eta muturreko balioak\n    Udalerri batean, batez besteko diru-sarrera mediana baino askoz handiagoa da. Zer esan nahi du horrek?\n    Ikusi hurrengo urratsa →\n  \n  Adibide hipotetikoak dira; ez dira benetako elkarrizketak, eta ez dute eraginkortasuna frogatzen. Ikasleak sortzen du erantzuna, ez IAk."
   },
   {
-    "objectID": "universidades.html#estado-y-colaboración",
-    "href": "universidades.html#estado-y-colaboración",
-    "title": "Sustancia para universidades",
-    "section": "Estado y colaboración",
-    "text": "Estado y colaboración\nSustancia se encuentra en desarrollo e investigación. Buscamos avanzar desde el prototipo existente hacia un piloto capaz de evaluar tanto su funcionamiento técnico como la pertinencia pedagógica de la experiencia.\nRevisar el proyecto y su equipo → · Conocer el recorrido del estudiante →"
+    "objectID": "eu/index.html#nola-funtzionatuko-du",
+    "href": "eu/index.html#nola-funtzionatuko-du",
+    "title": "Sustancia",
+    "section": "Nola funtzionatuko du?",
+    "text": "Nola funtzionatuko du?\nProposatutako eredu egokitzaileak hasierako diagnostikoa, gaitasun-profila, curriculumari lotutako jarduerak eta berrikuspen gidatuaren zikloa uztartzen ditu. Ikasleak ez du dokumenturik igo behar: talde akademikoak aukeratu eta berrikusten ditu iturriak eta ariketak.\n\nJarraitu ikaslearen ibilbideari →Unibertsitateetarako aplikazioak →"
+  },
+  {
+    "objectID": "eu/index.html#oinarri-teorikoa",
+    "href": "eu/index.html#oinarri-teorikoa",
+    "title": "Sustancia",
+    "section": "Oinarri teorikoa",
+    "text": "Oinarri teorikoa\n\n  Proiektuaren ikuspegi epistemologikoak Gilbert Simondon du inspirazio-iturri: estatistika ikastea ez da teknikak soilik erabiltzea, baizik eta emaitzak sortzeko erabakiak, haien aurresuposizioak eta ondoriozta ezin dena ulertzea.\n  Zure nabigatzaileak ez du bideoa onartzen.\n\nPrototipoaren lehen datu-multzoa unibertsitateko lehen mailako ikasleen habitus teknologikoari eta osasun mentalari buruzko ikerketa enpiriko batetik dator (n = 276). Orain, proposamena beste diziplina batzuetako estatistika-materialetara zabaltzen ari da."
+  },
+  {
+    "objectID": "eu/index.html#proiektuaren-egoera",
+    "href": "eu/index.html#proiektuaren-egoera",
+    "title": "Sustancia",
+    "section": "Proiektuaren egoera",
+    "text": "Proiektuaren egoera\nProiektuaren osagai guztiak ez daude une berean erabilgarri. Etiketek erakusten dute zer dagoen gaur egun eta zer dagoen oraindik diseinuan.\n\n  ERABILGARRIShiny prototipoaInterpretazio-jarduerak eta hasierako ebaluazio formatiboa. Jokoaren interfazea gaztelaniaz dago.\n  DOKUMENTATUTAEredu pedagogikoaAkatsen sailkapena, N1–N4 eta oinarri teorikoa.\n  GARAPENEANGaitasun-profilaHasierako diagnostikoa eta ebidentzietan oinarritutako dimentsio anitzeko profila.\n  AURREIKUSITAEgokitzapena eta jarraipenaElkarrizketa errekurtsiboak, jardueren hautaketa eta irakasleentzako panelak.\n\nIrakurri oinarri teorikoak → · Aztertu eredu pedagogikoa →"
   },
   {
     "objectID": "fundamentacion.html",

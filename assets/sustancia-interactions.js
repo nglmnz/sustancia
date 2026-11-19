@@ -95,9 +95,9 @@
       panel.replaceChildren();
       var h = document.createElement("h3"); h.textContent = item.title;
       var p = document.createElement("p"); p.textContent = item.summary;
-      var strong = document.createElement("strong"); strong.textContent = isEnglish ? "Example" : "Ejemplo";
+      var strong = document.createElement("strong"); strong.textContent = isBasque ? "Adibidea" : (isEnglish ? "Example" : "Ejemplo");
       var example = document.createElement("p"); example.textContent = item.example;
-      var ev = document.createElement("p"); ev.className = "s3-dim-evidence"; ev.textContent = (isEnglish ? "Observable evidence: " : "Evidencia observable: ") + item.evidence;
+      var ev = document.createElement("p"); ev.className = "s3-dim-evidence"; ev.textContent = (isBasque ? "Beha daitekeen ebidentzia: " : isEnglish ? "Observable evidence: " : "Evidencia observable: ") + item.evidence;
       panel.append(h,p,strong,example,ev);
     }
     tabs.forEach(function (button) { button.addEventListener("click", function () { choose(button.getAttribute("data-s3-dim")); }); });
@@ -147,7 +147,7 @@
     var pts=values.map(function(v,i){return point(i,v).map(function(q){return q.toFixed(1)}).join(",");}).join(" ");
     svg.appendChild(svgNode("polygon",{points:pts,fill:"rgba(45,127,139,.23)",stroke:"#1f7180","stroke-width":"3","stroke-linejoin":"round"}));
     values.forEach(function(v,i){ var p=point(i,v);svg.appendChild(svgNode("circle",{cx:p[0],cy:p[1],r:4.5,fill:"#1f7180",stroke:"#fff","stroke-width":"1.5"}));});
-    svg.setAttribute("aria-label",NAMES.map(function(name,i){return name+" "+values[i]+(isEnglish?" out of 100":" de 100");}).join(", "));
+    svg.setAttribute("aria-label",NAMES.map(function(name,i){return name+" "+values[i]+(isBasque?" / 100":isEnglish?" out of 100":" de 100");}).join(", "));
   }
   function initMastery() {
     var root=document.querySelector("[data-s3-mastery]"); if(!root) return;
@@ -164,7 +164,7 @@
       var data=PROFILES[profile],values=data[moment];
       title.textContent=data.name;
       desc.textContent=data.intro;
-      next.textContent=(moment==="t0"?(isEnglish?"Suggested next challenge (hypothetical): ":"Siguiente desafío sugerido (hipotético): "):(isEnglish?"Illustrative learning trajectory: ":"Trayectoria ilustrativa: "))+data.next;
+      next.textContent=(moment==="t0"?(isBasque?"Proposatutako hurrengo erronka (hipotetikoa): ":isEnglish?"Suggested next challenge (hypothetical): ":"Siguiente desafío sugerido (hipotético): "):(isBasque?"Ikaskuntza-ibilbide ilustratiboa: ":isEnglish?"Illustrative learning trajectory: ":"Trayectoria ilustrativa: "))+data.next;
       drawRadar(svg,values);
       bars.replaceChildren();
       values.forEach(function(value,i){
@@ -227,6 +227,7 @@
 
   // Content is localized at the data layer. The interaction logic remains shared.
   var isEnglish = /\/en\/(?:[^/]+)?$/.test(window.location.pathname);
+  var isBasque = /\/eu\/(?:[^/]+)?$/.test(window.location.pathname);
   if (isEnglish) {
     DIMENSIONS = {
       conceptos:{title:"Statistical concepts",summary:"What does the learner know about variables, measures, distributions, sampling, and probability?",example:"Someone may understand the mean but confuse it with the median when outliers are present.",evidence:"Responses linked to each statistical concept. 'Not assessed' must not be treated as 'low mastery'."},
@@ -284,6 +285,108 @@
     ];
   }
 
+
+  if (isBasque) {
+    DIMENSIONS = {
+      conceptos:{
+        title:"Kontzeptu estatistikoak",
+        summary:"Zer daki ikasleak aldagaiei, neurriei, banaketei, laginketari eta probabilitateari buruz?",
+        example:"Batezbestekoa interpreta dezake, baina muturreko balioen aurrean medianarekin nahastu.",
+        evidence:"Kontzeptu bakoitzari lotutako ariketetako erantzunak. 'Ebaluatu gabe' ez da 'gaitasun txikia'."
+      },
+      operaciones:{
+        title:"Eragiketa estatistikoak",
+        summary:"Zer egin dezake ikasleak: identifikatu, deskribatu, kalkulatu, alderatu, interpretatu, testuinguruan kokatu, kritikatu edo transferitu?",
+        example:"Bi ikaslek proportzio bera ongi kalkulatzen dute, baina batek bakarrik azaltzen du haren esanahia osasun-testuinguruan.",
+        evidence:"Jarduera mota desberdinetan behatutako prozedurak eta justifikazioak."
+      },
+      profundidad:{
+        title:"Interpretazioaren sakontasuna: N1–N4",
+        summary:"N1: irakurketa teknikoa. N2: interpretazio estatistikoa. N3: interpretazio substantiboa. N4: aurresuposizioen eta mugen azterketa kritikoa.",
+        example:"N1 erantzun batek portzentajea identifikatzen du; N3 batek aztertutako fenomenoarekin lotzen du.",
+        evidence:"Jarduera bakoitzari lotutako errubrikak. Ardatz honek ez ditu gainerako dimentsioak ordezten."
+      },
+      errores:{
+        title:"Errepikatzen diren akatsak",
+        summary:"Ikasteko aukera berriak bideratzen dituzten gaizki-ulertuak, ez etiketa iraunkorrak.",
+        example:"Lotura estatistikoa kausalitatearekin nahastea edo zenbaketa absolutuak izendatzaileak aztertu gabe alderatzea.",
+        evidence:"Akats zehatzen erregistroa, testuingurua, errepikapena eta zuzenketa posiblea."
+      },
+      requisitos:{
+        title:"Aurrebaldintza kontzeptualak",
+        summary:"Beste galdera batzuei heltzeko behar den aurretiko ezagutza: portzentajeak interpretatzeko proportzioak eta erreferentzia-taldeak ulertu behar dira.",
+        example:"Eskualdeen tasak alderatu aurretik, izendatzaile bakoitzak zer populazio adierazten duen egiaztatu.",
+        evidence:"Curriculumaren mapa eta aurreko jarduna; loturak irakasleek berrikusten dituzte."
+      },
+      trayectoria:{
+        title:"Ikaskuntza-ibilbidea eta berrikusteko gaitasuna",
+        summary:"Hasierako erantzunen, atzeraelikaduraren eta berrikusitako erantzunen arteko aldaketak aztertzen ditu.",
+        example:"Ikasleak baztertutako aurresuposizio bat antzeman eta argudioa berridazten du, erantzun bukatua jaso gabe.",
+        evidence:"Saiakeren sekuentziak; berrikuspen bakar batek ez du gaitasun egonkorra edo erresilientzia neurtzen."
+      }
+    };
+    NAMES = ["Identifikatu","Kalkulatu","Alderatu","Interpretatu","Testuinguruan kokatu","Kritikatu","Transferitu"];
+    PROFILES = {
+      a:{
+        name:"A profila · kalkulu sendoagoa",
+        intro:"Prozeduretan eroso dabil, baina testuinguruko interpretazioa eta transferentzia garatu behar ditu.",
+        t0:[88,91,67,58,39,33,24],t2:[90,91,74,71,64,52,48],
+        next:"Testuinguruan kokatu eta transferitzea eskatzen duen jarduera bat probatu, kalkulu hutsa errepikatu ordez."
+      },
+      b:{
+        name:"B profila · interpretazio sendoagoa",
+        intro:"Testuinguruko arrazoibidea eta interpretazio kritikoa sendoagoak dira; kalkulu-prozedurek praktika gehiago behar dute.",
+        t0:[72,43,65,79,82,74,69],t2:[78,53,71,81,83,77,72],
+        next:"Kalkulua eta egiaztapen teknikoa landu, interpretazio-trebetasunak aprobetxatuz."
+      }
+    };
+    EXAMPLES = {
+      ingresos:{
+        category:"Gizarte-zientziak · joera zentrala",
+        name:"Diru-sarrerak eta muturreko balioak",
+        question:"Udalerri batean, batez besteko diru-sarrera mediana baino askoz handiagoa da. Zer esan nahi du horrek?",
+        initial:"Gehienek batez besteko diru-sarrera irabazten dute, batezbestekoak ohiko soldata erakusten duelako.",
+        feedback:"Batezbesteko handiak esan nahi al du gehienek kopuru hori irabazten dutela? Eta gutxi batzuek oso diru-sarrera handiak badituzte?",
+        revision:"Ez nahitaez. Muturreko balio gutxi batzuek batezbestekoa igo dezakete; medianak banaketaren erdigunea hobeto adieraz dezake.",
+        evidence:"Batezbestekoaren eta medianaren interpretazioa, muturreko balioen identifikazioa eta orokortze baten berrikuspena. Hurrengo erronka: printzipioa beste banaketa batean aplikatzea."
+      },
+      salud:{
+        category:"Osasuna · proportzioak",
+        name:"Maiztasunak eta izendatzaileak",
+        question:"A zentroan 80 pazientetik 20k sintomak dituzte; B zentroan, 200etik 20k. Behatutako proportzio bera al dute?",
+        initial:"Bai, bietan 20 pazientek dituzte sintomak.",
+        feedback:"Kopuru absolutuak ala proportzioak alderatzen ari zara? Zenbatekoa da zentro bakoitzeko paziente-kopurua?",
+        revision:"Ez. A zentroan 20/80 = %25 dira; B zentroan 20/200 = %10. Kopuru absolutuak berdinak dira, baina proportzioak ez.",
+        evidence:"Portzentajeen kalkulua eta interpretazioa, izendatzaile desberdinen alderaketa eta ondorio bat zuzentzeko gaitasuna."
+      },
+      encuestas:{
+        category:"Ikerketa-metodoak · laginketa",
+        name:"Orokortu al dezakegu?",
+        question:"Unibertsitate bateko 120 ikasleren borondatezko inkesta batek «Txileko gazteek hala pentsatzen dute» ondorioztatzen du. Egokia al da?",
+        initial:"Bai; 120 lagunek erantzun dutenez, inkestak Txileko gazteen iritzia islatzen du.",
+        feedback:"Nork izan du erantzuteko aukera? Lagina herrialde osoko gazteen adierazgarria dela frogatzen duen ebidentziarik badago?",
+        revision:"Ez dugu horretarako oinarririk. Laginaren hautaketa aztertu gabe ezin da talde honetatik harago orokortu; autohautaketak alborapena ekar dezake.",
+        evidence:"Populazioaren eta laginaren bereizketa, orokortzeen azterketa kritikoa eta adierazgarritasunari buruzko aurresuposizioen berrikuspena."
+      },
+      ingenieria:{
+        category:"Ingeniaritza · sakabanaketa",
+        name:"Batezbestekoa ez da nahikoa",
+        question:"Bi ekoizpen-lerrok 10 cm-ko batez besteko luzera duten piezak egiten dituzte. Lehenengoan 9,9–10,1 cm artean aldatzen da; bigarrenean 9–11 cm artean. Baliokideak al dira?",
+        initial:"Bai, biek 10 cm-ko batezbestekoa dute.",
+        feedback:"Nola bereizten da aldakortasuna? Nahikoa al da neurri zentrala ekoizpenaren koherentzia neurtzeko?",
+        revision:"Ez. Batezbestekoak berdinak izan arren, bigarren lerroak sakabanaketa askoz handiagoa du eta kalitate-tolerantziak ez bete ditzake.",
+        evidence:"Banaketen alderaketa, sakabanaketaren interpretazioa eta kontzeptu estatistiko baten aplikazioa kalitate-kontrolean."
+      }
+    };
+    STAGES = [
+      {key:"question",title:"01 · Erronka",role:"Jokoaren erronka"},
+      {key:"initial",title:"02 · Hasierako erantzuna",role:"Ikaslearen lehen erantzuna"},
+      {key:"feedback",title:"03 · Atzeraelikadura",role:"Sistemaren galdera gidaria"},
+      {key:"revision",title:"04 · Berrikuspena",role:"Ikaslearen erantzun berrikusia"},
+      {key:"evidence",title:"05 · Ebidentzia",role:"Sistemak beha dezakeena"}
+    ];
+  }
+
   function initScenarios() {
     document.querySelectorAll("[data-s3-examples]").forEach(function(root){
       var choices=Array.from(root.querySelectorAll("[data-s3-example]"));
@@ -299,7 +402,7 @@
         heading.textContent=e.name+" · "+e.category;
         role.textContent=s.role;
         text.textContent=e[s.key];
-        if(counter)counter.textContent=(stage+1)+(isEnglish?" of ":" de ")+STAGES.length+(isEnglish?" · simulated example":" · ejemplo simulado");
+        if(counter)counter.textContent=(stage+1)+(isBasque?" / ":isEnglish?" of ":" de ")+STAGES.length+(isBasque?" · adibide simulatua":isEnglish?" · simulated example":" · ejemplo simulado");
         choices.forEach(function(b){var active=b.getAttribute("data-s3-example")===scenario;b.classList.toggle("s3-selected",active);b.setAttribute("aria-pressed",String(active));});
         steps.forEach(function(b){var active=Number(b.getAttribute("data-s3-stage"))===stage;b.classList.toggle("s3-selected",active);b.setAttribute("aria-pressed",String(active));});
       }

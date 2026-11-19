@@ -127,8 +127,16 @@ ul.task-list li input[type="checkbox"] {
 </ul>
             <ul class="navbar-nav navbar-nav-scroll ms-auto">
   <li class="nav-item">
+    <a class="nav-link" href="./index.html"> 
+<span class="menu-text">Español</span></a>
+  </li>  
+  <li class="nav-item">
     <a class="nav-link" href="./en/index.html"> 
 <span class="menu-text">English</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="./eu/index.html"> 
+<span class="menu-text">Euskara</span></a>
   </li>  
 </ul>
           </div> <!-- /navcollapse -->
@@ -261,55 +269,73 @@ Observar indicadores agregados por cohorte, curso o carrera para investigar tray
 (function(){
   "use strict";
   var slugs=["index","fundamentacion","pedagogia","como-funciona","universidades","equipo","piloto"];
-  var englishLabels={
-    "fundamentacion":"Foundations",
-    "pedagogia":"Pedagogical model",
-    "como-funciona":"How it works",
-    "universidades":"Universities",
-    "equipo":"Team",
-    "piloto":"Prototype"
+  var labels={
+    es:{"fundamentacion":"Fundamentación","pedagogia":"Modelo pedagógico","como-funciona":"Cómo funciona","universidades":"Universidades","equipo":"Equipo","piloto":"Prototipo"},
+    en:{"fundamentacion":"Foundations","pedagogia":"Pedagogical model","como-funciona":"How it works","universidades":"Universities","equipo":"Team","piloto":"Prototype"},
+    eu:{"fundamentacion":"Oinarri teorikoak","pedagogia":"Eredu pedagogikoa","como-funciona":"Nola funtzionatzen du?","universidades":"Unibertsitateak","equipo":"Lantaldea","piloto":"Prototipoa"}
   };
+  var localeNames={es:"Español",en:"English",eu:"Euskara"};
   function init(){
     var path=window.location.pathname;
-    var inEnglish=/\/en\/(?:[^\/]+)?$/.test(path);
-    var base=path.replace(/(?:en\/)?(?:[^\/]*)$/,"");
-    var file=(path.split("/").pop()||"index.html");
-    var slug=file.replace(/\.html$/,"");
+    var locale=/\/eu\//.test(path)?"eu":/\/en\//.test(path)?"en":"es";
+    var base=path.replace(/(?:(?:en|eu)\/)?[^/]*$/,"");
+    var slug=(path.split("/").pop()||"index.html").replace(/\.html$/,"");
     if(slugs.indexOf(slug)<0)slug="index";
-    document.documentElement.setAttribute("lang",inEnglish?"en":"es");
-    var anchors=document.querySelectorAll(".navbar a[href]");
-    Array.prototype.forEach.call(anchors,function(a){
-      var label=a.textContent.trim();
-      if(label==="ES / EN"||label==="English"||label==="Español"){
-        a.textContent=inEnglish?"Español":"English";
-        a.setAttribute("href",base+(inEnglish?"":"en/")+slug+".html");
-        a.setAttribute("hreflang",inEnglish?"es":"en");
-        a.setAttribute("lang",inEnglish?"es":"en");
-        a.setAttribute("aria-label",inEnglish?"Ver esta página en español":"View this page in English");
+    var prefix=function(lang){return lang==="es"?"":lang+"/";};
+    var urlFor=function(lang,target){return base+prefix(lang)+target+".html";};
+    document.documentElement.setAttribute("lang",locale);
+    document.querySelectorAll(".navbar a[href]").forEach(function(a){
+      var original=a.textContent.trim();
+      var targetLanguage=Object.keys(localeNames).find(function(key){return original===localeNames[key];});
+      if(targetLanguage){
+        a.textContent=localeNames[targetLanguage];
+        a.setAttribute("href",urlFor(targetLanguage,slug));
+        a.setAttribute("hreflang",targetLanguage);
+        a.setAttribute("lang",targetLanguage);
+        a.setAttribute("aria-label",{
+          es:"Ver esta página en español",
+          en:"View this page in English",
+          eu:"Ikusi orri hau euskaraz"
+        }[targetLanguage]);
         a.classList.add("s3-language-switch");
+        if(targetLanguage===locale){
+          a.setAttribute("aria-current","page");
+        }else{
+          a.removeAttribute("aria-current");
+        }
         return;
       }
-      if(!inEnglish)return;
-      try{
+      if(a.classList.contains("navbar-brand")||a.querySelector("img")){
+        a.setAttribute("href",urlFor(locale,"index"));
+        return;
+      }
+      try {
         var destination=new URL(a.getAttribute("href"),window.location.href);
+        if(destination.origin!==window.location.origin)return;
         var match=destination.pathname.match(/\/(index|fundamentacion|pedagogia|como-funciona|universidades|equipo|piloto)\.html$/);
         if(!match)return;
         var target=match[1];
-        a.setAttribute("href",base+"en/"+target+".html");
-        if(englishLabels[target])a.textContent=englishLabels[target];
+        a.setAttribute("href",urlFor(locale,target));
+        if(labels[locale][target])a.textContent=labels[locale][target];
       }catch(e){}
     });
-    if(inEnglish){
-      var footer=document.querySelector(".nav-footer-center");
-      if(footer)footer.textContent="Sustancia · Interdisciplinary research and development project · 2026";
-      var input=document.querySelector(".aa-Input");
-      if(input)input.setAttribute("placeholder","Search");
+    var footer=document.querySelector(".nav-footer-center");
+    if(footer){
+      footer.textContent={
+        es:"Sustancia · Proyecto interdisciplinario en investigación y desarrollo · 2026",
+        en:"Sustancia · Interdisciplinary research and development project · 2026",
+        eu:"Sustancia · Diziplinarteko ikerketa- eta garapen-proiektua · 2026"
+      }[locale];
     }
-    var alternate=document.createElement("link");
-    alternate.setAttribute("rel","alternate");
-    alternate.setAttribute("hreflang",inEnglish?"es":"en");
-    alternate.setAttribute("href",window.location.origin+base+(inEnglish?"":"en/")+slug+".html");
-    document.head.appendChild(alternate);
+    var input=document.querySelector(".aa-Input");
+    if(input)input.setAttribute("placeholder",{es:"Buscar",en:"Search",eu:"Bilatu"}[locale]);
+    ["es","en","eu"].forEach(function(lang){
+      var alternate=document.createElement("link");
+      alternate.setAttribute("rel","alternate");
+      alternate.setAttribute("hreflang",lang);
+      alternate.setAttribute("href",window.location.origin+urlFor(lang,slug));
+      document.head.appendChild(alternate);
+    });
   }
   if(document.readyState==="loading")document.addEventListener("DOMContentLoaded",init,{once:true});
   else init();

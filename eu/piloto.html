@@ -1,0 +1,853 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="eu" xml:lang="eu"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.11.9">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+<meta name="description" content="Sustanciaren joko-prototipo esperimentala.">
+
+<title>Aztertu prototipoa – Sustancia</title>
+<style>
+/* Default styles provided by pandoc.
+** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+*/
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: 1.5em;}
+div.column{flex: auto;}
+@media screen {
+div.columns{gap: min(4vw, 1.5em);}
+div.column{overflow-x: auto;}
+}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+</style>
+
+
+<script src="../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../">
+<script src="../site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../site_libs/quarto-html/scrollable-regions/scrollable-regions.js" type="module"></script>
+<script src="../site_libs/quarto-html/popper.min.js"></script>
+<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-4e220f1c46fbf15cd6b7314021729ad9.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../site_libs/bootstrap/bootstrap-35d85bf88cc0324d7698e7694a826fc7.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "navbar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "end",
+  "type": "overlay",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "Ez dago emaitzarik",
+    "search-matching-documents-text": "bilatutako dokumentuak",
+    "search-copy-link-title": "Kopiatu esteka bilatzeko",
+    "search-hide-matches-text": "Ezkutatu gainontzeko emaitzak",
+    "search-more-match-text": "emaitza gehigarria dokumentu honetan",
+    "search-more-matches-text": "emaitza gehigarriak dokumentu honetan",
+    "search-clear-button-title": "Garbitu",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Utzi",
+    "search-submit-button-title": "Bidali",
+    "search-label": "Bilatu"
+  }
+}</script>
+<style>html{ scroll-behavior: smooth; }</style>
+
+
+</head>
+
+<body class="nav-fixed quarto-light"><a id="quarto-skip-link" class="visually-hidden-focusable" href="#quarto-document-content">Skip to main content</a>
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+    <nav class="navbar navbar-expand-lg " data-bs-theme="dark" aria-label="Webgune">
+      <div class="navbar-container container-fluid">
+      <div class="navbar-brand-container mx-auto">
+    <a href="../eu/index.html" class="navbar-brand navbar-brand-logo">
+    <img src="../assets/logo-sustancia.png" alt="Sustancia - Inicio" class="navbar-logo light-content">
+    <img src="../assets/logo-sustancia.png" alt="Sustancia - Inicio" class="navbar-logo dark-content">
+    </a>
+    <a class="navbar-brand" href="../eu/index.html">
+    <span class="navbar-title">Sustancia</span>
+    </a>
+  </div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Aldatu nabigazioa" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+  <span class="navbar-toggler-icon"></span>
+</button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav navbar-nav-scroll me-auto">
+  <li class="nav-item">
+    <a class="nav-link" href="../fundamentacion.html"> 
+<span class="menu-text">Fundamentación</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../pedagogia.html"> 
+<span class="menu-text">Modelo pedagógico</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../como-funciona.html"> 
+<span class="menu-text">Cómo funciona</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../universidades.html"> 
+<span class="menu-text">Universidades</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../equipo.html"> 
+<span class="menu-text">Equipo</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../piloto.html"> 
+<span class="menu-text">Prototipo</span></a>
+  </li>  
+</ul>
+            <ul class="navbar-nav navbar-nav-scroll ms-auto">
+  <li class="nav-item">
+    <a class="nav-link" href="../index.html"> 
+<span class="menu-text">Español</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../en/index.html"> 
+<span class="menu-text">English</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../eu/index.html"> 
+<span class="menu-text">Euskara</span></a>
+  </li>  
+</ul>
+          </div> <!-- /navcollapse -->
+            <div class="quarto-navbar-tools">
+</div>
+            <div id="quarto-search" class="" title="Bilatu"></div>
+      </div> <!-- /container-fluid -->
+    </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-full page-navbar">
+<!-- sidebar -->
+<!-- margin-sidebar -->
+    
+<!-- main -->
+<main class="content column-page" id="quarto-document-content" tabindex="-1">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title">Aztertu prototipoa</h1>
+</div>
+
+<div>
+  <div class="description">
+    Sustanciaren joko-prototipo esperimentala.
+  </div>
+</div>
+
+
+<div class="quarto-title-meta column-page">
+
+    
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<div class="hero">
+<div class="eyebrow">
+Bertsio esperimentala
+</div>
+<section id="probatu-egungo-prototipoa" class="level1">
+<h1>Probatu <em>egungo prototipoa</em></h1>
+<p class="hero-sub">
+Esperientzia honek emaitza estatistikoak interpretatzea, erantzunak idaztea eta atzeraelikadura formatiboa jasotzea ahalbidetzen du. Diagnostiko egokitzailea, epe luzeko gaitasun-profila eta erakundeentzako panelak hurrengo garapen-fasekoak dira.
+</p>
+</section>
+</div>
+<p>Jarraian agertzen den aplikazioa R/Shiny erabiliz garatu da eta kanpoko zerbitzari batean dago; haren erabilgarritasuna ostatu-zerbitzuaren araberakoa da. <strong>Jokoaren egungo interfazea gaztelaniaz dago; oraindik ez dago euskarara itzulita. Ez sartu datu pertsonalik edo informazio akademiko sentikorrik bertsio esperimental honetan.</strong></p>
+<div class="v2-pilot-shell">
+<p><iframe src="https://tbu8oh-angel0dario-munoz0ra0iman.shinyapps.io/app_v2_0309/" title="Sustanciaren R/Shiny prototipo esperimentala — interfazea gaztelaniaz" loading="lazy" width="100%" height="780" style="border:0;border-radius:10px;"></iframe></p>
+</div>
+<p><a href="https://tbu8oh-angel0dario-munoz0ra0iman.shinyapps.io/app_v2_0309/">Aplikazioa kargatzen ez bada, ireki beste fitxa batean ↗</a></p>
+<p><a href="../eu/como-funciona.html">Ezagutu proposatutako ikaskuntza-ibilbide egokitzailea →</a></p>
+
+
+
+</main> <!-- /main -->
+<script>
+(function(){
+  "use strict";
+  var slugs=["index","fundamentacion","pedagogia","como-funciona","universidades","equipo","piloto"];
+  var labels={
+    es:{"fundamentacion":"Fundamentación","pedagogia":"Modelo pedagógico","como-funciona":"Cómo funciona","universidades":"Universidades","equipo":"Equipo","piloto":"Prototipo"},
+    en:{"fundamentacion":"Foundations","pedagogia":"Pedagogical model","como-funciona":"How it works","universidades":"Universities","equipo":"Team","piloto":"Prototype"},
+    eu:{"fundamentacion":"Oinarri teorikoak","pedagogia":"Eredu pedagogikoa","como-funciona":"Nola funtzionatzen du?","universidades":"Unibertsitateak","equipo":"Lantaldea","piloto":"Prototipoa"}
+  };
+  var localeNames={es:"Español",en:"English",eu:"Euskara"};
+  function init(){
+    var path=window.location.pathname;
+    var locale=/\/eu\//.test(path)?"eu":/\/en\//.test(path)?"en":"es";
+    var base=path.replace(/(?:(?:en|eu)\/)?[^/]*$/,"");
+    var slug=(path.split("/").pop()||"index.html").replace(/\.html$/,"");
+    if(slugs.indexOf(slug)<0)slug="index";
+    var prefix=function(lang){return lang==="es"?"":lang+"/";};
+    var urlFor=function(lang,target){return base+prefix(lang)+target+".html";};
+    document.documentElement.setAttribute("lang",locale);
+    document.querySelectorAll(".navbar a[href]").forEach(function(a){
+      var original=a.textContent.trim();
+      var targetLanguage=Object.keys(localeNames).find(function(key){return original===localeNames[key];});
+      if(targetLanguage){
+        a.textContent=localeNames[targetLanguage];
+        a.setAttribute("href",urlFor(targetLanguage,slug));
+        a.setAttribute("hreflang",targetLanguage);
+        a.setAttribute("lang",targetLanguage);
+        a.setAttribute("aria-label",{
+          es:"Ver esta página en español",
+          en:"View this page in English",
+          eu:"Ikusi orri hau euskaraz"
+        }[targetLanguage]);
+        a.classList.add("s3-language-switch");
+        if(targetLanguage===locale){
+          a.setAttribute("aria-current","page");
+        }else{
+          a.removeAttribute("aria-current");
+        }
+        return;
+      }
+      if(a.classList.contains("navbar-brand")||a.querySelector("img")){
+        a.setAttribute("href",urlFor(locale,"index"));
+        return;
+      }
+      try {
+        var destination=new URL(a.getAttribute("href"),window.location.href);
+        if(destination.origin!==window.location.origin)return;
+        var match=destination.pathname.match(/\/(index|fundamentacion|pedagogia|como-funciona|universidades|equipo|piloto)\.html$/);
+        if(!match)return;
+        var target=match[1];
+        a.setAttribute("href",urlFor(locale,target));
+        if(labels[locale][target])a.textContent=labels[locale][target];
+      }catch(e){}
+    });
+    var footer=document.querySelector(".nav-footer-center");
+    if(footer){
+      footer.textContent={
+        es:"Sustancia · Proyecto interdisciplinario en investigación y desarrollo · 2026",
+        en:"Sustancia · Interdisciplinary research and development project · 2026",
+        eu:"Sustancia · Diziplinarteko ikerketa- eta garapen-proiektua · 2026"
+      }[locale];
+    }
+    var input=document.querySelector(".aa-Input");
+    if(input)input.setAttribute("placeholder",{es:"Buscar",en:"Search",eu:"Bilatu"}[locale]);
+    ["es","en","eu"].forEach(function(lang){
+      var alternate=document.createElement("link");
+      alternate.setAttribute("rel","alternate");
+      alternate.setAttribute("hreflang",lang);
+      alternate.setAttribute("href",window.location.origin+urlFor(lang,slug));
+      document.head.appendChild(alternate);
+    });
+  }
+  if(document.readyState==="loading")document.addEventListener("DOMContentLoaded",init,{once:true});
+  else init();
+})();
+</script>
+<style>
+.s4-wetland{width:100%;max-width:1440px;margin:0 auto;position:relative;background:transparent;flex-shrink:0;padding:0 0 48px;isolation:isolate}
+.s4-stage{position:relative;width:100%;aspect-ratio:1600/537;overflow:hidden}
+.s4-land{display:block;width:100%;height:100%;filter:url(#s4-white-key);image-rendering:pixelated}
+.s4-capy{position:absolute;width:15%;height:40%;left:17%;top:38%;animation:s4-roam 22s linear infinite}
+.s4-capy-small{width:10%;height:26.67%;left:10%;top:56%;animation:s4-chase 19s linear infinite}
+.s4-sprite{width:100%;height:100%;background-size:400% 100%;background-repeat:no-repeat;filter:url(#s4-white-key);image-rendering:pixelated;animation:s4-frames .65s steps(4,end) infinite}
+@keyframes s4-frames{to{background-position:133.333333% 0}}
+@keyframes s4-roam{0%{transform:translateX(0) scaleX(1)}49%{transform:translateX(200%) scaleX(1)}50%{transform:translateX(200%) scaleX(-1)}99%{transform:translateX(0) scaleX(-1)}100%{transform:translateX(0) scaleX(1)}}
+@keyframes s4-chase{0%{transform:translate(0,0) scaleX(1)}49%{transform:translate(280%,-8%) scaleX(1)}50%{transform:translate(280%,-8%) scaleX(-1)}99%{transform:translate(0,0) scaleX(-1)}100%{transform:translate(0,0) scaleX(1)}}
+.s4-wetland button{position:absolute;right:20px;bottom:5px;min-height:40px;padding:7px 12px;background:#f7f7f2;color:#16265f;border:2px solid #16265f;font:12px monospace;cursor:pointer}
+.s4-wetland button:focus-visible{outline:3px solid #c8341f;outline-offset:3px}
+.s4-wetland[data-paused=true] *,.s4-wetland[data-away=true] *{animation-play-state:paused!important}
+@media(prefers-reduced-motion:reduce){.s4-wetland *{animation:none!important}}
+@media(max-width:600px){.s4-stage{width:150%;max-width:none;margin-left:-25%}.s4-wetland{overflow:hidden}}
+
+/* The habitat is the footer's background layer, not a section after it. */
+footer.footer.s4-habitat-footer{position:relative!important;isolation:isolate;background:transparent!important;border:0!important;overflow:hidden;min-height:clamp(230px,35vw,530px);padding:0!important;margin-top:-40px}
+footer.s4-habitat-footer .nav-footer{position:absolute;bottom:0;left:0;width:100%;z-index:2;background:transparent!important;border:0!important;color:#16265f!important;padding:10px 90px!important;min-height:44px}
+footer.s4-habitat-footer .nav-footer-center{color:#16265f!important;text-shadow:0 1px 2px #f7f7f2}
+footer.s4-habitat-footer .s4-wetland{position:absolute;inset:auto 0 0;max-width:none;margin:0;padding:0;z-index:0;pointer-events:none}
+footer.s4-habitat-footer .s4-stage{width:106%;margin-left:-3%;margin-bottom:-2.5%;aspect-ratio:1600/537}
+footer.s4-habitat-footer .s4-wetland button{pointer-events:auto;z-index:3;right:8px;bottom:8px;font-size:10px;padding:4px 6px;opacity:.8}
+footer.s4-habitat-footer .s4-capy{height:60%;top:20%}
+footer.s4-habitat-footer .s4-capy-small{height:40%;top:43%}
+@media(max-width:600px){
+ footer.footer.s4-habitat-footer{min-height:260px;margin-top:-25px}
+ footer.s4-habitat-footer .s4-stage{width:180%;margin-left:-40%;margin-bottom:-2%}
+ footer.s4-habitat-footer .nav-footer{padding:8px 80px 8px 12px!important;font-size:10px}
+}
+</style>
+<section class="s4-wetland" id="sustancia-wetland" aria-label="Humedal de Sustancia con capibaras caminando">
+<svg width="0" height="0" aria-hidden="true" style="position:absolute"><defs><filter id="s4-white-key" color-interpolation-filters="sRGB" x="0" y="0" width="100%" height="100%"><fecolormatrix type="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  -10 -10 -10 0 28" result="key"></fecolormatrix><fecomposite in="SourceGraphic" in2="key" operator="in"></fecomposite></filter></defs></svg>
+<div class="s4-stage" role="img" aria-label="Dos capibaras pasean y juegan en un humedal pixel art con una rana y una tortuga">
+<img class="s4-land" alt="" width="1600" height="537">
+<div class="s4-capy"><div class="s4-sprite"></div></div>
+<div class="s4-capy s4-capy-small"><div class="s4-sprite" style="animation-delay:-.3s"></div></div>
+</div><button type="button" aria-pressed="false">Pausar animación</button>
+</section>
+<script>
+(function(){
+function init(){
+const scene=document.getElementById('sustancia-wetland');if(!scene)return;
+const english=location.pathname.includes('/en/');
+const base=new URL(english?'../assets/':'assets/',location.href);
+scene.querySelector('.s4-land').src=new URL('wetland-pixel.jpeg',base).href;
+scene.querySelectorAll('.s4-sprite').forEach(el=>el.style.backgroundImage='url("'+new URL('capybara-walk.jpeg',base).href+'")');
+const footer=document.querySelector('footer.footer');if(footer){footer.classList.add('s4-habitat-footer');footer.prepend(scene);}else document.body.appendChild(scene);
+const button=scene.querySelector('button');const media=matchMedia('(prefers-reduced-motion: reduce)');let paused=media.matches;
+function update(){scene.dataset.paused=String(paused||media.matches);button.setAttribute('aria-pressed',scene.dataset.paused);button.disabled=media.matches;button.textContent=media.matches?(english?'Reduced motion':'Movimiento reducido'):paused?(english?'Resume animation':'Reanudar animación'):(english?'Pause animation':'Pausar animación');}
+button.addEventListener('click',()=>{paused=!paused;update()});media.addEventListener('change',()=>{paused=media.matches;update()});update();
+if('IntersectionObserver'in window)new IntersectionObserver(entries=>{scene.dataset.away=String(!entries[0].isIntersecting)},{rootMargin:'80px'}).observe(scene);
+}
+if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',init,{once:true});else init();
+})();
+</script>
+<script id="quarto-html-after-body" type="application/javascript">
+  window.document.addEventListener("DOMContentLoaded", function (event) {
+    const icon = "";
+    const anchorJS = new window.AnchorJS();
+    anchorJS.options = {
+      placement: 'right',
+      icon: icon
+    };
+    anchorJS.add('.anchored');
+    const isCodeAnnotation = (el) => {
+      for (const clz of el.classList) {
+        if (clz.startsWith('code-annotation-')) {                     
+          return true;
+        }
+      }
+      return false;
+    }
+    const onCopySuccess = function(e) {
+      // button target
+      const button = e.trigger;
+      // don't keep focus
+      button.blur();
+      // flash "checked"
+      button.classList.add('code-copy-button-checked');
+      var currentTitle = button.getAttribute("title");
+      button.setAttribute("title", "Kopiatuta!");
+      let tooltip;
+      if (window.bootstrap) {
+        button.setAttribute("data-bs-toggle", "tooltip");
+        button.setAttribute("data-bs-placement", "left");
+        button.setAttribute("data-bs-title", "Kopiatuta!");
+        tooltip = new bootstrap.Tooltip(button, 
+          { trigger: "manual", 
+            customClass: "code-copy-button-tooltip",
+            offset: [0, -8]});
+        tooltip.show();    
+      }
+      setTimeout(function() {
+        if (tooltip) {
+          tooltip.hide();
+          button.removeAttribute("data-bs-title");
+          button.removeAttribute("data-bs-toggle");
+          button.removeAttribute("data-bs-placement");
+        }
+        button.setAttribute("title", currentTitle);
+        button.classList.remove('code-copy-button-checked');
+      }, 1000);
+      // clear code selection
+      e.clearSelection();
+    }
+    const getTextToCopy = function(trigger) {
+      const outerScaffold = trigger.parentElement.cloneNode(true);
+      const codeEl = outerScaffold.querySelector('code');
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+    const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+      text: getTextToCopy
+    });
+    clipboard.on('success', onCopySuccess);
+    if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+      const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+        text: getTextToCopy,
+        container: window.document.getElementById('quarto-embedded-source-code-modal')
+      });
+      clipboardModal.on('success', onCopySuccess);
+    }
+      var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var mailtoRegex = new RegExp(/^mailto:/);
+        var filterRegex = new RegExp('/' + window.location.host + '/');
+      const newWindowLabel = "(opens in a new tab)";
+      const newWindowNoteId = "quarto-ext-newwindow-label";
+      // Links reference one hidden label through aria-describedby, so the
+      // announcement never changes their accessible name.
+      var describeNewWindow = (link) => {
+        if (!window.document.getElementById(newWindowNoteId)) {
+          var newWindowNote = window.document.createElement("span");
+          newWindowNote.id = newWindowNoteId;
+          newWindowNote.hidden = true;
+          newWindowNote.textContent = newWindowLabel;
+          window.document.body.appendChild(newWindowNote);
+        }
+        var describedBy = (link.getAttribute("aria-describedby") || "").split(/\s+/).filter(Boolean);
+        if (!describedBy.includes(newWindowNoteId)) {
+          describedBy.push(newWindowNoteId);
+          link.setAttribute("aria-describedby", describedBy.join(" "));
+        }
+      }
+      var isInternal = (href) => {
+          return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+      }
+      // Inspect non-navigation links and adorn them if external
+      window.quartoDecorateExternalLinks = function (root) {
+     var links = (root || window.document).querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+      for (var i=0; i<links.length; i++) {
+        const link = links[i];
+        if (!isInternal(link.href)) {
+          // undo the damage that might have been done by quarto-nav.js in the case of
+          // links that we want to consider external
+          if (link.dataset.originalHref !== undefined) {
+            link.href = link.dataset.originalHref;
+          }
+            // target, if specified
+            link.setAttribute("target", "_blank");
+            if (link.getAttribute("rel") === null) {
+              link.setAttribute("rel", "noopener");
+            }
+            describeNewWindow(link);
+          if (!link.classList.contains('no-external-icon')) {
+          }
+        }
+      }
+      };
+      window.quartoDecorateExternalLinks(window.document);
+    // Esc closes the popup (WCAG 1.4.13) and focus leaving both trigger and
+    // popup closes it (WCAG 2.4.11); tippy handles neither for interactive popups.
+    const hideOnEscAndFocusOut = {
+      name: 'hideOnEscAndFocusOut',
+      defaultValue: true,
+      fn(instance) {
+        const dismiss = () => {
+          // A show scheduled by the trigger delay would otherwise reopen it
+          instance.clearDelayTimeouts();
+          instance.hide();
+        };
+        const onKeyDown = (event) => {
+          if (event.key !== 'Escape') {
+            return;
+          }
+          // Keep Esc from also reaching page handlers (e.g. reveal.js overview),
+          // except an open reveal.js slide menu, which Esc should close too.
+          // The menu handles keys only when its keyboard option is on.
+          const menuHandlesEsc = window.Reveal?.getPlugin?.('menu')?.isOpen() &&
+            window.Reveal.getConfig().menu?.keyboard !== false;
+          if (!menuHandlesEsc) {
+            event.stopPropagation();
+          }
+          if (instance.popper.contains(window.document.activeElement)) {
+            // Disabled while refocusing so the focus trigger does not reopen it
+            instance.disable();
+            instance.reference.focus();
+            instance.enable();
+          }
+          dismiss();
+        };
+        const onFocusOut = (event) => {
+          const target = event.relatedTarget;
+          if (target && !instance.reference.contains(target) &&
+              !instance.popper.contains(target)) {
+            dismiss();
+          }
+        };
+        // On the trigger too: a click trigger (code-annotations: select) has no
+        // blur handling. Attached for the instance's lifetime so leaving the
+        // trigger also cancels a show still pending on the trigger delay.
+        instance.reference.addEventListener('focusout', onFocusOut);
+        return {
+          onShow() {
+            window.document.addEventListener('keydown', onKeyDown, true);
+            instance.popper.addEventListener('focusout', onFocusOut);
+          },
+          onHide() {
+            window.document.removeEventListener('keydown', onKeyDown, true);
+            instance.popper.removeEventListener('focusout', onFocusOut);
+          },
+          onDestroy() {
+            instance.reference.removeEventListener('focusout', onFocusOut);
+          },
+        };
+      },
+    };
+    function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+      const config = {
+        allowHTML: true,
+        maxWidth: 500,
+        delay: 100,
+        arrow: false,
+        appendTo: function(el) {
+            return el.parentElement;
+        },
+        interactive: true,
+        interactiveBorder: 10,
+        theme: 'quarto',
+        placement: 'bottom-start',
+        plugins: [hideOnEscAndFocusOut],
+      };
+      if (contentFn) {
+        config.content = contentFn;
+      }
+      if (onTriggerFn) {
+        config.onTrigger = onTriggerFn;
+      }
+      if (onUntriggerFn) {
+        config.onUntrigger = onUntriggerFn;
+      }
+      window.tippy(el, config); 
+    }
+    const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+    for (var i=0; i<noterefs.length; i++) {
+      const ref = noterefs[i];
+      tippyHover(ref, function() {
+        // use id or data attribute instead here
+        let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+        try { href = new URL(href).hash; } catch {}
+        const id = href.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note) {
+          return note.innerHTML;
+        } else {
+          return "";
+        }
+      });
+    }
+    const xrefs = window.document.querySelectorAll('a.quarto-xref');
+    const processXRef = (id, note) => {
+      // Strip column container classes
+      const stripColumnClz = (el) => {
+        el.classList.remove("page-full", "page-columns");
+        if (el.children) {
+          for (const child of el.children) {
+            stripColumnClz(child);
+          }
+        }
+      }
+      stripColumnClz(note)
+      if (id === null || id.startsWith('sec-')) {
+        // Special case sections, only their first couple elements
+        const container = document.createElement("div");
+        if (note.children && note.children.length > 2) {
+          container.appendChild(note.children[0].cloneNode(true));
+          for (let i = 1; i < note.children.length; i++) {
+            const child = note.children[i];
+            if (child.tagName === "P" && child.innerText === "") {
+              continue;
+            } else {
+              container.appendChild(child.cloneNode(true));
+              break;
+            }
+          }
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(container);
+          }
+          return container.innerHTML
+        } else {
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(note);
+          }
+          return note.innerHTML;
+        }
+      } else {
+        // Remove any anchor links if they are present
+        const anchorLink = note.querySelector('a.anchorjs-link');
+        if (anchorLink) {
+          anchorLink.remove();
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        if (note.classList.contains("callout")) {
+          return note.outerHTML;
+        } else {
+          return note.innerHTML;
+        }
+      }
+    }
+    for (var i=0; i<xrefs.length; i++) {
+      const xref = xrefs[i];
+      tippyHover(xref, undefined, function(instance) {
+        instance.disable();
+        let url = xref.getAttribute('href');
+        let hash = undefined; 
+        if (url.startsWith('#')) {
+          hash = url;
+        } else {
+          try { hash = new URL(url).hash; } catch {}
+        }
+        if (hash) {
+          const id = hash.replace(/^#\/?/, "");
+          const note = window.document.getElementById(id);
+          if (note !== null) {
+            try {
+              const html = processXRef(id, note.cloneNode(true));
+              instance.setContent(html);
+            } finally {
+              instance.enable();
+              instance.show();
+            }
+          } else {
+            // See if we can fetch this
+            fetch(url.split('#')[0])
+            .then(res => res.text())
+            .then(html => {
+              const parser = new DOMParser();
+              const htmlDoc = parser.parseFromString(html, "text/html");
+              const note = htmlDoc.getElementById(id);
+              if (note !== null) {
+                const html = processXRef(id, note);
+                instance.setContent(html);
+              } 
+            }).finally(() => {
+              instance.enable();
+              instance.show();
+            });
+          }
+        } else {
+          // See if we can fetch a full url (with no hash to target)
+          // This is a special case and we should probably do some content thinning / targeting
+          fetch(url)
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.querySelector('main.content');
+            if (note !== null) {
+              // This should only happen for chapter cross references
+              // (since there is no id in the URL)
+              // remove the first header
+              if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+                note.children[0].remove();
+              }
+              const html = processXRef(null, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      }, function(instance) {
+      });
+    }
+        let selectedAnnoteEl;
+        const selectorForAnnotation = ( cell, annotation) => {
+          let cellAttr = 'data-code-cell="' + cell + '"';
+          let lineAttr = 'data-code-annotation="' +  annotation + '"';
+          const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+          return selector;
+        }
+        const selectCodeLines = (annoteEl) => {
+          const doc = window.document;
+          const targetCell = annoteEl.getAttribute("data-target-cell");
+          const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+          const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+          const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+          const lineIds = lines.map((line) => {
+            return targetCell + "-" + line;
+          })
+          // Each band is positioned against its own containing block, which is
+          // not the offsetParent of the lines, so place it from client rects.
+          const placeBand = (band, firstEl, lastEl, codeBlock) => {
+            const container = band.offsetParent;
+            if (container === null) {
+              return;
+            }
+            const containerRect = container.getBoundingClientRect();
+            // Reveal.js scales slides with a transform, so convert client
+            // pixels back to the CSS pixels of the container.
+            const scale = containerRect.height / container.offsetHeight || 1;
+            const firstRect = firstEl.getBoundingClientRect();
+            const lastRect = lastEl.getBoundingClientRect();
+            const top = (firstRect.top - containerRect.top) / scale - container.clientTop + container.scrollTop;
+            const height = (lastRect.bottom - firstRect.top) / scale;
+            band.style.top = top - 2 + "px";
+            band.style.height = height + 4 + "px";
+            if (codeBlock) {
+              // Without the copy button wrapper, the containing block is wider
+              // than the code block, so span the code block explicitly.
+              const blockRect = codeBlock.getBoundingClientRect();
+              band.style.left = (blockRect.left - containerRect.left) / scale - container.clientLeft + container.scrollLeft + "px";
+              band.style.width = blockRect.width / scale + "px";
+            }
+          };
+          if (lineIds.length > 0) {
+            const el = window.document.getElementById(lineIds[0]);
+            const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+            const parent = el.parentElement.parentElement;
+            // cook up a div (if necessary) and position it
+            let div = window.document.getElementById("code-annotation-line-highlight");
+            if (div === null) {
+              div = window.document.createElement("div");
+              div.setAttribute("id", "code-annotation-line-highlight");
+              div.style.position = 'absolute';
+              parent.appendChild(div);
+            }
+            placeBand(div, el, lastEl, parent.closest("div.sourceCode") || parent);
+            let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+            if (gutterDiv === null) {
+              gutterDiv = window.document.createElement("div");
+              gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+              gutterDiv.style.position = 'absolute';
+              const codeCell = window.document.getElementById(targetCell);
+              const gutter = codeCell.querySelector('.code-annotation-gutter');
+              gutter.appendChild(gutterDiv);
+            }
+            placeBand(gutterDiv, el, lastEl);
+            selectedAnnoteEl = annoteEl;
+          }
+        };
+        const unselectCodeLines = () => {
+          const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+          elementsIds.forEach((elId) => {
+            const div = window.document.getElementById(elId);
+            if (div) {
+              div.remove();
+            }
+          });
+          selectedAnnoteEl = undefined;
+        };
+          // Handle positioning of the toggle
+      window.addEventListener(
+        "resize",
+        throttle(() => {
+          elRect = undefined;
+          if (selectedAnnoteEl) {
+            selectCodeLines(selectedAnnoteEl);
+          }
+        }, 10)
+      );
+      function throttle(fn, ms) {
+      let throttle = false;
+      let timer;
+        return (...args) => {
+          if(!throttle) { // first call gets through
+              fn.apply(this, args);
+              throttle = true;
+          } else { // all the others get throttled
+              if(timer) clearTimeout(timer); // cancel #2
+              timer = setTimeout(() => {
+                fn.apply(this, args);
+                timer = throttle = false;
+              }, ms);
+          }
+        };
+      }
+        // Attach click handler to the DT
+        const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+        for (const annoteDlNode of annoteDls) {
+          annoteDlNode.addEventListener('click', (event) => {
+            const clickedEl = event.target;
+            if (clickedEl !== selectedAnnoteEl) {
+              unselectCodeLines();
+              const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+              if (activeEl) {
+                activeEl.classList.remove('code-annotation-active');
+              }
+              selectCodeLines(clickedEl);
+              clickedEl.classList.add('code-annotation-active');
+            } else {
+              // Unselect the line
+              unselectCodeLines();
+              clickedEl.classList.remove('code-annotation-active');
+            }
+          });
+        }
+    const findCites = (el) => {
+      const parentEl = el.parentElement;
+      if (parentEl) {
+        const cites = parentEl.dataset.cites;
+        if (cites) {
+          return {
+            el,
+            cites: cites.split(' ')
+          };
+        } else {
+          return findCites(el.parentElement)
+        }
+      } else {
+        return undefined;
+      }
+    };
+    var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+    for (var i=0; i<bibliorefs.length; i++) {
+      const ref = bibliorefs[i];
+      const citeInfo = findCites(ref);
+      if (citeInfo) {
+        tippyHover(citeInfo.el, function() {
+          var popup = window.document.createElement('div');
+          citeInfo.cites.forEach(function(cite) {
+            var citeDiv = window.document.createElement('div');
+            citeDiv.classList.add('hanging-indent');
+            citeDiv.classList.add('csl-entry');
+            var biblioDiv = window.document.getElementById('ref-' + cite);
+            if (biblioDiv) {
+              citeDiv.innerHTML = biblioDiv.innerHTML;
+            }
+            popup.appendChild(citeDiv);
+          });
+          return popup.innerHTML;
+        });
+      }
+    }
+  });
+  </script>
+  <script type="application/javascript">
+  window.quartoScrollableRegionsLabels = {"code":"Korritu daitekeen kodea","output":"Korritu daitekeen irteera"};
+  </script>
+</div> <!-- /content -->
+<footer class="footer">
+  <div class="nav-footer">
+    <div class="nav-footer-left">
+      &nbsp;
+    </div>   
+    <div class="nav-footer-center">
+<p>Sustancia · Proyecto interdisciplinario en investigación y desarrollo · 2026</p>
+</div>
+    <div class="nav-footer-right">
+      &nbsp;
+    </div>
+  </div>
+</footer>
+
+
+
+
+<script src="../site_libs/quarto-html/zenscroll-min.js"></script>
+</body></html>
