@@ -1,0 +1,50 @@
+---
+title: "Sustancia unibertsitateentzat"
+description: "Ikaskuntza estatistiko egokitzailearen aplikazioak goi-mailako hezkuntzan eta hezkuntza-ikerketan."
+lang: eu
+toc: true
+---
+
+::: {.hero}
+<div class="eyebrow">Lankidetza akademikoak · proposatutako aplikazioak</div>
+
+# <em>Ikasteko, irakasteko eta ikertzeko</em> tresna bat
+
+<p class="hero-sub">Sustancia unibertsitateko estatistika-irakaskuntza osatzeko diseinatzen ari da. Lehen arloa hasierako estatistika da, gizarte-zientzietan, osasun-zientzietan eta ingeniaritzan aplikatzeko aukerarekin.</p>
+:::
+
+## Curriculumarekiko lotura {.seccion}
+
+Ereduak ikaskuntza-emaitza eta ikasgaietako eduki esplizituak jarraitzen ditu, ez IAk modu arbitrarioan sortutako sekuentzia. Hasierako diseinuak 2022ko estatistikako sarrera-ikasprograma bat hartu du oinarri: oinarrizko kontzeptuak, datu kategoriko eta kuantitatiboak, banaketa normala eta inferentziarako sarrera. Erakunde bakoitzean, bere curriculuma berrikusi beharko da.
+
+<div class="v2-pill-grid"><span>I · Oinarriak</span><span>II · Datu kategorikoak</span><span>III · Datu kuantitatiboak</span><span>IV · Banaketa normala</span><span>V · Inferentziarako sarrera</span></div>
+
+## Elkar osatzen duten hiru ikuspegi {.seccion}
+
+<div class="v2-card-grid">
+  <article class="v2-card"><span class="v2-kicker">IKASLEA</span><h3>Norberaren ikaskuntza ulertzea</h3><p>Kontzeptu eta eragiketa estatistikoetako indarguneak, zailtasunak eta aurrerapena ikustea, nota bakarrera mugatu gabe.</p></article>
+  <article class="v2-card"><span class="v2-kicker">IRAKASLEA</span><h3>Ikaskuntzari laguntzea</h3><p>Errepikatzen diren okerrak eta indartu beharreko arloak identifikatzea, taldearen bilakaera aztertzea eta jarduerak berrikustea.</p></article>
+  <article class="v2-card"><span class="v2-kicker">ERAKUNDEA</span><h3>Etengabeko hobekuntza</h3><p>Kohorte, ikasgai edo titulazioaren araberako adierazle agregatuak ikertzea, ikaskuntza-ibilbideak eta laguntza-neurriak ulertzeko.</p></article>
+</div>
+
+## Zer ekar dezake Sustanciak? {.seccion}
+
+- **Hasierako diagnostikoa:** ikasle bakoitzaren abiapuntu matematiko eta estatistikoa ebidentzietan oinarrituta ezagutzea.
+- **Testuinguruko praktika:** diziplina bakoitzari dagozkion datu eta arazoetan oinarritutako ariketak.
+- **Ikaskuntza errekurtsiboa:** lehen erantzuna, atzeraelikadura, berrikuspena eta ebidentzia berria.
+- **Curriculumaren trazabilitatea:** kontzeptu, eragiketa eta iturri berrikusiei lotutako jarduerak.
+- **Hezkuntza-ikerketa:** arrazoibide estatistikoaren bilakaera denboran aztertzeko aukera.
+
+Horiek **diseinu-helburuak** dira, ez dagoeneko zabaldu diren funtzionalitateak edo frogatutako eragin-emaitzak.
+
+## Gainbegiratzea eta datuetarako sarbidea {.seccion}
+
+Sarbideek ardurak islatu behar dituzte: ikasleek beren profilak ikusiko lituzkete, irakasleek ikastaroari dagokion informazioa, eta erakundeek adierazle agregatuak. Baimenak, oinarri juridikoa, datuen minimizazioa, gordetzeko epeak eta babes-neurriak zehaztu behar dira ezarpen instituzionala egin aurretik.
+
+IAk edukien bilaketa eta berrikuspena lagundu ditzake; **irakasleek izaten jarraitzen dute curriculumeko erabakien eta jardueren azken onespenaren arduradun**.
+
+## Garapena eta lankidetza {.seccion}
+
+Sustancia ikerketa- eta garapen-fasean dago. Helburua da egungo prototipotik bideragarritasun teknikoa eta egokitasun pedagogikoa aztertuko dituen pilotu batera igarotzea, eta ondoren ikaskuntzaren ebidentziak ebaluatzea.
+
+[Ezagutu lantaldea →](equipo.qmd) · [Ikusi ikaslearen ibilbidea →](como-funciona.qmd)
