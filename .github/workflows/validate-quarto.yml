@@ -57,6 +57,32 @@ jobs:
           assert 'data-s3-mastery' in enpedagogy
           assert 'data-s3-dimensions' in enpedagogy
           assert Path("_site/assets/sustancia-interactions.js").exists()
+          # Basque section parity, metadata, interactive components and local links.
+          for name in pages:
+              p=Path("_site/eu")/(name+".html")
+              assert p.exists(), f"Basque page missing: {p}"
+              html=p.read_text(encoding="utf-8")
+              assert 'lang="eu"' in html[:500], f"Basque metadata missing: {name}"
+              assert '<html' in html
+              assert '&lt;div class=' not in html, f"Escaped component in Basque page: {name}"
+              assert 'language-switch' in html, f"Language switch missing: {name}"
+              for href in __import__("re").findall(r'href="([^"]+)"',html):
+                  if href.startswith(("http:","https:","#","mailto:","javascript:")):
+                      continue
+                  if href.endswith(".qmd"):
+                      raise AssertionError(f"Unrendered QMD link in {p}: {href}")
+                  if href.endswith(".html"):
+                      assert (p.parent/href).resolve().exists(), f"Broken Basque link in {p}: {href}"
+              print(f"OK: eu/{name}.html")
+          euhome=Path("_site/eu/index.html").read_text(encoding="utf-8")
+          euped=Path("_site/eu/pedagogia.html").read_text(encoding="utf-8")
+          assert "Taula bat irakurtzea ez da hura interpretatzea." in euhome
+          assert 'data-s3-examples' in euhome
+          assert 'data-s3-mastery' in euped and 'data-s3-dimensions' in euped
+          js=Path("_site/assets/sustancia-interactions.js").read_text(encoding="utf-8")
+          assert "var isBasque" in js and "Beha daitekeen ebidentzia:" in js
+          assert "Euskara" in Path("_site/assets/language-switch.html").read_text(encoding="utf-8") if Path("_site/assets/language-switch.html").exists() else "Euskara" in euhome
+          print("OK: Basque translation and interactive localization")
           # All local English-to-English links must resolve within the generated site.
           import re
           for name in pages:
@@ -69,5 +95,5 @@ jobs:
                       raise AssertionError(f"Unrendered QMD link in {p}: {href}")
                   if href.endswith(".html"):
                       assert (p.parent/href).resolve().exists(), f"Broken internal link in {p}: {href}"
-          print("OK: both languages, translated HTML metadata, equivalent sections and working links")
+          print("OK: Spanish, English and Basque sections, metadata and working links")
           PY
