@@ -1,0 +1,171 @@
+---
+title: "Eredu pedagogikoa"
+description: "Sustanciak proposatutako eragiketa estatistikoak, interpretazioaren sakontasuna eta dimentsio anitzeko gaitasun-profila."
+lang: eu
+toc: true
+---
+
+::: {.hero}
+<div class="eyebrow">Arkitektura pedagogikoa · garatzen ari den diseinua</div>
+
+# Ikasle bakoitza <em>abiapuntu desberdinetik</em> hasten da
+
+<p class="hero-sub">Erantzun bat zuzena ala okerra den jakitea ez da nahikoa. Sustanciak ulertu nahi du ikasleak zer kontzeptu erabiltzen dituen, zer eragiketa estatistiko egin ditzakeen, nola interpretatzen dituen emaitzak eta zer berrikus dezakeen atzeraelikadura jaso ondoren.</p>
+:::
+
+## Gaitasun-profila {.seccion}
+
+Ikasle batek batezbestekoa zuzen kalkula dezake, baina haren esanahia azaltzeko zailtasunak izan. Beste batek banaketa bat ongi interpreta dezake, baina desbideratze estandarra kalkulatzeko laguntza behar. Nota bakar batek alde horiek ezkutatuko lituzke.
+
+Horregatik, **dimentsio anitzeko gaitasun-profila** proposatzen dugu: trebetasun zehatzen ebidentzietan oinarritutako estimazio ebolutiboa. **Ez da nota bat, ezta diagnostiko psikologiko bat ere.**
+
+
+```{=html}
+<div class="s3-mastery" data-s3-mastery>
+  <div class="s3-mastery-header">
+    <div><span class="v2-kicker">ESPLORATZAILE INTERAKTIBOA · DATU SIMULATUAK</span><h3>Profila ez da nota bat</h3><p>Alderatu bi ikasle fikzioren profilak eta haien bilakaerako bi une hipotetiko.</p></div>
+    <div class="s3-choice-group" role="group" aria-label="Aukeratu ikasle-profila">
+      <button type="button" class="s3-selected" data-s3-profile="a" aria-pressed="true">A profila</button>
+      <button type="button" data-s3-profile="b" aria-pressed="false">B profila</button>
+    </div>
+  </div>
+  <div class="s3-time-group" role="group" aria-label="Aukeratu une simulatua">
+    <button type="button" class="s3-selected" data-s3-moment="t0" aria-pressed="true">Abiapuntua (t0)</button>
+    <button type="button" data-s3-moment="t2" aria-pressed="false">Praktikaren ondoren (t2 hipotetikoa)</button>
+  </div>
+  <div class="s3-profile-main">
+    <div class="s3-radar-pane"><svg data-s3-radar class="s3-radar" viewBox="0 0 520 395" role="img" aria-label="Dimentsio anitzeko gaitasun-profil simulatua"></svg></div>
+    <div class="s3-profile-detail">
+      <h4 data-s3-profile-title>A profila · kalkulu sendoagoa</h4>
+      <p data-s3-profile-description>Prozeduretan trebea, baina testuinguruko interpretazioa eta transferentzia landu behar ditu.</p>
+      <div class="s3-mini-bars" data-s3-bars aria-label="Eragiketa estatistikoen balio simulatuak"></div>
+      <p class="s3-next-activity" data-s3-next>Hurrengo erronka hipotetikoa: testuinguruan kokatu eta transferitu.</p>
+    </div>
+  </div>
+  <p class="s3-data-warning"><strong>Simulazioa, ez neurketa:</strong> every value and change is fictional. Puntuazioak ez dira kalibratutako ebaluazioa, eta ez dute frogatzen atzeraelikadurak automatikoki gaitasuna hobetzen duenik.</p>
+</div>
+```
+
+### Aztertu dimentsio bakoitza
+
+Aukeratu dimentsio bat, **zer deskribatzen duen, adibide bat eta ebaluatzeko zer ebidentzia behar den** ikusteko. Dimentsioak elkarri lotuta daude, baina ezin dute elkar ordezkatu.
+
+
+```{=html}
+<div class="s3-dimensions" data-s3-dimensions>
+  <div class="s3-dim-selector" role="group" aria-label="Aztertu gaitasunaren dimentsioak">
+    <button type="button" class="s3-selected" data-s3-dim="conceptos" aria-pressed="true"><span>01</span>Kontzeptuak</button>
+    <button type="button" data-s3-dim="operaciones" aria-pressed="false"><span>02</span>Eragiketak</button>
+    <button type="button" data-s3-dim="profundidad" aria-pressed="false"><span>03</span>N1–N4</button>
+    <button type="button" data-s3-dim="errores" aria-pressed="false"><span>04</span>Akatsak</button>
+    <button type="button" data-s3-dim="requisitos" aria-pressed="false"><span>05</span>Aurrebaldintzak</button>
+    <button type="button" data-s3-dim="trayectoria" aria-pressed="false"><span>06</span>Ikaskuntza-ibilbidea</button>
+  </div>
+  <section class="s3-dim-panel" data-s3-dim-panel aria-live="polite">
+    <h3>Kontzeptu estatistikoak</h3><p>Aldagaiei, neurriei, banaketei, laginketari eta probabilitateari buruzko ezagutza.</p>
+  </section>
+</div>
+```
+
+Sistemak **estimatutako gaitasuna, eskuragarri dagoen ebidentzia eta oraindik behatu gabeko informazioa** bereizi behar ditu. Balio bat falta izatea ez da zero puntu izatea edo ahulezia frogatua erakustea.
+
+## Eragiketa estatistikoen laborategia {.seccion}
+
+Estatistika ez da trebetasun bakarra. Ikaskuntza-jarduera berean uztar daitezkeen zortzi eragiketa-multzo proposatzen ditugu.
+
+| Eragiketa | Zer egiten du ikasleak? |
+|---|---|
+| Identifikatu | Aldagaiak, analisi-unitateak, populazioak eta laginak identifikatu. |
+| Deskribatu | Datuen banaketa edo eredu bat ezaugarritu. |
+| Kalkulatu | Metodo egokiekin neurriak eta emaitzak lortu. |
+| Alderatu | Taldeak, neurriak eta adierazleak konparatu. |
+| Interpretatu | Emaitza estatistiko batek zer esan nahi duen azaldu. |
+| Testuinguruan kokatu | Emaitzak aztertutako fenomenoarekin eta haren testuinguruarekin lotu. |
+| Kritikatu | Aurresuposizioak, mugak eta azalpen alternatiboak aztertu. |
+| Transferitu | Ikasitako printzipioa beste egoera batean aplikatu. |
+
+**Pentsa batezbestekoan:** hura kalkulatzea zeregin bakarra da. Zer adierazten duen, noiz izan daitekeen engainagarria, medianatik zertan bereizten den edo muturreko balioak kenduta zer gertatzen den ere galde dezakegu. Eragiketok ez dira hierarkia zurrun edo kategoria baztertzaileak.
+
+## Interpretazioaren sakontasuna: N1–N4 {.seccion}
+
+Jatorrizko N1–N4 proposamena Sustanciaren parte da oraindik, baina **gaitasun-profilaren dimentsio bat** besterik ez da.
+
+| Maila | Galdera gidaria |
+|---|---|
+| **N1 · Irakurketa teknikoa** | Zer ageri da datuetan, taulan edo grafikoan? |
+| **N2 · Interpretazio estatistikoa** | Zer erlazio, magnitude edo alde adierazten da? |
+| **N3 · Interpretazio substantiboa** | Zer esan nahi du horrek aztertutako fenomenorako? |
+| **N4 · Irakurketa kritiko eta gogoetatsua** | Zer aurresuposizio eta mugak baldintzatzen dute ondorioa? |
+
+Maila horiek datu-irudikapenen irakurketari eta arrazoibide estatistikoari buruzko ikerketetan oinarritzen dira (Curcio, Shaughnessy, Garfield eta Ben-Zvi). **Sustanciaren eskala zehatzak baliozkotzea behar du oraindik**; ez da unibertsalki baliozkotutako neurketa. Egungo jokoaren puntuak ez dira gaitasun-portzentajeak.
+
+## Ikastea berrikustea ere bada {.seccion}
+
+**Atzeraelikaduraren zikloa argiago ikusten da ekintzan.** Aukeratu testuinguru bat eta jarraitu erronkari, hasierako erantzunari, galdera gidariari, berrikuspenari eta ebidentzia berriari.
+
+
+```{=html}
+<div class="s3-examples" data-s3-examples>
+  <div class="s3-examples-top"><span class="v2-kicker">AZTERTU ATZERAELIKADURAREN ZIKLOA</span><span class="s3-example-counter" data-s3-example-counter>1 / 5 · adibide simulatua</span></div>
+  <div class="s3-example-choices" role="group" aria-label="Aukeratu diziplina-testuingurua">
+    <button type="button" data-s3-example="ingresos" aria-pressed="true">Diru-sarrerak</button>
+    <button type="button" data-s3-example="salud" aria-pressed="false">Osasuna</button>
+    <button type="button" data-s3-example="encuestas" aria-pressed="false">Inkestak</button>
+    <button type="button" data-s3-example="ingenieria" aria-pressed="false">Ingeniaritza</button>
+  </div>
+  <div class="s3-example-timeline" role="group" aria-label="Aukeratu ikaskuntza-unea">
+    <button type="button" data-s3-stage="0" aria-pressed="true">1. Erronka</button>
+    <button type="button" data-s3-stage="1" aria-pressed="false">2. Erantzuna</button>
+    <button type="button" data-s3-stage="2" aria-pressed="false">3. Atzeraelikadura</button>
+    <button type="button" data-s3-stage="3" aria-pressed="false">4. Berrikuspena</button>
+    <button type="button" data-s3-stage="4" aria-pressed="false">5. Ebidentzia</button>
+  </div>
+  <div class="s3-example-panel" aria-live="polite">
+    <span class="v2-kicker" data-s3-example-role>Ikaskuntza-erronka</span>
+    <h3 data-s3-example-heading>Diru-sarrerak eta muturreko balioak</h3>
+    <p data-s3-example-text>Udalerri batean, batez besteko diru-sarrera mediana baino askoz handiagoa da. Zer esan nahi du horrek?</p>
+    <button type="button" data-s3-example-next class="s3-next">Ikusi hurrengo urratsa →</button>
+  </div>
+  <p class="v2-small">Erantzun, galdera eta behaketa horiek eredu pedagogikoa irudikatzen dute. Ez dira ikasleen benetako elkarrizketak.</p>
+</div>
+```
+
+### Elkarrizketa epistemologikoak
+
+Iturriak eta irudikapen estatistikoak elkarrizketarako material bihur daitezke. Erantzunak eman beharrean, sistemak ikasleari bere baieztapenak aztertzeko eskatzen dio.
+
+
+```{=html}
+<div class="s3-epistemic">
+  <details><summary><strong>Iturria eta arazoa</strong><span>Zer adierazten du testuak edo grafikoak?</span></summary><p>Identifikatu baieztapena, iturria eta jorratzen duen arazoa. Talde akademikoak jardueretako materialak berrikusten ditu.</p></details>
+  <details><summary><strong>Jarrera</strong><span>Zein da zure interpretazioa?</span></summary><p>Ikasleek jarrera bat hartu eta, beren hitzekin, zergatik iruditzen zaien arrazoizkoa azaltzen dute.</p></details>
+  <details><summary><strong>Kontrastea</strong><span>Zer ebidentziak alda lezake zure iritzia?</span></summary><p>Kontraadibide batek, neurketaren desberdintasunak, ahaztutako aurresuposizio batek edo muga batek hasierako azalpena zalantzan jartzen du.</p></details>
+  <details><summary><strong>Transferentzia</strong><span>Printzipioak balio al du beste testuinguru batean?</span></summary><p>Ikasleek kontzeptua osasunean, inkestetan, industria-ekoizpenean edo gizarte-adierazleetan aztertzen dute.</p></details>
+  <details><summary><strong>Aplikazioa eta berrikuspena</strong><span>Nola idatziko zenuke berriro zure erantzuna?</span></summary><p>Ikasleak beste interpretazio bat sortzen du. Sistemak aldaketak, iraunkorrak diren akatsak eta hurrengo urratsak jaso ditzake.</p></details>
+</div>
+```
+
+Ikasleek atzeraelikadura nola erabiltzen duten **ikus daitekeen berrikuspenaren kalitate** gisa iker daiteke. Ez dugu saiakera bakarretik frustrazioa, erresilientzia edo ezaugarri psikologikorik ondorioztatzen.
+
+## Akatsak ikasteko aukera gisa {.seccion}
+
+Akats batek hurrengo galdera bidera dezake, puntuazioa murriztu ordez. Hasierako prototipoaren sailkapenak kausalitatearen inferentzia justifikatu gabea, orokortze gehiegizkoa, falazia ekologikoa eta kategorien reifikazioa jasotzen ditu. Oinarrizko estatistikan beste nahaste batzuk ere ager daitezke: maiztasunak eta portzentajeak, batezbestekoa eta mediana, edo populazioaren parametroak eta laginaren estatistikoak. Akatsak benetako gaitasun-profilarekin lotu aurretik sailkapen bateratua behar da.
+
+## Nola hautatuko litzateke hurrengo erronka? {.seccion}
+
+Proposatutako arkitekturak ikasgaiaren curriculuma, baliozkotutako jarduera-bankua eta ikaslearen profileko ebidentzia uztartzen ditu. Irizpide esplizituekin funtzionatzen duen motor pedagogikoak gidatzen du aurrerapena. IAk bilaketan, ebaluazioan eta atzeraelikaduran lagundu dezake, baina ez du curriculuma bere kabuz erabakitzen, ezta irakasleen gainbegiratzea ordezten ere.
+
+Taldeak ikasmaterialak bildu eta berrikusten ditu. **Ikasleek ez dute liburu edo PDF dokumenturik igo behar jolasteko.**
+
+## Erreferentziak {.seccion}
+
+- Curcio, F. (1987). Comprehension of mathematical relationships expressed in graphs. *Journal for Research in Mathematics Education*, 18(5).
+- Shaughnessy, J. M. (2007). Research on statistics learning and reasoning. In *Second Handbook of Research on Mathematics Teaching and Learning*.
+- Garfield, J., & Ben-Zvi, D. (2008). *Developing Students' Statistical Reasoning*. Springer.
+- Bourdieu, P. (1987 [1979]). The three states of cultural capital.
+- Simondon, G. (2007 [1958]). *On the Mode of Existence of Technical Objects*.
+
+
+```{=html}
+<script src="../assets/sustancia-interactions.js" defer></script>
+```
