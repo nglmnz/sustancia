@@ -28,8 +28,12 @@ website:
       - href: piloto.qmd
         text: Prototipo
     right:
+      - href: index.qmd
+        text: Español
       - href: en/index.qmd
         text: English
+      - href: eu/index.qmd
+        text: Euskara
   page-footer:
     center: "Sustancia · Proyecto interdisciplinario en investigación y desarrollo · 2026"
     background: "#14161A"
