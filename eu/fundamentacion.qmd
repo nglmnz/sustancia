@@ -1,0 +1,169 @@
+---
+title: "Oinarri teorikoak"
+pagetitle: "Oinarri teorikoak — Sustancia"
+lang: eu
+---
+
+::: {.hero}
+<div class="eyebrow">Oinarri teorikoak</div>
+
+# Interpretazioa, <em>delegatu ezin den ezagutza</em>
+
+<p class="hero-sub">Sustancia ez da IA erabiltzen duen ariketa-aplikazio soil bat. Hipotesi soziologiko batetik abiatzen da: lan kognitiboa kanpora delegatzeak norberaren ezagutza eta trebetasunak metatzeko aukerak ahuldu baditzake, IA bidez lagundutako ikaskuntzaren diseinua —nork sortzen duen eta nork ebaluatzen duen— ikaskuntza nola antolatzen den ulertzeko galdera da.</p>
+:::
+
+## Arazoa: alderantzizko bihurketa {.seccion}
+
+<span class="num-seccion">I — Diagnostikoa</span>
+
+Bourdieuren ikuspegian, gorpuztutako kapital kulturalak ezaugarri nagusi bat du: **denbora-inbertsio pertsonala eskatzen du**. Inork ezin du beste pertsona baten ordez arreta mantentzeko, argudio bat antolatzeko edo emaitza bat interpretatzeko gaitasuna barneratu. IA sortzaileak ahalegin indibidual horretatik ihes egiteko aukera agintzen duela dirudi.
+
+Testu, laburpen edo ebidentzien interpretazioa delegatzea, hortaz, ez da beti lasterbide neutroa. Proiektuak **kapitalaren alderantzizko bihurketa** kontzeptua proposatzen du: gaurko ahalegina aurrezteak etorkizunean ezagutza eta trebetasun gorpuztuak metatzeko aukerak mugatu ditzake. Interpretazio teorikoa eta ikerketa-galdera da, ez IAren erabilera zehatz baten kausa-efektu frogatua.
+
+Sustancia sortu zuen ikerketak unibertsitateko lehen mailako 276 ikasleren habitus teknologikoa eta osasun mentala aztertu zituen. Bi bereizketa garrantzitsu dira:
+
+- **Erabilera-ereduek axola dute, ez soilik pantaila-denborak.** Aztertutako ereduetan, pantaila-denborak ez zuen erabilera konpultsiboaren lotura bera erakutsi. Lotura horiek ez dute kausalitatea frogatzen.
+- **Delegazioa ez da unibertsala.** Arrisku posible bat ez da ezinbesteko ondorio bat; hezkuntza-diseinuak aldea eragin dezake.
+
+## IA bidez lagundutako ikaskuntza diseinatzeko bi modu {.seccion}
+
+<span class="num-seccion">II — Diseinu-erabakia</span>
+
+IAk oso rol desberdinak izan ditzake ikaskuntza-jarduera batean. Alderatu bi eredu ideal hauek eta erreparatu nork egiten duen lan intelektuala.
+
+
+```{=html}
+<div class="diagrama">
+  <div class="modos" role="group" aria-label="Alderatu ikaskuntza-arkitekturak">
+    <button class="modo activo-del" id="btn-del" type="button">▸ Arkitektura delegatiboa</button>
+    <button class="modo" id="btn-inc" type="button">▸ Arkitektura barneratzailea</button>
+  </div>
+  <svg viewBox="0 0 700 300" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="IAk lagundutako ikaskuntzaren bi eredu">
+    <rect x="30" y="100" width="180" height="100" rx="8" fill="#FFFFFF" stroke="#14161A" stroke-width="1.5"/>
+    <text x="120" y="145" text-anchor="middle" font-family="Spectral,serif" font-weight="700" font-size="16" fill="#14161A">Ikaslea</text>
+    <text x="120" y="168" text-anchor="middle" font-family="IBM Plex Mono,monospace" font-size="10" fill="#8A8F98">denbora + arreta</text>
+    <rect x="490" y="100" width="180" height="100" rx="8" fill="#FFFFFF" stroke="#14161A" stroke-width="1.5"/>
+    <text x="580" y="145" text-anchor="middle" font-family="Spectral,serif" font-weight="700" font-size="16" fill="#14161A">IA eredua</text>
+    <text x="580" y="168" text-anchor="middle" font-family="IBM Plex Mono,monospace" font-size="10" fill="#8A8F98">sortzeko gaitasuna</text>
+    <g class="flujo-del" id="fx-del">
+      <path d="M 490 125 C 400 90, 300 90, 215 122" stroke="#C8341F" stroke-width="3" fill="none" marker-end="url(#pR)"/>
+      <text x="350" y="82" text-anchor="middle" font-family="IBM Plex Mono,monospace" font-size="10" fill="#C8341F">IAk interpretazioa sortzen du</text>
+      <path d="M 215 178 C 300 212, 400 212, 485 180" stroke="#C8341F" stroke-width="1.6" stroke-dasharray="5 4" fill="none" marker-end="url(#pR)"/>
+      <text x="350" y="232" text-anchor="middle" font-family="IBM Plex Mono,monospace" font-size="10" fill="#C8341F">Ikasleak onartu edo errepikatu</text>
+      <text x="350" y="272" text-anchor="middle" font-family="Spectral,serif" font-style="italic" font-size="13" fill="#7E1F12">praktika pertsonala galtzeko arriskua</text>
+    </g>
+    <g class="flujo-inc" id="fx-inc" opacity="0.10">
+      <path d="M 215 125 C 300 90, 400 90, 485 122" stroke="#223A8F" stroke-width="3" fill="none" marker-end="url(#pA)"/>
+      <text x="350" y="82" text-anchor="middle" font-family="IBM Plex Mono,monospace" font-size="10" fill="#223A8F">Ikasleak interpretazioa sortzen du</text>
+      <path d="M 485 178 C 400 212, 300 212, 220 180" stroke="#223A8F" stroke-width="1.6" stroke-dasharray="5 4" fill="none" marker-end="url(#pA)"/>
+      <text x="350" y="232" text-anchor="middle" font-family="IBM Plex Mono,monospace" font-size="10" fill="#223A8F">IAk errubriketan oinarritutako atzeraelikadura ematen du</text>
+      <text x="350" y="272" text-anchor="middle" font-family="Spectral,serif" font-style="italic" font-size="13" fill="#16265F">ikasteko ahalegina ikaslearena da</text>
+    </g>
+    <defs>
+      <marker id="pA" markerWidth="8" markerHeight="8" refX="6" refY="4" orient="auto"><path d="M0,0 L8,4 L0,8 z" fill="#223A8F"/></marker>
+      <marker id="pR" markerWidth="8" markerHeight="8" refX="6" refY="4" orient="auto"><path d="M0,0 L8,4 L0,8 z" fill="#C8341F"/></marker>
+    </defs>
+  </svg>
+  <div class="leyenda" id="leyenda">
+    <span class="tag rojo">Arkitektura delegatiboa</span>
+    IAk interpretazioa sortzen du, eta ikasleak batez ere jaso edo onartzen du. Eredu ideal honetan, argudioak eraikitzeko praktika murriztu daiteke.
+  </div>
+</div>
+<script>
+(function(){
+  var legend=document.getElementById('leyenda');
+  var fxInc=document.getElementById('fx-inc'),fxDel=document.getElementById('fx-del');
+  var bInc=document.getElementById('btn-inc'),bDel=document.getElementById('btn-del');
+  if(!bInc||!bDel||!legend)return;
+  bDel.addEventListener('click',function(){
+    fxDel.setAttribute('opacity','1');fxInc.setAttribute('opacity','0.10');
+    bDel.className='modo activo-del';bInc.className='modo';
+    legend.innerHTML='<span class="tag rojo">Arkitektura delegatiboa</span> IAk interpretazioa sortzen du, eta ikasleak emaitza onartu ohi du. Argudio bat eraikitzeko praktikatzeko aukera murriztu daiteke.';
+  });
+  bInc.addEventListener('click',function(){
+    fxInc.setAttribute('opacity','1');fxDel.setAttribute('opacity','0.10');
+    bInc.className='modo activo-inc';bDel.className='modo';
+    legend.innerHTML='<span class="tag azul">Arkitektura barneratzailea</span> Ikasleak interpretazioa sortzen du; IAk errubrika esplizituekin ebaluatu, akatsak identifikatu eta galdera gidariak egin ditzake. <strong>Sustanciak bigarren elkarreragin mota horri ematen dio lehentasuna.</strong>';
+  });
+})();
+</script>
+```
+
+Sustanciak **arkitektura barneratzailea** lehenesten du: ikasleak interpretazioa egiten du eta atzeraelikadura erabiltzen du berrikusteko. Prototipo esperimentalak idatzizko erantzunak eta ebaluazio formatiboa jorratzen ditu; berrikuspen errekurtsibo sistematikoa eta dimentsio anitzeko egokitzapena garatu eta ebaluatu behar dira oraindik.
+
+## Interpretazio substantiboa ezagutza gorpuztu gisa {.seccion}
+
+<span class="num-seccion">III — Zer den ikastea</span>
+
+Emaitza estatistiko bat sakon interpretatzeko gaitasuna kapital kultural gorpuztu gisa uler daiteke: praktikaren bidez garatzen da, eta ezin da delegazio hutsaren bidez transferitu. Analisiak sortzea errazten den neurrian, **emaitzek zer esan nahi duten —eta zer ezin den ondorioztatu— jakitea bereziki baliotsua** da.
+
+<div class="cita-marco">Sustanciak ikaskuntza baloratzeko beste modu bat proposatzen du: arrazoibide esanguratsua abiaduraren gainetik jartzea. Hasierako jokoan, interpretazio substantiboak puntu gehiago jasotzen ditu taula bat teknikoki irakurtzeak baino. Helburua ez da berehalakotasuna maximizatzea, ulertzeko behar den denbora aitortzea baizik.</div>
+
+Akatsen tratamenduak logika bera jarraitzen du. Jatorrizko kontzeptuan, akats batek azalpen bat ireki dezake akatsen katalogoan: ulertutako akatsa ikaskuntzaren parte bihurtzen da, ez zigor hutsa.
+
+## Oinarri epistemologikoa {.seccion}
+
+<span class="num-seccion">IV — Simondon</span>
+
+Gilbert Simondonen filosofiak N4 interpretazio kritiko eta gogoetatsua inspiratzen du. Objektu tekniko batekin harreman ez-alienatua izateak ez du soilik hura erabiltzea esan nahi: **barrutik nola funtzionatzen duen ulertzea** ere badakar. Estatistikan, horrek esan nahi du galdetzea zergatik aukeratu den metodo bat, zer aurresuposizio dituen, eredu batek nola eraldatzen dituen datuak eta ikerketa-diseinuak zer baieztapen ez dituen ahalbidetzen.
+
+Sustancia osagarri pedagogiko bat izan nahi da, ez ikaslearen jarduera intelektualaren ordezkoa. Helburua ez da interpretazio bat jasotzea bakarrik, **interpretatzaile izateko gaitasuna garatzea** baizik.
+
+## Hiru oinarri, diseinu bakarra {.seccion}
+
+<span class="num-seccion">V — Sintesia</span>
+
+Jarri kurtsorea txartel bakoitzaren gainean edo hautatu teklatuarekin nahiz ukipenarekin, oinarri teoriko bakoitzak jokoaren diseinua nola bideratzen duen ikusteko.
+
+
+```{=html}
+<div class="flip-grid">
+  <div class="flip-card flip-card--deep" tabindex="0" role="button" aria-label="Oinarri soziologikoa, aktibatu xehetasunetarako">
+    <div class="flip-inner">
+      <div class="flip-front"><div class="flip-label">Oinarri soziologikoa</div><div class="flip-titulo">Bourdieu</div><div class="flip-autor">Kapital-formen teoria</div><div class="flip-hint">→ jarri kurtsorea gainean edo hautatu</div></div>
+      <div class="flip-back"><div class="flip-aporta">Ekarpena</div><div class="flip-texto">Norberaren ahalegin intelektuala zergatik den garrantzitsua, eta IAren eta ikasleen rolak zergatik diren galdera soziologiko bat.</div><div class="flip-traduce">Ikasleak berak ezagutza sortzeari lehentasuna ematen dion arkitektura.</div></div>
+    </div>
+  </div>
+  <div class="flip-card" tabindex="0" role="button" aria-label="Oinarri epistemologikoa, aktibatu xehetasunetarako">
+    <div class="flip-inner">
+      <div class="flip-front"><div class="flip-label">Oinarri epistemologikoa</div><div class="flip-titulo">Simondon</div><div class="flip-autor">Objektu teknikoak eta haien existentzia-modua</div><div class="flip-hint">→ jarri kurtsorea gainean edo hautatu</div></div>
+      <div class="flip-back"><div class="flip-aporta">Ekarpena</div><div class="flip-texto">Prozesu teknikoak barrutik ulertzeko ikuspegia, metodoak kutxa beltz gisa erabili beharrean.</div><div class="flip-traduce">N4 interpretazio kritikoa, aurresuposizio eta muga metodologikoak barne.</div></div>
+    </div>
+  </div>
+  <div class="flip-card" tabindex="0" role="button" aria-label="Oinarri pedagogikoa, aktibatu xehetasunetarako">
+    <div class="flip-inner">
+      <div class="flip-front"><div class="flip-label">Oinarri pedagogikoa</div><div class="flip-titulo">Curcio · Shaughnessy · Garfield</div><div class="flip-autor">Estatistikaren didaktika</div><div class="flip-hint">→ jarri kurtsorea gainean edo hautatu</div></div>
+      <div class="flip-back"><div class="flip-aporta">Ekarpena</div><div class="flip-texto">Ikasleek datuak nola irakurri, interpretatu eta horiekin arrazoitzen duten aztertzen duten ikerketak.</div><div class="flip-traduce">N1–N4 mailen, jarduera-errubriken eta atzeraelikadura formatiboaren inspirazioa; eskala zehatza baliozkotu behar da.</div></div>
+    </div>
+  </div>
+</div>
+<script>
+(function(){
+  document.querySelectorAll('.flip-card').forEach(function(card){
+    card.addEventListener('click',function(){card.classList.toggle('flipped');});
+    card.addEventListener('keydown',function(e){if(e.key==='Enter'||e.key===' '){e.preventDefault();card.classList.toggle('flipped');}});
+  });
+})();
+</script>
+```
+
+## Erreferentziak {.seccion}
+
+- Bourdieu, P. (1987 [1979]). The three states of cultural capital. *Sociológica*, 2(5).
+- Bourdieu, P., & Wacquant, L. (2005 [1992]). *An Invitation to Reflexive Sociology*.
+- Curcio, F. (1987). Comprehension of mathematical relationships expressed in graphs. *JRME*, 18(5).
+- Garfield, J., & Ben-Zvi, D. (2008). *Developing Students' Statistical Reasoning*. Springer.
+- Ignatow, G., & Robinson, L. (2017). Pierre Bourdieu: theorizing the digital. *Information, Communication & Society*, 20(7).
+- Shaughnessy, J. M. (2007). Research on statistics learning and reasoning. In *Second Handbook of Research on Mathematics Teaching and Learning*.
+- Simondon, G. (2007 [1958]). *On the Mode of Existence of Technical Objects*.
+- Zuboff, S. (2020). *The Age of Surveillance Capitalism*.
+
+## Oinarrietatik ikaskuntza egokitzailera {.seccion}
+
+Diseinuak N1–N4 interpretazio-sakontasuna zabaltzen du, kontzeptuak, eragiketa estatistikoak, akats errepikatuak, aurrebaldintzak eta ikaskuntza-ibilbideko aldaketak bereizten dituen **dimentsio anitzeko gaitasun-eredu** batekin. Interpretazioaren sakontasuna arrazoibide estatistikoaren dimentsio bat da, ez gaitasun osoa.
+
+Proposatutako zikloak —**hasierako erantzuna → atzeraelikadura → berrikusitako erantzuna → ebidentzia berria**— ikasleen lan intelektuala behatzeko aukera eman dezake. Atzeraelikadurak ez du automatikoki ikaskuntza hobea bermatzen: hipotesi horiek egiaztatu egin behar dira.
+
+Curriculumari lotutako jarduerak giza taldeak berrikusitako iturrietatik sortzen dira. IAk aurkikuntzan, erauzketan, sailkapenean eta ebaluazioan lagun dezake, baina erabaki pedagogikoek giza gainbegiratzea behar dute.
+
+[Aztertu eredu pedagogikoa →](pedagogia.qmd) · [Ikusi nola funtzionatzen duen →](como-funciona.qmd)
