@@ -1,0 +1,76 @@
+---
+title: "Nola funtzionatzen du?"
+description: "Hasierako diagnostikotik arrazoibide estatistikoa berrikustera: Sustanciaren ikaskuntza-ibilbidea."
+lang: eu
+toc: true
+---
+
+::: {.hero}
+<div class="eyebrow">Ikaskuntza-esperientzia · proposatutako arkitektura</div>
+
+# Zurekin batera <em>egokitzen den</em> ikaskuntza-ibilbidea
+
+<p class="hero-sub">Sustanciaren helburua ikaslearen abiapuntua ezagutzea, erronka egokiak proposatzea eta atzeraelikadura berriro pentsatzeko aukera bihurtzea da. Hemen aurreikusitako esperientzia deskribatzen da: osagai guztiak ez daude oraindik egungo prototipoan inplementatuta.</p>
+:::
+
+## Ikaslearen ibilbidea {.seccion}
+
+<div class="v2-steps" aria-label="Proposatutako ikaskuntza-ibilbidea">
+  <div class="v2-step"><span class="v2-step-num">01</span><div><h3>Hasierako diagnostikoa</h3><p>Jarduera laburrek aurretiko ezagutzak, kontzeptu estatistikoekiko ohitura eta arrazoitzeko moduak aztertzen dituzte. Helburua abiapuntua ulertzea da, ez ikasleari behin betiko etiketa jartzea.</p></div></div>
+  <div class="v2-step"><span class="v2-step-num">02</span><div><h3>Hasierako gaitasun-profila</h3><p>Kontzeptuei, eragiketei eta interpretazioaren sakontasunari buruzko lehen estimazioa osatzen da. Oraindik behatu ez dena ezezagun gisa jasotzen da, ez ezintasun gisa.</p></div></div>
+  <div class="v2-step"><span class="v2-step-num">03</span><div><h3>Jokoa hasten da</h3><p>Curriculumarekin lotutako erronka batek taula irakurtzea, neurri bat kalkulatzea, emaitzak alderatzea, datuak interpretatzea edo mugak aztertzea eskatzen du.</p></div></div>
+  <div class="v2-step"><span class="v2-step-num">04</span><div><h3>Norberaren erantzuna</h3><p>Ikasleak erantzun bat sortzen du: idatzizko interpretazioa, enuntziatu osatua, justifikatutako alderaketa edo kalkulua, jardueraren arabera.</p></div></div>
+  <div class="v2-step"><span class="v2-step-num">05</span><div><h3>Atzeraelikadura eta elkarrizketa epistemologikoa</h3><p>Sistemak zailtasun bat seinalatzen du eta alderatzera, berriro aztertzera edo hobeto justifikatzera gonbidatzen duten galderak egiten ditu. IAk ez luke interpretazio bukatua besterik gabe eman behar.</p></div></div>
+  <div class="v2-step"><span class="v2-step-num">06</span><div><h3>Berrikuspena eta ebidentzia berria</h3><p>Berrikusitako erantzunak akats bat zuzendu den, argudio berriak txertatu diren edo printzipio bat beste testuinguru batera eraman den erakuts dezake.</p></div></div>
+  <div class="v2-step"><span class="v2-step-num">07</span><div><h3>Hurrengo erronka</h3><p>Ebidentzia berriak profila eguneratzeko eta jarduera pedagogikoki hautatzeko balio du. Ikaskuntzak aurrebaldintza bat sendotu, interpretazioan sakondu edo testuingurua alda dezake.</p></div></div>
+</div>
+
+## Berrikustea, ez soilik berriro saiatzea {.seccion}
+
+<div class="v2-dialog" aria-label="Elkarrizketa epistemologikoaren adibidea">
+  <div class="v2-dialog-header">ADIBIDE ILUSTRATIBOA · BATEZBESTEKOAK ETA MUTURREKO BALIOAK</div>
+  <div class="v2-bubble v2-system"><strong>Erronka.</strong> Batez besteko diru-sarrera mediana baino askoz handiagoa da. Zerk azal dezake?</div>
+  <div class="v2-bubble v2-student"><strong>Lehen erantzuna.</strong> Batezbestekoa handiagoa da jende gehienak kopuru hori irabazten duelako.</div>
+  <div class="v2-bubble v2-system"><strong>Galdera gidaria.</strong> Batezbestekoak nahitaez adierazten al du gehienek zenbat irabazten duten? Eta pertsona gutxi batzuek oso diru-sarrera handiak badituzte?</div>
+  <div class="v2-bubble v2-student"><strong>Berrikusitako erantzuna.</strong> Diru-sarrera oso altu gutxi batzuek batezbestekoa igo dezakete; ezin dut esan gehienek kopuru hori jasotzen dutenik.</div>
+  <div class="v2-dialog-footer">Sistemak bi erantzunak, atzeraelikadura eta aldaketa jaso ditzake; baina berrikuspen bakar batek ez du gaitasun egonkorra frogatzen.</div>
+</div>
+
+Elkarrizketa epistemologikoak **iturriak**, **arazoa**, **jarrera**, **alderaketa**, **transferentzia** eta **aplikazioa** uztar ditzake. Mugimendu pedagogikoak dira, ez sei galderako kontrol-zerrenda zurruna.
+
+## Zer aldatzen da profilean? {.seccion}
+
+<div class="v2-panel">
+  <p>Gaitasun-bektorea ez da nota bakarra: ikasleak dakienari, egin dezakeenari eta landu behar duenari buruzko ebidentziak uztartzen ditu.</p>
+  <div class="v2-pill-grid"><span>Kontzeptuak</span><span>Eragiketak</span><span>N1–N4 sakontasuna</span><span>Akats errepikatuak</span><span>Aurrebaldintzak</span><span>Ikaskuntza-ibilbidea eta berrikuspena</span></div>
+  <p class="v2-small">Adierazleek kalibrazioa eta baliozkotzea behar dute benetako hezkuntza-erabakietan erabili baino lehen.</p>
+</div>
+
+## Iturri estatistikoetatik ikaskuntza-jardueretara {.seccion}
+
+Taldeak **ezagutza-base estatistiko egituratu bat** osatuko du, erabilera-eskubide egokiak dituzten ikasprograma, eskuliburu, artikulu eta beste material batzuetatik abiatuta. Agente espezializatuek kontzeptuak, adibideak, eragiketak eta ariketak ateratzen lagunduko dute, iturrien trazabilitatea gordez.
+
+**Material bat automatikoki ateratzeak ez du jarduera baliozkotu bihurtzen**: taldeak zehaztasun estatistikoa, curriculumarekiko egokitasuna eta berrerabiltzeko eskubideak aztertu behar ditu. Eredu egokitzailea eta ezagutza-basea garapenean daude oraindik.
+
+## Nork egiten du zer? {.seccion}
+
+| Parte-hartzailea | Ardura |
+|---|---|
+| Talde akademikoa eta irakasleak | Curriculuma zehaztu, jarduerak baliozkotu eta erabaki pedagogikoak gainbegiratu. |
+| IAko agente laguntzaileak | Onartutako materialak bilatu, ariketak proposatu eta errubrikekin ebaluatzen lagundu, babes-neurriekin. |
+| Motor pedagogikoa | Jarduerak hautatu, irizpide esplizituetan eta ikaslearen estimatutako profilean oinarrituta. |
+| Ikaslea | Bere arrazoibidea sortu, alderatu, berrikusi eta garatu. |
+
+**Garrantzitsua:** talde akademikoak sartzen eta berrikusten ditu ikasmaterialak. **Ikasleek ez dute dokumenturik igo behar jolasteko.**
+
+## Orain erabilgarri eta oraindik garapenean {.seccion}
+
+| Osagaia | Egoera |
+|---|---|
+| Kontzeptu pedagogikoa, N1–N4 eta hasierako akatsen sailkapena | Dokumentatuta |
+| Interpretazio-jarduerak dituen prototipoa | Esperimentala; kanpoko zerbitzuaren araberakoa |
+| Hasierako diagnostikoa eta dimentsio anitzeko profila | Diseinuan eta garapenean |
+| Berrikuspen sistematikoa eta hautaketa egokitzailea | Garapenean |
+| Agenteekin osatutako jarduera-bankua eta erakundeentzako panelak | Aurreikusita |
+
+[Aztertu egungo prototipoa →](piloto.qmd) · [Irakurri eredu pedagogikoa →](pedagogia.qmd)
