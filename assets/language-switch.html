@@ -13,7 +13,8 @@
     var locale=/\/eu\//.test(path)?"eu":/\/en\//.test(path)?"en":"es";
     var base=path.replace(/(?:(?:en|eu)\/)?[^/]*$/,"");
     var slug=(path.split("/").pop()||"index.html").replace(/\.html$/,"");
-    if(slugs.indexOf(slug)<0)slug="index";
+    var editorial = /^(sedimentos|sedimento-01)$/.test(slug);
+    if(slugs.indexOf(slug)<0 && !editorial)slug="index";
     var prefix=function(lang){return lang==="es"?"":lang+"/";};
     var urlFor=function(lang,target){return base+prefix(lang)+target+".html";};
     document.documentElement.setAttribute("lang",locale);
@@ -22,7 +23,7 @@
       var targetLanguage=Object.keys(localeNames).find(function(key){return original===localeNames[key];});
       if(targetLanguage){
         a.textContent=localeNames[targetLanguage];
-        a.setAttribute("href",urlFor(targetLanguage,slug));
+        a.setAttribute("href",urlFor(targetLanguage,editorial && targetLanguage!=="es"?"index":slug));
         a.setAttribute("hreflang",targetLanguage);
         a.setAttribute("lang",targetLanguage);
         a.setAttribute("aria-label",{
@@ -45,6 +46,11 @@
       try {
         var destination=new URL(a.getAttribute("href"),window.location.href);
         if(destination.origin!==window.location.origin)return;
+        if(/\/sedimentos\.html$/.test(destination.pathname)){
+          a.setAttribute("href",urlFor("es","sedimentos"));
+          if(locale!=="es")a.textContent="Sedimentos (ES)";
+          return;
+        }
         var match=destination.pathname.match(/\/(index|fundamentacion|pedagogia|como-funciona|universidades|equipo|piloto)\.html$/);
         if(!match)return;
         var target=match[1];
@@ -62,7 +68,7 @@
     }
     var input=document.querySelector(".aa-Input");
     if(input)input.setAttribute("placeholder",{es:"Buscar",en:"Search",eu:"Bilatu"}[locale]);
-    ["es","en","eu"].forEach(function(lang){
+    (editorial?["es"]:["es","en","eu"]).forEach(function(lang){
       var alternate=document.createElement("link");
       alternate.setAttribute("rel","alternate");
       alternate.setAttribute("hreflang",lang);

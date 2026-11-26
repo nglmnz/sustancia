@@ -4,6 +4,7 @@ project:
   resources:
     - assets/videos/*.mp4
     - assets/*.jpeg
+    - assets/sedimentos/*.webp
 
 website:
   title: "Sustancia"
@@ -23,6 +24,8 @@ website:
         text: Cómo funciona
       - href: universidades.qmd
         text: Universidades
+      - href: sedimentos.qmd
+        text: Sedimentos
       - href: equipo.qmd
         text: Equipo
       - href: piloto.qmd

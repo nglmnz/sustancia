@@ -1,0 +1,148 @@
+---
+title: "Devorar el conocimiento"
+description: "De Pierre Bourdieu a la antropofagia cultural brasileña: una aproximación epistemológica a Sustancia."
+page-layout: full
+toc: false
+format:
+  html:
+    css: assets/sedimentos/sedimentos.css
+---
+
+```{=html}
+<header class="sed-tropical">
+  <div class="sed-tropical-copy">
+    <a class="sed-back" href="sedimentos.html">← Volver a Sedimentos</a>
+    <p class="sed-eyebrow">Sedimento 01 / Noviembre 2026</p>
+    <h1>Devorar el conocimiento</h1>
+    <p class="sed-subtitle">De Pierre Bourdieu a la antropofagia cultural brasileña: una aproximación epistemológica a Sustancia.</p>
+    <p class="sed-tropical-tags">Sociología · Arte · Aprendizaje · América Latina</p>
+  </div>
+  <figure class="sed-tropical-art"><img src="assets/sedimentos/ensayo-01.webp" width="160" height="80" alt="Figura devorando páginas, una metáfora pixel art de la antropofagia cultural."><figcaption>Ilustración editorial original · Sustancia</figcaption></figure>
+</header>
+<nav class="sed-chapters" aria-label="Índice del ensayo">
+<a href="#incorporacion">I. Incorporación</a><a href="#brasil">II. Brasil</a><a href="#libro">III. Comerse un libro</a><a href="#sustancia">IV. Sustancia</a><a href="#epistemologia">V. Epistemología</a><a href="#referencias">Lecturas</a>
+</nav>
+```
+
+::: {.sed-essay-body}
+
+¿Qué hacemos realmente cuando decimos que nos hemos comido un libro?
+
+Esta expresión cotidiana, aparentemente trivial, permite establecer un encuentro entre dos tradiciones intelectuales y culturales provenientes de geografías muy distintas: la sociología de Pierre Bourdieu y la antropofagia cultural brasileña, recuperada posteriormente por el movimiento tropicalista.
+
+Ambas nos ofrecen elementos para pensar qué significa adquirir conocimiento, incorporarlo y transformarlo en algo propio.
+
+## I. El conocimiento que se hace cuerpo {#incorporacion}
+
+En su teoría de los capitales, Pierre Bourdieu distingue diferentes estados del capital cultural. Uno de ellos, el estado incorporado, resulta particularmente relevante para comprender los procesos de aprendizaje.
+
+La incorporación del capital cultural supone un trabajo de asimilación que requiere una inversión personal de tiempo. Podemos adquirir un libro, acceder a una obra de arte o disponer de una enorme cantidad de información, pero su mera posesión no implica que hayamos incorporado aquello que contienen.
+
+Leer, escuchar música, visitar un museo, aprender a interpretar una investigación o participar en determinados espacios de socialización son experiencias mediante las cuales vamos adquiriendo disposiciones, sensibilidades, habilidades y esquemas de interpretación del mundo.
+
+Estas experiencias contribuyen a configurar nuestro habitus, entendido como un conjunto de disposiciones socialmente adquiridas que orientan nuestras maneras de percibir, pensar y actuar.
+
+Sin embargo, este proceso no ocurre en el vacío. Las condiciones materiales de existencia, la disponibilidad de tiempo, las experiencias familiares y las oportunidades educativas intervienen en las posibilidades de incorporar diferentes formas de capital cultural.
+
+**El conocimiento incorporado no puede transferirse instantáneamente ni adquirirse por delegación.**
+
+Esta idea adquiere una relevancia particular en una época en la que podemos delegar una parte creciente de nuestras actividades intelectuales en sistemas de inteligencia artificial.
+
+## II. Brasil y el arte de devorar {#brasil}
+
+Varias décadas antes de la sistematización de estas ideas por Bourdieu, en Brasil se estaba gestando una de las propuestas culturales más sugerentes del pensamiento latinoamericano.
+
+En 1928, Oswald de Andrade publicó su *Manifesto Antropófago*, estrechamente vinculado a la obra de la artista Tarsila do Amaral.
+
+La antropofagia cultural recuperaba metafóricamente prácticas rituales de determinados pueblos indígenas brasileños, en las que la devoración del otro podía adquirir un significado simbólico de apropiación y transformación de sus cualidades.
+
+Andrade trasladó esta imagen al terreno de la producción cultural.
+
+Frente a la dependencia intelectual y artística respecto de Europa, la propuesta antropofágica no consistía en rechazar todo aquello que provenía del exterior, sino en devorarlo, digerirlo y transformarlo mediante las particularidades de la experiencia brasileña.
+
+Décadas más tarde, esta tradición encontraría una nueva expresión en el tropicalismo.
+
+En 1967, el artista Hélio Oiticica presentó su instalación *Tropicália*, una obra que invitaba al espectador a involucrarse corporal y sensorialmente con el espacio artístico. Poco después, Caetano Veloso retomaría su nombre en una canción que se convertiría en uno de los referentes del movimiento tropicalista.
+
+Junto con artistas como Gilberto Gil, Gal Costa, Tom Zé y Os Mutantes, el tropicalismo articuló expresiones populares, experimentación artística, influencias internacionales y reflexiones sobre la sociedad brasileña, en un contexto marcado por la dictadura militar.
+
+Su riqueza residía precisamente en su capacidad de transformar materiales culturales heterogéneos en nuevas posibilidades expresivas, sin reducir la complejidad histórica de Brasil a una identidad homogénea.
+
+**La diversidad no era un obstáculo para la creación. Era su materia prima.**
+
+## III. Comerse un libro {#libro}
+
+¿Qué ocurre, entonces, cuando afirmamos que nos hemos comido un libro?
+
+Desde la sociología de Bourdieu, podríamos interpretar esta expresión como una metáfora del trabajo de incorporación del conocimiento: hemos dedicado tiempo a un objeto cultural, lo hemos interpretado y hemos adquirido nuevas herramientas para comprender el mundo.
+
+Desde la antropofagia cultural brasileña, podemos ir un paso más allá. No solamente hemos incorporado algo externo, sino que también tenemos la posibilidad de transformarlo mediante nuestras propias experiencias, preguntas y condiciones de existencia.
+
+**El libro nos transforma, pero nosotros también transformamos aquello que leemos.**
+
+Aprender, desde este encuentro conceptual, no consiste exclusivamente en acumular información. Implica desarrollar la capacidad de metabolizarla, establecer relaciones, producir nuevas interpretaciones y generar conocimiento situado.
+
+## IV. ¿Qué tiene que ver todo esto con Sustancia? {#sustancia}
+
+Sustancia nace de una inquietud pedagógica: cómo contribuir al desarrollo de capacidades de interpretación, razonamiento y pensamiento autónomo en una sociedad atravesada por la inteligencia artificial.
+
+Desde esta perspectiva, la tecnología educativa no debería sustituir el trabajo de incorporación del conocimiento, sino crear mejores condiciones para que este ocurra.
+
+Por ello, en Sustancia nos interesa que los estudiantes elaboren interpretaciones propias, se enfrenten a problemas, cometan errores, reciban retroalimentación y puedan transformar progresivamente sus formas de razonamiento.
+
+Nuestro vector de maestría busca reconocer precisamente el carácter multidimensional de este proceso. Aprender no significa únicamente alcanzar una puntuación superior, sino desarrollar distintas capacidades que puedan movilizarse ante nuevos problemas y contextos.
+
+La inteligencia artificial puede acompañar este proceso, pero no puede realizar por nosotros el trabajo personal de incorporación.
+
+Esta reflexión también alcanza la dimensión tecnológica del proyecto. Desarrollar infraestructura propia, experimentar con modelos locales y promover la soberanía tecnológica implica preguntarnos cómo podemos apropiarnos críticamente de tecnologías producidas en otros contextos y transformarlas de acuerdo con nuestras necesidades.
+
+No se trata de rechazar el conocimiento producido en otros lugares, sino de desarrollar capacidades propias para interpretarlo, modificarlo y producir nuevas posibilidades a partir de él.
+
+## V. Una epistemología en construcción {#epistemologia}
+
+Sustancia no pretende encontrar sus fundamentos en una única disciplina, tradición intelectual o geografía.
+
+Su construcción se nutre de encuentros entre la sociología, la pedagogía, las ciencias de la computación, la estadística, las artes y las experiencias culturales de diferentes territorios.
+
+Este encuentro entre Pierre Bourdieu y la antropofagia cultural brasileña constituye una primera aproximación a lo que provisionalmente podríamos denominar una epistemología de la metabolización del conocimiento.
+
+Una manera de pensar el aprendizaje como incorporación, apropiación crítica y transformación.
+
+En tiempos en los que acceder a la información es cada vez más sencillo, quizás el desafío educativo fundamental no sea consumir más conocimiento, sino desarrollar las capacidades necesarias para digerirlo, transformarlo y hacerlo propio.
+
+Porque no basta con acceder al conocimiento.
+
+::: {.sed-final-line}
+Hay que convertirlo en sustancia.
+:::
+
+:::
+
+::: {.sed-references #referencias}
+
+## Materiales de origen
+
+Las referencias que nutren el ensayo, para continuar la exploración.
+
+### Textos de origen
+
+- Bourdieu, P. (1986). [The Forms of Capital](https://web.stanford.edu/~eckert/PDF/Bourdieu1986.pdf) · Universidad de Stanford (copia del capítulo).
+- Andrade, O. (1928). [Manifesto antropófago](https://icaa.mfah.org/s/es/item/771303) · International Center for the Arts of the Americas, Museum of Fine Arts, Houston.
+
+### Arte, archivos y difusión cultural
+
+- [Hélio Oiticica y Tropicália](https://www.museoreinasofia.es/colecciones/artista/oiticica-helio/) · Museo Nacional Centro de Arte Reina Sofía.
+- [Revista de Antropofagia: número inaugural de 1928](https://sgpa.webhostusp.sti.usp.br/modernismo/artigos.php?ano=1928&mod=1&ordenar=3&pag=1&per=408) · Universidade de São Paulo.
+
+### Artículos científicos y trabajos académicos
+
+- [Reminiscências da Antropofagia oswaldiana](https://revistas.usp.br/leviathan/pt_BR/article/view/150302) · *Leviathan*, Universidade de São Paulo.
+- [Oswaldo Costa, Antropofagia, y la crítica caníbal de la modernidad colonial](https://cultureandhistory.revistas.csic.es/index.php/cultureandhistory/article/view/82) · *Culture & History Digital Journal*, CSIC.
+- [Políticas da indigestão (Antropofagia revisitada)](https://revistas.usp.br/ars/es/article/view/197334) · *ARS*, Universidade de São Paulo.
+- [Antropofagia: palimpsesto selvagem](https://teses.usp.br/teses/disponiveis/8/8151/tde-04082016-165033/pt-br.html) · Tesis, Universidade de São Paulo.
+
+:::
+
+::: {.sed-return}
+[← Volver al salar de Sedimentos](sedimentos.qmd) · [Fundamentación de Sustancia](fundamentacion.qmd)
+:::
