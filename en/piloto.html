@@ -47,7 +47,7 @@ ul.task-list li input[type="checkbox"] {
 <link href="../site_libs/quarto-html/quarto-syntax-highlighting-4e220f1c46fbf15cd6b7314021729ad9.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../site_libs/bootstrap/bootstrap-35d85bf88cc0324d7698e7694a826fc7.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="../site_libs/bootstrap/bootstrap-4734f1a591e1b404fad78abb58220eb2.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -115,6 +115,10 @@ ul.task-list li input[type="checkbox"] {
   <li class="nav-item">
     <a class="nav-link" href="../universidades.html"> 
 <span class="menu-text">Universidades</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../sedimentos.html"> 
+<span class="menu-text">Sedimentos</span></a>
   </li>  
   <li class="nav-item">
     <a class="nav-link" href="../equipo.html"> 
@@ -214,7 +218,8 @@ This experience currently focuses on interpreting statistical findings, writing 
     var locale=/\/eu\//.test(path)?"eu":/\/en\//.test(path)?"en":"es";
     var base=path.replace(/(?:(?:en|eu)\/)?[^/]*$/,"");
     var slug=(path.split("/").pop()||"index.html").replace(/\.html$/,"");
-    if(slugs.indexOf(slug)<0)slug="index";
+    var editorial = /^(sedimentos|sedimento-01)$/.test(slug);
+    if(slugs.indexOf(slug)<0 && !editorial)slug="index";
     var prefix=function(lang){return lang==="es"?"":lang+"/";};
     var urlFor=function(lang,target){return base+prefix(lang)+target+".html";};
     document.documentElement.setAttribute("lang",locale);
@@ -223,7 +228,7 @@ This experience currently focuses on interpreting statistical findings, writing 
       var targetLanguage=Object.keys(localeNames).find(function(key){return original===localeNames[key];});
       if(targetLanguage){
         a.textContent=localeNames[targetLanguage];
-        a.setAttribute("href",urlFor(targetLanguage,slug));
+        a.setAttribute("href",urlFor(targetLanguage,editorial && targetLanguage!=="es"?"index":slug));
         a.setAttribute("hreflang",targetLanguage);
         a.setAttribute("lang",targetLanguage);
         a.setAttribute("aria-label",{
@@ -246,6 +251,11 @@ This experience currently focuses on interpreting statistical findings, writing 
       try {
         var destination=new URL(a.getAttribute("href"),window.location.href);
         if(destination.origin!==window.location.origin)return;
+        if(/\/sedimentos\.html$/.test(destination.pathname)){
+          a.setAttribute("href",urlFor("es","sedimentos"));
+          if(locale!=="es")a.textContent="Sedimentos (ES)";
+          return;
+        }
         var match=destination.pathname.match(/\/(index|fundamentacion|pedagogia|como-funciona|universidades|equipo|piloto)\.html$/);
         if(!match)return;
         var target=match[1];
@@ -263,7 +273,7 @@ This experience currently focuses on interpreting statistical findings, writing 
     }
     var input=document.querySelector(".aa-Input");
     if(input)input.setAttribute("placeholder",{es:"Buscar",en:"Search",eu:"Bilatu"}[locale]);
-    ["es","en","eu"].forEach(function(lang){
+    (editorial?["es"]:["es","en","eu"]).forEach(function(lang){
       var alternate=document.createElement("link");
       alternate.setAttribute("rel","alternate");
       alternate.setAttribute("hreflang",lang);
